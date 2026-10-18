@@ -57,7 +57,19 @@ jobs:
             send "ultimate status"
             send "ultimate gate nether open"
             send "ultimate gate nether close"
-            sleep 10
+            # Prove each worldgen mod actually places its biomes.
+            for b in natures_spirit:aspen_forest biomeswevegone:black_forest windswept:pine_barrens yungscavebiomes:frosted_caves; do
+              send "locate biome $b"
+            done
+            # Generate real chunks around spawn to catch worldgen crashes between mods.
+            send "chunky radius 160"
+            send "chunky start"
+            for j in $(seq 1 120); do
+              grep -q 'Task finished' console.log && break
+              kill -0 $server 2>/dev/null || break
+              sleep 5
+            done
+            grep -E 'Task finished|Task stopped' console.log || echo "::warning::Chunky did not report finishing"
             send "stop"
           else
             send "stop"
@@ -85,6 +97,9 @@ jobs:
           done
           echo "===== ultimate status / gate output"
           grep -E 'nether|end:|Phase|has been' console.log || true
+          echo "===== Biome checks"
+          grep -E 'nearest|Could not find' console.log || true
+          if grep -q 'Could not find a biome' console.log; then echo "::warning::A worldgen mod's biome was not found near spawn"; fi
           echo "===== FTB Quests"
           grep -i 'ftbquests\|ftb quests' logs/latest.log | head -40 || true
           echo "===== Warnings/errors in latest.log (first 150)"

@@ -84,6 +84,12 @@ the Sculptor (Mowzie's Mobs), Scylla (Cataclysm), dungeon mini-bosses.
 When a quest boss dies, **every player within 64 blocks** gets credit for it, not just the one
 who landed the last hit. Late joiners catch up by fighting alongside veterans.
 
+### Spawn-safe zone
+
+Phase 4+ bosses (Frostmaw, Umvuthi, Maledictus, Ancient Remnant, Leviathan, Harbinger, Scylla)
+don't exist within 1000 blocks of world spawn. Any that generate there are removed, so
+the Far Lands really are far. Bosses called with an Echo are exempt.
+
 ### Boss scaling
 
 Boss damage taken is scaled by the number of players within 48 blocks:

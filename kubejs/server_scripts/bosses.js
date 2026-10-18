@@ -4,10 +4,14 @@
 // - The first Harbinger kill opens the Nether for the whole server.
 // - Boss scaling: bosses take less damage when more players are fighting them.
 // - Echoes: craftable items that summon a quest boss again.
+// - Spawn-safe zone: Phase 4+ bosses that generate near world spawn are removed,
+//   so nobody meets Frostmaw on day one. Echo-called bosses are tagged and exempt.
 
 const CREDIT_RADIUS = 64
 const SCALING_RADIUS = 48
 const SCALING_PER_EXTRA_PLAYER = 0.65
+const SPAWN_SAFE_RADIUS = 1000
+const ECHO_TAG = 'ultimate_echo'
 
 // entity id -> boss id (stage suffix). Optional bosses give a stage too, for glory quests.
 const BOSSES = {
@@ -35,8 +39,11 @@ const ECHOES = {
   maledictus: { entity: 'cataclysm:maledictus' },
   ancient_remnant: { entity: 'cataclysm:ancient_remnant' },
   leviathan: { entity: 'cataclysm:the_leviathan', needsWater: true },
-  harbinger: { entity: 'cataclysm:the_harbinger', nbt: '{Is_Act:1b}' }
+  harbinger: { entity: 'cataclysm:the_harbinger', nbt: 'Is_Act:1b' }
 }
+
+// Bosses of the Far Lands and later: they belong far from spawn.
+const FAR_BOSSES = ['frostmaw', 'umvuthi', 'maledictus', 'ancient_remnant', 'leviathan', 'harbinger', 'scylla']
 
 const bossName = entity => entity.getDisplayName().getString()
 
@@ -77,6 +84,18 @@ EntityEvents.death(event => {
   }
 })
 
+// ---- Spawn-safe zone ----
+EntityEvents.spawned(event => {
+  const entity = event.entity
+  const id = BOSSES[String(entity.type)]
+  if (!id || FAR_BOSSES.indexOf(id) < 0 || entity.tags.contains(ECHO_TAG)) return
+  if (String(entity.level.dimension().location()) !== 'minecraft:overworld') return
+  const spawn = entity.level.getSharedSpawnPos()
+  const dx = entity.x - spawn.x
+  const dz = entity.z - spawn.z
+  if (dx * dx + dz * dz < SPAWN_SAFE_RADIUS * SPAWN_SAFE_RADIUS) event.cancel()
+})
+
 // ---- Boss scaling ----
 // damage x 1 / (1 + 0.65 x (players - 1)): fair for one player, still a fight for five.
 EntityEvents.beforeHurt(event => {
@@ -93,7 +112,8 @@ const summonInFront = (player, server, echo) => {
   const x = (player.x + look.x() * 6).toFixed(1)
   const z = (player.z + look.z() * 6).toFixed(1)
   const y = player.y.toFixed(1)
-  server.runCommandSilent(`execute in minecraft:overworld run summon ${echo.entity} ${x} ${y} ${z} ${echo.nbt || ''}`)
+  const nbt = `{Tags:["${ECHO_TAG}"]${echo.nbt ? ',' + echo.nbt : ''}}`
+  server.runCommandSilent(`execute in minecraft:overworld run summon ${echo.entity} ${x} ${y} ${z} ${nbt}`)
 }
 
 Object.keys(ECHOES).forEach(echoId => {
