@@ -48,6 +48,7 @@ jobs:
           for i in $(seq 1 240); do
             if grep -q 'Done (' logs/latest.log 2>/dev/null; then ready=1; break; fi
             if ! kill -0 $server 2>/dev/null; then echo "::error::Server exited during startup"; break; fi
+            if ls crash-reports/*.txt >/dev/null 2>&1; then echo "::error::Server crashed during startup"; break; fi
             if [ $((i % 6)) -eq 0 ]; then echo "[$((i*5))s] $(tail -n 1 logs/latest.log 2>/dev/null | cut -c1-200)"; fi
             sleep 5
           done
@@ -67,6 +68,7 @@ jobs:
             for j in $(seq 1 120); do
               grep -q 'Task finished' console.log && break
               kill -0 $server 2>/dev/null || break
+              ls crash-reports/*.txt >/dev/null 2>&1 && break
               sleep 5
             done
             grep -E 'Task finished|Task stopped' console.log || echo "::warning::Chunky did not report finishing"
@@ -75,7 +77,7 @@ jobs:
             send "stop"
           fi
           for i in $(seq 1 60); do kill -0 $server 2>/dev/null || break; sleep 2; done
-          kill $server 2>/dev/null || true
+          kill -9 $server 2>/dev/null || true
           tail -n 60 console.log
 
       - name: Check results
