@@ -1,0 +1,653 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "magic_side"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "irons_spellbooks:arcane_essence"
+	}
+	id: "14869D5CE9961DE0"
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4D37D3F99A7A7793"
+			]
+			id: "475488349CEDBA22"
+			rewards: [
+				{
+					id: "4644A7A68597F4C2"
+					type: "xp"
+					xp: 40
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6F8DD74F276E237B"
+					item: {
+						count: 1
+						id: "irons_spellbooks:inscription_table"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			id: "1896D26D699DD437"
+			optional: true
+			rewards: [
+				{
+					id: "526DDCF83D904882"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "259480E77361F967"
+					item: {
+						count: 1
+						id: "irons_spellbooks:iron_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			id: "4FECCE9110E31F0E"
+			optional: true
+			rewards: [
+				{
+					id: "78FB1C5A5FEDB394"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "1EB792FE0B4DB4E9"
+					item: {
+						count: 1
+						id: "irons_spellbooks:gold_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			id: "2E5776191E48B14F"
+			optional: true
+			rewards: [
+				{
+					id: "1DB7780AAB9DF9D6"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "7B73C7FB8E9CEFF1"
+					item: {
+						count: 1
+						id: "irons_spellbooks:diamond_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			id: "2EE4CB3EB84FF245"
+			optional: true
+			rewards: [
+				{
+					id: "28686CD58ED63717"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "1804EC863F19D427"
+					item: {
+						count: 1
+						id: "irons_spellbooks:scroll_forge"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			id: "1F6E734F4E5D9A4B"
+			optional: true
+			rewards: [
+				{
+					id: "7042B81716D18489"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "1219663CD10A1575"
+					item: {
+						count: 1
+						id: "irons_spellbooks:alchemist_cauldron"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			id: "16816ACA93EFD583"
+			optional: true
+			rewards: [
+				{
+					id: "6E308B8F2AFC6C9B"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "2AAF3FF14DC1C485"
+					item: {
+						count: 1
+						id: "irons_spellbooks:upgrade_orb"
+					}
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			id: "7AC19ED9E93F11A1"
+			optional: true
+			rewards: [
+				{
+					id: "2763A4BABB0EF651"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "1191EB9B380A4862"
+					item: {
+						count: 1
+						id: "irons_spellbooks:mana_ring"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			id: "599E3586929EFE1D"
+			optional: true
+			rewards: [
+				{
+					id: "3FEBEF896D151A7F"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "2D82AC9EF8095F03"
+					item: {
+						count: 1
+						id: "irons_spellbooks:pyromancer_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			id: "59676C65F219B40C"
+			optional: true
+			rewards: [
+				{
+					id: "357C1AD9275A2254"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "4158BB9CD2B379E0"
+					item: {
+						count: 1
+						id: "irons_spellbooks:mithril_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "2473F23F2D16F00C"
+			optional: true
+			rewards: [
+				{
+					id: "35EB32E1573EC4D0"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					entity: "irons_spellbooks:dead_king"
+					id: "10F1E9553A776BAF"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			icon: {
+				id: "minecraft:totem_of_undying"
+			}
+			id: "254546620A7C9A3D"
+			optional: true
+			rewards: [
+				{
+					id: "23AB124B626BFA36"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					entity: "irons_spellbooks:archevoker"
+					id: "1699AE293BB66E76"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			icon: {
+				id: "ars_nouveau:worn_notebook"
+			}
+			id: "3236A73465D211DF"
+			optional: true
+			rewards: [
+				{
+					id: "733EC162EF5682FD"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "4ECBC6DC4DB6A233"
+					item: {
+						count: 1
+						id: "ars_nouveau:scribes_table"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3236A73465D211DF"
+			]
+			id: "26C89AD3A6E4BF2E"
+			optional: true
+			rewards: [
+				{
+					id: "28DB8A4A2F801749"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "5886D83CA5C3E29D"
+					item: {
+						count: 1
+						id: "ars_nouveau:source_jar"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3236A73465D211DF"
+			]
+			id: "3A5349211566D9FF"
+			optional: true
+			rewards: [
+				{
+					id: "140869B1512C0C7C"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "4B7588A5268523BF"
+					item: {
+						count: 1
+						id: "ars_nouveau:agronomic_sourcelink"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3236A73465D211DF"
+			]
+			id: "42BD7617521E60C5"
+			optional: true
+			rewards: [
+				{
+					id: "1A79765A272D96DA"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "589A38CD8F3AE119"
+					item: {
+						count: 1
+						id: "ars_nouveau:imbuement_chamber"
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3236A73465D211DF"
+			]
+			id: "4B84F3D4C0026FFD"
+			optional: true
+			rewards: [
+				{
+					id: "4EE39DD8DC4BDE58"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "57CB52B82D019C65"
+					item: {
+						count: 1
+						id: "ars_nouveau:enchanting_apparatus"
+					}
+					type: "item"
+				}
+				{
+					id: "108AB94BAF00DC41"
+					item: {
+						count: 1
+						id: "ars_nouveau:arcane_core"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3236A73465D211DF"
+			]
+			id: "64383F64D9FF7C1F"
+			optional: true
+			rewards: [
+				{
+					id: "377A3FF7F246091C"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "3F9329D3C9B65379"
+					item: {
+						count: 1
+						id: "ars_nouveau:apprentice_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3236A73465D211DF"
+			]
+			id: "131D76EAFF84CE00"
+			optional: true
+			rewards: [
+				{
+					id: "5291308BC7D3CFCC"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "3E0AB072F94870EB"
+					item: {
+						count: 1
+						id: "ars_nouveau:archmage_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3236A73465D211DF"
+			]
+			id: "59F9AC50E3F26A76"
+			optional: true
+			rewards: [
+				{
+					id: "2967B17482028747"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "633F1044813860E4"
+					item: {
+						count: 1
+						id: "ars_nouveau:starbuncle_charm"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3236A73465D211DF"
+			]
+			id: "346495447F1F7F11"
+			optional: true
+			rewards: [
+				{
+					id: "377675033FB239DE"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "60647834205CD8BE"
+					item: {
+						count: 1
+						id: "ars_nouveau:whirlisprig_charm"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3236A73465D211DF"
+			]
+			id: "185F99AFF658C69A"
+			optional: true
+			rewards: [
+				{
+					id: "741515D9A960ADA9"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "3147E0B43DE03289"
+					item: {
+						count: 1
+						id: "ars_nouveau:ritual_brazier"
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3236A73465D211DF"
+			]
+			icon: {
+				id: "ars_nouveau:wilden_horn"
+			}
+			id: "20BF905D9DB02C51"
+			optional: true
+			rewards: [
+				{
+					id: "1DAF73B8CF942590"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					entity: "ars_nouveau:wilden_boss"
+					id: "292F82A910D97CA9"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"475488349CEDBA22"
+			]
+			id: "371B53B968E6CA34"
+			optional: true
+			rewards: [
+				{
+					id: "69FC919618BAD3F4"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "186A7602FB7FBFCB"
+					item: {
+						count: 1
+						id: "illagerinvasion:imbuing_table"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+}

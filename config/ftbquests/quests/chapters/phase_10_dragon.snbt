@@ -1,0 +1,255 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "phase_10_dragon"
+	group: "66FDEF22A5BA1F25"
+	icon: {
+		id: "minecraft:dragon_egg"
+	}
+	id: "5654CFED2C5B0A2E"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"58213E8CF889A2A5"
+			]
+			icon: {
+				id: "minecraft:elytra"
+			}
+			id: "21373C5E1185A5D0"
+			rewards: [
+				{
+					id: "4DE958ADBD906894"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "395B995C0A360EE7"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"21373C5E1185A5D0"
+			]
+			icon: {
+				id: "aeronautics:propeller_bearing"
+			}
+			id: "34A9BCAF72192C47"
+			rewards: [
+				{
+					id: "103BF9DD454B59AA"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 2L
+					id: "5C68B158B522216B"
+					item: {
+						count: 1
+						id: "aeronautics:propeller_bearing"
+					}
+					type: "item"
+				}
+				{
+					id: "4F70E9AEDC46D664"
+					item: {
+						count: 1
+						id: "simulated:physics_assembler"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"34A9BCAF72192C47"
+			]
+			icon: {
+				id: "minecraft:end_crystal"
+			}
+			id: "634892C2AFC35058"
+			rewards: [
+				{
+					id: "7A68540464813112"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:the_end"
+					id: "6D9028C801B998AD"
+					type: "biome"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"634892C2AFC35058"
+			]
+			icon: {
+				id: "minecraft:bow"
+			}
+			id: "4F01DEC6875E0B9D"
+			optional: true
+			rewards: [
+				{
+					id: "1470415B825D9E4B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "13ED023CAF90184B"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"634892C2AFC35058"
+			]
+			icon: {
+				id: "minecraft:dragon_head"
+			}
+			id: "366D7302AFE1D480"
+			rewards: [
+				{
+					id: "127D18ED326B1702"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					count: 2
+					id: "5956CE066C57C9A8"
+					item: {
+						count: 1
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "67E17776F92E9267"
+					stage: "ultimate_boss_ender_dragon"
+					type: "gamestage"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"366D7302AFE1D480"
+			]
+			id: "2606DD79023983B0"
+			optional: true
+			rewards: [
+				{
+					id: "5D753358024D988B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "227775A8384BC316"
+					item: {
+						count: 1
+						id: "minecraft:dragon_breath"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"366D7302AFE1D480"
+			]
+			icon: {
+				id: "minecraft:ender_pearl"
+			}
+			id: "4F4B32F79DD288AD"
+			optional: true
+			rewards: [
+				{
+					id: "6258FB28F42289DC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "5EC3E4C6D4C61BE1"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"366D7302AFE1D480"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_10"
+			}
+			id: "268E0DCA5F2228B2"
+			rewards: [
+				{
+					id: "1A2EEA5C78438AD7"
+					stage: "ultimate_tier_10"
+					type: "gamestage"
+				}
+				{
+					id: "154A9957E5E66732"
+					item: {
+						count: 1
+						id: "ultimate:tempering_kit_10"
+					}
+					type: "item"
+				}
+				{
+					id: "45D5C33D23B55314"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "76509F7E70EFA4E5"
+					stage: "ultimate_boss_ender_dragon"
+					type: "gamestage"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+}

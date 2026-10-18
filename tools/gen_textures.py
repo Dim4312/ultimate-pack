@@ -34,6 +34,10 @@ TIER_GEMS = {
     4: ((90, 220, 120), (40, 150, 70)),    # emerald
     5: ((120, 200, 255), (60, 120, 200)),  # prismarine / sea
     6: ((255, 120, 60), (190, 60, 30)),    # forge fire
+    7: ((230, 50, 80), (140, 20, 45)),     # crimson / nether
+    8: ((180, 90, 235), (110, 45, 165)),   # ender
+    9: ((245, 230, 255), (185, 150, 215)), # end rod
+    10: ((255, 80, 220), (170, 25, 150)),  # dragon
 }
 
 # Echo: a hollow crystal with a colored core.
@@ -63,7 +67,31 @@ ECHO_CORES = {
     "ancient_remnant": (230, 190, 110),
     "leviathan": (60, 120, 220),
     "harbinger": (230, 50, 50),
+    "netherite_monstrosity": (200, 70, 35),
+    "ignis": (255, 175, 40),
+    "ender_guardian": (190, 80, 255),
 }
+
+# Return Gate block: a purpur frame around a starry void with a glowing ring.
+GATE = [
+    "PPPPPPPPPPPPPPPP",
+    "PppppppppppppppP",
+    "PpVVVVVVVVVVVVpP",
+    "PpVVsVVVVVVVsVpP",
+    "PpVVVVRRRRVVVVpP",
+    "PpVVVRrrrrRVVVpP",
+    "PpVsRrVVVVrRVVpP",
+    "PpVVRrVwVVrRVVpP",
+    "PpVVRrVVVVrRsVpP",
+    "PpVVRrVVVVrRVVpP",
+    "PpVVVRrrrrRVVVpP",
+    "PpVVVVRRRRVVVVpP",
+    "PpVsVVVVVVVVsVpP",
+    "PpVVVVVVVVVVVVpP",
+    "PppppppppppppppP",
+    "PPPPPPPPPPPPPPPP",
+]
+BLOCKS = OUT.parent / "block"
 
 
 def draw(pattern, palette):
@@ -95,7 +123,12 @@ def main():
             "K": core, "k": shade(core, 1.25),
         }
         draw(ECHO, palette).save(OUT / f"echo_{boss}.png")
-    print(f"wrote textures to {OUT}")
+    BLOCKS.mkdir(parents=True, exist_ok=True)
+    draw(GATE, {
+        "P": (120, 80, 120), "p": (170, 120, 170), "V": (15, 10, 30), "s": (230, 220, 255),
+        "R": (200, 90, 255), "r": (120, 50, 190), "w": (255, 255, 255),
+    }).save(BLOCKS / "return_gate.png")
+    print(f"wrote textures to {OUT} and {BLOCKS}")
 
 
 if __name__ == "__main__":

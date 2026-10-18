@@ -1,0 +1,335 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "phase_8_one_way"
+	group: "12F61BC6BC7B0735"
+	icon: {
+		id: "minecraft:end_stone"
+	}
+	id: "4F28DE7C5403CE63"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2C580D63D92BA6FB"
+			]
+			id: "3D2502FE71E7408B"
+			rewards: [
+				{
+					id: "50DBA7526EEED6CF"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 12L
+					id: "3B68A5FD6C913ED9"
+					item: {
+						count: 1
+						id: "minecraft:ender_eye"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3D2502FE71E7408B"
+			]
+			icon: {
+				id: "minecraft:end_portal_frame"
+			}
+			id: "5F12D1208183EC82"
+			rewards: [
+				{
+					id: "5DDD234E9B8BE6AC"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "6C6F325207F242B7"
+					structure: "#betterstrongholds:better_strongholds"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F12D1208183EC82"
+			]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "5600AD939E279233"
+			rewards: [
+				{
+					id: "59AC219581B8A2BE"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "143365C67EB35B44"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5600AD939E279233"
+			]
+			icon: {
+				id: "minecraft:end_stone"
+			}
+			id: "173BC39D72488FFA"
+			rewards: [
+				{
+					id: "44D7AA3884B7369F"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "63712B3B44DC81BD"
+					type: "dimension"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"173BC39D72488FFA"
+			]
+			icon: {
+				id: "minecraft:chorus_fruit"
+			}
+			id: "5871D2B9A1CAB289"
+			rewards: [
+				{
+					id: "5B2C4FCCEEB9682F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "2F58384A796E871A"
+					item: {
+						count: 1
+						id: "minecraft:popped_chorus_fruit"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"173BC39D72488FFA"
+			]
+			icon: {
+				id: "minecraft:purpur_block"
+			}
+			id: "1FA52EB91E716014"
+			rewards: [
+				{
+					id: "74B6BB01DE938D26"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "2E756793663466C1"
+					structure: "#minecraft:end_city"
+					type: "structure"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1FA52EB91E716014"
+			]
+			icon: {
+				id: "minecraft:shulker_box"
+			}
+			id: "2619F3C6074A725C"
+			rewards: [
+				{
+					id: "67854C4AB811E3C0"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1FF37502EFFBAC32"
+					item: {
+						count: 1
+						id: "minecraft:shulker_shell"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1FA52EB91E716014"
+			]
+			id: "74E44E1307BA478E"
+			optional: true
+			rewards: [
+				{
+					id: "55A259518181B22C"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 32
+					id: "4D8906ED956CB0C4"
+					item: {
+						count: 1
+						id: "minecraft:firework_rocket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2366F922C36A805B"
+					item: {
+						count: 1
+						id: "minecraft:elytra"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"173BC39D72488FFA"
+			]
+			icon: {
+				id: "minecraft:end_stone_bricks"
+			}
+			id: "2A1E02DF42F9544E"
+			rewards: [
+				{
+					id: "11A305B7CB46926F"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "184D969A35EFE1DF"
+					structure: "cataclysm:ruined_citadel"
+					type: "structure"
+				}
+			]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2A1E02DF42F9544E"
+			]
+			icon: {
+				id: "cataclysm:gauntlet_of_guard"
+			}
+			id: "20B48BBB846068E6"
+			rewards: [
+				{
+					id: "3D4CED2629DD924C"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					count: 8
+					id: "6BBC47F284233C74"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "4F096D1DDBA5B66A"
+					stage: "ultimate_boss_ender_guardian"
+					type: "gamestage"
+				}
+			]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"20B48BBB846068E6"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_8"
+			}
+			id: "451DA2C4BBACE0BD"
+			rewards: [
+				{
+					id: "578566AB339A06C0"
+					stage: "ultimate_tier_8"
+					type: "gamestage"
+				}
+				{
+					id: "3004C0572DD63ACF"
+					item: {
+						count: 1
+						id: "ultimate:tempering_kit_8"
+					}
+					type: "item"
+				}
+				{
+					id: "3858424C08C640C0"
+					type: "xp"
+					xp: 1600
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "15E7136FD48238EF"
+					stage: "ultimate_boss_ender_guardian"
+					type: "gamestage"
+				}
+			]
+			x: 10.5d
+			y: 1.0d
+		}
+	]
+}

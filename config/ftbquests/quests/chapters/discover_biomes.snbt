@@ -1,0 +1,1522 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "discover_biomes"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "naturescompass:naturescompass"
+	}
+	id: "2D834A8A479D074E"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"391FC3F74C0C2F45"
+			]
+			id: "1EE68DDE8C6B2590"
+			rewards: [
+				{
+					id: "5935D501A2437AA6"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1032D4950BEC8BCD"
+					item: {
+						count: 1
+						id: "naturescompass:naturescompass"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "natures_spirit:redwood_sapling"
+			}
+			id: "43B9F4D008230BD4"
+			optional: true
+			rewards: [
+				{
+					id: "7DE910D4FAC48FE3"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:redwood_forest"
+					id: "1F3079B3FC5A0AA3"
+					type: "biome"
+				}
+			]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "natures_spirit:sugi_sapling"
+			}
+			id: "155DDC016A303CB8"
+			optional: true
+			rewards: [
+				{
+					id: "77B1C72414A1F3BD"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:sugi_forest"
+					id: "7284EB15BC878F61"
+					type: "biome"
+				}
+			]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "natures_spirit:blue_wisteria_sapling"
+			}
+			id: "665C2FD14970862F"
+			optional: true
+			rewards: [
+				{
+					id: "36AEF57F2C237321"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:wisteria_forest"
+					id: "2F7EAC1521D89A92"
+					type: "biome"
+				}
+			]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "natures_spirit:aspen_sapling"
+			}
+			id: "2F40B36A15B5FC50"
+			optional: true
+			rewards: [
+				{
+					id: "7B532BC4217DAC94"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:aspen_forest"
+					id: "28B63539150B251F"
+					type: "biome"
+				}
+			]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "natures_spirit:red_maple_sapling"
+			}
+			id: "56F524B1A25C56C0"
+			optional: true
+			rewards: [
+				{
+					id: "61F1A2ACBF2FB98B"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:maple_woodlands"
+					id: "1F74A5FB0DDF51B1"
+					type: "biome"
+				}
+			]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "natures_spirit:lavender"
+			}
+			id: "1779A290EA6A2A77"
+			optional: true
+			rewards: [
+				{
+					id: "7288D34323F75089"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:lavender_fields"
+					id: "7C364A7367E66A1B"
+					type: "biome"
+				}
+			]
+			x: 9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "natures_spirit:coconut"
+			}
+			id: "763172D3C740DE60"
+			optional: true
+			rewards: [
+				{
+					id: "62E94489CBAD2EA8"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:tropical_woods"
+					id: "4C64C0EA0ADB5812"
+					type: "biome"
+				}
+			]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "natures_spirit:white_chalk"
+			}
+			id: "701E86015077FAFC"
+			optional: true
+			rewards: [
+				{
+					id: "2847AD1680F5FD11"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:white_cliffs"
+					id: "7B80C2D9A7291961"
+					type: "biome"
+				}
+			]
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "natures_spirit:pink_sandstone"
+			}
+			id: "6EAD1613082815D5"
+			optional: true
+			rewards: [
+				{
+					id: "61987391B1D52473"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:stratified_desert"
+					id: "4F68DBE9B2F1C43B"
+					type: "biome"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:mud"
+			}
+			id: "2C42B779AD5E544E"
+			optional: true
+			rewards: [
+				{
+					id: "14C17BDAD6F45F7E"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:marsh"
+					id: "142C3E96CA083BF4"
+					type: "biome"
+				}
+			]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:snow_block"
+			}
+			id: "32E45504E6286C4C"
+			optional: true
+			rewards: [
+				{
+					id: "3E7D5C79BECB6F1B"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:tundra"
+					id: "7BF67D7769FC3437"
+					type: "biome"
+				}
+			]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "natures_spirit:fir_sapling"
+			}
+			id: "23D721B1896E13E3"
+			optional: true
+			rewards: [
+				{
+					id: "228E6A598A1FEAEB"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "natures_spirit:alpine_highlands"
+					id: "43FC65C2B49F73F0"
+					type: "biome"
+				}
+			]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:spruce_sapling"
+			}
+			id: "1EF1D88B99828495"
+			optional: true
+			rewards: [
+				{
+					id: "36AF15FBE42A664C"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:black_forest"
+					id: "49D09A3019475F46"
+					type: "biome"
+				}
+			]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:cherry_sapling"
+			}
+			id: "67418D77FD6D64B8"
+			optional: true
+			rewards: [
+				{
+					id: "4BEBA597187A03C8"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:sakura_grove"
+					id: "2F55C9146AE3FD16"
+					type: "biome"
+				}
+			]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "biomeswevegone:baobab_sapling"
+			}
+			id: "6DA1CF5749944F50"
+			optional: true
+			rewards: [
+				{
+					id: "6C3907428CE2DB35"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:baobab_savanna"
+					id: "2DBD307D1EDB5A62"
+					type: "biome"
+				}
+			]
+			x: 11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "biomeswevegone:cypress_sapling"
+			}
+			id: "5975AFCD3286C6A9"
+			optional: true
+			rewards: [
+				{
+					id: "6ED10012AEB59177"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:bayou"
+					id: "5C0F06AF2F470E5C"
+					type: "biome"
+				}
+			]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:moss_block"
+			}
+			id: "37E949A8A26EAE0A"
+			optional: true
+			rewards: [
+				{
+					id: "5FA3E13CA33EE9F5"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:crag_gardens"
+					id: "72BADB62BE1FA3CD"
+					type: "biome"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:amethyst_shard"
+			}
+			id: "7D38C66175EB72A6"
+			optional: true
+			rewards: [
+				{
+					id: "12AD7407873E0C5D"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:enchanted_tangle"
+					id: "2DC37462CB1898E1"
+					type: "biome"
+				}
+			]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:mossy_cobblestone"
+			}
+			id: "29A64A320A560AC5"
+			optional: true
+			rewards: [
+				{
+					id: "7490B198E55A3BC6"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:forgotten_forest"
+					id: "1802B3BDA46677E0"
+					type: "biome"
+				}
+			]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "biomeswevegone:jacaranda_sapling"
+			}
+			id: "2F37ACE67A731F1F"
+			optional: true
+			rewards: [
+				{
+					id: "19B79ABBD9238F99"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:jacaranda_jungle"
+					id: "14839C03506D7E40"
+					type: "biome"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:pumpkin"
+			}
+			id: "12596558C60C6F56"
+			optional: true
+			rewards: [
+				{
+					id: "471343A265C3AB46"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:pumpkin_valley"
+					id: "657E46B69B637A17"
+					type: "biome"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:red_sandstone"
+			}
+			id: "551571EF7628178A"
+			optional: true
+			rewards: [
+				{
+					id: "48A6755E61CB2212"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:red_rock_valley"
+					id: "6B245AE7BD31D5C1"
+					type: "biome"
+				}
+			]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:sand"
+			}
+			id: "37C76DC33C395FEB"
+			optional: true
+			rewards: [
+				{
+					id: "73B3C978BABF5303"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:rainbow_beach"
+					id: "7D5BCE3BF9110AD1"
+					type: "biome"
+				}
+			]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:blue_ice"
+			}
+			id: "207432745E2C0690"
+			optional: true
+			rewards: [
+				{
+					id: "21B893FF8ED593D6"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:shattered_glacier"
+					id: "26E697080FCF3DD1"
+					type: "biome"
+				}
+			]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:apple"
+			}
+			id: "5D1A0BC9FD8E76AD"
+			optional: true
+			rewards: [
+				{
+					id: "266189E3732914D3"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:skyris_vale"
+					id: "113EBF3C237D7E4E"
+					type: "biome"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:cauldron"
+			}
+			id: "5BDBDFA1690B905C"
+			optional: true
+			rewards: [
+				{
+					id: "31A84C4851642120"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:weeping_witch_forest"
+					id: "2C97C60348FD89E7"
+					type: "biome"
+				}
+			]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:mangrove_propagule"
+			}
+			id: "24B890D5B9E2BEA8"
+			optional: true
+			rewards: [
+				{
+					id: "2A12591755DB3A58"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:white_mangrove_marshes"
+					id: "32DD27ADB4095B4F"
+					type: "biome"
+				}
+			]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:terracotta"
+			}
+			id: "1A15553EB1954929"
+			optional: true
+			rewards: [
+				{
+					id: "15A97C832AC371E6"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "biomeswevegone:ironwood_gour"
+					id: "4A2FE26700C932F4"
+					type: "biome"
+				}
+			]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "windswept:chestnut_sapling"
+			}
+			id: "2D708A78533599DF"
+			optional: true
+			rewards: [
+				{
+					id: "1634997BB4E5F975"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "windswept:chestnut_forest"
+					id: "2428D1EFC037DBBB"
+					type: "biome"
+				}
+			]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "windswept:pine_sapling"
+			}
+			id: "46A3A7C9B343752F"
+			optional: true
+			rewards: [
+				{
+					id: "2D6521AED57A7C36"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "windswept:pine_barrens"
+					id: "1EBDBA5F7CD46FB4"
+					type: "biome"
+				}
+			]
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:red_mushroom_block"
+			}
+			id: "2BABCE1E1CE0AFCA"
+			optional: true
+			rewards: [
+				{
+					id: "24582CC1648972BA"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:mushroom_fields"
+					id: "68EB5B199ED4E973"
+					type: "biome"
+				}
+			]
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:cherry_leaves"
+			}
+			id: "466F5743E5002F69"
+			optional: true
+			rewards: [
+				{
+					id: "40662F75A276BB65"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:cherry_grove"
+					id: "501C40DA0099AD1C"
+					type: "biome"
+				}
+			]
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:packed_ice"
+			}
+			id: "7B16DB1CD401C05E"
+			optional: true
+			rewards: [
+				{
+					id: "160546D6D9FA3E02"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:ice_spikes"
+					id: "379DFE2E91A9E3FB"
+					type: "biome"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:orange_terracotta"
+			}
+			id: "4FF198B2E187FFDF"
+			optional: true
+			rewards: [
+				{
+					id: "3B6C8E12C9A9D798"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:eroded_badlands"
+					id: "77A33D57CD0DB376"
+					type: "biome"
+				}
+			]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1EE68DDE8C6B2590"
+			]
+			icon: {
+				id: "minecraft:dripstone_block"
+			}
+			id: "77DF62B89A1FB9A0"
+			optional: true
+			rewards: [
+				{
+					id: "7C5494937DB99BC5"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "249812953395B24D"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"77DF62B89A1FB9A0"
+			]
+			icon: {
+				id: "minecraft:glow_berries"
+			}
+			id: "5219AB5B1627DEF6"
+			optional: true
+			rewards: [
+				{
+					id: "4B9996A10656BE9B"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:lush_caves"
+					id: "65196735462BCFC9"
+					type: "biome"
+				}
+			]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"77DF62B89A1FB9A0"
+			]
+			icon: {
+				id: "minecraft:pointed_dripstone"
+			}
+			id: "7BB4F9AB3DA9489C"
+			optional: true
+			rewards: [
+				{
+					id: "1A4C732CFC4E0F43"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:dripstone_caves"
+					id: "210F35CCEF0128CE"
+					type: "biome"
+				}
+			]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"77DF62B89A1FB9A0"
+			]
+			icon: {
+				id: "minecraft:ice"
+			}
+			id: "68CD47616C436C20"
+			optional: true
+			rewards: [
+				{
+					id: "7BC76902642A1395"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "yungscavebiomes:frosted_caves"
+					id: "130721603B5B5EC6"
+					type: "biome"
+				}
+			]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"77DF62B89A1FB9A0"
+			]
+			icon: {
+				id: "minecraft:suspicious_sand"
+			}
+			id: "6F17FC1A0D317A1F"
+			optional: true
+			rewards: [
+				{
+					id: "3C74A9C215B42DEC"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "yungscavebiomes:lost_caves"
+					id: "467F8E0A18517CD5"
+					type: "biome"
+				}
+			]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"77DF62B89A1FB9A0"
+			]
+			icon: {
+				id: "minecraft:sculk"
+			}
+			id: "78E82C75121CFB19"
+			optional: true
+			rewards: [
+				{
+					id: "438C57CB0EF9ED2E"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:deep_dark"
+					id: "1187A954F056A1F7"
+					type: "biome"
+				}
+			]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"66C1BDB4942F94FE"
+			]
+			icon: {
+				id: "minecraft:netherrack"
+			}
+			id: "54178B3005D9EE4C"
+			optional: true
+			rewards: [
+				{
+					id: "45779DC3D008CBD5"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "27CA324A79C418F0"
+					type: "dimension"
+				}
+			]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:crimson_fungus"
+			}
+			id: "47CF82538833F521"
+			optional: true
+			rewards: [
+				{
+					id: "130E79A5B1D884F2"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:crimson_forest"
+					id: "2487EC572F14BADA"
+					type: "biome"
+				}
+			]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:warped_fungus"
+			}
+			id: "2EA4CD47217CDB3F"
+			optional: true
+			rewards: [
+				{
+					id: "3221D5703FEED11F"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:warped_forest"
+					id: "6ECA95091B47A6DD"
+					type: "biome"
+				}
+			]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:soul_sand"
+			}
+			id: "7CD971563286749D"
+			optional: true
+			rewards: [
+				{
+					id: "6F45BB99BD8B9A89"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:soul_sand_valley"
+					id: "2F02E79330C9A699"
+					type: "biome"
+				}
+			]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:basalt"
+			}
+			id: "1C87535087485878"
+			optional: true
+			rewards: [
+				{
+					id: "2AAE3C7AE32CF99F"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:basalt_deltas"
+					id: "3A585A2916DD6590"
+					type: "biome"
+				}
+			]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:gray_concrete_powder"
+			}
+			id: "17D686186D44D1A1"
+			optional: true
+			rewards: [
+				{
+					id: "1DF2FDDE9B36F53C"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "incendium:ash_barrens"
+					id: "68506CE17ECD97A9"
+					type: "biome"
+				}
+			]
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:red_sand"
+			}
+			id: "159D230F9126550C"
+			optional: true
+			rewards: [
+				{
+					id: "1DA7843EB6A5AB91"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "incendium:infernal_dunes"
+					id: "49915014AA9C581C"
+					type: "biome"
+				}
+			]
+			x: 9.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:shroomlight"
+			}
+			id: "15438C6D1BD94F7D"
+			optional: true
+			rewards: [
+				{
+					id: "6348BDADD753EBB7"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "incendium:inverted_forest"
+					id: "2BEFDED164683F00"
+					type: "biome"
+				}
+			]
+			x: 11.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:quartz_block"
+			}
+			id: "24394B3692BEF64B"
+			optional: true
+			rewards: [
+				{
+					id: "3F03D72973E4E2E9"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "incendium:quartz_flats"
+					id: "24CB2A79FEF3A2D1"
+					type: "biome"
+				}
+			]
+			x: 12.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:slime_block"
+			}
+			id: "304EE32ED1CAB9C2"
+			optional: true
+			rewards: [
+				{
+					id: "2F0FC225DA692B95"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "incendium:toxic_heap"
+					id: "6CFD4D46989940FC"
+					type: "biome"
+				}
+			]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:magma_block"
+			}
+			id: "23FE46A28DC64A31"
+			optional: true
+			rewards: [
+				{
+					id: "22E1916BD1CED0DC"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "incendium:volcanic_deltas"
+					id: "1601E9FC96537BAF"
+					type: "biome"
+				}
+			]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:weeping_vines"
+			}
+			id: "6841F030B3C6A43B"
+			optional: true
+			rewards: [
+				{
+					id: "60F359AD51CA2160"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "incendium:weeping_valley"
+					id: "3F1AE62F30AB3C74"
+					type: "biome"
+				}
+			]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"54178B3005D9EE4C"
+			]
+			icon: {
+				id: "minecraft:wither_rose"
+			}
+			id: "1C3CB1B679C70DD9"
+			optional: true
+			rewards: [
+				{
+					id: "1BC25D288401B005"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					biome: "incendium:withered_forest"
+					id: "7ACEE749EE5BB74E"
+					type: "biome"
+				}
+			]
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"173BC39D72488FFA"
+			]
+			icon: {
+				id: "minecraft:end_stone"
+			}
+			id: "4BF9CC7B93EEECE0"
+			optional: true
+			rewards: [
+				{
+					id: "37FF94EF4D740149"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "2F2EE742E6EFD82C"
+					type: "dimension"
+				}
+			]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"4BF9CC7B93EEECE0"
+			]
+			icon: {
+				id: "minecraft:amethyst_cluster"
+			}
+			id: "397204955D0BF79E"
+			optional: true
+			rewards: [
+				{
+					id: "13E27774E25447EB"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					biome: "nullscape:crystal_peaks"
+					id: "2CCFBF6DE17FC78B"
+					type: "biome"
+				}
+			]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"4BF9CC7B93EEECE0"
+			]
+			icon: {
+				id: "minecraft:obsidian"
+			}
+			id: "3DE67754D3941A50"
+			optional: true
+			rewards: [
+				{
+					id: "12FC0353DFA271C3"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					biome: "nullscape:shadowlands"
+					id: "1F6006B3E0D109D8"
+					type: "biome"
+				}
+			]
+			x: 3.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"4BF9CC7B93EEECE0"
+			]
+			icon: {
+				id: "minecraft:end_stone"
+			}
+			id: "4940ABD7981D2CD3"
+			optional: true
+			rewards: [
+				{
+					id: "405F4F1B65AD4241"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					biome: "nullscape:void_barrens"
+					id: "598D0E31F5834775"
+					type: "biome"
+				}
+			]
+			x: 5.0d
+			y: 10.0d
+		}
+	]
+}

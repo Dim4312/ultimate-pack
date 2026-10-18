@@ -6,6 +6,7 @@ Downloads each mod jar (and the vanilla 1.21.1 client jar) once into ~/.cache/ul
 then writes tools/.ids.json. gen_quests.py uses it to refuse quests that point at IDs that don't exist.
 CurseForge-only mods have no direct download URL; their namespaces are listed under "unchecked".
 """
+import io
 import json
 import re
 import tomllib
@@ -40,6 +41,9 @@ def vanilla_jar():
 def scan(jar, ids):
     with zipfile.ZipFile(jar) as z:
         for name in z.namelist():
+            if name.startswith("META-INF/jarjar/") and name.endswith(".jar"):
+                scan(io.BytesIO(z.read(name)), ids)  # bundled mods (e.g. Aeronautics ships Simulated)
+                continue
             if name.endswith("lang/en_us.json") and "/assets/" in "/" + name:
                 try:
                     lang = json.loads(z.read(name).decode("utf-8", "replace"))

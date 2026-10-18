@@ -11,20 +11,25 @@ A co-op **combat + magic + Create** modpack for Minecraft **1.21.1 / NeoForge** 
 - **Upgrades = materials + a quest.** There's no drop-rate grind: beat a phase's Trial, craft a Tempering Kit, and upgrade any weapon or staff.
 - **Bosses you can beat in an evening.** They have real mechanics (Mowzie's Mobs, L_Ender's Cataclysm) and scale with group size. Everyone nearby gets credit. Echoes let anyone fight a boss again.
 - **A world worth exploring:** Tectonic terrain, Nature's Spirit + Oh The Biomes We've Gone biomes, Windswept for richer snowy and forest areas, YUNG's Cave Biomes underground. Distant Horizons shows mountains kilometres away (optional; untick it on the first-launch screen if your PC struggles).
-- **Runs well:** Sodium (+ Sodium Extra, Reese's Sodium Options), Lithium, ModernFix, FerriteCore, ImmediatelyFast, Entity Culling, More Culling, Cull Leaves, BadOptimizations, Dynamic FPS, Particle Core, Structure Layout Optimizer, AI Improvements, Clumps, FastFurnace/FastWorkbench/FastSuite.
+- **Runs well:** Sodium (+ Sodium Extra, Reese's Sodium Options), Lithium, ModernFix, FerriteCore, ImmediatelyFast, Entity Culling, More Culling, Cull Leaves, BadOptimizations, Dynamic FPS, Particle Core, Structure Layout Optimizer, AI Improvements, Clumps, FastFurnace/FastWorkbench/FastSuite, ScalableLux (lighting), Noisium (worldgen), Async Locator (compasses and `/locate` don't freeze the server), Ksyxis (faster world loading), Let Me Despawn. New players get light default video settings.
+- **Adventure everywhere:** When Dungeons Arise, IDAS, Dungeons and Taverns, Moog's structures, Towns and Towers, Repurposed Structures, Incendium, Nullscape, YUNG's, Born in Chaos, Aquamirae, Illager Invasion, Friends and Foes, Artifacts.
+- **Cooking and farming:** Farmer's Delight with Expanded, Rustic, Ocean's, Nether's and End's Delight, Brewin' and Chewin', Vinery, Bountiful Fares, Cooking for Blockheads, and Create Central Kitchen / Slice and Dice to automate it.
 - **Three worlds only:** Overworld, Nether, End. No extra dimensions to split the server.
 - **Late joiners catch up.** Loot is per player (Lootr), boss credit is shared, and server-wide gates move the story forward for everyone.
 
 See [DESIGN.md](DESIGN.md) for the full design.
 
-## Status — v0.2
+## Status — v0.3
 
 | | |
 |---|---|
 | ✅ **Act I — The Land** | Phase 1 Arrival · Phase 2 Ruins · Phase 3 The Deep (Ferrous Wroughtnaut) |
 | ✅ **Act II — The Frontier** | Phase 4 Far Lands (beat 2 of 4: Frostmaw, Umvuthi, Maledictus, Ancient Remnant) · Phase 5 The Sea (Leviathan) · Phase 6 The Forge (Harbinger) |
-| 🔒 Act III — The Nether | Sealed. The first Harbinger kill opens it for everyone. Quests for it are not written yet. |
-| 🔒 Acts IV–V — The End | Sealed. Coming later: one-way arrival, the Return Gate, a cut-off dragon island. |
+| ✅ **Act III — The Nether** | Phase 7 The Fire (Netherite Monstrosity + Ignis). Opens when the Harbinger first falls. |
+| ✅ **Act IV — The End: New World** | Phase 8 One Way (Ender Guardian). Opens when Ignis first falls. The portal drops you on a far outer island and there is no way home. |
+| ✅ **Act V — The End: The Way Back** | Phase 9 The Way Back (build and wake the Return Gate) · Phase 10 The Dragon (wings fail near its island; build an airship) |
+| ✅ **Side quests** | Biome and dungeon discoveries, Kitchen & Farm, Create Workshop, Arcane Studies, Treasure & Monsters, Life & Travel. All optional. |
+| 🔜 Later | The Dragon's Echo: End raids and dragon pacts after the dragon is dead. |
 
 ## Playing (Prism Launcher)
 
@@ -63,13 +68,16 @@ If your host runs a panel such as Pterodactyl and can't run scripts, install Neo
 | `/ultimate status` | Shows Nether/End gate state and every online player's latest Trial |
 | `/ultimate gate nether open\|close` | Opens or seals the Nether manually |
 | `/ultimate gate end open\|close` | Opens or seals the End manually |
+| `/ultimate returngate reset` | Puts the Return Gate back to sleep (the End becomes one-way again) |
+| `/ultimate arrival` | Shows the outer island where the End portal drops players |
 
 ## Systems in short
 
 - **Tempering:** completing the Phase N Trial teaches *Tempering N*. Craft a *Tempering Kit N* and hold it in one hand with any melee weapon or staff in the other, then right-click. Each level gives +12% damage and +6% spell power (max X ≈ 2.2×). That is the whole power curve.
-- **Boss Echoes:** craft one from an echo shard and themed blocks, then right-click it in the Overworld to call that boss. The Leviathan only answers in water. A Harbinger Echo used on a dormant Harbinger wakes it.
+- **Boss Echoes:** craft one from an echo shard and themed blocks, then right-click it where that boss lives (Overworld, Nether or End) to call it. The Leviathan only answers in water. A Harbinger Echo used on a dormant Harbinger wakes it.
 - **Spawn-safe zone:** Phase 4+ bosses never appear within 1000 blocks of spawn. Echo-called bosses are exempt.
 - **Boss scaling:** with N players within 48 blocks, a boss takes `1 / (1 + 0.65·(N−1))` damage.
+- **The End is one-way:** the stronghold portal throws you onto an outer island (the same one for everyone) and nothing takes you back, except death. Someone who beat the Ender Guardian wakes a craftable Return Gate. After that the gate takes anyone home, and the portal brings anyone to the gate. Elytra don't work within 1000 blocks of the dragon's island until the dragon is dead.
 - **Overworld Blaze Burner:** the Nether is sealed through Act II, so Create's Blaze Burner can be crafted from magma blocks, a lava bucket and a coal block instead.
 
 ## Developing

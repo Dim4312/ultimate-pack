@@ -1,0 +1,184 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "phase_9_way_back"
+	group: "66FDEF22A5BA1F25"
+	icon: {
+		id: "ultimate:return_gate"
+	}
+	id: "2D399535AA66ACA0"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"451DA2C4BBACE0BD"
+			]
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "6E31B51B1F1485AC"
+			rewards: [
+				{
+					id: "7C7CF3750BE7B546"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "39509FF5E21C67DB"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6E31B51B1F1485AC"
+			]
+			icon: {
+				id: "minecraft:dragon_head"
+			}
+			id: "2FCC36702D78E8BD"
+			rewards: [
+				{
+					id: "335EA3979F536BEA"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "64A8FB2E6181BEE8"
+					item: {
+						count: 1
+						id: "minecraft:dragon_head"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6E31B51B1F1485AC"
+			]
+			icon: {
+				id: "minecraft:purpur_pillar"
+			}
+			id: "2B92D956815BC6C4"
+			rewards: [
+				{
+					id: "113DDA2AA3033708"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "14879C88379F52CB"
+					item: {
+						count: 1
+						id: "minecraft:purpur_block"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "198C7798D8B9F767"
+					item: {
+						count: 1
+						id: "minecraft:shulker_shell"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "708AA5879CEAD875"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2FCC36702D78E8BD"
+				"2B92D956815BC6C4"
+			]
+			icon: {
+				id: "ultimate:return_gate"
+			}
+			id: "3E3F5106478640C8"
+			rewards: [
+				{
+					id: "1CC410BA7B1C2AE8"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "7BCBC0D496382E4B"
+					item: {
+						count: 1
+						id: "ultimate:return_gate"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3E3F5106478640C8"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_9"
+			}
+			id: "58213E8CF889A2A5"
+			rewards: [
+				{
+					id: "48423BA42E196B4E"
+					stage: "ultimate_tier_9"
+					type: "gamestage"
+				}
+				{
+					id: "610530FF1DE598AA"
+					item: {
+						count: 1
+						id: "ultimate:tempering_kit_9"
+					}
+					type: "item"
+				}
+				{
+					id: "740915357CC87ADC"
+					type: "xp"
+					xp: 1800
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "38E590CD9CD97A43"
+					stage: "ultimate_return_gate"
+					type: "gamestage"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+	]
+}

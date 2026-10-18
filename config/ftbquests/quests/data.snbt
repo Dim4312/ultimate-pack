@@ -10,7 +10,7 @@
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
 	icon: {
-		id: "ultimate:tempering_kit_6"
+		id: "ultimate:tempering_kit_10"
 	}
 	lock_message: ""
 	pause_game: false

@@ -1,8 +1,44 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/defaultoptions/options.txt"
+hash = "b73936da40995d52654b641ba8a31b6ea6e809c4cd048608046ed12c3a81b298"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "0007e8940b263bd9949e2ff40af3488080b9b213f12c8fa58dded3eba53eec19"
+hash = "df8b92bdd8a1fbef506cba5bc3ee88aea0cfca5f3a1c83918a8b086f114875b9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/create_side.snbt"
+hash = "ff9b91f6a6aac8a655617c127f1ccc479f2d6c2328ba6bfd41eba298a06478b8"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/discover_biomes.snbt"
+hash = "b5d17a0370a0271f22641c0620921505556d99304c7ca75e1615c7bf3b0fc931"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/discover_structures.snbt"
+hash = "cf15c6624b5487237d91b8807754cf44284b70e37732013a4c75cadaa769c79d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/gear.snbt"
+hash = "74d5f1654a895ea588274552a238ccfdefd02da36e70cf66b48cdae1ecc06e52"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/kitchen.snbt"
+hash = "fe9c5aa391fbcd81a2ac2101990285a23789de49a711749f72cb3bd8731e3365"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/life.snbt"
+hash = "b3f0bce80933dc75f9e5938314b58d8511325a3b1b23e5fbb2946e301c0c61c4"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/magic_side.snbt"
+hash = "773892444784d8cc82a204210fd37dfbccab6bfe4944bf3c1e7b83352fd19a96"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/phase_10_dragon.snbt"
+hash = "aec59006ff2dd718f303f049c50b854da6cfc5c8736553fb978ffc7c1d35c835"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/phase_1_arrival.snbt"
@@ -29,16 +65,28 @@ file = "config/ftbquests/quests/chapters/phase_6_forge.snbt"
 hash = "b0f81b43758ff205e1d913403a1e7c2138e4c1180d0ce7d4664cae08c0ac4931"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/phase_7_fire.snbt"
+hash = "71d19793e5a45e961ac47fe6ab6e53f74330367a3fd4a7876593ce862280fc80"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/phase_8_one_way.snbt"
+hash = "433038414fad77ea26fbc845354169f963e728726cc9c056b5193e33b1bd9d79"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/phase_9_way_back.snbt"
+hash = "adaa4254789df61436cc12a902c918e8f4b8e3bf5c062b0cd96d4da9c872521e"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
 hash = "471bc2506a6df31410d5a2438ad659a8272e44f5cf8cf5fdb127bbda3a743e2c"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "e0e0e57a35c7d62284a4f58c8fe047a62a65347f7ee7d2347fe0b0326ad62123"
+hash = "330b976950620f9a853f7f58be87cfa09a0c581e4faec902bb8d0ef856690965"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "68010f818ffaa2eb02f9783b879de4c6c9d2f57af2e9955a65ad816254e92b65"
+hash = "adcd7acca3ea86c3e901c37fb05de0f58c3033b6563f099d9263648378138e18"
 
 [[files]]
 file = "config/natures_spirit-common.toml"
@@ -49,8 +97,16 @@ file = "kubejs/assets/ultimate/lang/en_us.json"
 hash = "e334bdf6284b7644b7ee506acfb8069a4dfd1e92042cb00b4c518ac68fced8e0"
 
 [[files]]
+file = "kubejs/assets/ultimate/textures/block/return_gate.png"
+hash = "78e449168e9fbea1cd5e832288e3d427db36c389d198541b122efaefcd09276e"
+
+[[files]]
 file = "kubejs/assets/ultimate/textures/item/echo_ancient_remnant.png"
 hash = "1ddf52bdfc11ab6cf86f203a13387a4d94790e1a9f709292227403ad4af3f687"
+
+[[files]]
+file = "kubejs/assets/ultimate/textures/item/echo_ender_guardian.png"
+hash = "9021ddb333cf5a7709927af0fa3b3f7879b67b492fa63abc436eeedd3d637a18"
 
 [[files]]
 file = "kubejs/assets/ultimate/textures/item/echo_frostmaw.png"
@@ -61,12 +117,20 @@ file = "kubejs/assets/ultimate/textures/item/echo_harbinger.png"
 hash = "179ab2ee37fe09aba10292c31cd7387b31dcd3627ac56786f76f903736632200"
 
 [[files]]
+file = "kubejs/assets/ultimate/textures/item/echo_ignis.png"
+hash = "6dad5b5ea2e9833509cba7b95edea0991695dbb448355953548a6a9a5254bd03"
+
+[[files]]
 file = "kubejs/assets/ultimate/textures/item/echo_leviathan.png"
 hash = "d26310f32490a3cf87eee4706423cd3587e4416340a595ce60cc66a59b90257a"
 
 [[files]]
 file = "kubejs/assets/ultimate/textures/item/echo_maledictus.png"
 hash = "e36d02c2eafb33a0b087225209423626efec2292701910a1da45c433a8d360aa"
+
+[[files]]
+file = "kubejs/assets/ultimate/textures/item/echo_netherite_monstrosity.png"
+hash = "2db79f50da3ae0701b2ff3f0c44d57215fcc916536e2fbc90200ac3fd4d5d551"
 
 [[files]]
 file = "kubejs/assets/ultimate/textures/item/echo_umvuthi.png"
@@ -79,6 +143,10 @@ hash = "958fcffc95b3dde2d1c0de63e78b513d05f0555900befbc2a44988c0e694c894"
 [[files]]
 file = "kubejs/assets/ultimate/textures/item/tempering_kit_1.png"
 hash = "7df072202bb7d7e2ddc94e9e93b793fb7eed68d05862bdc24b92b5deede4be43"
+
+[[files]]
+file = "kubejs/assets/ultimate/textures/item/tempering_kit_10.png"
+hash = "415b9a204fb121d33e3dfaee1ba5dbe36f43c1fef94e1f94e0ef9376a003f8c7"
 
 [[files]]
 file = "kubejs/assets/ultimate/textures/item/tempering_kit_2.png"
@@ -101,6 +169,18 @@ file = "kubejs/assets/ultimate/textures/item/tempering_kit_6.png"
 hash = "25b6435c5ef3d68ff989cfddbea0329fa706377e25c67a9c3427bf63e7f138a3"
 
 [[files]]
+file = "kubejs/assets/ultimate/textures/item/tempering_kit_7.png"
+hash = "04eb78bbc36bc8b0977a4409c7215e9830b55b18e069708572ef8be1a9d0e4bc"
+
+[[files]]
+file = "kubejs/assets/ultimate/textures/item/tempering_kit_8.png"
+hash = "f04f1125f2aed2131330356a6607d6fc67738fdb204b9245ad818b3195cc103a"
+
+[[files]]
+file = "kubejs/assets/ultimate/textures/item/tempering_kit_9.png"
+hash = "42570569c46aabf294ff0c2fc34e83107d3ab7a3ddd0ce9a58547feff70e0b92"
+
+[[files]]
 file = "kubejs/data/ultimate/enchantment/tempered.json"
 hash = "4386237328f49171545637504659bb51393918b031610c48aaa996b3410798f1"
 
@@ -114,31 +194,35 @@ hash = "387c4c29407a954f107965bf40e27f68f4b7e0cf252b05241edc90316fed6716"
 
 [[files]]
 file = "kubejs/server_scripts/bosses.js"
-hash = "b8a66143c8f11839f3b143e7151ff8214cef993ebdff7fa503df74978bb73ffc"
+hash = "129a9fe5ab0797bde03435cb13305150004913be6e39426c357291852dcb0933"
 
 [[files]]
 file = "kubejs/server_scripts/commands.js"
-hash = "58657b9db65869dc1d704043cf4379242acbbc5a9146cdbbccb8fe5a1c609409"
+hash = "266e4d6ab977b44a3ec615fc519a04cd031916f3ab594953d1457a780493d41a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "675f2bab87e6f443b0464a7dc899553ec6f96d8ac381fa653c63d27d048fe398"
+hash = "f7bd0d4257603fefe0cf2fe1bc08b425fdd2eee67aa4c4cb3c84a346640107c6"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
-hash = "e90615f1fc3085175fbefca14b9c8a345a112e54a58dc987a40b505e2443ea10"
+hash = "2e68672405506f3907820ab9a6f31ce9229aa2552dae1d17b103514245cd8895"
 
 [[files]]
 file = "kubejs/server_scripts/tempering.js"
 hash = "cbe200d58a071f14477c98dd7311fa1ca516d817f3859180b4f3eaa8e95f5b7b"
 
 [[files]]
+file = "kubejs/server_scripts/the_end.js"
+hash = "4a647441555844dfbd99add668494eead1b3d8d6163b64ab8623ea117e1edec7"
+
+[[files]]
 file = "kubejs/startup_scripts/items.js"
-hash = "67bb78c82befc76d0c1f1a05d8482f2de856e1f678a47612b7a6769fa41235fe"
+hash = "6a8fc52577fd3faf1b473911fd20735bda66c699498ea0d0e6bcec10e34c6bf5"
 
 [[files]]
 file = "kubejs/startup_scripts/world_gates.js"
-hash = "24930b29bc786279eab564affb5b7496f8ff7918a25cf78c511328dc615e7c22"
+hash = "fbdfcad8f1f7749932bdfcac2f8c9501033ad8b8ecd29027b78880005a0ad6b8"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"
@@ -178,6 +262,11 @@ metafile = true
 [[files]]
 file = "mods/artifacts.pw.toml"
 hash = "416b7f130791397fb2ceb9e89ce3fd0e870f207c8e40b759c069cb58b7544314"
+metafile = true
+
+[[files]]
+file = "mods/async-locator-refined.pw.toml"
+hash = "4652f7122f9fcd06f61f40a5c299d5316fde47cdbb23e8120c339f8b80a5ab27"
 metafile = true
 
 [[files]]
@@ -481,6 +570,11 @@ hash = "712a69b3569a8055979de6eea262068535fe182dffb3833e53e5833e9cbf9766"
 metafile = true
 
 [[files]]
+file = "mods/ksyxis.pw.toml"
+hash = "0546b1ffff8f721de68cf4e8963390b37de255d9c117bbb0370ae645e68839ca"
+metafile = true
+
+[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "7e0eca275f27b6543f06c36dec433851a956960cbedd2be57d19e159d636bfc1"
 metafile = true
@@ -591,6 +685,11 @@ hash = "326d6aa0912804399801330217cb1daaf568a274af6ff53e6a17e5de0f6a5393"
 metafile = true
 
 [[files]]
+file = "mods/noisium.pw.toml"
+hash = "b3e831b3e4d6ddbf23806b0fec6087eca264af1ebc04e747c89024972aaa8607"
+metafile = true
+
+[[files]]
 file = "mods/nullscape.pw.toml"
 hash = "dcfbfa39abeaba554c2c5323f9b9a3ec58dfc386aca2d237f73948abdbdc7125"
 metafile = true
@@ -693,6 +792,11 @@ metafile = true
 [[files]]
 file = "mods/sable.pw.toml"
 hash = "fadb5c9cfe145e51992894fe57209fc8f1696ef892ee9702a24c6205f042e9b2"
+metafile = true
+
+[[files]]
+file = "mods/scalablelux.pw.toml"
+hash = "9d9330972174ff5c68779f15ecd7023b357eb2e0a5bdc99b63ca7768e90616f1"
 metafile = true
 
 [[files]]

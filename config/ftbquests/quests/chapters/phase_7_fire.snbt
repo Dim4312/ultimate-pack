@@ -1,0 +1,458 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "phase_7_fire"
+	group: "48645974BA64BE63"
+	icon: {
+		id: "minecraft:blaze_powder"
+	}
+	id: "7263A042786D763C"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"62BB24BE88E916DA"
+			]
+			icon: {
+				id: "minecraft:netherrack"
+			}
+			id: "66C1BDB4942F94FE"
+			rewards: [
+				{
+					id: "20D73BC019A952B8"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 16
+					id: "1E36140D4A7570D5"
+					item: {
+						count: 1
+						id: "minecraft:golden_carrot"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "25B0F8078F90C80D"
+					type: "dimension"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"66C1BDB4942F94FE"
+			]
+			icon: {
+				id: "minecraft:nether_bricks"
+			}
+			id: "15BC15E59B2C215F"
+			rewards: [
+				{
+					id: "5A9E073B353436C5"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "6EB08BEA5EDF54E6"
+					structure: "#betterfortresses:better_fortresses"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"15BC15E59B2C215F"
+			]
+			icon: {
+				id: "minecraft:blaze_rod"
+			}
+			id: "2CCBAE40FAEE8477"
+			rewards: [
+				{
+					id: "52458841C0A9BD3C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "17F9D9F919E960ED"
+					item: {
+						count: 1
+						id: "minecraft:blaze_rod"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"66C1BDB4942F94FE"
+			]
+			icon: {
+				id: "minecraft:gilded_blackstone"
+			}
+			id: "1B929428B2854DF9"
+			rewards: [
+				{
+					id: "5B6365CD9ECA9797"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 16
+					id: "1B777E292A409990"
+					item: {
+						count: 1
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "428C28D089750B07"
+					structure: "#minecraft:bastion_remnant"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1B929428B2854DF9"
+			]
+			icon: {
+				id: "minecraft:netherite_ingot"
+			}
+			id: "22EEDACACBA08A26"
+			rewards: [
+				{
+					id: "1BAFCFA6950C454B"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "257A383151DD815A"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"66C1BDB4942F94FE"
+			]
+			icon: {
+				id: "minecraft:soul_lantern"
+			}
+			id: "18892417FC79295C"
+			rewards: [
+				{
+					id: "1593C16940B3BC99"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "74E48567D4AEE1DE"
+					structure: "cataclysm:soul_black_smith"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"18892417FC79295C"
+			]
+			icon: {
+				id: "cataclysm:monstrous_horn"
+			}
+			id: "5FB8F2A9A154FF78"
+			rewards: [
+				{
+					id: "2CFFEC344C9ED3E9"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 2
+					id: "6638A6B768EC211F"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "339A69645F08523C"
+					stage: "ultimate_boss_netherite_monstrosity"
+					type: "gamestage"
+				}
+			]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"66C1BDB4942F94FE"
+			]
+			icon: {
+				id: "cataclysm:altar_of_fire"
+			}
+			id: "12E11CEE2DA99419"
+			rewards: [
+				{
+					id: "15720D7C5C965919"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "42FE468EB0CE170A"
+					structure: "cataclysm:burning_arena"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"12E11CEE2DA99419"
+			]
+			icon: {
+				id: "cataclysm:ignitium_ingot"
+			}
+			id: "1B0633362A46DC76"
+			rewards: [
+				{
+					id: "542DD482776709C5"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 8
+					id: "6368984C726AC1B5"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "768637843A5D558E"
+					stage: "ultimate_boss_ignis"
+					type: "gamestage"
+				}
+			]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"1B0633362A46DC76"
+			]
+			icon: {
+				id: "ultimate:echo_ignis"
+			}
+			id: "6B07D38FE3D375B0"
+			optional: true
+			rewards: [
+				{
+					id: "219241BED23D0B41"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "221D48CD02CDFF2A"
+					item: {
+						count: 1
+						id: "ultimate:echo_ignis"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"15BC15E59B2C215F"
+			]
+			icon: {
+				id: "minecraft:nether_star"
+			}
+			id: "1C1CC9EE267F3BBF"
+			optional: true
+			rewards: [
+				{
+					id: "3A085EFC8043EC17"
+					type: "xp"
+					xp: 800
+				}
+				{
+					id: "50483D747422DDF2"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "58103CDADAC48995"
+					stage: "ultimate_boss_wither"
+					type: "gamestage"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"66C1BDB4942F94FE"
+			]
+			icon: {
+				id: "create:blaze_cake"
+			}
+			id: "78A1CF41A49F1B85"
+			optional: true
+			rewards: [
+				{
+					id: "232BBB954BB87105"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "7BE0B1BD71A187F3"
+					item: {
+						count: 1
+						id: "create:blaze_burner"
+					}
+					type: "item"
+				}
+				{
+					id: "5F469642750126F9"
+					item: {
+						count: 1
+						id: "create:blaze_cake"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"22EEDACACBA08A26"
+			]
+			id: "786D14297743E5C7"
+			optional: true
+			rewards: [
+				{
+					id: "607F7360A1635ECC"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "79258D847BBEFFE2"
+					item: {
+						count: 1
+						id: "irons_spellbooks:netherite_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5FB8F2A9A154FF78"
+				"1B0633362A46DC76"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_7"
+			}
+			id: "2C580D63D92BA6FB"
+			rewards: [
+				{
+					id: "19321E03CAAF68D1"
+					stage: "ultimate_tier_7"
+					type: "gamestage"
+				}
+				{
+					id: "60D7D324BBE65FFF"
+					item: {
+						count: 1
+						id: "ultimate:tempering_kit_7"
+					}
+					type: "item"
+				}
+				{
+					id: "1A30F878BC99118C"
+					type: "xp"
+					xp: 1400
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "1134AA0256E54A74"
+					stage: "ultimate_boss_netherite_monstrosity"
+					type: "gamestage"
+				}
+				{
+					id: "4BAD23AA2BAD3B30"
+					stage: "ultimate_boss_ignis"
+					type: "gamestage"
+				}
+			]
+			x: 7.0d
+			y: 0.0d
+		}
+	]
+}

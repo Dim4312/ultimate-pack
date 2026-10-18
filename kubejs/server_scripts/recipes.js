@@ -30,6 +30,26 @@ ServerEvents.recipes(event => {
     D: 'minecraft:diamond', G: 'minecraft:gold_block', M: 'create:precision_mechanism', E: 'irons_spellbooks:arcane_essence'
   })
 
+  // Phase 7 — The Fire: the Nether's riches.
+  event.shaped(kit(7), [' N ', 'BEB', ' Q '], {
+    N: 'minecraft:netherite_scrap', B: 'minecraft:blaze_rod', E: 'irons_spellbooks:arcane_essence', Q: 'minecraft:quartz_block'
+  })
+  // Phases 8–10 — the End is one-way at first, so these use only things found there.
+  event.shaped(kit(8), [' S ', 'CPC', ' U '], {
+    S: 'minecraft:shulker_shell', C: 'minecraft:popped_chorus_fruit', P: 'minecraft:ender_pearl', U: 'minecraft:purpur_block'
+  })
+  event.shaped(kit(9), ['SRS', 'PUP', 'SRS'], {
+    S: 'minecraft:shulker_shell', R: 'minecraft:end_rod', P: 'minecraft:ender_pearl', U: 'minecraft:purpur_block'
+  })
+  event.shaped(kit(10), [' B ', 'SNS', ' B '], {
+    B: 'minecraft:dragon_breath', S: 'minecraft:shulker_shell', N: 'minecraft:netherite_ingot'
+  })
+
+  // Act V: the Return Gate. The dragon head comes from an End ship; waking it needs the Ender Guardian.
+  event.shaped('ultimate:return_gate', ['PSP', 'EHE', 'PSP'], {
+    P: 'minecraft:purpur_block', S: 'minecraft:shulker_shell', E: 'minecraft:ender_pearl', H: 'minecraft:dragon_head'
+  })
+
   // The Nether is sealed through Act II, but Create's brass needs a Blaze Burner.
   // Overworld path: magma instead of netherrack, and magma + lava instead of a captured blaze.
   // (Quartz already comes from crushing diorite.)
@@ -50,4 +70,7 @@ ServerEvents.recipes(event => {
   echo('ancient_remnant', ['minecraft:chiseled_sandstone', 'minecraft:gold_block', 'minecraft:bone_block'])
   echo('leviathan', ['minecraft:heart_of_the_sea', 'minecraft:prismarine_crystals', 'minecraft:prismarine_crystals'])
   echo('harbinger', ['create:precision_mechanism', 'minecraft:redstone_block', 'minecraft:iron_block'])
+  echo('netherite_monstrosity', ['minecraft:netherite_scrap', 'minecraft:magma_block', 'minecraft:polished_blackstone_bricks'])
+  echo('ignis', ['minecraft:blaze_rod', 'minecraft:blaze_rod', 'minecraft:soul_lantern'])
+  echo('ender_guardian', ['minecraft:end_stone_bricks', 'minecraft:shulker_shell', 'minecraft:ender_pearl'])
 })

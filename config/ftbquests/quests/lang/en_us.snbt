@@ -1,8 +1,32 @@
 {
+	chapter.14869D5CE9961DE0.chapter_subtitle: [
+		"More spells, better books, magic helpers."
+	]
+	chapter.14869D5CE9961DE0.title: "&9Arcane Studies"
+	chapter.1A0695D07C9B8A34.chapter_subtitle: [
+		"Mini-bosses, rare finds and cool gear."
+	]
+	chapter.1A0695D07C9B8A34.title: "&6Treasure & Monsters"
 	chapter.23AE929B108DA600.chapter_subtitle: [
 		"Settle in. First machines, first fights, first spells."
 	]
 	chapter.23AE929B108DA600.title: "&a1. Arrival"
+	chapter.2AC7F0A329B254B5.chapter_subtitle: [
+		"Machines that are fun to build. None of these are required."
+	]
+	chapter.2AC7F0A329B254B5.title: "&6Create Workshop"
+	chapter.2D399535AA66ACA0.chapter_subtitle: [
+		"How do we get home?"
+	]
+	chapter.2D399535AA66ACA0.title: "&d9. The Way Back"
+	chapter.2D834A8A479D074E.chapter_subtitle: [
+		"Go everywhere. Every biome is a small reward."
+	]
+	chapter.2D834A8A479D074E.title: "&eDiscoveries: Biomes"
+	chapter.3010B3B346EC4BBA.chapter_subtitle: [
+		"Good food heals more and keeps you full longer. Cook together."
+	]
+	chapter.3010B3B346EC4BBA.title: "&eKitchen & Farm"
 	chapter.449DAB2CB6AD8451.chapter_subtitle: [
 		"The surface is full of places to raid."
 	]
@@ -11,6 +35,14 @@
 		"Mineshafts, caves, and something ancient below."
 	]
 	chapter.4C6955F48943D07D.title: "&a3. The Deep"
+	chapter.4F28DE7C5403CE63.chapter_subtitle: [
+		"The portal only goes one way. Pack well."
+	]
+	chapter.4F28DE7C5403CE63.title: "&58. One Way"
+	chapter.5654CFED2C5B0A2E.chapter_subtitle: [
+		"The dragon's island is cut off by the void."
+	]
+	chapter.5654CFED2C5B0A2E.title: "&d10. The Dragon"
 	chapter.5BDFE4FCEA44F862.chapter_subtitle: [
 		"A city sank. Something still lives in it."
 	]
@@ -23,25 +55,83 @@
 		"An ancient factory holds the key to the Nether."
 	]
 	chapter.68564AFD461A87C0.title: "&b6. The Forge"
+	chapter.7263A042786D763C.chapter_subtitle: [
+		"Fortresses, bastions, and the two fire bosses."
+	]
+	chapter.7263A042786D763C.title: "&c7. The Fire"
 	chapter.74CAB2F3431C59C8.chapter_subtitle: [
 		"Expeditions. Pick two of four."
 	]
 	chapter.74CAB2F3431C59C8.title: "&b4. Far Lands"
+	chapter.7959E8373B197341.chapter_subtitle: [
+		"Things that make the world nicer to live in."
+	]
+	chapter.7959E8373B197341.title: "&aLife & Travel"
+	chapter.7E6FB5A69DB6172B.chapter_subtitle: [
+		"Castles, crypts, ships and towers. Each one has loot for every player."
+	]
+	chapter.7E6FB5A69DB6172B.title: "&eDiscoveries: Dungeons"
+	chapter_group.12F61BC6BC7B0735.title: "&5Act IV — The End: New World"
+	chapter_group.48645974BA64BE63.title: "&cAct III — The Nether"
 	chapter_group.4DA04986CA45D18F.title: "&aAct I — The Land"
 	chapter_group.5A47BB2AE635AEC6.title: "&bAct II — The Frontier"
+	chapter_group.66FDEF22A5BA1F25.title: "&dAct V — The End: The Way Back"
+	chapter_group.7B6FDD4F9A66BB50.title: "&eSide Quests & Discoveries"
 	file.0000000000000001.title: "Ultimate Pack"
 	quest.10B7F86C2EE56300.quest_desc: [
 		"A castle on the snowy peaks, full of draugr. In its great hall lies a cursed tombstone."
 	]
 	quest.10B7F86C2EE56300.title: "The Frosted Prison"
+	quest.110A8D026B602328.quest_desc: [
+		"Feasts are placed on a table and everyone can take a serving. Perfect after a boss fight."
+	]
+	quest.110A8D026B602328.title: "A Feast"
+	quest.112E73FC7E557AEC.quest_desc: [
+		"Swim a lot faster."
+	]
+	quest.112E73FC7E557AEC.title: "Flippers"
+	quest.1135663C1DC88357.quest_desc: [
+		"The Explorer's Compass finds any structure you pick from a list."
+		"Every chest has its own loot for each player (Lootr), so go together or go later, it's all yours."
+	]
+	quest.1135663C1DC88357.title: "&eThe Explorer's Compass"
+	quest.113D66B7721EAAB3.quest_desc: [
+		"Step on one, appear at the other."
+	]
+	quest.113D66B7721EAAB3.title: "Warp Plates"
 	quest.116573CF05013094.quest_desc: [
 		"A water wheel turns flowing water into rotation. Rotation powers everything in Create."
 	]
 	quest.116573CF05013094.title: "&6Create:&r Power"
+	quest.12596558C60C6F56.quest_desc: [
+		"Halloween, but it's a biome."
+	]
+	quest.12596558C60C6F56.title: "Pumpkin Valley"
+	quest.12E11CEE2DA99419.quest_desc: [
+		"An arena of fire, deep in the Nether. At its heart is the &eAltar of Fire&r."
+		"Ignis sleeps until the altar is lit... or until someone uses an &dEcho of Ignis&r."
+	]
+	quest.12E11CEE2DA99419.title: "The Burning Arena"
+	quest.131D76EAFF84CE00.quest_desc: [
+		"Everything Ars Nouveau can do."
+	]
+	quest.131D76EAFF84CE00.title: "&dArs:&r Archmage Spell Book"
 	quest.132B5284D108AD23.quest_desc: [
 		"Atop the Acropolis waits Scylla, a storm queen. Optional, but glorious."
 	]
 	quest.132B5284D108AD23.title: "&5Optional: Scylla"
+	quest.1380EAF0EAE47745.quest_desc: [
+		"Ring it to see where mobs can spawn."
+	]
+	quest.1380EAF0EAE47745.title: "Haunted Bell"
+	quest.13C6C24E75346738.quest_desc: [
+		"Houses inside giant mushrooms."
+	]
+	quest.13C6C24E75346738.title: "Mushroom Village"
+	quest.13DA8590AB7495A1.quest_desc: [
+		"Craft the big recipes automatically."
+	]
+	quest.13DA8590AB7495A1.title: "Mechanical Crafters"
 	quest.1411F78FB4F206F0.quest_desc: [
 		"&eJEI&r (item list on the right): hover an item and press &eR&r for its recipe or &eU&r for its uses."
 		"&ePonder&r: hold &eW&r while hovering any Create item to see an animated guide."
@@ -49,14 +139,99 @@
 		"&eWaystones&r: find them in villages or craft them to travel between places you've been."
 	]
 	quest.1411F78FB4F206F0.title: "Lost? JEI and Ponder"
+	quest.1473BAEDC00EB5EA.quest_desc: [
+		"A huge stone church."
+	]
+	quest.1473BAEDC00EB5EA.title: "The Cathedral"
 	quest.148B8F0EAF856AD1.quest_desc: [
 		"Umvuthi calls the sun down on you. Kill the followers first, and don't stand in the light."
 	]
 	quest.148B8F0EAF856AD1.title: "&cBoss: Umvuthi"
+	quest.14BD8FDC04C495B1.quest_desc: [
+		"Incendium's castles and more."
+	]
+	quest.14BD8FDC04C495B1.title: "&cIn the Nether"
+	quest.14D3FF661FAB76A6.quest_desc: [
+		"Show train times, stock levels or a message for your friends."
+	]
+	quest.14D3FF661FAB76A6.title: "Display Boards"
+	quest.14F845F787B56A05.quest_desc: [
+		"The pirate captain of the Ice Maze."
+	]
+	quest.14F845F787B56A05.title: "Captain Cornelia"
+	quest.15438C6D1BD94F7D.quest_desc: [
+		"Trees hanging from the ceiling."
+	]
+	quest.15438C6D1BD94F7D.title: "Inverted Forest"
+	quest.155DDC016A303CB8.quest_desc: [
+		"Japanese cedars and quiet paths."
+	]
+	quest.155DDC016A303CB8.title: "Sugi Forest"
+	quest.159D230F9126550C.quest_desc: [
+		"Burning sand dunes."
+	]
+	quest.159D230F9126550C.title: "Infernal Dunes"
+	quest.15AA66EC3A51C8CD.quest_desc: [
+		"A fortress in the sky. Bring slow falling."
+	]
+	quest.15AA66EC3A51C8CD.title: "Heavenly Conqueror"
+	quest.15BC15E59B2C215F.quest_desc: [
+		"YUNG's fortresses are huge: halls, bridges, a whole keep. Blazes and wither skeletons live here."
+	]
+	quest.15BC15E59B2C215F.title: "Nether Fortress"
+	quest.16816ACA93EFD583.quest_desc: [
+		"Upgrade your mage armor at the arcane anvil."
+	]
+	quest.16816ACA93EFD583.title: "&9Iron's:&r Upgrade Orbs"
+	quest.168D7F9DF13FB23C.quest_desc: [
+		"He rides a dark horse on Halloween nights... and other nights."
+	]
+	quest.168D7F9DF13FB23C.title: "Lord Pumpkinhead"
+	quest.173BC39D72488FFA.quest_desc: [
+		"Welcome to the End. Everyone who comes through the portal lands here, on this same island."
+		"Build a base. You'll be here for a while."
+	]
+	quest.173BC39D72488FFA.title: "A New World"
 	quest.176A35EE0A40251D.quest_desc: [
 		"Guardians, elder guardians and gold. Bring milk for mining fatigue."
 	]
 	quest.176A35EE0A40251D.title: "Ocean Monument"
+	quest.1779A290EA6A2A77.quest_desc: [
+		"It smells nice. Probably."
+	]
+	quest.1779A290EA6A2A77.title: "Lavender Fields"
+	quest.1788E5E2327DE5FC.quest_desc: [
+		"A fortress of tricks."
+	]
+	quest.1788E5E2327DE5FC.title: "Illusioner Citadel"
+	quest.17D686186D44D1A1.quest_desc: [
+		"Grey ash as far as you can see."
+	]
+	quest.17D686186D44D1A1.title: "Ash Barrens"
+	quest.185F99AFF658C69A.quest_desc: [
+		"Rituals change the weather, the time of day and more."
+	]
+	quest.185F99AFF658C69A.title: "&dArs:&r Rituals"
+	quest.18892417FC79295C.quest_desc: [
+		"In the soul sand valleys stands an old forge. Its smith never stopped working."
+	]
+	quest.18892417FC79295C.title: "The Soul Black Smith"
+	quest.1896D26D699DD437.quest_desc: [
+		"More slots for more spells."
+	]
+	quest.1896D26D699DD437.title: "&9Iron's:&r Iron Spell Book"
+	quest.189BE9117D277051.quest_desc: [
+		"Bones and treasure."
+	]
+	quest.189BE9117D277051.title: "Ancient Crypt"
+	quest.189F3CD689F8BD7B.quest_desc: [
+		"Organic compost turns into Rich Soil, which makes crops grow faster."
+	]
+	quest.189F3CD689F8BD7B.title: "Rich Soil"
+	quest.18E8E443386B66D4.quest_desc: [
+		"Molten metal and the people who guard it."
+	]
+	quest.18E8E443386B66D4.title: "The Foundry"
 	quest.19897C91C7CD5DA8.quest_desc: [
 		"Show that you can build and fight."
 		"Have 16 Andesite Alloy, and take down 3 creepers before they take down your base."
@@ -70,6 +245,57 @@
 		"&bFrostmaw&r roams the ice spikes and snowy plains, sleeping until disturbed."
 	]
 	quest.19B191D7E1743B4B.title: "The Frozen North"
+	quest.1A15553EB1954929.quest_desc: [
+		"Stepped pools in red stone."
+	]
+	quest.1A15553EB1954929.title: "Ironwood Gour"
+	quest.1A16A9A1908AA09D.quest_desc: [
+		"A ship that sails the void."
+	]
+	quest.1A16A9A1908AA09D.title: "Starlight Voyager"
+	quest.1A276C59CF3B9A62.quest_desc: [
+		"Nap through the day."
+	]
+	quest.1A276C59CF3B9A62.title: "Hammock"
+	quest.1A5C5FA8AB5BC10A.quest_desc: [
+		"When you die, a gravestone keeps your items. Only you can open it."
+	]
+	quest.1A5C5FA8AB5BC10A.title: "Grave Matters"
+	quest.1A9B7B777A8C0574.quest_desc: [
+		"Claim your land with FTB Chunks (open the map with &eM&r and drag over chunks): nobody can grief it."
+		"Talk with proximity voice chat (Simple Voice Chat, key &eV&r to configure)."
+	]
+	quest.1A9B7B777A8C0574.title: "&aHome Sweet Home"
+	quest.1AA5CF1F0E37E97A.quest_desc: [
+		"Send packages across your base on chains."
+	]
+	quest.1AA5CF1F0E37E97A.title: "Chain Conveyors"
+	quest.1B0633362A46DC76.quest_desc: [
+		"A knight of living fire with a sword and a shield. Three phases, each angrier than the last."
+		"&6When Ignis falls for the first time, the End opens for everyone.&r"
+	]
+	quest.1B0633362A46DC76.title: "&cBoss: Ignis"
+	quest.1B710BC9020BF7DE.quest_desc: [
+		"Spin it."
+	]
+	quest.1B710BC9020BF7DE.title: "A Globe"
+	quest.1B929428B2854DF9.quest_desc: [
+		"A piglin castle full of gold, and full of piglin brutes. Their chests hold netherite scraps."
+	]
+	quest.1B929428B2854DF9.title: "Bastion Remnant"
+	quest.1C173F21C41AB355.quest_desc: [
+		"Old stones, older secrets."
+	]
+	quest.1C173F21C41AB355.title: "Ancient Ruins"
+	quest.1C1CC9EE267F3BBF.quest_desc: [
+		"Three wither skeleton skulls and four soul sand. Build it far away from your base."
+		"Its Nether Star makes a beacon."
+	]
+	quest.1C1CC9EE267F3BBF.title: "&5Optional: The Wither"
+	quest.1C3CB1B679C70DD9.quest_desc: [
+		"Dead trees and wither skeletons."
+	]
+	quest.1C3CB1B679C70DD9.title: "Withered Forest"
 	quest.1C3EEA688E04645A.quest_desc: [
 		"&6One world. Play together. Create, don't grind."
 		""
@@ -77,28 +303,114 @@
 		"Beating a Trial teaches you the next level of &6Tempering&r, the only power upgrade in the pack."
 		""
 		"There are only three worlds: the &2Overworld&r, the &cNether&r and the &5End&r."
-		"The Nether and the End are &csealed&r for now. You will open them together."
+		"The Nether and the End start &csealed&r. You open them together, for the whole server, by beating bosses."
+		""
+		"Not in the mood for the story? The &eSide Quests&r chapters (biomes, dungeons, cooking, magic, gear) are all optional."
 	]
 	quest.1C3EEA688E04645A.title: "&eWelcome to Ultimate Pack"
+	quest.1C4C9AC5ACB69C6D.quest_desc: [
+		"Undead guard their master's tower."
+	]
+	quest.1C4C9AC5ACB69C6D.title: "Necromancer's Spire"
 	quest.1C4E6474036F2D95.quest_desc: [
 		"Visit a village. Trade, find a waystone, and ask yourself: where do all those ruins lead?"
 	]
 	quest.1C4E6474036F2D95.title: "The World Beyond"
+	quest.1C87535087485878.quest_desc: [
+		"Jagged basalt and magma cubes."
+	]
+	quest.1C87535087485878.title: "Basalt Deltas"
+	quest.1C8F94F469BBC0A2.quest_desc: [
+		"Knives slice food and get extra drops (leather, ham) from animals."
+	]
+	quest.1C8F94F469BBC0A2.title: "A Kitchen Knife"
 	quest.1CCC633B15A78AC2.quest_desc: [
 		"&9Ars Nouveau&r is the other magic: you design spells yourself from glyphs."
 		"Read the Worn Notebook for a full guide. Totally optional, totally fun."
 	]
 	quest.1CCC633B15A78AC2.title: "&9Magic:&r Ars Nouveau"
+	quest.1CE8753C3B2548BD.quest_desc: [
+		"There were other dragons once."
+	]
+	quest.1CE8753C3B2548BD.title: "Dragon Skeleton"
+	quest.1D0C36F3C14B99EA.quest_desc: [
+		"Wooden towers full of bandits and their loot."
+	]
+	quest.1D0C36F3C14B99EA.title: "Bandit Towers"
+	quest.1D7E99F9E2A05832.quest_desc: [
+		"More space, more upgrades."
+	]
+	quest.1D7E99F9E2A05832.title: "Bigger Backpack"
+	quest.1D9B52BEACC805AA.quest_desc: [
+		"Fight your way through the arena."
+	]
+	quest.1D9B52BEACC805AA.title: "The Coliseum"
+	quest.1EE68DDE8C6B2590.quest_desc: [
+		"A Nature's Compass points to any biome you pick. Try it."
+		"There are more than a hundred biomes in this pack. You don't have to find them all... but you could."
+	]
+	quest.1EE68DDE8C6B2590.title: "&eThe Explorer's Kit"
+	quest.1EF1D88B99828495.quest_desc: [
+		"Dark, dense and a bit creepy."
+	]
+	quest.1EF1D88B99828495.title: "Black Forest"
 	quest.1F0DF0760248002B.quest_desc: [
 		"Buried treasure maps lead to the Heart of the Sea. With it, build a conduit and breathe underwater."
 	]
 	quest.1F0DF0760248002B.title: "Set Sail"
+	quest.1F0F0620D6AC14FF.quest_desc: [
+		"Mines, crypts and chambers."
+	]
+	quest.1F0F0620D6AC14FF.title: "&eUnder the Ground"
+	quest.1F2DAFCA5304583E.quest_desc: [
+		"Islands in the sky. How?"
+	]
+	quest.1F2DAFCA5304583E.title: "Floating Islands"
+	quest.1F36A6722656F796.quest_desc: [
+		"Moog's End Structures, Nullscape and more."
+	]
+	quest.1F36A6722656F796.title: "&5In the End"
+	quest.1F56FEA91F7D9E3F.quest_desc: [
+		"A fan through lava smelts, through fire smokes, through water washes."
+	]
+	quest.1F56FEA91F7D9E3F.title: "Bulk Processing"
+	quest.1F6D54BDBC1A17E0.quest_desc: [
+		"Move items around your base. Use dried kelp, it's the recipe."
+	]
+	quest.1F6D54BDBC1A17E0.title: "Conveyor Belts"
+	quest.1F6E734F4E5D9A4B.quest_desc: [
+		"Brew potions and break down scrolls into ink."
+	]
+	quest.1F6E734F4E5D9A4B.title: "&9Iron's:&r Alchemist Cauldron"
+	quest.1FA52EB91E716014.quest_desc: [
+		"Purple towers full of shulkers. Some have a ship floating next to them."
+		"Remember the ships. They matter later."
+	]
+	quest.1FA52EB91E716014.title: "End City"
 	quest.2000F5C83EEDFD97.quest_desc: [
 		"Deep under the ground lies a factory of the old world. Its guardian, &cthe Harbinger&r, is dormant."
 		"Normally you need a Nether Star to wake it, but the Nether is sealed."
 		"Instead, right-click it with an &dEcho of The Harbinger&r."
 	]
 	quest.2000F5C83EEDFD97.title: "The Ancient Factory"
+	quest.207432745E2C0690.quest_desc: [
+		"Broken ice and deep cracks."
+	]
+	quest.207432745E2C0690.title: "Shattered Glacier"
+	quest.20B48BBB846068E6.quest_desc: [
+		"Teleports, punches, and throws void runes. Watch the ground for purple marks and move."
+		"&dWhoever helps beat it can wake a Return Gate.&r"
+	]
+	quest.20B48BBB846068E6.title: "&cBoss: Ender Guardian"
+	quest.20BF905D9DB02C51.quest_desc: [
+		"Call it with a ritual. Hunters, stalkers and guardians all in one."
+	]
+	quest.20BF905D9DB02C51.title: "&dArs:&r &5The Wilden Chimera"
+	quest.21373C5E1185A5D0.quest_desc: [
+		"The dragon's island is about a thousand blocks of empty void away."
+		"Near it, wings stop working. Pearls don't reach. You need something bigger."
+	]
+	quest.21373C5E1185A5D0.title: "Cut Off"
 	quest.21BF4BB51834B3E5.quest_desc: [
 		"Dungeons hide under the ground: catacombs of zombies, skeletons and spiders."
 		"Each player gets their own loot from every chest, so share the hunt."
@@ -109,11 +421,64 @@
 		"A puzzle fight. Optional, but nobody forgets it."
 	]
 	quest.2233DB7D480197A6.title: "&5Optional: The Sculptor"
+	quest.22EEDACACBA08A26.quest_desc: [
+		"Ancient debris hides deep in the Nether at about Y 15. Four scraps and four gold make one ingot."
+		"Use a smithing table and a netherite upgrade template (bastions have them)."
+	]
+	quest.22EEDACACBA08A26.title: "Netherite"
+	quest.23D721B1896E13E3.quest_desc: [
+		"Fir trees on high meadows."
+	]
+	quest.23D721B1896E13E3.title: "Alpine Highlands"
+	quest.23FE46A28DC64A31.quest_desc: [
+		"Lava rivers between black rock."
+	]
+	quest.23FE46A28DC64A31.title: "Volcanic Deltas"
+	quest.241EB30666DD35B1.quest_desc: [
+		"Born in Chaos's monsters drop it. Their gear is nasty."
+	]
+	quest.241EB30666DD35B1.title: "Dark Metal"
+	quest.24394B3692BEF64B.quest_desc: [
+		"A shining white plain."
+	]
+	quest.24394B3692BEF64B.title: "Quartz Flats"
+	quest.2460BDF3EBBAC3E2.quest_desc: [
+		"Teleport to any waystone you know, once."
+	]
+	quest.2460BDF3EBBAC3E2.title: "Warp Scroll"
+	quest.2468348D8AF7EB70.quest_desc: [
+		"Quiet halls high in the mountains."
+	]
+	quest.2468348D8AF7EB70.title: "The Monastery"
+	quest.2473F23F2D16F00C.quest_desc: [
+		"Somewhere in a cursed catacomb, a king still sits on his throne."
+	]
+	quest.2473F23F2D16F00C.title: "&9Iron's:&r &5The Dead King"
+	quest.24B890D5B9E2BEA8.quest_desc: [
+		"Pale mangroves in shallow water."
+	]
+	quest.24B890D5B9E2BEA8.title: "White Mangrove Marshes"
+	quest.24C4D4A900D6B847.quest_desc: [
+		"Towers grown over with thorns."
+	]
+	quest.24C4D4A900D6B847.title: "Thornborn Towers"
+	quest.25253F12D398380F.quest_desc: [
+		"Food, drink and a bed for the night (Dungeons and Taverns)."
+	]
+	quest.25253F12D398380F.title: "A Tavern"
+	quest.254546620A7C9A3D.quest_desc: [
+		"The greatest of the evoker mages."
+	]
+	quest.254546620A7C9A3D.title: "&9Iron's:&r &5The Archevoker"
 	quest.25B6B1D4E06FABDF.quest_desc: [
 		"A press flattens ingots into sheets. A millstone grinds ores and crops."
 		"Ores ground up give extra ingots. Automation starts paying off right away."
 	]
 	quest.25B6B1D4E06FABDF.title: "&6Create:&r First Machines"
+	quest.25D576DEFC643967.quest_desc: [
+		"Machines, gears and a very busy tinkerer."
+	]
+	quest.25D576DEFC643967.title: "Tinker's Citadel"
 	quest.26045AE94C6082E0.quest_desc: [
 		"There are no classes. Pick up a sword &oand&r a spellbook."
 		""
@@ -124,20 +489,180 @@
 		"Every Phase gives a weapon goal and a magic goal. Lean wherever you like, and change your mind any time."
 	]
 	quest.26045AE94C6082E0.title: "Everyone fights, everyone casts"
+	quest.2606DD79023983B0.quest_desc: [
+		"Catch it in bottles while the dragon breathes. Tempering Kit X needs it, so grab plenty."
+	]
+	quest.2606DD79023983B0.title: "Dragon's Breath"
+	quest.261533C08D853A62.quest_desc: [
+		"Engineer's Goggles show the stress and speed of your machines."
+		"Hold &eW&r over any Create item for a Ponder scene."
+	]
+	quest.261533C08D853A62.title: "&6The Workshop"
+	quest.2619F3C6074A725C.quest_desc: [
+		"Shulker boxes keep your stuff organized, and the End's Tempering Kits need shells."
+	]
+	quest.2619F3C6074A725C.title: "Shulker Shells"
+	quest.268E0DCA5F2228B2.quest_desc: [
+		"Defeat the Ender Dragon."
+		"You've done it: all ten Phases. Tempering X is yours."
+		"&dThe Dragon's Echo&r (End raids and dragon pacts) is coming in a future update."
+		""
+		"&eReward:&r you learn &6Tempering X&r and get your first Tempering Kit X."
+		"From now on you can craft that kit and temper any weapon or staff up to level X."
+	]
+	quest.268E0DCA5F2228B2.quest_subtitle: "Learn Tempering X"
+	quest.268E0DCA5F2228B2.title: "&6Trial of Phase 10"
+	quest.26958AC16C592360.quest_desc: [
+		"The crew is still on board."
+	]
+	quest.26958AC16C592360.title: "Undead Pirate Ship"
+	quest.269DDFD61A743584.quest_desc: [
+		"Cook a stew in the pot. Bowls go in the bottom slot."
+	]
+	quest.269DDFD61A743584.title: "A Proper Meal"
+	quest.26C89AD3A6E4BF2E.quest_desc: [
+		"Source powers everything in Ars Nouveau."
+	]
+	quest.26C89AD3A6E4BF2E.title: "&dArs:&r Source Jar"
+	quest.2736256921B527F5.quest_desc: [
+		"Do you really want to? Optional. Very optional."
+	]
+	quest.2736256921B527F5.title: "The Warden"
+	quest.284A53888BB162C2.quest_desc: [
+		"What's left of a castle."
+	]
+	quest.284A53888BB162C2.title: "Castle Ruins"
+	quest.2892D80CF8DE2C00.quest_desc: [
+		"Something moves under the ground."
+	]
+	quest.2892D80CF8DE2C00.title: "Undead Crypt"
 	quest.28A147AB52E53677.quest_desc: [
 		"A great ice beast. Stay away from its breath, use fire, and keep moving."
 	]
 	quest.28A147AB52E53677.title: "&cBoss: Frostmaw"
+	quest.2901DAD22DC33E8F.quest_desc: [
+		"A whole underground mine, carts and all."
+	]
+	quest.2901DAD22DC33E8F.title: "Mining System"
+	quest.2905922F04002C1F.quest_desc: [
+		"With Create Central Kitchen, a mixer and a heated basin cook Farmer's Delight pot recipes on their own."
+		"Deployers can use cutting boards. Your whole kitchen can run itself."
+	]
+	quest.2905922F04002C1F.title: "&6Create:&r Central Kitchen"
+	quest.292B30122D28BEFA.quest_desc: [
+		"A desert palace with a lot of rooms and a lot of guards."
+	]
+	quest.292B30122D28BEFA.title: "Shiraz Palace"
+	quest.29A64A320A560AC5.quest_desc: [
+		"Old, mossy and silent."
+	]
+	quest.29A64A320A560AC5.title: "Forgotten Forest"
+	quest.2A1E02DF42F9544E.quest_desc: [
+		"A broken castle of end stone. Its guardian is not broken at all."
+	]
+	quest.2A1E02DF42F9544E.title: "The Ruined Citadel"
+	quest.2A7C0EF5ACFC62A7.quest_desc: [
+		"Somebody lives up there."
+	]
+	quest.2A7C0EF5ACFC62A7.title: "Jungle Tree House"
+	quest.2ABF0388C774055A.quest_desc: [
+		"Mine faster with your bare hands."
+	]
+	quest.2ABF0388C774055A.title: "Digging Claws"
 	quest.2B2ABA53A2E279AE.quest_desc: [
 		"The Leviathan only fights in water. Water breathing, Depth Strider and a conduit help a lot."
 		"Its Echo only works while you stand in water."
 	]
 	quest.2B2ABA53A2E279AE.title: "&cBoss: The Leviathan"
+	quest.2B3A833FA8175741.quest_desc: [
+		"Half-timbered houses, English style."
+	]
+	quest.2B3A833FA8175741.title: "A Tudor Village"
+	quest.2B92D956815BC6C4.quest_desc: [
+		"The frame of the gate. Purpur from the cities, shells from shulkers, pearls from endermen."
+	]
+	quest.2B92D956815BC6C4.title: "Purpur and Pearls"
+	quest.2B9AF7ABD65464A4.quest_desc: [
+		"Illagers... on a ship."
+	]
+	quest.2B9AF7ABD65464A4.title: "Illager Galley"
+	quest.2BABCE1E1CE0AFCA.quest_desc: [
+		"Mooshrooms and no hostile mobs. A perfect hideout."
+	]
+	quest.2BABCE1E1CE0AFCA.title: "Mushroom Island"
+	quest.2C3658428ED4F62D.quest_desc: [
+		"A windmill makes power anywhere, no water needed."
+	]
+	quest.2C3658428ED4F62D.title: "Wind Power"
+	quest.2C42B779AD5E544E.quest_desc: [
+		"Reeds, mud and frogs."
+	]
+	quest.2C42B779AD5E544E.title: "Marsh"
+	quest.2C580D63D92BA6FB.quest_desc: [
+		"Defeat the Netherite Monstrosity and Ignis."
+		""
+		"&eReward:&r you learn &6Tempering VII&r and get your first Tempering Kit VII."
+		"From now on you can craft that kit and temper any weapon or staff up to level VII."
+	]
+	quest.2C580D63D92BA6FB.quest_subtitle: "Learn Tempering VII"
+	quest.2C580D63D92BA6FB.title: "&6Trial of Phase 7"
+	quest.2C727D207E927473.quest_desc: [
+		"Pulls items into your backpack."
+	]
+	quest.2C727D207E927473.title: "Backpack Magnet"
+	quest.2C8C2EB497AD4A44.quest_desc: [
+		"The strongest power in Create. Boil water on a heated tank."
+	]
+	quest.2C8C2EB497AD4A44.title: "Steam Engine"
+	quest.2CCBAE40FAEE8477.quest_desc: [
+		"Blaze rods brew potions and power a real Blaze Burner. You'll need them for Eyes of Ender too."
+	]
+	quest.2CCBAE40FAEE8477.title: "Blaze Rods"
+	quest.2D708A78533599DF.quest_desc: [
+		"Roast chestnuts by the fire."
+	]
+	quest.2D708A78533599DF.title: "Chestnut Forest"
 	quest.2DE3874998AEE8D2.quest_desc: [
 		"Deployers use items like a player would. Mechanical arms move things around."
 		"Your factory can now craft things on its own."
 	]
 	quest.2DE3874998AEE8D2.title: "&6Create:&r Brass Machines"
+	quest.2E5776191E48B14F.quest_desc: [
+		"A book for a real wizard."
+	]
+	quest.2E5776191E48B14F.title: "&9Iron's:&r Diamond Spell Book"
+	quest.2E621D894EB85167.quest_desc: [
+		"Don't get lost."
+	]
+	quest.2E621D894EB85167.title: "The Labyrinth"
+	quest.2EA4CD47217CDB3F.quest_desc: [
+		"Blue and quiet. Endermen love it."
+	]
+	quest.2EA4CD47217CDB3F.title: "Warped Forest"
+	quest.2EE4CB3EB84FF245.quest_desc: [
+		"Write your own scrolls with ink and paper."
+	]
+	quest.2EE4CB3EB84FF245.title: "&9Iron's:&r Scroll Forge"
+	quest.2EEA49EF4AC31512.quest_desc: [
+		"When Dungeons Arise, IDAS, Towns and Towers, Moog's structures, Structory and more."
+	]
+	quest.2EEA49EF4AC31512.title: "&eOn the Surface"
+	quest.2EEB4F774D3EFAE5.quest_desc: [
+		"A piglin dungeon tower."
+	]
+	quest.2EEB4F774D3EFAE5.title: "Piglin Donjon"
+	quest.2F06003042FC29DD.quest_desc: [
+		"The strongest illager mage. Drops the Hallowed Gem."
+	]
+	quest.2F06003042FC29DD.title: "The Invoker"
+	quest.2F37ACE67A731F1F.quest_desc: [
+		"A jungle in purple."
+	]
+	quest.2F37ACE67A731F1F.title: "Jacaranda Jungle"
+	quest.2F40B36A15B5FC50.quest_desc: [
+		"White trunks and golden leaves."
+	]
+	quest.2F40B36A15B5FC50.title: "Aspen Forest"
 	quest.2F436E4EB7868DE2.quest_desc: [
 		"Prove the ruins are yours. Defeat 5 vindicators and have 16 brass ingots."
 		""
@@ -150,17 +675,113 @@
 		"An illager fortress full of evokers and their spells. Great loot for casters."
 	]
 	quest.2F58F09C3B139A1B.title: "&9Magic:&r Evoker Fort"
+	quest.2F68436950AF4669.quest_desc: [
+		"Fill and empty bottles, buckets and potions automatically."
+	]
+	quest.2F68436950AF4669.title: "Spouts and Drains"
+	quest.2FCC36702D78E8BD.quest_desc: [
+		"Every End ship carries a dragon head on its bow. Bring one back."
+	]
+	quest.2FCC36702D78E8BD.title: "The Figurehead"
+	quest.2FF69A890A608FE6.quest_desc: [
+		"A big, simple storage block."
+	]
+	quest.2FF69A890A608FE6.title: "Item Vault"
+	quest.300A1160893400D8.quest_desc: [
+		"Hold many kinds of arrows at once."
+	]
+	quest.300A1160893400D8.title: "Quiver"
+	quest.304EE32ED1CAB9C2.quest_desc: [
+		"Green, glowing and poisonous."
+	]
+	quest.304EE32ED1CAB9C2.title: "Toxic Heap"
+	quest.307A7FB4B1ECDB04.quest_desc: [
+		"Even ships in the void can sink."
+	]
+	quest.307A7FB4B1ECDB04.title: "End Shipwreck"
+	quest.3236A73465D211DF.quest_desc: [
+		"Read the &eWorn Notebook&r. Glyphs are crafted at the Scribe's Table and put into your spell book."
+	]
+	quest.3236A73465D211DF.title: "&dArs Nouveau"
+	quest.32E45504E6286C4C.quest_desc: [
+		"Cold, flat and very windy."
+	]
+	quest.32E45504E6286C4C.title: "Tundra"
 	quest.33835BAE2EFAE768.quest_desc: [
 		"Four great enemies live far from spawn: in the ice, in the jungle, in the frozen peaks and in the desert."
 		"&eYou only need to beat two of them&r to pass this Phase. Pick the trips that sound fun."
 		"Now is a good time for a train line or a waystone network."
 	]
 	quest.33835BAE2EFAE768.title: "Expedition"
+	quest.33AA8CFBBDCD3ABD.quest_desc: [
+		"A keg ferments drinks: beer, mead, rice wine... and makes cheese too."
+	]
+	quest.33AA8CFBBDCD3ABD.title: "Brewin' and Chewin'"
+	quest.33AC20A0A3B03A65.quest_desc: [
+		"Chaos spills out of this tower at night."
+	]
+	quest.33AC20A0A3B03A65.title: "Dark Tower"
+	quest.33B2AAE833BE009F.quest_desc: [
+		"Something is still running in here."
+	]
+	quest.33B2AAE833BE009F.title: "Nether Reactor"
+	quest.34395F9052A26317.quest_desc: [
+		"A skeleton mage that calls more skeletons."
+	]
+	quest.34395F9052A26317.title: "Supreme Bonescaller"
+	quest.346495447F1F7F11.quest_desc: [
+		"It helps your plants grow."
+	]
+	quest.346495447F1F7F11.title: "&dArs:&r Whirlisprig"
+	quest.34A9BCAF72192C47.quest_desc: [
+		"Build an airship that can cross the void: lift, propellers, fuel, and a place to land."
+		"Bring blocks, food and your whole team. Ponder (&eW&r) shows how the parts work."
+		"Levitite (check JEI) makes things float."
+	]
+	quest.34A9BCAF72192C47.title: "&6Create:&r An End Airship"
+	quest.366D7302AFE1D480.quest_desc: [
+		"The last boss. Everyone within 64 blocks gets credit."
+		"When it dies, the void winds calm down and wings work everywhere in the End."
+	]
+	quest.366D7302AFE1D480.title: "&cBoss: The Ender Dragon"
+	quest.368C5ABDFF0A22AB.quest_desc: [
+		"Let's Do Vinery: plant grapevines on a trellis, then press and ferment them into wine."
+	]
+	quest.368C5ABDFF0A22AB.title: "The Vineyard"
+	quest.371B53B968E6CA34.quest_desc: [
+		"Illager Invasion's Imbuing Table pushes an enchantment one level past its normal max."
+		"You need a Hallowed Gem from the Invoker."
+	]
+	quest.371B53B968E6CA34.title: "Illager Imbuing Table"
+	quest.3746CF719F3BB8BD.quest_desc: [
+		"A tower of books and magic."
+	]
+	quest.3746CF719F3BB8BD.title: "Wizard Tower"
+	quest.37C76DC33C395FEB.quest_desc: [
+		"A beach of every color."
+	]
+	quest.37C76DC33C395FEB.title: "Rainbow Beach"
 	quest.37D0E5A084DA15A8.quest_desc: [
 		"Build a train. Tracks, a station, and a controls block on a frame of casings."
 		"A shared rail network is the backbone of a server. Connect your friends' bases."
 	]
 	quest.37D0E5A084DA15A8.title: "&6Create:&r Trains"
+	quest.37E949A8A26EAE0A.quest_desc: [
+		"Huge pillars with gardens on top."
+	]
+	quest.37E949A8A26EAE0A.title: "Crag Gardens"
+	quest.3818CFCC5D58C03A.quest_desc: [
+		"A real castle, walls and all."
+	]
+	quest.3818CFCC5D58C03A.title: "The Castle"
+	quest.38482C831C621CA3.quest_desc: [
+		"Rustic Delight adds coffee and bell peppers; Expanded Delight adds chili, peanuts, cinnamon and cheese."
+	]
+	quest.38482C831C621CA3.title: "Spice it Up"
+	quest.3860CDE5C0DA1641.quest_desc: [
+		"Upgrade your backpack: more slots, then magnets, feeders and more."
+	]
+	quest.3860CDE5C0DA1641.title: "Better Backpack"
 	quest.38850715B2AA5D94.quest_desc: [
 		"Manors, hideouts, mansions. The illagers have more than outposts."
 		"Evokers drop totems of undying. You'll want some later."
@@ -175,11 +796,31 @@
 		"Look around. Can you see a village, a tower, a ruin? Remember it."
 	]
 	quest.391FC3F74C0C2F45.title: "A Place to Start"
+	quest.3949A5E65E1958EA.quest_desc: [
+		"Chorus, shulker meat and even dragon. Cook on an End stove."
+	]
+	quest.3949A5E65E1958EA.title: "&5End's Delight"
+	quest.397204955D0BF79E.quest_desc: [
+		"Spires of crystal on the outer islands."
+	]
+	quest.397204955D0BF79E.title: "Crystal Peaks"
+	quest.39DC552F5B5E97A5.quest_desc: [
+		"A knight in black armor."
+	]
+	quest.39DC552F5B5E97A5.title: "Fallen Chaos Knight"
 	quest.39ECAB3AE1AFB2ED.quest_desc: [
 		"Precision mechanisms come from sequenced assembly: a chain of deployers and a press."
 		"If you've built that line, you're ready for the factory."
 	]
 	quest.39ECAB3AE1AFB2ED.title: "Precision"
+	quest.3A247C25BCBBFB63.quest_desc: [
+		"Not quest bosses, but they drop great stuff. Shared credit doesn't apply here: everyone wants the loot."
+	]
+	quest.3A247C25BCBBFB63.title: "&cMini-Bosses"
+	quest.3A5349211566D9FF.quest_desc: [
+		"Make source from growing plants, fire, mushrooms or potions."
+	]
+	quest.3A5349211566D9FF.title: "&dArs:&r Sourcelinks"
 	quest.3A61AD421B7825F9.quest_desc: [
 		"With Create Aeronautics you can build a flying ship: an envelope or propellers to lift it,"
 		"a propeller bearing to push it, and a Physics Assembler to bring it to life."
@@ -196,6 +837,10 @@
 		"Break the seals to lift it."
 	]
 	quest.3B4DCB310F4D7421.title: "Desert Temple"
+	quest.3C568B0D252C8D7E.quest_desc: [
+		"Climb down and pull things up."
+	]
+	quest.3C568B0D252C8D7E.title: "Rope"
 	quest.3C5CADF2C25E4756.quest_desc: [
 		"&6Tempering&r gives a weapon or staff &e+12% damage&r and &e+6% spell power&r per level."
 		""
@@ -207,15 +852,120 @@
 		"No grinding, no random rolls. Tempering X is about 2.2x damage, and that's the cap."
 	]
 	quest.3C5CADF2C25E4756.title: "&6Tempering"
+	quest.3D2502FE71E7408B.quest_desc: [
+		"Blaze powder and ender pearls. Throw an eye and follow it to a stronghold."
+	]
+	quest.3D2502FE71E7408B.title: "Eyes of Ender"
+	quest.3DACB7349E294F1A.quest_desc: [
+		"Yes, it shoots potatoes. Yes, it hurts."
+	]
+	quest.3DACB7349E294F1A.title: "Potato Cannon"
+	quest.3DE67754D3941A50.quest_desc: [
+		"Dark land under a dark sky."
+	]
+	quest.3DE67754D3941A50.title: "Shadowlands"
+	quest.3E3F5106478640C8.quest_desc: [
+		"Craft the gate (see JEI) and place it at your End base."
+	]
+	quest.3E3F5106478640C8.title: "Build the Return Gate"
+	quest.3E53904F5676765C.quest_desc: [
+		"Put them on a moving contraption and drive over your fields."
+	]
+	quest.3E53904F5676765C.title: "Automatic Farm"
+	quest.3EA0575DE92FA552.quest_desc: [
+		"Double jump!"
+	]
+	quest.3EA0575DE92FA552.title: "Cloud in a Bottle"
+	quest.3EB92B7311920408.quest_desc: [
+		"Breathe underwater for a long time."
+	]
+	quest.3EB92B7311920408.title: "Diving Gear"
+	quest.404F4963D233E52B.quest_desc: [
+		"Opens the frozen chests of the Ice Maze."
+	]
+	quest.404F4963D233E52B.title: "The Frozen Key"
+	quest.40A9DC4E5068FCFA.quest_desc: [
+		"Fuse a gem into a weapon for a special ability."
+	]
+	quest.40A9DC4E5068FCFA.title: "Netherfused Gem"
+	quest.42BD7617521E60C5.quest_desc: [
+		"Turn gems into source gems."
+	]
+	quest.42BD7617521E60C5.title: "&dArs:&r Imbuement Chamber"
+	quest.43B9F4D008230BD4.quest_desc: [
+		"Trees taller than your house. Taller than your neighbor's house too."
+	]
+	quest.43B9F4D008230BD4.title: "Redwood Forest"
 	quest.450FABCC58B14E95.quest_desc: [
 		"Silent, dark, full of sculk. Don't wake the Warden."
 		"Ancient City chests hold &dEcho Shards&r, the base of every Boss Echo."
 	]
 	quest.450FABCC58B14E95.title: "The Deep Dark"
+	quest.451DA2C4BBACE0BD.quest_desc: [
+		"Defeat the Ender Guardian."
+		""
+		"&eReward:&r you learn &6Tempering VIII&r and get your first Tempering Kit VIII."
+		"From now on you can craft that kit and temper any weapon or staff up to level VIII."
+	]
+	quest.451DA2C4BBACE0BD.quest_subtitle: "Learn Tempering VIII"
+	quest.451DA2C4BBACE0BD.title: "&6Trial of Phase 8"
+	quest.4520797F0A530CA9.quest_desc: [
+		"A tall spire into the dark."
+	]
+	quest.4520797F0A530CA9.title: "Ender Spire"
+	quest.4520D8B574C5D64B.quest_desc: [
+		"A fortress rising out of the waves."
+	]
+	quest.4520D8B574C5D64B.title: "Ocean Fortress"
+	quest.466F5743E5002F69.quest_desc: [
+		"Pink trees in the mountains."
+	]
+	quest.466F5743E5002F69.title: "Cherry Grove"
+	quest.469FE8BE01847132.quest_desc: [
+		"You'll hear it before you see it."
+	]
+	quest.469FE8BE01847132.title: "Haunted Manor"
+	quest.46A3A7C9B343752F.quest_desc: [
+		"Sandy soil and tall pines."
+	]
+	quest.46A3A7C9B343752F.title: "Pine Barrens"
+	quest.475488349CEDBA22.quest_desc: [
+		"Two magic mods, no classes. Iron's Spells is about finding and upgrading spells,"
+		"Ars Nouveau is about building your own."
+	]
+	quest.475488349CEDBA22.title: "&9The Study"
+	quest.47CF82538833F521.quest_desc: [
+		"Red fungus trees and hoglins."
+	]
+	quest.47CF82538833F521.title: "Crimson Forest"
+	quest.48760F6D731A85AE.quest_desc: [
+		"Piglins have towns too."
+	]
+	quest.48760F6D731A85AE.title: "Piglin Village"
+	quest.4940ABD7981D2CD3.quest_desc: [
+		"Thin islands floating over nothing."
+	]
+	quest.4940ABD7981D2CD3.title: "Void Barrens"
+	quest.494F0B0748942A74.quest_desc: [
+		"A pub up in the trees. First round's on you."
+	]
+	quest.494F0B0748942A74.title: "Treetop Tavern"
 	quest.49790207FC98980E.quest_desc: [
 		"The best stuff is underground. Find diamonds, and bring torches."
 	]
 	quest.49790207FC98980E.title: "Going Down"
+	quest.499F47C323510404.quest_desc: [
+		"A rich illager family lives here. Not for long."
+	]
+	quest.499F47C323510404.title: "Illager Manor"
+	quest.4AF25645677BE536.quest_desc: [
+		"A castle courtyard on an outer island."
+	]
+	quest.4AF25645677BE536.title: "Enderkeep Courtyard"
+	quest.4B7B1D1ED3ABE131.quest_desc: [
+		"Back to your bound waystone."
+	]
+	quest.4B7B1D1ED3ABE131.title: "Return Scroll"
 	quest.4B7DF60BF4C1C75F.quest_desc: [
 		"Defeat the Ferrous Wroughtnaut and reach an Ancient City."
 		""
@@ -224,15 +974,31 @@
 	]
 	quest.4B7DF60BF4C1C75F.quest_subtitle: "Learn Tempering III"
 	quest.4B7DF60BF4C1C75F.title: "&6Trial of Phase 3"
+	quest.4B84F3D4C0026FFD.quest_desc: [
+		"Craft magical items on pedestals."
+	]
+	quest.4B84F3D4C0026FFD.title: "&dArs:&r Enchanting Apparatus"
+	quest.4BF9CC7B93EEECE0.quest_desc: [
+		"Nullscape reshapes the outer End: peaks, shadows and barrens."
+	]
+	quest.4BF9CC7B93EEECE0.title: "&5The End's Biomes"
 	quest.4C081E9D4761F2B9.quest_desc: [
 		"The sand king and his sandstorms. Keep your distance from the charge."
 	]
 	quest.4C081E9D4761F2B9.title: "&cBoss: Ancient Remnant"
+	quest.4C41865109D7A059.quest_desc: [
+		"Ships, lighthouses and fortresses on the water."
+	]
+	quest.4C41865109D7A059.title: "&bOut at Sea"
 	quest.4C4F3F29FF6FF2E6.quest_desc: [
 		"Deep under the mountains there is a sealed iron room."
 		"Something huge waits inside, wearing iron armor."
 	]
 	quest.4C4F3F29FF6FF2E6.title: "The Wrought Chamber"
+	quest.4CB5710DAEFAD7E7.quest_desc: [
+		"A mountain keep. Climb all the way up."
+	]
+	quest.4CB5710DAEFAD7E7.title: "Keep Kayra"
 	quest.4D37D3F99A7A7793.quest_desc: [
 		"&9Iron's Spells:&r spells are found as &oscrolls&r in chests and from wizards."
 		"Put a scroll into your spellbook at the Inscription Table to learn it for good."
@@ -245,12 +1011,44 @@
 		"Everyone within 64 blocks gets credit."
 	]
 	quest.4EB8075860107567.title: "&cBoss: Ferrous Wroughtnaut"
+	quest.4F01DEC6875E0B9D.quest_desc: [
+		"Bows, spells, anything that reaches. No crystals, no healing."
+	]
+	quest.4F01DEC6875E0B9D.title: "No More Healing"
+	quest.4F2EF97B53B2E551.quest_desc: [
+		"That chest had teeth."
+	]
+	quest.4F2EF97B53B2E551.title: "Not a Chest"
+	quest.4F4B32F79DD288AD.quest_desc: [
+		"The dragon's death opens small gateways at the edge of its island. They lead to the far islands."
+	]
+	quest.4F4B32F79DD288AD.title: "Beyond"
+	quest.4FECCE9110E31F0E.quest_desc: [
+		"Even more slots."
+	]
+	quest.4FECCE9110E31F0E.title: "&9Iron's:&r Gold Spell Book"
+	quest.4FF198B2E187FFDF.quest_desc: [
+		"Spiky terracotta towers. Gold in the mineshafts."
+	]
+	quest.4FF198B2E187FFDF.title: "Eroded Badlands"
+	quest.5048A79E3C8BDF23.quest_desc: [
+		"Wild crops grow all over the world. Break them for seeds."
+	]
+	quest.5048A79E3C8BDF23.title: "The Garden"
 	quest.5075BAA598827ACC.quest_desc: [
 		"&6Create&r lets you build machines out of moving parts."
 		"Andesite Alloy is the start of it all. Mix andesite with iron nuggets (or zinc)."
 		"Hold &eW&r over any Create item to see a Ponder scene."
 	]
 	quest.5075BAA598827ACC.title: "&6Create:&r Andesite Alloy"
+	quest.5219AB5B1627DEF6.quest_desc: [
+		"Glow berries and azalea, deep under the ground."
+	]
+	quest.5219AB5B1627DEF6.title: "Lush Caves"
+	quest.529E6ED4C7D6E0A3.quest_desc: [
+		"A holy place of fire."
+	]
+	quest.529E6ED4C7D6E0A3.title: "The Sanctum"
 	quest.530B6C339ACBAFDC.quest_desc: [
 		"Iron is what everything else is built from: tools, armor, machines, spellbooks."
 	]
@@ -259,18 +1057,123 @@
 		"The nights are dangerous. Learn how your weapon swings (Better Combat) and how to dodge (&eR&r)."
 	]
 	quest.53CBEC8BD54F35FE.title: "Night Watch"
+	quest.54178B3005D9EE4C.quest_desc: [
+		"Incendium adds eight new Nether biomes. Bring fire resistance."
+	]
+	quest.54178B3005D9EE4C.title: "&cThe Nether's Biomes"
+	quest.54E739CA15514105.quest_desc: [
+		"Age milk in a cask into a wheel of cheese."
+	]
+	quest.54E739CA15514105.title: "Say Cheese"
+	quest.54EAF44C13BDB4AC.quest_desc: [
+		"Bountiful Fares adds fruit trees, teas and a gristmill for flour."
+	]
+	quest.54EAF44C13BDB4AC.title: "The Orchard"
+	quest.551571EF7628178A.quest_desc: [
+		"Red stone canyons."
+	]
+	quest.551571EF7628178A.title: "Red Rock Valley"
+	quest.55B092D6B97652CB.quest_desc: [
+		"Wine gets better the longer it ages."
+	]
+	quest.55B092D6B97652CB.title: "Fine Wine"
 	quest.55B7A018221C548A.quest_desc: [
 		"With Echo Shards you can craft &dBoss Echoes&r and fight any quest boss again."
 	]
 	quest.55B7A018221C548A.title: "&dEcho Shards"
+	quest.55E73BE5BE61637A.quest_desc: [
+		"It didn't make it home."
+	]
+	quest.55E73BE5BE61637A.title: "Sunken Ship"
+	quest.5600AD939E279233.quest_desc: [
+		"&cThe End is a one-way trip.&r Nothing takes you back: no portal, no waystone. Only dying does."
+		"You won't land next to the dragon. The portal throws you onto an outer island, far away from it."
+		""
+		"Bring: food and seeds, a water bucket, tools, lots of blocks, torches, Create parts."
+		"Beds explode in the End. If you die, your items wait in a &egrave&r where you fell, and the portal still takes you back there."
+		"Go together. The first group builds the base everyone else lands in."
+	]
+	quest.5600AD939E279233.title: "&cRead this before you jump"
+	quest.5611F33D7BC349EA.quest_desc: [
+		"Something huge lives under the frozen sea."
+	]
+	quest.5611F33D7BC349EA.title: "Maze Mother"
+	quest.56F524B1A25C56C0.quest_desc: [
+		"Autumn, all year round."
+	]
+	quest.56F524B1A25C56C0.title: "Maple Woodlands"
+	quest.58213E8CF889A2A5.quest_desc: [
+		"Wake the Return Gate (right-click it as someone who beat the Ender Guardian), then use it."
+		"&dThis happens once, for the whole server:&r from now on the gate takes anyone home,"
+		"and the stronghold portal brings anyone straight to the gate."
+		"Late joiners: just right-click an awake gate to finish this Trial."
+		""
+		"&eReward:&r you learn &6Tempering IX&r and get your first Tempering Kit IX."
+		"From now on you can craft that kit and temper any weapon or staff up to level IX."
+	]
+	quest.58213E8CF889A2A5.quest_subtitle: "Learn Tempering IX"
+	quest.58213E8CF889A2A5.title: "&6Trial of Phase 9"
 	quest.582FB1C842F07D0A.quest_desc: [
 		"A drowned city full of deeplings. At its heart is the Altar of the Abyss."
 	]
 	quest.582FB1C842F07D0A.title: "The Sunken City"
+	quest.5871D2B9A1CAB289.quest_desc: [
+		"Chorus fruit grows on the islands. Pop it in a furnace. End's Delight turns chorus, shulkers"
+		"and even endermites into real meals."
+	]
+	quest.5871D2B9A1CAB289.title: "Food in the Void"
+	quest.58BA63127A90D3B0.quest_desc: [
+		"The blazes' queen. Her crown is a trophy."
+	]
+	quest.58BA63127A90D3B0.title: "The Wildfire"
+	quest.58D1183CF5827A00.quest_desc: [
+		"An empty manor at the edge of the woods."
+	]
+	quest.58D1183CF5827A00.title: "Old Manor"
+	quest.58F8A0E1841FD10D.quest_desc: [
+		"Simply Swords' runic weapons get a random power from these."
+	]
+	quest.58F8A0E1841FD10D.title: "Runic Tablet"
+	quest.59676C65F219B40C.quest_desc: [
+		"Rare and strong. Look deep underground for mithril ore."
+	]
+	quest.59676C65F219B40C.title: "&9Iron's:&r Mithril"
+	quest.5975AFCD3286C6A9.quest_desc: [
+		"Swamp water, cypress trees and fireflies."
+	]
+	quest.5975AFCD3286C6A9.title: "Bayou"
+	quest.599E3586929EFE1D.quest_desc: [
+		"Every school has its own armor: fire, ice, lightning, holy, ender, blood, evocation..."
+	]
+	quest.599E3586929EFE1D.title: "&9Iron's:&r Pyromancer Robes"
+	quest.59F9AC50E3F26A76.quest_desc: [
+		"A little helper that carries items between chests."
+	]
+	quest.59F9AC50E3F26A76.title: "&dArs:&r A Starbuncle Friend"
+	quest.5A0DCA1967A047CE.quest_desc: [
+		"Someone built an airship before you did."
+	]
+	quest.5A0DCA1967A047CE.title: "A Lost Blimp"
+	quest.5A3349BF54E081E8.quest_desc: [
+		"Move water, lava, honey and more."
+	]
+	quest.5A3349BF54E081E8.title: "Pipes and Pumps"
+	quest.5AF002ECC54330A5.quest_desc: [
+		"Let a cannon build your schematics."
+	]
+	quest.5AF002ECC54330A5.title: "Schematicannon"
+	quest.5BDBDFA1690B905C.quest_desc: [
+		"Witches live here. Don't touch the pots."
+	]
+	quest.5BDBDFA1690B905C.title: "Weeping Witch Forest"
 	quest.5C2BB606D61719AE.quest_desc: [
 		"The old miners left rails, chests and cave spiders behind."
 	]
 	quest.5C2BB606D61719AE.title: "Abandoned Mineshafts"
+	quest.5D1A0BC9FD8E76AD.quest_desc: [
+		"Green apple trees on misty hills."
+	]
+	quest.5D1A0BC9FD8E76AD.title: "Skyris Vale"
 	quest.5EAE0F3E883289D1.quest_desc: [
 		"Defeat the Leviathan."
 		""
@@ -279,30 +1182,138 @@
 	]
 	quest.5EAE0F3E883289D1.quest_subtitle: "Learn Tempering V"
 	quest.5EAE0F3E883289D1.title: "&6Trial of Phase 5"
+	quest.5EFC6A1A1DDEEC55.quest_desc: [
+		"Illager Invasion's metal, for platinum tools."
+	]
+	quest.5EFC6A1A1DDEEC55.title: "Platinum"
+	quest.5F12D1208183EC82.quest_desc: [
+		"YUNG's strongholds are big and full of traps. The portal room is at the bottom."
+	]
+	quest.5F12D1208183EC82.title: "The Stronghold"
+	quest.5F6F1EDDB10F8C9F.quest_desc: [
+		"Loot is per player, so every chest is worth opening."
+		"Artifacts hide in chests and in &cmimics&r (chests that bite)."
+	]
+	quest.5F6F1EDDB10F8C9F.title: "&6Treasure Hunter"
+	quest.5F767CC7399FCF8D.quest_desc: [
+		"Glowing mushrooms in the dark."
+	]
+	quest.5F767CC7399FCF8D.title: "Mushroom Mines"
+	quest.5FB8F2A9A154FF78.quest_desc: [
+		"A walking furnace of netherite and lava. It hits like a mountain and throws lava."
+		"Fire resistance is a must. Hit it after its slam, then get out of the way."
+	]
+	quest.5FB8F2A9A154FF78.title: "&cBoss: Netherite Monstrosity"
+	quest.6012C7596482A2FB.quest_desc: [
+		"A tomb on the surface."
+	]
+	quest.6012C7596482A2FB.title: "Mausoleum"
+	quest.60B80CDE4193ED79.quest_desc: [
+		"A castle at the end of the world."
+	]
+	quest.60B80CDE4193ED79.title: "End Castle"
+	quest.613B01F8E8BD828B.quest_desc: [
+		"A walled fort. The illagers won't let you in politely."
+	]
+	quest.613B01F8E8BD828B.title: "Illager Fort"
 	quest.6197ED624AE5FF2A.quest_desc: [
 		"A backpack is the best friend of an explorer. Upgrade it later."
 	]
 	quest.6197ED624AE5FF2A.title: "Pack Your Bags"
+	quest.61E29E4B52BE17CA.quest_desc: [
+		"Supplementaries: carry things, store fireflies, decorate."
+	]
+	quest.61E29E4B52BE17CA.title: "Sacks and Jars"
 	quest.62BB24BE88E916DA.quest_desc: [
 		"Defeat the Harbinger."
-		"This is the end of Act II. The Nether is open. Act III is coming in the next update."
+		"This is the end of Act II. The Nether is open: Act III starts now."
 		""
 		"&eReward:&r you learn &6Tempering VI&r and get your first Tempering Kit VI."
 		"From now on you can craft that kit and temper any weapon or staff up to level VI."
 	]
 	quest.62BB24BE88E916DA.quest_subtitle: "Learn Tempering VI"
 	quest.62BB24BE88E916DA.title: "&6Trial of Phase 6"
+	quest.634168CDBA6D061F.quest_desc: [
+		"Double your ores, and get extra goodies from gravel."
+	]
+	quest.634168CDBA6D061F.title: "Crushing Wheels"
+	quest.634892C2AFC35058.quest_desc: [
+		"Land on the main island. The obsidian towers hold End Crystals that heal the dragon."
+		"Break them first. Some are in iron cages: you'll have to climb."
+	]
+	quest.634892C2AFC35058.title: "The Dragon's Island"
+	quest.6419ECB7D8BFAA2A.quest_desc: [
+		"Saws cut whole trees at once."
+	]
+	quest.6419ECB7D8BFAA2A.title: "Tree Farm"
+	quest.64383F64D9FF7C1F.quest_desc: [
+		"More glyphs per spell."
+	]
+	quest.64383F64D9FF7C1F.title: "&dArs:&r Apprentice Spell Book"
 	quest.647EE7319945CCCE.quest_desc: [
 		"Under the desert lies the tomb of a king. You need the &eNecklace of the Desert&r to wake him."
 		"...or an Echo."
 	]
 	quest.647EE7319945CCCE.title: "The Cursed Pyramid"
+	quest.654356F8CDAC9C3F.quest_desc: [
+		"&eFarmer's Delight&r is the heart of cooking here. A cooking pot over a fire or stove makes soups and meals."
+		"A cutting board and a knife slice ingredients. Meals give long-lasting buffs (Nourishment, Comfort)."
+		"AppleSkin shows how filling each food is."
+	]
+	quest.654356F8CDAC9C3F.title: "&eA Real Kitchen"
+	quest.665C2FD14970862F.quest_desc: [
+		"Purple and blue flowers hanging from every branch."
+	]
+	quest.665C2FD14970862F.title: "Wisteria Forest"
+	quest.66C1BDB4942F94FE.quest_desc: [
+		"The Harbinger is down and the Nether is open for everyone. Light a portal."
+		"Bring fire resistance potions, a shield and gold armor (piglins leave you alone if you wear gold)."
+		"Incendium made the Nether a lot wilder than you remember."
+	]
+	quest.66C1BDB4942F94FE.title: "Into the Nether"
 	quest.66EAEF7E688F4662.quest_desc: [
 		"Someone already killed the boss you need? No problem."
-		"Every quest boss has a craftable &dEcho&r. Right-click it in the Overworld to call that boss to you."
+		"Every quest boss has a craftable &dEcho&r. Right-click it where that boss lives (Overworld, Nether or End) to call it to you."
 		"Echoes need an &dEcho Shard&r, which you'll find in Ancient Cities (Phase 3). See JEI for recipes."
 	]
 	quest.66EAEF7E688F4662.title: "&dBoss Echoes"
+	quest.6730F19A5ABCCE10.quest_desc: [
+		"Control machines from a distance with redstone links."
+	]
+	quest.6730F19A5ABCCE10.title: "Linked Controller"
+	quest.67418D77FD6D64B8.quest_desc: [
+		"Pink petals everywhere."
+	]
+	quest.67418D77FD6D64B8.title: "Sakura Grove"
+	quest.67DEDBF9C94A7D3A.quest_desc: [
+		"Older than the mineshafts."
+	]
+	quest.67DEDBF9C94A7D3A.title: "Ancient Mines"
+	quest.6841F030B3C6A43B.quest_desc: [
+		"Red vines and a deep valley."
+	]
+	quest.6841F030B3C6A43B.title: "Weeping Valley"
+	quest.68CD47616C436C20.quest_desc: [
+		"Ice caves under the snow. Bring a warm coat."
+	]
+	quest.68CD47616C436C20.title: "Frosted Caves"
+	quest.698E29B020580AEE.quest_desc: [
+		"Create's logistics: order anything from your storage and have it delivered."
+	]
+	quest.698E29B020580AEE.title: "Stock and Packages"
+	quest.6A09BEC0D14488F4.quest_desc: [
+		"Nothing in here is what it looks like."
+	]
+	quest.6A09BEC0D14488F4.title: "Illusioner Tower"
+	quest.6B07D38FE3D375B0.quest_desc: [
+		"An Echo of Ignis or of the Netherite Monstrosity calls them again, but only in the Nether."
+		"Late joiners: ask a friend who has fought them to come along."
+	]
+	quest.6B07D38FE3D375B0.title: "&dNether Echoes"
+	quest.6BFE38B0FFA293EA.quest_desc: [
+		"Captain Cornelia's frozen ship. Find it in the icy seas."
+	]
+	quest.6BFE38B0FFA293EA.title: "Ice Maze Pirate Ship"
 	quest.6C380F39401324F2.quest_desc: [
 		"Brass needs &oheated&r mixing, which normally means a blaze."
 		"The Nether is sealed, so this pack has an Overworld recipe for the &6Blaze Burner&r:"
@@ -310,14 +1321,32 @@
 		"Zinc ore is found in the Overworld; copper you know."
 	]
 	quest.6C380F39401324F2.title: "&6Create:&r Brass"
+	quest.6C6C1CFD85E7F7C6.quest_desc: [
+		"More health."
+	]
+	quest.6C6C1CFD85E7F7C6.title: "Crystal Heart"
 	quest.6C937FA5947E8982.quest_desc: [
 		"Masked warriors guard a grove in the savanna. Their chief wears the mask of the sun."
 	]
 	quest.6C937FA5947E8982.title: "Umvuthana Grove"
+	quest.6DA1CF5749944F50.quest_desc: [
+		"Fat trees that look like they're upside down."
+	]
+	quest.6DA1CF5749944F50.title: "Baobab Savanna"
 	quest.6E083910D9248137.quest_desc: [
 		"Puzzles, traps and treasure under the vines."
 	]
 	quest.6E083910D9248137.title: "Jungle Temple"
+	quest.6E2A0C3361D5F849.quest_desc: [
+		"Home of the phantoms."
+	]
+	quest.6E2A0C3361D5F849.title: "Phantom Citadel"
+	quest.6E31B51B1F1485AC.quest_desc: [
+		"There is no portal home. Not yet."
+		"Old stories talk about a &dReturn Gate&r: purpur and shells, pearls, and the head of a dragon"
+		"that never lived. Only someone who has beaten the Ender Guardian can wake it."
+	]
+	quest.6E31B51B1F1485AC.title: "How do we get back?"
 	quest.6E937C72C722ACFB.quest_desc: [
 		"&aBoss credit is shared:&r everyone within 64 blocks when a boss dies gets credit for it."
 		"&aBosses scale:&r more players means each hit does a bit less, so a group still gets a real fight."
@@ -327,6 +1356,26 @@
 		"Want to share quest progress with a friend? Make a party: &e/ftbteams party create&r."
 	]
 	quest.6E937C72C722ACFB.title: "Play together"
+	quest.6EAD1613082815D5.quest_desc: [
+		"Layers of colored sandstone."
+	]
+	quest.6EAD1613082815D5.title: "Stratified Desert"
+	quest.6F17FC1A0D317A1F.quest_desc: [
+		"Sand caves under the desert, full of old secrets."
+	]
+	quest.6F17FC1A0D317A1F.title: "Lost Caves"
+	quest.6F1E81BC14E5448F.quest_desc: [
+		"Copper, breezes and trial keys."
+	]
+	quest.6F1E81BC14E5448F.title: "Trial Chambers"
+	quest.6F7732C9AFDD4A18.quest_desc: [
+		"The biggest castle in the Nether. Forbidden for a reason."
+	]
+	quest.6F7732C9AFDD4A18.title: "The Forbidden Castle"
+	quest.701E86015077FAFC.quest_desc: [
+		"Chalk cliffs over the sea."
+	]
+	quest.701E86015077FAFC.title: "White Cliffs"
 	quest.71396FFE00597E8A.quest_desc: [
 		"Beat &etwo&r of the four far-land bosses: Frostmaw, Umvuthi, Maledictus or the Ancient Remnant."
 		""
@@ -335,15 +1384,77 @@
 	]
 	quest.71396FFE00597E8A.quest_subtitle: "Learn Tempering IV"
 	quest.71396FFE00597E8A.title: "&6Trial of Phase 4"
+	quest.71C2D51A9756F916.quest_desc: [
+		"The illagers built a maze. Of course they did."
+	]
+	quest.71C2D51A9756F916.title: "Illager Labyrinth"
+	quest.720BBE61DE8A3CCB.quest_desc: [
+		"A whole city of nether brick."
+	]
+	quest.720BBE61DE8A3CCB.title: "Nether City"
+	quest.7275A531BCEB8A54.quest_desc: [
+		"The Slicer uses a knife on a cutting board for you. The Sprinkler waters your farm."
+	]
+	quest.7275A531BCEB8A54.title: "&6Create:&r Slice & Dice"
+	quest.7286D167A0BB1173.quest_desc: [
+		"Sleep anywhere without moving your spawn point."
+	]
+	quest.7286D167A0BB1173.title: "Sleeping Bag"
+	quest.72915923B588064D.quest_desc: [
+		"Throw blocks where you aim."
+	]
+	quest.72915923B588064D.title: "Slingshot"
 	quest.72C37C4C12766F9F.quest_desc: [
 		"Pillagers have built a tower nearby. Bring it down."
 	]
 	quest.72C37C4C12766F9F.title: "Pillager Outpost"
+	quest.74D1879704E637D0.quest_desc: [
+		"Sprint faster, step up blocks."
+	]
+	quest.74D1879704E637D0.title: "Running Shoes"
+	quest.74E44E1307BA478E.quest_desc: [
+		"End ships carry an elytra. Fly between the outer islands!"
+		"&eBut:&r near the dragon's island the void winds tear wings apart. You'll see."
+	]
+	quest.74E44E1307BA478E.title: "Wings"
+	quest.75686AC0BDCF8523.quest_desc: [
+		"Reach far. Very useful for building."
+	]
+	quest.75686AC0BDCF8523.title: "Extendo Grip"
+	quest.763172D3C740DE60.quest_desc: [
+		"Palm-like trees and warm water."
+	]
+	quest.763172D3C740DE60.title: "Tropical Woods"
 	quest.763F46BBA93593A3.quest_desc: [
 		"A war machine with lasers and missiles. Use cover, spread out, and keep hitting."
 		"&6When it falls for the first time, the Nether opens for everyone.&r"
 	]
 	quest.763F46BBA93593A3.title: "&cBoss: The Harbinger"
+	quest.77DF62B89A1FB9A0.quest_desc: [
+		"Cave biomes, deep below. YUNG's Cave Biomes adds frosted caves and lost sand caves."
+	]
+	quest.77DF62B89A1FB9A0.title: "&eUnder the Ground"
+	quest.786D14297743E5C7.quest_desc: [
+		"More spell slots and a lot more toughness. Your casters will thank you."
+	]
+	quest.786D14297743E5C7.title: "&9Magic:&r Netherite Spell Book"
+	quest.78A1CF41A49F1B85.quest_desc: [
+		"Catch a blaze in an empty burner. Feed it a Blaze Cake and it becomes &esuperheated&r,"
+		"which unlocks the hottest mixing recipes."
+	]
+	quest.78A1CF41A49F1B85.title: "&6Create:&r A Real Blaze Burner"
+	quest.78AF2FD0BCE1380C.quest_desc: [
+		"Handcrafted adds tables, chairs, couches, shelves and more."
+	]
+	quest.78AF2FD0BCE1380C.title: "Furniture"
+	quest.78E82C75121CFB19.quest_desc: [
+		"Shh."
+	]
+	quest.78E82C75121CFB19.title: "The Deep Dark"
+	quest.78F53CA51B003A57.quest_desc: [
+		"A cooking table shows every recipe you can make from the food in your kitchen. Add a fridge, an oven and a sink."
+	]
+	quest.78F53CA51B003A57.title: "Cooking for Blockheads"
 	quest.791A1E32996ABDFB.quest_desc: [
 		"Let a machine dig for you. Put drills on a moving contraption and you have a tunnel bore."
 	]
@@ -352,22 +1463,81 @@
 		"Craft an Echo of The Harbinger (echo shard, precision mechanism, redstone block, iron block)."
 	]
 	quest.794C461EFF4CA55A.title: "&dWake the Harbinger"
+	quest.79A830F9998AA6C7.quest_desc: [
+		"Nobody has left this place in a long time."
+	]
+	quest.79A830F9998AA6C7.title: "Plague Asylum"
+	quest.79A933F3EBB3DE82.quest_desc: [
+		"A dark keep of blackstone."
+	]
+	quest.79A933F3EBB3DE82.title: "Nether Keep"
+	quest.79F4A98A91FC1BED.quest_desc: [
+		"Ocean's Delight cooks squid, guardians and more."
+	]
+	quest.79F4A98A91FC1BED.title: "Food from the Sea"
+	quest.79FF6139D02C49E0.quest_desc: [
+		"A light on the rocks."
+	]
+	quest.79FF6139D02C49E0.title: "The Lighthouse"
+	quest.7AC19ED9E93F11A1.quest_desc: [
+		"Rings and amulets go in your Curios slots."
+	]
+	quest.7AC19ED9E93F11A1.title: "&9Iron's:&r Ring of Mana"
+	quest.7B16DB1CD401C05E.quest_desc: [
+		"Giant spikes of packed ice."
+	]
+	quest.7B16DB1CD401C05E.title: "Ice Spikes"
+	quest.7BB4F9AB3DA9489C.quest_desc: [
+		"Watch your head."
+	]
+	quest.7BB4F9AB3DA9489C.title: "Dripstone Caves"
 	quest.7CB04BB41982504E.quest_desc: [
 		"Waystones let you teleport between places you have visited."
 		"Villages often have one. Build one at your base and at every place you want to come back to."
 	]
 	quest.7CB04BB41982504E.title: "Waystones"
+	quest.7CD971563286749D.quest_desc: [
+		"Ghasts and skeletons in a valley of souls."
+	]
+	quest.7CD971563286749D.title: "Soul Sand Valley"
+	quest.7CE2DCFBDD94035E.quest_desc: [
+		"Rest in peace. Please."
+	]
+	quest.7CE2DCFBDD94035E.title: "Graveyard"
+	quest.7D38C66175EB72A6.quest_desc: [
+		"A magical forest. It glows."
+	]
+	quest.7D38C66175EB72A6.title: "Enchanted Tangle"
+	quest.7E9A3A4CFA4CE7FB.quest_desc: [
+		"Hoglins, striders and ghasts are food too, if you're brave. Cook on a Nether stove."
+	]
+	quest.7E9A3A4CFA4CE7FB.title: "&cNether's Delight"
 	quest.7FFF069E9ED62590.quest_desc: [
 		"The Arcane Anvil upgrades spellbooks and imbues weapons with spells."
 		"Yes, you can put a spell on your sword."
 	]
 	quest.7FFF069E9ED62590.title: "&9Magic:&r Arcane Anvil"
 	task.1363CD3C1AB7DBCB.title: "Got it"
+	task.13ED023CAF90184B.title: "All crystals destroyed"
+	task.143365C67EB35B44.title: "I packed my bags"
 	task.1965E58D6F097E28.title: "Got it"
+	task.249812953395B24D.title: "Got it"
 	task.2A5CAE48CB3A980F.title: "I found or built a waystone"
+	task.2CCD59380F460D5A.title: "Got it"
+	task.38752D7E24DCED68.title: "Bring friends"
+	task.39509FF5E21C67DB.title: "Think about it"
+	task.395B995C0A360EE7.title: "I tried to fly there"
+	task.3F8D35BD21E3B01B.title: "Let's go"
 	task.475424B3033F0424.title: "Got it"
+	task.4D4020292185A349.title: "Got it"
 	task.5DB181670D0C0C4C.title: "Return from the far lands"
+	task.5EB046D8EDFB72AB.title: "Got it"
+	task.5EC3E4C6D4C61BE1.title: "I flew through an End Gateway"
 	task.61649A8EFF75C600.title: "Got it"
 	task.61AE811454225993.title: "Ready to travel"
+	task.699D3BE6D2175E0C.title: "Got it"
+	task.7410231547AA7D0C.title: "Got it"
+	task.770593C0162BE319.title: "Got it"
 	task.7EED3BDF7B610572.title: "Got it"
+	task.7F5AFB638F0B5CE3.title: "I know where my grave is"
 }

@@ -1,0 +1,594 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gear"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "artifacts:cloud_in_a_bottle"
+	}
+	id: "1A0695D07C9B8A34"
+	order_index: 16
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1C4E6474036F2D95"
+			]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "5F6F1EDDB10F8C9F"
+			rewards: [
+				{
+					id: "20465EE06E481CFB"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3F8D35BD21E3B01B"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "3EA0575DE92FA552"
+			optional: true
+			rewards: [
+				{
+					id: "184564D268B862E9"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "20507AAD1B43F186"
+					item: {
+						count: 1
+						id: "artifacts:cloud_in_a_bottle"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "74D1879704E637D0"
+			optional: true
+			rewards: [
+				{
+					id: "146337D947EF7F32"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "45331B0CBE187077"
+					item: {
+						count: 1
+						id: "artifacts:running_shoes"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "2ABF0388C774055A"
+			optional: true
+			rewards: [
+				{
+					id: "290B645FF9563FD7"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "1FE07D68E39B518C"
+					item: {
+						count: 1
+						id: "artifacts:digging_claws"
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "112E73FC7E557AEC"
+			optional: true
+			rewards: [
+				{
+					id: "1E631C09807A647E"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "6A0181C54037678E"
+					item: {
+						count: 1
+						id: "artifacts:flippers"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "6C6C1CFD85E7F7C6"
+			optional: true
+			rewards: [
+				{
+					id: "1137DAD810B28FA9"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "5409D87E039268AC"
+					item: {
+						count: 1
+						id: "artifacts:crystal_heart"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "4F2EF97B53B2E551"
+			optional: true
+			rewards: [
+				{
+					id: "3573FCF42515648B"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					entity: "artifacts:mimic"
+					id: "3F30F1E9B6FAF7FD"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "58F8A0E1841FD10D"
+			optional: true
+			rewards: [
+				{
+					id: "6ECF048AEECE2469"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "2AB4476DAE494D55"
+					item: {
+						count: 1
+						id: "simplyswords:runic_tablet"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "40A9DC4E5068FCFA"
+			optional: true
+			rewards: [
+				{
+					id: "42A9F4F62F06EDB3"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "5AA91588D584B9A7"
+					item: {
+						count: 1
+						id: "simplyswords:netherfused_gem"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "3860CDE5C0DA1641"
+			optional: true
+			rewards: [
+				{
+					id: "1B2629C7040522F8"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "44CC81A8175B661C"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:iron_backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "241EB30666DD35B1"
+			optional: true
+			rewards: [
+				{
+					id: "1E78681E1500B0AA"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "2D5486B7681BCCD2"
+					item: {
+						count: 1
+						id: "born_in_chaos_v1:dark_metal_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "5EFC6A1A1DDEEC55"
+			optional: true
+			rewards: [
+				{
+					id: "3B41C7C866D80D01"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "289FB8B255F9A804"
+					item: {
+						count: 1
+						id: "illagerinvasion:platinum_chunk"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			id: "404F4963D233E52B"
+			optional: true
+			rewards: [
+				{
+					id: "428F065D80E9A801"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "70E66E9A66B66284"
+					item: {
+						count: 1
+						id: "aquamirae:frozen_key"
+					}
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F6F1EDDB10F8C9F"
+			]
+			icon: {
+				id: "minecraft:zombie_head"
+			}
+			id: "3A247C25BCBBFB63"
+			optional: true
+			rewards: [
+				{
+					id: "53CA9C3D8E38D465"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "38752D7E24DCED68"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3A247C25BCBBFB63"
+			]
+			icon: {
+				id: "minecraft:carved_pumpkin"
+			}
+			id: "168D7F9DF13FB23C"
+			optional: true
+			rewards: [
+				{
+					id: "1173AFBCB3465B33"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:lord_pumpkinhead"
+					id: "673BF3AFB785768E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3A247C25BCBBFB63"
+			]
+			icon: {
+				id: "minecraft:bone"
+			}
+			id: "34395F9052A26317"
+			optional: true
+			rewards: [
+				{
+					id: "3ACC51F900A8C76B"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:supreme_bonescaller"
+					id: "3822D3CFAAF49ACC"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3A247C25BCBBFB63"
+			]
+			icon: {
+				id: "minecraft:netherite_sword"
+			}
+			id: "39DC552F5B5E97A5"
+			optional: true
+			rewards: [
+				{
+					id: "3AAD105C09A45EB4"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:fallen_chaos_knight"
+					id: "2A261157DDAA8F5B"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3A247C25BCBBFB63"
+			]
+			icon: {
+				id: "aquamirae:dagger_of_greed"
+			}
+			id: "14F845F787B56A05"
+			optional: true
+			rewards: [
+				{
+					id: "523FA1EC1A6152BE"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "aquamirae:captain_cornelia"
+					id: "356285F98D3946B9"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3A247C25BCBBFB63"
+			]
+			icon: {
+				id: "aquamirae:maze_rose"
+			}
+			id: "5611F33D7BC349EA"
+			optional: true
+			rewards: [
+				{
+					id: "7E0915FF67E64C98"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "aquamirae:maze_mother"
+					id: "5F1FA9F918A94170"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3A247C25BCBBFB63"
+			]
+			icon: {
+				id: "friendsandfoes:wildfire_crown"
+			}
+			id: "58BA63127A90D3B0"
+			optional: true
+			rewards: [
+				{
+					id: "1E9AA5715BEA561A"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "friendsandfoes:wildfire"
+					id: "463AFB441A581B5B"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3A247C25BCBBFB63"
+			]
+			icon: {
+				id: "illagerinvasion:hallowed_gem"
+			}
+			id: "2F06003042FC29DD"
+			optional: true
+			rewards: [
+				{
+					id: "1E7741855581DCF9"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "illagerinvasion:invoker"
+					id: "30759AF73B710226"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3A247C25BCBBFB63"
+			]
+			icon: {
+				id: "minecraft:sculk_shrieker"
+			}
+			id: "2736256921B527F5"
+			optional: true
+			rewards: [
+				{
+					id: "796E8C4B0E031334"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:warden"
+					id: "1BD46FC46B71DB4A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.5d
+			y: 5.0d
+		}
+	]
+}

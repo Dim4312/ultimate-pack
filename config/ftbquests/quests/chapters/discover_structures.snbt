@@ -1,0 +1,1726 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "discover_structures"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "explorerscompass:explorerscompass"
+	}
+	id: "7E6FB5A69DB6172B"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"391FC3F74C0C2F45"
+			]
+			id: "1135663C1DC88357"
+			rewards: [
+				{
+					id: "131362CF4C201EC4"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "65F5165D62EDFF27"
+					item: {
+						count: 1
+						id: "explorerscompass:explorerscompass"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1135663C1DC88357"
+			]
+			icon: {
+				id: "minecraft:oak_door"
+			}
+			id: "2EEA49EF4AC31512"
+			optional: true
+			rewards: [
+				{
+					id: "503A15D47B93F0CB"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "2CCD59380F460D5A"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:crossbow"
+			}
+			id: "1D0C36F3C14B99EA"
+			optional: true
+			rewards: [
+				{
+					id: "2661D3827A3BDDEF"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "248E4130480C6790"
+					structure: "dungeons_arise:bandit_towers"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:iron_axe"
+			}
+			id: "613B01F8E8BD828B"
+			optional: true
+			rewards: [
+				{
+					id: "49F2B6D20FF865F6"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "7E54F79BC430E3AB"
+					structure: "dungeons_arise:illager_fort"
+					type: "structure"
+				}
+			]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:stone_bricks"
+			}
+			id: "4CB5710DAEFAD7E7"
+			optional: true
+			rewards: [
+				{
+					id: "31BCF3DEF00C4183"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "34100779ABF1430F"
+					structure: "dungeons_arise:keep_kayra"
+					type: "structure"
+				}
+			]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "2468348D8AF7EB70"
+			optional: true
+			rewards: [
+				{
+					id: "6EE27DF2DCDB37DD"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "697202D803BDF9AC"
+					structure: "dungeons_arise:monastery"
+					type: "structure"
+				}
+			]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:spider_eye"
+			}
+			id: "79A830F9998AA6C7"
+			optional: true
+			rewards: [
+				{
+					id: "17C55E31F78F5016"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "7CB283C7E1DC99FC"
+					structure: "dungeons_arise:plague_asylum"
+					type: "structure"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:gold_block"
+			}
+			id: "292B30122D28BEFA"
+			optional: true
+			rewards: [
+				{
+					id: "633B10DF5D9BDC59"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "4B0DB6420902FBDC"
+					structure: "dungeons_arise:shiraz_palace"
+					type: "structure"
+				}
+			]
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:sweet_berries"
+			}
+			id: "24C4D4A900D6B847"
+			optional: true
+			rewards: [
+				{
+					id: "6F196815444FD04E"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "394A5936E4ABF9A3"
+					structure: "dungeons_arise:thornborn_towers"
+					type: "structure"
+				}
+			]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "1D9B52BEACC805AA"
+			optional: true
+			rewards: [
+				{
+					id: "51ACE5807BB9B8C1"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "470E3FB489A88122"
+					structure: "dungeons_arise:coliseum"
+					type: "structure"
+				}
+			]
+			x: 12.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:brown_mushroom_block"
+			}
+			id: "13C6C24E75346738"
+			optional: true
+			rewards: [
+				{
+					id: "65962E3B6C6192A2"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "787270B9A1B830E5"
+					structure: "dungeons_arise:mushroom_village"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:jungle_log"
+			}
+			id: "2A7C0EF5ACFC62A7"
+			optional: true
+			rewards: [
+				{
+					id: "1701E839DF6F6F0C"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "78D85F2BA5F64A07"
+					structure: "dungeons_arise:jungle_tree_house"
+					type: "structure"
+				}
+			]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:feather"
+			}
+			id: "15AA66EC3A51C8CD"
+			optional: true
+			rewards: [
+				{
+					id: "1BAF4038F1526411"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "1026195D8B2A6C62"
+					structure: "dungeons_arise:heavenly_conqueror"
+					type: "structure"
+				}
+			]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:white_wool"
+			}
+			id: "5A0DCA1967A047CE"
+			optional: true
+			rewards: [
+				{
+					id: "22E9E0D2CD9EC0D2"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "77442A3E1E17D506"
+					structure: "dungeons_arise:small_blimp"
+					type: "structure"
+				}
+			]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:cobblestone_wall"
+			}
+			id: "3818CFCC5D58C03A"
+			optional: true
+			rewards: [
+				{
+					id: "1BB8C7A0FB37CC5F"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "5E39A63E3C4DFECC"
+					structure: "idas:castle"
+					type: "structure"
+				}
+			]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:cobweb"
+			}
+			id: "469FE8BE01847132"
+			optional: true
+			rewards: [
+				{
+					id: "45FF1394737D611C"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "4F851B60F1DA5511"
+					structure: "idas:haunted_manor"
+					type: "structure"
+				}
+			]
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:enchanting_table"
+			}
+			id: "3746CF719F3BB8BD"
+			optional: true
+			rewards: [
+				{
+					id: "123BDA1066DF59FE"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "1506BB58E32E0F57"
+					structure: "idas:wizard_tower"
+					type: "structure"
+				}
+			]
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:bone"
+			}
+			id: "1C4C9AC5ACB69C6D"
+			optional: true
+			rewards: [
+				{
+					id: "39B59576571EBFF0"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "6312E75B1C4944E1"
+					structure: "idas:necromancers_spire"
+					type: "structure"
+				}
+			]
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "create:cogwheel"
+			}
+			id: "25D576DEFC643967"
+			optional: true
+			rewards: [
+				{
+					id: "2AB52572D5F33E00"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "165C54D7E410774F"
+					structure: "idas:tinkers_citadel"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:oak_leaves"
+			}
+			id: "494F0B0748942A74"
+			optional: true
+			rewards: [
+				{
+					id: "1F208268D277E7AC"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "31650D7D875B419F"
+					structure: "idas:treetop_tavern"
+					type: "structure"
+				}
+			]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:mossy_stone_bricks"
+			}
+			id: "2E621D894EB85167"
+			optional: true
+			rewards: [
+				{
+					id: "5CF622B63A935B0C"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "5AB01E4C6BB933B3"
+					structure: "idas:labyrinth"
+					type: "structure"
+				}
+			]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:dark_oak_planks"
+			}
+			id: "2B3A833FA8175741"
+			optional: true
+			rewards: [
+				{
+					id: "54AB521D8BD0689B"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "1F8ABE3E10BF9C91"
+					structure: "towns_and_towers:exclusives/village_tudor"
+					type: "structure"
+				}
+			]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:barrel"
+			}
+			id: "25253F12D398380F"
+			optional: true
+			rewards: [
+				{
+					id: "5DD0B1525A76D06F"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "6914D15E102187F7"
+					structure: "#nova_structures:taverns"
+					type: "structure"
+				}
+			]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:totem_of_undying"
+			}
+			id: "499F47C323510404"
+			optional: true
+			rewards: [
+				{
+					id: "585B7360EC495FDA"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "1ADF23C8523C3F8C"
+					structure: "#nova_structures:illager_manor"
+					type: "structure"
+				}
+			]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "1473BAEDC00EB5EA"
+			optional: true
+			rewards: [
+				{
+					id: "69C0C208B763E70F"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "7DA2520827A3A3BD"
+					structure: "mvs:cathedral"
+					type: "structure"
+				}
+			]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:cracked_stone_bricks"
+			}
+			id: "284A53888BB162C2"
+			optional: true
+			rewards: [
+				{
+					id: "677AFA196033296F"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "27B834EF33E58610"
+					structure: "mvs:castle_ruins"
+					type: "structure"
+				}
+			]
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:grass_block"
+			}
+			id: "1F2DAFCA5304583E"
+			optional: true
+			rewards: [
+				{
+					id: "31CFCBF1CEF29ED9"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "2682EE10ED0F24D5"
+					structure: "mvs:floating_islands"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:spruce_door"
+			}
+			id: "58D1183CF5827A00"
+			optional: true
+			rewards: [
+				{
+					id: "475EAF03497482E4"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "2E70777CD99DBDE5"
+					structure: "structory:old_manor"
+					type: "structure"
+				}
+			]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:cobblestone"
+			}
+			id: "7CE2DCFBDD94035E"
+			optional: true
+			rewards: [
+				{
+					id: "7A04E3A156618638"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "54EE65C69FA7F27F"
+					structure: "structory:graveyard"
+					type: "structure"
+				}
+			]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:chiseled_stone_bricks"
+			}
+			id: "1C173F21C41AB355"
+			optional: true
+			rewards: [
+				{
+					id: "6AA4D18B416EA0E2"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "4C64577074DBE321"
+					structure: "philipsruins:ancient_ruins"
+					type: "structure"
+				}
+			]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:polished_andesite"
+			}
+			id: "6012C7596482A2FB"
+			optional: true
+			rewards: [
+				{
+					id: "4425EAD3AB39F217"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "7DC4E65DC28F31E9"
+					structure: "explorify:mausoleum"
+					type: "structure"
+				}
+			]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "born_in_chaos_v1:dark_metal_deposit"
+			}
+			id: "33AC20A0A3B03A65"
+			optional: true
+			rewards: [
+				{
+					id: "61C326BC6C3A885F"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "28A7346D44DB8BE8"
+					structure: "born_in_chaos_v1:dark_tower_forest"
+					type: "structure"
+				}
+			]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:spyglass"
+			}
+			id: "6A09BEC0D14488F4"
+			optional: true
+			rewards: [
+				{
+					id: "6EA730056CF07B46"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "6FB3DA67726CBF59"
+					structure: "illagerinvasion:illusioner_tower"
+					type: "structure"
+				}
+			]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:stone_bricks"
+			}
+			id: "71C2D51A9756F916"
+			optional: true
+			rewards: [
+				{
+					id: "2ACCC0B1859D0595"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "22A021394DFAF346"
+					structure: "illagerinvasion:labyrinth"
+					type: "structure"
+				}
+			]
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2EEA49EF4AC31512"
+			]
+			icon: {
+				id: "minecraft:amethyst_block"
+			}
+			id: "1788E5E2327DE5FC"
+			optional: true
+			rewards: [
+				{
+					id: "2959E62B0EFEE67B"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "4A7B045469A67622"
+					structure: "friendsandfoes:citadel"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1135663C1DC88357"
+			]
+			icon: {
+				id: "minecraft:iron_pickaxe"
+			}
+			id: "1F0F0620D6AC14FF"
+			optional: true
+			rewards: [
+				{
+					id: "5C419C504AB527C0"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "4D4020292185A349"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F0F0620D6AC14FF"
+			]
+			icon: {
+				id: "minecraft:minecart"
+			}
+			id: "2901DAD22DC33E8F"
+			optional: true
+			rewards: [
+				{
+					id: "127488486259825D"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "5B3C843C2A974C1E"
+					structure: "dungeons_arise:mining_system"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F0F0620D6AC14FF"
+			]
+			icon: {
+				id: "minecraft:blast_furnace"
+			}
+			id: "18E8E443386B66D4"
+			optional: true
+			rewards: [
+				{
+					id: "4874007B06F707B9"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "5D154008FF1B32EC"
+					structure: "dungeons_arise:foundry"
+					type: "structure"
+				}
+			]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F0F0620D6AC14FF"
+			]
+			icon: {
+				id: "minecraft:mushroom_stew"
+			}
+			id: "5F767CC7399FCF8D"
+			optional: true
+			rewards: [
+				{
+					id: "1F38425B499419F8"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "27F9A85AD87FF0F0"
+					structure: "dungeons_arise:mushroom_mines"
+					type: "structure"
+				}
+			]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F0F0620D6AC14FF"
+			]
+			icon: {
+				id: "minecraft:iron_pickaxe"
+			}
+			id: "67DEDBF9C94A7D3A"
+			optional: true
+			rewards: [
+				{
+					id: "2C8C551525E34EB1"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "12FD5AB5BAC77EF7"
+					structure: "idas:ancient_mines"
+					type: "structure"
+				}
+			]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F0F0620D6AC14FF"
+			]
+			icon: {
+				id: "minecraft:skeleton_skull"
+			}
+			id: "189BE9117D277051"
+			optional: true
+			rewards: [
+				{
+					id: "4D4F063729D57360"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "36C3D0F5850BDC63"
+					structure: "philipsruins:ancient_crypt"
+					type: "structure"
+				}
+			]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F0F0620D6AC14FF"
+			]
+			icon: {
+				id: "minecraft:zombie_head"
+			}
+			id: "2892D80CF8DE2C00"
+			optional: true
+			rewards: [
+				{
+					id: "33DFD3C5D09208FB"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "47A42DF9AF9E88B4"
+					structure: "#nova_structures:undead_crypt"
+					type: "structure"
+				}
+			]
+			x: 9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F0F0620D6AC14FF"
+			]
+			icon: {
+				id: "minecraft:trial_key"
+			}
+			id: "6F1E81BC14E5448F"
+			optional: true
+			rewards: [
+				{
+					id: "2D4B33ACAF4589A5"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "36BB1F0725C88D2B"
+					structure: "minecraft:trial_chambers"
+					type: "structure"
+				}
+			]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1135663C1DC88357"
+			]
+			icon: {
+				id: "minecraft:oak_boat"
+			}
+			id: "4C41865109D7A059"
+			optional: true
+			rewards: [
+				{
+					id: "61D1A2040DFDD09A"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "770593C0162BE319"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4C41865109D7A059"
+			]
+			icon: {
+				id: "minecraft:oak_boat"
+			}
+			id: "26958AC16C592360"
+			optional: true
+			rewards: [
+				{
+					id: "56F4597B36E19541"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "1771215E16739C46"
+					structure: "dungeons_arise:undead_pirate_ship"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4C41865109D7A059"
+			]
+			icon: {
+				id: "minecraft:dark_oak_boat"
+			}
+			id: "2B9AF7ABD65464A4"
+			optional: true
+			rewards: [
+				{
+					id: "377AF4F9C6C924EC"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "13E24A04EC6831CC"
+					structure: "dungeons_arise:illager_galley"
+					type: "structure"
+				}
+			]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4C41865109D7A059"
+			]
+			icon: {
+				id: "minecraft:sea_lantern"
+			}
+			id: "79FF6139D02C49E0"
+			optional: true
+			rewards: [
+				{
+					id: "2A6D577ADE87CD46"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "13E31CE9484D8BA7"
+					structure: "dungeons_arise:lighthouse"
+					type: "structure"
+				}
+			]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4C41865109D7A059"
+			]
+			icon: {
+				id: "aquamirae:frozen_key"
+			}
+			id: "6BFE38B0FFA293EA"
+			optional: true
+			rewards: [
+				{
+					id: "22B4ADACE157AE55"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "483EFCA95C5A2AEC"
+					structure: "aquamirae:pirate_ship"
+					type: "structure"
+				}
+			]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4C41865109D7A059"
+			]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "55E73BE5BE61637A"
+			optional: true
+			rewards: [
+				{
+					id: "57C7ACEB87B043EC"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "22E6A37823D5B503"
+					structure: "idas:sunken_ship/sunken_ship"
+					type: "structure"
+				}
+			]
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4C41865109D7A059"
+			]
+			icon: {
+				id: "minecraft:prismarine_bricks"
+			}
+			id: "4520D8B574C5D64B"
+			optional: true
+			rewards: [
+				{
+					id: "7D81F8A54EA032FD"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "2FE21CAB5BF37AA8"
+					structure: "philipsruins:ocean_fortress"
+					type: "structure"
+				}
+			]
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"66C1BDB4942F94FE"
+			]
+			icon: {
+				id: "minecraft:nether_bricks"
+			}
+			id: "14BD8FDC04C495B1"
+			optional: true
+			rewards: [
+				{
+					id: "7F07C1EE292C063B"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "7410231547AA7D0C"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"14BD8FDC04C495B1"
+			]
+			icon: {
+				id: "minecraft:red_nether_bricks"
+			}
+			id: "6F7732C9AFDD4A18"
+			optional: true
+			rewards: [
+				{
+					id: "5BBE6DF1573ABCB9"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "197F8096BDDB985C"
+					structure: "incendium:forbidden_castle"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"14BD8FDC04C495B1"
+			]
+			icon: {
+				id: "minecraft:crying_obsidian"
+			}
+			id: "529E6ED4C7D6E0A3"
+			optional: true
+			rewards: [
+				{
+					id: "1951CBF43F460A01"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "72C1E88A21D1F40C"
+					structure: "incendium:sanctum"
+					type: "structure"
+				}
+			]
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"14BD8FDC04C495B1"
+			]
+			icon: {
+				id: "minecraft:gold_nugget"
+			}
+			id: "48760F6D731A85AE"
+			optional: true
+			rewards: [
+				{
+					id: "151FF5721B0AA332"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "4F369941F2BA9289"
+					structure: "incendium:piglin_village"
+					type: "structure"
+				}
+			]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"14BD8FDC04C495B1"
+			]
+			icon: {
+				id: "minecraft:redstone_lamp"
+			}
+			id: "33B2AAE833BE009F"
+			optional: true
+			rewards: [
+				{
+					id: "1DA496550E1CC6AB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "632B1BB2E39B4B1E"
+					structure: "incendium:nether_reactor"
+					type: "structure"
+				}
+			]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"14BD8FDC04C495B1"
+			]
+			icon: {
+				id: "minecraft:polished_blackstone_bricks"
+			}
+			id: "79A933F3EBB3DE82"
+			optional: true
+			rewards: [
+				{
+					id: "19C1C43E443BACBE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "77A1BD51CC2E13FC"
+					structure: "#nova_structures:nether_keep"
+					type: "structure"
+				}
+			]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"14BD8FDC04C495B1"
+			]
+			icon: {
+				id: "minecraft:gilded_blackstone"
+			}
+			id: "2EEB4F774D3EFAE5"
+			optional: true
+			rewards: [
+				{
+					id: "6EAD64AD3D059887"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "6DC1C8954A32E403"
+					structure: "#nova_structures:piglin_donjon"
+					type: "structure"
+				}
+			]
+			x: 9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"14BD8FDC04C495B1"
+			]
+			icon: {
+				id: "minecraft:nether_bricks"
+			}
+			id: "720BBE61DE8A3CCB"
+			optional: true
+			rewards: [
+				{
+					id: "51C6E314D922CB9C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "7D45812F2F0CBED2"
+					structure: "repurposed_structures:city_nether"
+					type: "structure"
+				}
+			]
+			x: 11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"173BC39D72488FFA"
+			]
+			icon: {
+				id: "minecraft:purpur_block"
+			}
+			id: "1F36A6722656F796"
+			optional: true
+			rewards: [
+				{
+					id: "796C988AF7424F8C"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "699D3BE6D2175E0C"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1F36A6722656F796"
+			]
+			icon: {
+				id: "minecraft:purpur_pillar"
+			}
+			id: "4AF25645677BE536"
+			optional: true
+			rewards: [
+				{
+					id: "679C4EE5A891B717"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "6A886FCCB60C226F"
+					structure: "mes:enderkeep_courtyard"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1F36A6722656F796"
+			]
+			icon: {
+				id: "minecraft:end_rod"
+			}
+			id: "4520797F0A530CA9"
+			optional: true
+			rewards: [
+				{
+					id: "13E8D6815F90BBB9"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "6777A2C87200AE84"
+					structure: "mes:ender_spire"
+					type: "structure"
+				}
+			]
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1F36A6722656F796"
+			]
+			icon: {
+				id: "minecraft:phantom_membrane"
+			}
+			id: "6E2A0C3361D5F849"
+			optional: true
+			rewards: [
+				{
+					id: "70300EF5FDFCFFCD"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "3575814C22453268"
+					structure: "mes:phantom_citadel"
+					type: "structure"
+				}
+			]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1F36A6722656F796"
+			]
+			icon: {
+				id: "minecraft:chorus_flower"
+			}
+			id: "1A16A9A1908AA09D"
+			optional: true
+			rewards: [
+				{
+					id: "59B7FC950D10F688"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "7A4E381EC513C1B8"
+					structure: "mes:starlight_voyager"
+					type: "structure"
+				}
+			]
+			x: 6.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1F36A6722656F796"
+			]
+			icon: {
+				id: "minecraft:end_stone_bricks"
+			}
+			id: "60B80CDE4193ED79"
+			optional: true
+			rewards: [
+				{
+					id: "7FF2EE1BD6592656"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "272865923B038E5B"
+					structure: "#nova_structures:end_castle"
+					type: "structure"
+				}
+			]
+			x: 8.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1F36A6722656F796"
+			]
+			icon: {
+				id: "minecraft:bone_block"
+			}
+			id: "1CE8753C3B2548BD"
+			optional: true
+			rewards: [
+				{
+					id: "1B4D8101E36B78CE"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "32B1D6D11E6F219C"
+					structure: "nullscape:dragon_skeleton"
+					type: "structure"
+				}
+			]
+			x: 9.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1F36A6722656F796"
+			]
+			icon: {
+				id: "minecraft:purpur_slab"
+			}
+			id: "307A7FB4B1ECDB04"
+			optional: true
+			rewards: [
+				{
+					id: "3AF1B9DEBFDDFAD6"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "10844D7F27FCE5B6"
+					structure: "explorify:end_shipwreck"
+					type: "structure"
+				}
+			]
+			x: 11.0d
+			y: 8.5d
+		}
+	]
+}

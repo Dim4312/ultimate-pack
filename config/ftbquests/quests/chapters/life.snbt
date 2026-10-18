@@ -1,0 +1,424 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "life"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "waystones:waystone"
+	}
+	id: "7959E8373B197341"
+	order_index: 17
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"391FC3F74C0C2F45"
+			]
+			icon: {
+				id: "minecraft:oak_door"
+			}
+			id: "1A9B7B777A8C0574"
+			rewards: [
+				{
+					id: "5AE71C9D72D66781"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5EB046D8EDFB72AB"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "7286D167A0BB1173"
+			optional: true
+			rewards: [
+				{
+					id: "3AD139D7E6B98F9D"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "67635607DD6E5A42"
+					item: {
+						count: 1
+						id: "comforts:sleeping_bag_red"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "1A276C59CF3B9A62"
+			optional: true
+			rewards: [
+				{
+					id: "700C9C3F1A8B7FAE"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "19C1A2E683DA1FE5"
+					item: {
+						count: 1
+						id: "comforts:hammock_white"
+					}
+					type: "item"
+				}
+			]
+			x: 3.75d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			icon: {
+				id: "handcrafted:oak_chair"
+			}
+			id: "78AF2FD0BCE1380C"
+			optional: true
+			rewards: [
+				{
+					id: "4906A85D27B137B3"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "5A33C35B809BBB73"
+					item: {
+						count: 1
+						id: "handcrafted:oak_table"
+					}
+					type: "item"
+				}
+				{
+					id: "5A552116B5E3515B"
+					item: {
+						count: 1
+						id: "handcrafted:oak_chair"
+					}
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "61E29E4B52BE17CA"
+			optional: true
+			rewards: [
+				{
+					id: "72A48F5FEAB13FA3"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "121870920747E5A1"
+					item: {
+						count: 1
+						id: "supplementaries:sack"
+					}
+					type: "item"
+				}
+				{
+					id: "7E39CB697A869F7F"
+					item: {
+						count: 1
+						id: "supplementaries:jar"
+					}
+					type: "item"
+				}
+			]
+			x: 7.25d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "3C568B0D252C8D7E"
+			optional: true
+			rewards: [
+				{
+					id: "33324918FE3FCDA6"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "14ECE5257E43AA05"
+					item: {
+						count: 1
+						id: "supplementaries:rope"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "1B710BC9020BF7DE"
+			optional: true
+			rewards: [
+				{
+					id: "1DCEBC4462A51D95"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "2F071AD266EA8678"
+					item: {
+						count: 1
+						id: "supplementaries:globe"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "300A1160893400D8"
+			optional: true
+			rewards: [
+				{
+					id: "7F87DA81831E2E3C"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "29C2DAAF8B5BEA28"
+					item: {
+						count: 1
+						id: "supplementaries:quiver"
+					}
+					type: "item"
+				}
+			]
+			x: 3.75d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "72915923B588064D"
+			optional: true
+			rewards: [
+				{
+					id: "5255859110F05A40"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "68F747D750ECD2BC"
+					item: {
+						count: 1
+						id: "supplementaries:slingshot"
+					}
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "2460BDF3EBBAC3E2"
+			optional: true
+			rewards: [
+				{
+					id: "350EB5075E267CD2"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "6624B86C4F95DFAF"
+					item: {
+						count: 1
+						id: "waystones:warp_scroll"
+					}
+					type: "item"
+				}
+			]
+			x: 7.25d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "4B7B1D1ED3ABE131"
+			optional: true
+			rewards: [
+				{
+					id: "1F92995335AE7764"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "688369C76639B631"
+					item: {
+						count: 1
+						id: "waystones:return_scroll"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "113D66B7721EAAB3"
+			optional: true
+			rewards: [
+				{
+					id: "545B1A31B1AFDF8E"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "5D82FE4F7A49E71E"
+					item: {
+						count: 1
+						id: "waystones:warp_plate"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "1D7E99F9E2A05832"
+			optional: true
+			rewards: [
+				{
+					id: "6B2FBBA64615FB9E"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "6429784E0E47206D"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:gold_backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 3.75d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			id: "2C727D207E927473"
+			optional: true
+			rewards: [
+				{
+					id: "516A6EC359E28A2A"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "2CBB8B6C45BD2B99"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:magnet_upgrade"
+					}
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1A9B7B777A8C0574"
+			]
+			icon: {
+				id: "gravestone:gravestone"
+			}
+			id: "1A5C5FA8AB5BC10A"
+			optional: true
+			rewards: [
+				{
+					id: "18E57DF58762F413"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "7F5AFB638F0B5CE3"
+					type: "checkmark"
+				}
+			]
+			x: 7.25d
+			y: 2.0d
+		}
+	]
+}

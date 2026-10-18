@@ -59,6 +59,7 @@ jobs:
             send "ultimate status"
             send "ultimate gate nether open"
             send "ultimate gate nether close"
+            send "ultimate arrival"
             # Generate real chunks around spawn to catch worldgen crashes between mods.
             send "chunky radius 96"
             send "chunky start"
@@ -95,9 +96,13 @@ jobs:
             fi
           done
           echo "===== ultimate status / gate output"
-          grep -E 'nether|end:|Phase|has been' console.log || true
-          echo "===== Biome checks"
-          grep -E 'nearest|Could not find' console.log || true
+          grep -E 'nether|end:|Phase|has been|return gate|ender dragon|arrival' console.log || true
+          if ! grep -q 'End arrival island' console.log; then
+            echo "::error::/ultimate arrival did not answer (End arrival search broken?)"; status=1
+          fi
+          if grep -qE 'An unexpected error occurred|Error executing command' console.log; then
+            echo "::error::A command threw an error"; grep -E -A3 'An unexpected error occurred|Error executing command' console.log; status=1
+          fi
           echo "===== FTB Quests"
           grep -i 'ftbquests\|ftb quests' logs/latest.log | head -40 || true
           echo "===== Warnings/errors in latest.log (first 150)"

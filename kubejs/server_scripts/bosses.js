@@ -1,7 +1,7 @@
 // Ultimate Pack — bosses.
 // - Shared credit: everyone near a quest boss when it dies gets its stage (`ultimate_boss_<id>`).
 //   Quests check the stage, so a late joiner who helped a friend counts too.
-// - The first Harbinger kill opens the Nether for the whole server.
+// - The first Harbinger kill opens the Nether for the whole server, the first Ignis kill the End.
 // - Boss scaling: bosses take less damage when more players are fighting them.
 // - Echoes: craftable items that summon a quest boss again.
 // - Spawn-safe zone: Phase 4+ bosses that generate near world spawn are removed,
@@ -31,7 +31,7 @@ const BOSSES = {
   'minecraft:ender_dragon': 'ender_dragon'
 }
 
-// echo item id suffix -> how to summon it
+// echo item id suffix -> how to summon it (Overworld unless a dimension is given)
 const ECHOES = {
   wroughtnaut: { entity: 'mowziesmobs:ferrous_wroughtnaut' },
   frostmaw: { entity: 'mowziesmobs:frostmaw' },
@@ -39,8 +39,12 @@ const ECHOES = {
   maledictus: { entity: 'cataclysm:maledictus' },
   ancient_remnant: { entity: 'cataclysm:ancient_remnant' },
   leviathan: { entity: 'cataclysm:the_leviathan', needsWater: true },
-  harbinger: { entity: 'cataclysm:the_harbinger', nbt: 'Is_Act:1b' }
+  harbinger: { entity: 'cataclysm:the_harbinger', nbt: 'Is_Act:1b' },
+  netherite_monstrosity: { entity: 'cataclysm:netherite_monstrosity', dimension: 'minecraft:the_nether' },
+  ignis: { entity: 'cataclysm:ignis', dimension: 'minecraft:the_nether' },
+  ender_guardian: { entity: 'cataclysm:ender_guardian', dimension: 'minecraft:the_end' }
 }
+const DIMENSION_NAMES = { 'minecraft:overworld': 'the Overworld', 'minecraft:the_nether': 'the Nether', 'minecraft:the_end': 'the End' }
 
 // Bosses of the Far Lands and later: they belong far from spawn.
 const FAR_BOSSES = ['frostmaw', 'umvuthi', 'maledictus', 'ancient_remnant', 'leviathan', 'harbinger', 'scylla']
@@ -82,6 +86,16 @@ EntityEvents.death(event => {
     server.tell(Text.gold('The Nether is now open for everyone.'))
     server.runCommandSilent('playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 0.6')
   }
+  if (id === 'ignis' && !global.isGateOpen(server, 'minecraft:the_end')) {
+    global.setGateOpen(server, 'minecraft:the_end', true)
+    server.tell(Text.darkPurple('The fire of Ignis goes out. Far away, the eyes of ender begin to burn...'))
+    server.tell(Text.gold('The End is now open for everyone. Find a stronghold. Warning: it is a one-way trip.'))
+    server.runCommandSilent('playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 0.6')
+  }
+  if (id === 'ender_dragon' && !server.persistentData.getBoolean('ultimate_dragon_dead')) {
+    server.persistentData.putBoolean('ultimate_dragon_dead', true)
+    server.tell(Text.gold('The Ender Dragon is dead. The void winds calm down: wings work everywhere in the End now.'))
+  }
 })
 
 // ---- Spawn-safe zone ----
@@ -107,13 +121,15 @@ EntityEvents.beforeHurt(event => {
 })
 
 // ---- Echoes ----
+const echoDimension = echo => echo.dimension || 'minecraft:overworld'
+
 const summonInFront = (player, server, echo) => {
   const look = player.getLookAngle()
   const x = (player.x + look.x() * 6).toFixed(1)
   const z = (player.z + look.z() * 6).toFixed(1)
   const y = player.y.toFixed(1)
   const nbt = `{Tags:["${ECHO_TAG}"]${echo.nbt ? ',' + echo.nbt : ''}}`
-  server.runCommandSilent(`execute in minecraft:overworld run summon ${echo.entity} ${x} ${y} ${z} ${nbt}`)
+  server.runCommandSilent(`execute in ${echoDimension(echo)} run summon ${echo.entity} ${x} ${y} ${z} ${nbt}`)
 }
 
 Object.keys(ECHOES).forEach(echoId => {
@@ -126,8 +142,8 @@ Object.keys(ECHOES).forEach(echoId => {
     const item = event.item
     if (!server) return
     let message
-    if (String(player.level.dimension().location()) !== 'minecraft:overworld') {
-      message = Text.red('The echo is silent here. Use it in the Overworld.')
+    if (String(player.level.dimension().location()) !== echoDimension(echo)) {
+      message = Text.red(`The echo is silent here. Use it in ${DIMENSION_NAMES[echoDimension(echo)]}.`)
     } else if (echo.needsWater && !player.isInWater()) {
       message = Text.red('The Leviathan only answers from the water. Stand in the sea.')
     } else {

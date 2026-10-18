@@ -39,7 +39,7 @@ Each phase ends with a **Trial** quest. Completing it teaches you the next level
 Optional bosses along the way (no Tempering required, just glory and loot):
 the Sculptor (Mowzie's Mobs), Scylla (Cataclysm), dungeon mini-bosses.
 
-### The End in two phases (Acts IV–V, not built yet)
+### The End in two phases (Acts IV–V)
 
 - **Phase 8 — New World.** The stronghold portal is a one-way trip. You land on an outer
   island, not next to the dragon. The dragon is far away and out of reach. Bring
@@ -108,7 +108,13 @@ Star, but the Nether is still locked during Act II.
 
 - **The Nether** is sealed until someone kills **the Harbinger** for the first time (end of
   Act II). Then it opens for the whole server.
-- **The End** is sealed until Act IV is released.
+- **The End** is sealed until someone kills **Ignis** for the first time (end of Act III).
+- **The End is one-way** until a Return Gate is awake. Leaving the End (portal or anything else) is blocked;
+  dying still works. Players coming through the stronghold portal land on one shared outer island
+  1200–2400 blocks out (picked once, saved). Once someone with Ender Guardian credit wakes a gate,
+  the gate sends anyone home and the portal lands anyone at the gate. Wings fail within 1000 blocks
+  of the dragon's island until it is dead.
+- Admins: `/ultimate returngate reset`, `/ultimate arrival`.
 - Admins: `/ultimate gate nether open|close`, `/ultimate gate end open|close`, `/ultimate status`.
 
 ### Personal progress, shared world
@@ -128,7 +134,9 @@ Star, but the Nether is still locked during Act II.
 
 ## Status
 
-- **v0.1 (this release):** Acts I–II (the Overworld, Phases 1–6) are playable.
-  The Nether and End are sealed.
-- **Next:** Act III (Nether) quests and Tempering VII. Then the custom End mod
-  (one-way arrival, Return Gate, cut-off dragon island), then the Dragon's Echo.
+- **v0.1:** Acts I–II (the Overworld, Phases 1–6).
+- **v0.2:** client and server zips, more optimization, Tectonic worldgen.
+- **v0.3 (this release):** Acts III–V (Phases 7–10: the Nether, the one-way End, the Return Gate,
+  the cut-off dragon island), Tempering VII–X, side chapters (discoveries, dungeons, cooking, Create,
+  magic, gear, life), more dungeon, cooking and farming mods.
+- **Next:** the Dragon's Echo (End raids, dragon pacts).
