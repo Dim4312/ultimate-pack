@@ -126,7 +126,7 @@ hash = "e90615f1fc3085175fbefca14b9c8a345a112e54a58dc987a40b505e2443ea10"
 
 [[files]]
 file = "kubejs/server_scripts/tempering.js"
-hash = "066add28aad3b2820bf34734e17f790cd20e700a0f5abf4a364d20b9eec4349d"
+hash = "cbe200d58a071f14477c98dd7311fa1ca516d817f3859180b4f3eaa8e95f5b7b"
 
 [[files]]
 file = "kubejs/startup_scripts/items.js"

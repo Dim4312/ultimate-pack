@@ -40,14 +40,15 @@ const tryTemper = (player, server, kitHand, tier) => {
   return Text.gold(`${weapon.getHoverName().getString()} is now Tempered ${TEMPER_ROMAN[tier]}!`)
 }
 
-for (let tier = 1; tier <= global.TEMPERING_TIERS; tier++) {
-  const kitTier = tier
-  ItemEvents.rightClicked(`ultimate:tempering_kit_${kitTier}`, event => {
+// A function per tier: Rhino doesn't give loop variables a fresh binding per iteration.
+const registerKit = tier => {
+  ItemEvents.rightClicked(`ultimate:tempering_kit_${tier}`, event => {
     if (!event.server) return
-    event.player.setStatusMessage(tryTemper(event.player, event.server, event.hand, kitTier))
+    event.player.setStatusMessage(tryTemper(event.player, event.server, event.hand, tier))
     event.cancel()
   })
 }
+for (let tier = 1; tier <= global.TEMPERING_TIERS; tier++) registerKit(tier)
 
 // Tell players what they just learned.
 PlayerEvents.stageAdded(event => {
