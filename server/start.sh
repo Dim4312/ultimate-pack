@@ -3,7 +3,7 @@
 # First run installs NeoForge; every run syncs mods/configs/scripts from GitHub, then starts the server.
 #   MEMORY=8G ./start.sh        (default 8G)
 #   PACK_URL=... ./start.sh     (use a fork or a pinned commit)
-#   PACKWIZ_INSTALLER_TOKEN=... (optional GitHub token for installer downloads)
+#   PACKWIZ_BOOTSTRAP_NO_UPDATE=1 (use a predownloaded packwiz-installer.jar)
 set -euo pipefail
 cd "$(dirname "$0")"
 
@@ -39,8 +39,12 @@ if [ ! -f packwiz-installer-bootstrap.jar ]; then
 fi
 echo "Syncing pack from $PACK_URL"
 bootstrap_args=(-g -s server "$PACK_URL")
-if [ -n "${PACKWIZ_INSTALLER_TOKEN:-}" ]; then
-  bootstrap_args=(--bootstrap-update-token "Bearer $PACKWIZ_INSTALLER_TOKEN" "${bootstrap_args[@]}")
+if [ "${PACKWIZ_BOOTSTRAP_NO_UPDATE:-0}" = 1 ]; then
+  if [ ! -s packwiz-installer.jar ]; then
+    echo "PACKWIZ_BOOTSTRAP_NO_UPDATE=1 requires a predownloaded packwiz-installer.jar" >&2
+    exit 1
+  fi
+  bootstrap_args=(--bootstrap-no-update "${bootstrap_args[@]}")
 fi
 java -jar packwiz-installer-bootstrap.jar "${bootstrap_args[@]}"
 

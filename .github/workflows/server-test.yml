@@ -55,11 +55,13 @@ jobs:
 
       - name: Install server (same script players use)
         env:
-          # Shared runner IPs can exhaust GitHub's unauthenticated API allowance.
-          PACKWIZ_INSTALLER_TOKEN: ${{ github.token }}
+          # Use the release asset directly; the old bootstrap's API lookup can 403.
+          INSTALLER_URL: https://github.com/packwiz/packwiz-installer/releases/download/v0.5.14/packwiz-installer.jar
+          PACKWIZ_BOOTSTRAP_NO_UPDATE: '1'
         run: |
           mkdir -p /tmp/srv
           cp server/start.sh /tmp/srv/
+          curl -fsSL --retry 3 -o /tmp/srv/packwiz-installer.jar "$INSTALLER_URL"
           echo "eula=true" > /tmp/srv/eula.txt
           cd /tmp/srv
           # Install + sync only: replace the final exec with a no-op.

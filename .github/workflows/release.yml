@@ -23,6 +23,7 @@ jobs:
       TAG: ${{ github.event.inputs.tag || github.ref_name }}
       GH_TOKEN: ${{ github.token }}
       BOOTSTRAP_URL: https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+      INSTALLER_URL: https://github.com/packwiz/packwiz-installer/releases/download/v0.5.14/packwiz-installer.jar
     steps:
       - uses: actions/checkout@v4
         with:
@@ -39,13 +40,15 @@ jobs:
           sleep 2
           curl -fsS http://localhost:8000/pack.toml > /dev/null
           curl -fsSL -o /tmp/bootstrap.jar "$BOOTSTRAP_URL"
+          curl -fsSL --retry 3 -o /tmp/installer.jar "$INSTALLER_URL"
 
       - name: Build client zip
         run: |
           mkdir -p /tmp/client/.minecraft
           cp prism/instance.cfg prism/mmc-pack.json /tmp/client/
           cp /tmp/bootstrap.jar /tmp/client/.minecraft/packwiz-installer-bootstrap.jar
-          (cd /tmp/client/.minecraft && java -jar packwiz-installer-bootstrap.jar --bootstrap-update-token "Bearer $GH_TOKEN" -g -s client http://localhost:8000/pack.toml)
+          cp /tmp/installer.jar /tmp/client/.minecraft/packwiz-installer.jar
+          (cd /tmp/client/.minecraft && java -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -g -s client http://localhost:8000/pack.toml)
           echo "Client mods: $(ls /tmp/client/.minecraft/mods | wc -l)"
           (cd /tmp/client && zip -qr9 /tmp/UltimatePack-client.zip .)
 
@@ -55,7 +58,8 @@ jobs:
           cp server/start.sh server/start.bat /tmp/server/
           chmod +x /tmp/server/start.sh
           cp /tmp/bootstrap.jar /tmp/server/packwiz-installer-bootstrap.jar
-          (cd /tmp/server && java -jar packwiz-installer-bootstrap.jar --bootstrap-update-token "Bearer $GH_TOKEN" -g -s server http://localhost:8000/pack.toml)
+          cp /tmp/installer.jar /tmp/server/packwiz-installer.jar
+          (cd /tmp/server && java -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -g -s server http://localhost:8000/pack.toml)
           echo "Server mods: $(ls /tmp/server/mods | wc -l)"
           (cd /tmp/server && zip -qr9 /tmp/UltimatePack-server.zip .)
 
