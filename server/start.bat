@@ -1,13 +1,13 @@
 @echo off
 rem Ultimate Pack - dedicated server launcher for Windows.
 rem First run installs NeoForge; every run syncs mods/configs/scripts from GitHub, then starts the server.
-rem   set MEMORY=8G ^& start.bat     (default 6G)
+rem   set MEMORY=8G ^& start.bat     (default 8G)
 setlocal
 cd /d "%~dp0"
 
 if not defined PACK_URL set PACK_URL=https://raw.githubusercontent.com/Dim4312/ultimate-pack/main/pack.toml
 set NEOFORGE=21.1.262
-if not defined MEMORY set MEMORY=6G
+if not defined MEMORY set MEMORY=8G
 
 if not exist run.bat (
   echo Installing NeoForge %NEOFORGE% server...

@@ -32,7 +32,7 @@ jobs:
           cd /tmp/srv
           # Install + sync only: replace the final exec with a no-op.
           sed 's#^exec ./run.sh nogui#echo installed#' start.sh > install.sh && chmod +x install.sh
-          PACK_URL=http://localhost:8000/pack.toml MEMORY=6G ./install.sh
+          PACK_URL=http://localhost:8000/pack.toml MEMORY=8G ./install.sh
           echo "Mods installed: $(ls mods | wc -l)"
           ls mods
 

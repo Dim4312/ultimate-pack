@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # Ultimate Pack — dedicated server launcher.
 # First run installs NeoForge; every run syncs mods/configs/scripts from GitHub, then starts the server.
-#   MEMORY=8G ./start.sh        (default 6G)
+#   MEMORY=8G ./start.sh        (default 8G)
 #   PACK_URL=... ./start.sh     (use a fork or a pinned commit)
 set -euo pipefail
 cd "$(dirname "$0")"
 
 PACK_URL="${PACK_URL:-https://raw.githubusercontent.com/Dim4312/ultimate-pack/main/pack.toml}"
 NEOFORGE="21.1.262"
-MEMORY="${MEMORY:-6G}"
+MEMORY="${MEMORY:-8G}"
 
 if [ ! -f run.sh ]; then
   echo "Installing NeoForge $NEOFORGE server..."
