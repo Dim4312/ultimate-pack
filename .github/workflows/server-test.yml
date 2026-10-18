@@ -43,9 +43,10 @@ jobs:
           sleep infinity > console.in &
           ./run.sh nogui < console.in > console.log 2>&1 &
           server=$!
-          send() { echo "$1" > console.in; }
+          # Never block on the fifo if the server is already gone.
+          send() { timeout 5 bash -c 'echo "$1" > console.in' _ "$1" || true; }
           ready=
-          for i in $(seq 1 240); do
+          for i in $(seq 1 60); do
             if grep -q 'Done (' logs/latest.log 2>/dev/null; then ready=1; break; fi
             if ! kill -0 $server 2>/dev/null; then echo "::error::Server exited during startup"; break; fi
             if ls crash-reports/*.txt >/dev/null 2>&1; then echo "::error::Server crashed during startup"; break; fi

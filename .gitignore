@@ -4,3 +4,4 @@ __pycache__/
 server/*
 !server/start.sh
 !server/start.bat
+tools/.ids.json
