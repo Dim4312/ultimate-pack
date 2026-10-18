@@ -1,0 +1,66 @@
+name: Release zips
+
+# Builds two ready-to-play zips with every mod already inside and attaches them to the release:
+#   UltimatePack-client.zip  Prism instance (import it), client mods included, still auto-updates on launch
+#   UltimatePack-server.zip  server folder with server mods; start.sh / start.bat install NeoForge and keep it synced
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to build from and upload to (e.g. v0.2.0)
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  zips:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TAG: ${{ github.event.inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+      BOOTSTRAP_URL: https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TAG }}
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Serve this tag's pack locally
+        run: |
+          python3 -m http.server 8000 --directory "$GITHUB_WORKSPACE" > /tmp/http.log 2>&1 &
+          sleep 2
+          curl -fsS http://localhost:8000/pack.toml > /dev/null
+          curl -fsSL -o /tmp/bootstrap.jar "$BOOTSTRAP_URL"
+
+      - name: Build client zip
+        run: |
+          mkdir -p /tmp/client/.minecraft
+          cp prism/instance.cfg prism/mmc-pack.json /tmp/client/
+          cp /tmp/bootstrap.jar /tmp/client/.minecraft/packwiz-installer-bootstrap.jar
+          (cd /tmp/client/.minecraft && java -jar packwiz-installer-bootstrap.jar -g -s client http://localhost:8000/pack.toml)
+          echo "Client mods: $(ls /tmp/client/.minecraft/mods | wc -l)"
+          (cd /tmp/client && zip -qr9 /tmp/UltimatePack-client.zip .)
+
+      - name: Build server zip
+        run: |
+          mkdir -p /tmp/server
+          cp server/start.sh server/start.bat /tmp/server/
+          chmod +x /tmp/server/start.sh
+          cp /tmp/bootstrap.jar /tmp/server/packwiz-installer-bootstrap.jar
+          (cd /tmp/server && java -jar packwiz-installer-bootstrap.jar -g -s server http://localhost:8000/pack.toml)
+          echo "Server mods: $(ls /tmp/server/mods | wc -l)"
+          (cd /tmp/server && zip -qr9 /tmp/UltimatePack-server.zip .)
+
+      - name: Upload to release
+        run: |
+          ls -lh /tmp/*.zip
+          gh release view "$TAG" > /dev/null 2>&1 || gh release create "$TAG" --title "Ultimate Pack $TAG" --generate-notes --verify-tag
+          gh release upload "$TAG" /tmp/UltimatePack-client.zip /tmp/UltimatePack-server.zip --clobber

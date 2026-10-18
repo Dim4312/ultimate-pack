@@ -11,12 +11,13 @@ A co-op **combat + magic + Create** modpack for Minecraft **1.21.1 / NeoForge** 
 - **Upgrades = materials + a quest.** There's no drop-rate grind: beat a phase's Trial, craft a Tempering Kit, and upgrade any weapon or staff.
 - **Bosses you can beat in an evening.** They have real mechanics (Mowzie's Mobs, L_Ender's Cataclysm) and scale with group size. Everyone nearby gets credit. Echoes let anyone fight a boss again.
 - **A world worth exploring:** Tectonic terrain, Nature's Spirit + Oh The Biomes We've Gone biomes, Windswept for richer snowy and forest areas, YUNG's Cave Biomes underground. Distant Horizons shows mountains kilometres away (optional; untick it on the first-launch screen if your PC struggles).
+- **Runs well:** Sodium (+ Sodium Extra, Reese's Sodium Options), Lithium, ModernFix, FerriteCore, ImmediatelyFast, Entity Culling, More Culling, Cull Leaves, BadOptimizations, Dynamic FPS, Particle Core, Structure Layout Optimizer, AI Improvements, Clumps, FastFurnace/FastWorkbench/FastSuite.
 - **Three worlds only:** Overworld, Nether, End. No extra dimensions to split the server.
 - **Late joiners catch up.** Loot is per player (Lootr), boss credit is shared, and server-wide gates move the story forward for everyone.
 
 See [DESIGN.md](DESIGN.md) for the full design.
 
-## Status — v0.1
+## Status — v0.2
 
 | | |
 |---|---|
@@ -28,25 +29,30 @@ See [DESIGN.md](DESIGN.md) for the full design.
 ## Playing (Prism Launcher)
 
 1. Install [Prism Launcher](https://prismlauncher.org/).
-2. **Add Instance → Import**, then paste this URL:
-   `https://github.com/Dim4312/ultimate-pack/releases/latest/download/UltimatePack-prism.zip`
-3. Launch. On the first launch a small window downloads all mods (this takes a minute). Later launches update the pack automatically.
+2. Download **UltimatePack-client.zip** from the [latest release](https://github.com/Dim4312/ultimate-pack/releases/latest). All mods are already inside.
+3. In Prism, **Add Instance → Import** and pick the zip, or paste this URL:
+   `https://github.com/Dim4312/ultimate-pack/releases/latest/download/UltimatePack-client.zip`
+4. Launch. Every launch checks this repo and downloads only what changed.
 
 The instance uses 6 GB of RAM by default. Change it in *Edit → Settings → Java*. Prism downloads Java 21 for you if you don't have it.
+
+If the game stutters, open *Options → Video Settings*. Lower the render distance, or open the Distant Horizons button and turn off rendering. Distant Horizons is the heaviest mod in the pack.
 
 ## Hosting the server
 
 You need Java 21 and about 6 GB of RAM for the server.
 
+Download **UltimatePack-server.zip** from the [latest release](https://github.com/Dim4312/ultimate-pack/releases/latest) and unzip it into an empty folder. It already contains all server mods, configs and scripts.
+
 ```bash
-mkdir ultimate-server && cd ultimate-server
-curl -fsSLO https://raw.githubusercontent.com/Dim4312/ultimate-pack/main/server/start.sh
-chmod +x start.sh
+cd ultimate-server
 echo eula=true > eula.txt      # you accept https://aka.ms/MinecraftEULA
-./start.sh                      # MEMORY=8G ./start.sh for more RAM
+./start.sh                      # Linux/macOS. MEMORY=8G ./start.sh for more RAM
 ```
 
-On the first run, `start.sh` installs NeoForge 21.1.262 and writes sensible `server.properties`: `allow-flight=true` (so Create contraptions don't kick players) and `spawn-protection=0`. On **every** run it syncs server-side mods, configs and scripts from this repo. Client-only mods such as Sodium are skipped.
+On Windows, write `eula=true` into `eula.txt` and double-click `start.bat`.
+
+On the first run, the start script installs NeoForge 21.1.262 and writes sensible `server.properties`: `allow-flight=true` (so Create contraptions don't kick players) and `spawn-protection=0`. On **every** run it syncs server-side mods, configs and scripts from this repo. Client-only mods such as Sodium are skipped.
 
 If your host runs a panel such as Pterodactyl and can't run scripts, install NeoForge 21.1.262 with the panel. Then add `java -jar packwiz-installer-bootstrap.jar -g -s server https://raw.githubusercontent.com/Dim4312/ultimate-pack/main/pack.toml` as a startup step, or run it once over SSH or SFTP.
 
@@ -75,7 +81,7 @@ packwiz modrinth add <mod>     # add a mod
 python3 tools/gen_quests.py    # regenerate the quest book from code
 python3 tools/gen_textures.py  # regenerate item textures
 packwiz refresh                # always run before committing
-python3 tools/build_prism.py   # build dist/UltimatePack-prism.zip
+git tag v0.x.0 && git push --tags   # GitHub builds UltimatePack-client.zip + UltimatePack-server.zip into the release
 ```
 
 The quest book is generated from `tools/gen_quests.py`, so edit that file instead of the SNBT. Gameplay logic lives in `kubejs/` (Tempering, bosses, gates, recipes). Every push boots a real server in GitHub Actions (`.github/workflows/server-test.yml`) and fails on crashes or KubeJS errors.

@@ -1,12 +1,12 @@
 name = "Ultimate Pack"
 author = "Dim4312"
-version = "0.1.0"
+version = "0.2.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "57791ba9312da6d2c6c24d2f971cf63fe7398d1a9be3161342dd7a624f4cb83d"
+hash = "174d442db5c1c0f45d29c0156e94be0000c013a3dd5fd0255f246264d4516a8a"
 
 [versions]
 minecraft = "1.21.1"
