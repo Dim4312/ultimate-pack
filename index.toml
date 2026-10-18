@@ -41,6 +41,10 @@ file = "config/ftbquests/quests/lang/en_us.snbt"
 hash = "68010f818ffaa2eb02f9783b879de4c6c9d2f57af2e9955a65ad816254e92b65"
 
 [[files]]
+file = "config/natures_spirit-common.toml"
+hash = "a0c639f0e22098fd33e89ff022ecf0a7189639b487238974345f8eef3d35149e"
+
+[[files]]
 file = "kubejs/assets/ultimate/lang/en_us.json"
 hash = "e334bdf6284b7644b7ee506acfb8069a4dfd1e92042cb00b4c518ac68fced8e0"
 
