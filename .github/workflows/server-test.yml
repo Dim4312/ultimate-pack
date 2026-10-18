@@ -57,7 +57,6 @@ jobs:
             send "ultimate status"
             send "ultimate gate nether open"
             send "ultimate gate nether close"
-            send "kubejs errors"
             sleep 10
             send "stop"
           else

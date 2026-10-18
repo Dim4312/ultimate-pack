@@ -1,5 +1,7 @@
 # Ultimate Pack
 
+[![Server boot test](https://github.com/Dim4312/ultimate-pack/actions/workflows/server-test.yml/badge.svg)](https://github.com/Dim4312/ultimate-pack/actions/workflows/server-test.yml)
+
 A co-op **combat + magic + Create** modpack for Minecraft **1.21.1 / NeoForge** for a group of about 10 friends on one always-on server.
 
 **One world, play together, create — don't grind.**
