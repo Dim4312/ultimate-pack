@@ -105,8 +105,16 @@ file = "config/ftbquests/quests/lang/en_us.snbt"
 hash = "551b2e43ecd55d80e8a37673ff0977c3ddcbaff106891e7dfff24e7d0eb3fca9"
 
 [[files]]
+file = "config/immersive_optimization.json"
+hash = "2afa52e4e303df977a6e1622ee6309f0742074aa88536acdd9c7e80569924c3e"
+
+[[files]]
 file = "config/natures_spirit-common.toml"
 hash = "a0c639f0e22098fd33e89ff022ecf0a7189639b487238974345f8eef3d35149e"
+
+[[files]]
+file = "config/servercore/config.yml"
+hash = "7ff3ec263cb3b6288e22b9d7addc8ae3077430e3ba3fdb8bce253eb916a7c00b"
 
 [[files]]
 file = "config/sparsestructures.json5"

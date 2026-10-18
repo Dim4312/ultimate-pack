@@ -11,7 +11,7 @@ A co-op **combat + magic + Create** modpack for Minecraft **1.21.1 / NeoForge** 
 - **Upgrades = materials + a quest.** There's no drop-rate grind: beat a phase's Trial, craft a Tempering Kit, and upgrade any weapon, staff or Ars spellbook.
 - **Bosses you can beat in an evening.** They have real mechanics (Mowzie's Mobs, L_Ender's Cataclysm) and scale with group size. Everyone nearby gets credit. Echoes let anyone fight a boss again.
 - **A world worth exploring:** Tectonic terrain, Nature's Spirit + Oh The Biomes We've Gone biomes, Windswept for richer snowy and forest areas, YUNG's Cave Biomes underground. Distant Horizons shows mountains kilometres away (optional; untick it on the first-launch screen if your PC struggles).
-- **Runs well:** Sodium (+ Sodium Extra, Reese's Sodium Options), Lithium, ModernFix, FerriteCore, ImmediatelyFast, Entity Culling, More Culling, Cull Leaves, BadOptimizations, Dynamic FPS, Particle Core, Structure Layout Optimizer, AI Improvements, Clumps, FastFurnace/FastWorkbench/FastSuite, Noisium (worldgen), Async Locator (compasses and `/locate` don't freeze the server), Ksyxis (faster world loading), Let Me Despawn. New players get light default video settings.
+- **Runs well:** Sodium (+ Sodium Extra, Reese's Sodium Options), Lithium, ModernFix, FerriteCore, ImmediatelyFast, Entity Culling, More Culling, Cull Leaves, BadOptimizations, Dynamic FPS, Particle Core, Structure Layout Optimizer, AI Improvements, Clumps, FastFurnace/FastWorkbench/FastSuite, Noisium (worldgen), Async Locator (compasses and `/locate` don't freeze the server), Ksyxis (faster world loading), Let Me Despawn, C2ME (multi-threaded chunk loading), Flerovium, Fast Paintings, Krypton Reno (network). The server also runs ServerCore (backs off view distance and mob caps when it lags), Immersive Optimization (distant mobs tick less; Create, airships and bosses are excluded), Alternate Current (redstone) and Leaves Be Gone. Neruina stops one broken mob or block from crashing the world. New players get light default video settings.
 - **Adventure everywhere:** When Dungeons Arise, IDAS, Dungeons and Taverns, Moog's structures, Towns and Towers, Repurposed Structures, Incendium, Nullscape, YUNG's, Born in Chaos, Aquamirae, Illager Invasion, Friends and Foes, Artifacts.
 - **Cooking and farming:** Farmer's Delight with Expanded, Rustic, Ocean's, Nether's and End's Delight, Brewin' and Chewin', Vinery, Bountiful Fares, Cooking for Blockheads, and Create Central Kitchen / Slice and Dice to automate it.
 - **A shared workshop:** Storage Drawers handles bulk materials; Create logistics handles stock lists, orders and deliveries. Flight School teaches a first ship before the End expedition.
@@ -41,6 +41,8 @@ and [WORLDGEN.md](WORLDGEN.md) for the terrain investigation and measured profil
 3. In Prism, **Add Instance → Import** and pick the zip, or paste this URL:
    `https://github.com/Dim4312/ultimate-pack/releases/latest/download/UltimatePack-client.zip`
 4. Launch. Every launch checks this repo and downloads only what changed.
+
+**Testing alone?** Download **UltimatePack-solo.zip** instead and import it the same way. It has every client *and* server mod, so you can play singleplayer without hosting a server. It is a fixed snapshot of that release and doesn't auto-update. It uses 8 GB of RAM by default. Pre-releases (tags like `v0.5.0-test.1`) are test builds from the `dev` branch.
 
 The instance uses 6 GB of RAM by default. Change it in *Edit → Settings → Java*. Prism downloads Java 21 for you if you don't have it.
 
