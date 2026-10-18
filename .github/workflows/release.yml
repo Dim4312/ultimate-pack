@@ -1,8 +1,13 @@
 name: Release zips
 
-# Builds two ready-to-play zips with every mod already inside and attaches them to the release:
+# Builds three ready-to-play zips with every mod already inside and attaches them to the release:
 #   UltimatePack-client.zip  Prism instance (import it), client mods included, still auto-updates on launch
 #   UltimatePack-server.zip  server folder with server mods; start.sh / start.bat install NeoForge and keep it synced
+#   UltimatePack-solo.zip    Prism instance with client AND server mods, for singleplayer testing without a server.
+#                            A fixed snapshot of this tag: it never auto-updates. Chunky is left out (it crashes
+#                            Distant Horizons in singleplayer).
+# Tags with a dash (v0.5.0-test.1) are test builds: a pre-release whose client and server zips follow the dev branch,
+# so friends on main and the "latest" download links are not affected.
 on:
   push:
     tags: ['v*']
@@ -34,6 +39,11 @@ jobs:
           distribution: temurin
           java-version: '21'
 
+      - name: Pick the branch the zips follow
+        run: |
+          if [[ "$TAG" == *-* ]]; then echo "BRANCH=dev" >> "$GITHUB_ENV"; echo "PRERELEASE=--prerelease" >> "$GITHUB_ENV"
+          else echo "BRANCH=main" >> "$GITHUB_ENV"; echo "PRERELEASE=" >> "$GITHUB_ENV"; fi
+
       - name: Serve this tag's pack locally
         run: |
           python3 -m http.server 8000 --directory "$GITHUB_WORKSPACE" > /tmp/http.log 2>&1 &
@@ -46,6 +56,7 @@ jobs:
         run: |
           mkdir -p /tmp/client/.minecraft
           cp prism/instance.cfg prism/mmc-pack.json /tmp/client/
+          sed -i "s#/ultimate-pack/main/pack.toml#/ultimate-pack/$BRANCH/pack.toml#" /tmp/client/instance.cfg
           cp /tmp/bootstrap.jar /tmp/client/.minecraft/packwiz-installer-bootstrap.jar
           cp /tmp/installer.jar /tmp/client/.minecraft/packwiz-installer.jar
           (cd /tmp/client/.minecraft && java -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -g -s client http://localhost:8000/pack.toml)
@@ -56,6 +67,7 @@ jobs:
         run: |
           mkdir -p /tmp/server
           cp server/start.sh server/start.bat /tmp/server/
+          sed -i "s#/ultimate-pack/main/pack.toml#/ultimate-pack/$BRANCH/pack.toml#" /tmp/server/start.sh /tmp/server/start.bat
           chmod +x /tmp/server/start.sh
           cp /tmp/bootstrap.jar /tmp/server/packwiz-installer-bootstrap.jar
           cp /tmp/installer.jar /tmp/server/packwiz-installer.jar
@@ -63,8 +75,23 @@ jobs:
           echo "Server mods: $(ls /tmp/server/mods | wc -l)"
           (cd /tmp/server && zip -qr9 /tmp/UltimatePack-server.zip .)
 
+      - name: Build solo zip
+        run: |
+          mkdir -p /tmp/solo/.minecraft
+          cp prism/mmc-pack.json /tmp/solo/
+          cp prism/instance-solo.cfg /tmp/solo/instance.cfg
+          cp /tmp/bootstrap.jar /tmp/solo/.minecraft/packwiz-installer-bootstrap.jar
+          cp /tmp/installer.jar /tmp/solo/.minecraft/packwiz-installer.jar
+          (cd /tmp/solo/.minecraft && java -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -g -s both http://localhost:8000/pack.toml)
+          chunky=$(grep -m1 '^filename' mods/chunky.pw.toml | cut -d'"' -f2)
+          rm -f "/tmp/solo/.minecraft/mods/$chunky" /tmp/solo/.minecraft/packwiz-installer*.jar
+          test -n "$(ls /tmp/solo/.minecraft/mods | grep -i distanthorizons)"
+          ! ls /tmp/solo/.minecraft/mods | grep -qi chunky
+          echo "Solo mods: $(ls /tmp/solo/.minecraft/mods | wc -l)"
+          (cd /tmp/solo && zip -qr9 /tmp/UltimatePack-solo.zip .)
+
       - name: Upload to release
         run: |
           ls -lh /tmp/*.zip
-          gh release view "$TAG" > /dev/null 2>&1 || gh release create "$TAG" --title "Ultimate Pack $TAG" --generate-notes --verify-tag
-          gh release upload "$TAG" /tmp/UltimatePack-client.zip /tmp/UltimatePack-server.zip --clobber
+          gh release view "$TAG" > /dev/null 2>&1 || gh release create "$TAG" --title "Ultimate Pack $TAG" --generate-notes --verify-tag $PRERELEASE
+          gh release upload "$TAG" /tmp/UltimatePack-client.zip /tmp/UltimatePack-server.zip /tmp/UltimatePack-solo.zip --clobber
