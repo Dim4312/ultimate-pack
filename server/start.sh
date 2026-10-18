@@ -3,6 +3,7 @@
 # First run installs NeoForge; every run syncs mods/configs/scripts from GitHub, then starts the server.
 #   MEMORY=8G ./start.sh        (default 8G)
 #   PACK_URL=... ./start.sh     (use a fork or a pinned commit)
+#   PACKWIZ_INSTALLER_TOKEN=... (optional GitHub token for installer downloads)
 set -euo pipefail
 cd "$(dirname "$0")"
 
@@ -37,7 +38,11 @@ if [ ! -f packwiz-installer-bootstrap.jar ]; then
   curl -fsSL -o packwiz-installer-bootstrap.jar https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
 fi
 echo "Syncing pack from $PACK_URL"
-java -jar packwiz-installer-bootstrap.jar -g -s server "$PACK_URL"
+bootstrap_args=()
+if [ -n "${PACKWIZ_INSTALLER_TOKEN:-}" ]; then
+  bootstrap_args+=(--bootstrap-update-token "Bearer $PACKWIZ_INSTALLER_TOKEN")
+fi
+java -jar packwiz-installer-bootstrap.jar "${bootstrap_args[@]}" -g -s server "$PACK_URL"
 
 if ! grep -q '^eula=true' eula.txt 2>/dev/null; then
   echo "You must accept the Minecraft EULA (https://aka.ms/MinecraftEULA):  echo eula=true > eula.txt"

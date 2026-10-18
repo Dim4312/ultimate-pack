@@ -34,7 +34,11 @@ if not exist packwiz-installer-bootstrap.jar (
   curl -fsSL -o packwiz-installer-bootstrap.jar https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar || goto :fail
 )
 echo Syncing pack from %PACK_URL%
-java -jar packwiz-installer-bootstrap.jar -g -s server "%PACK_URL%" || goto :fail
+if defined PACKWIZ_INSTALLER_TOKEN (
+  java -jar packwiz-installer-bootstrap.jar --bootstrap-update-token "Bearer %PACKWIZ_INSTALLER_TOKEN%" -g -s server "%PACK_URL%" || goto :fail
+) else (
+  java -jar packwiz-installer-bootstrap.jar -g -s server "%PACK_URL%" || goto :fail
+)
 
 findstr /b "eula=true" eula.txt >nul 2>&1 || (
   echo You must accept the Minecraft EULA ^(https://aka.ms/MinecraftEULA^): open eula.txt and set eula=true

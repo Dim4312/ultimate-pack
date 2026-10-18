@@ -107,6 +107,8 @@ git tag v0.x.0 && git push --tags   # GitHub builds UltimatePack-client.zip + Ul
 
 The quest book is generated from `tools/gen_quests.py`, so edit that file instead of the SNBT. IDs stay stable to preserve existing progress. Gameplay logic lives in `kubejs/` (Tempering, bosses, gates, recipes). CI validates the generated book and runs progression checks before booting a real server; crashes and KubeJS errors fail the workflow (`.github/workflows/server-test.yml`). Event tests use mocks and complement the server test; they do not establish in-game compatibility or performance.
 
+CI authenticates Packwiz's installer update lookup with its short-lived GitHub token to avoid shared unauthenticated API limits. Server launchers also accept an optional `PACKWIZ_INSTALLER_TOKEN` for automated hosts that need authenticated installer downloads.
+
 ## Credits & license
 
 Pack files (scripts, quests, configs, textures, tools) are MIT-licensed. Every mod is downloaded from Modrinth or CurseForge by its authors' official files and keeps its own license. Nothing is redistributed here.

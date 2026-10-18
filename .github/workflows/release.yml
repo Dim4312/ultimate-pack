@@ -45,7 +45,7 @@ jobs:
           mkdir -p /tmp/client/.minecraft
           cp prism/instance.cfg prism/mmc-pack.json /tmp/client/
           cp /tmp/bootstrap.jar /tmp/client/.minecraft/packwiz-installer-bootstrap.jar
-          (cd /tmp/client/.minecraft && java -jar packwiz-installer-bootstrap.jar -g -s client http://localhost:8000/pack.toml)
+          (cd /tmp/client/.minecraft && java -jar packwiz-installer-bootstrap.jar --bootstrap-update-token "Bearer $GH_TOKEN" -g -s client http://localhost:8000/pack.toml)
           echo "Client mods: $(ls /tmp/client/.minecraft/mods | wc -l)"
           (cd /tmp/client && zip -qr9 /tmp/UltimatePack-client.zip .)
 
@@ -55,7 +55,7 @@ jobs:
           cp server/start.sh server/start.bat /tmp/server/
           chmod +x /tmp/server/start.sh
           cp /tmp/bootstrap.jar /tmp/server/packwiz-installer-bootstrap.jar
-          (cd /tmp/server && java -jar packwiz-installer-bootstrap.jar -g -s server http://localhost:8000/pack.toml)
+          (cd /tmp/server && java -jar packwiz-installer-bootstrap.jar --bootstrap-update-token "Bearer $GH_TOKEN" -g -s server http://localhost:8000/pack.toml)
           echo "Server mods: $(ls /tmp/server/mods | wc -l)"
           (cd /tmp/server && zip -qr9 /tmp/UltimatePack-server.zip .)
 

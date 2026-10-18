@@ -6,6 +6,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -51,6 +54,9 @@ jobs:
           curl -fsS http://localhost:8000/pack.toml > /dev/null
 
       - name: Install server (same script players use)
+        env:
+          # Shared runner IPs can exhaust GitHub's unauthenticated API allowance.
+          PACKWIZ_INSTALLER_TOKEN: ${{ github.token }}
         run: |
           mkdir -p /tmp/srv
           cp server/start.sh /tmp/srv/
