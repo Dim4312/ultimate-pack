@@ -1,0 +1,26 @@
+{
+  "description": { "translate": "enchantment.ultimate.tempered" },
+  "supported_items": "#ultimate:temperable",
+  "weight": 1,
+  "max_level": 10,
+  "min_cost": { "base": 200, "per_level_above_first": 0 },
+  "max_cost": { "base": 200, "per_level_above_first": 0 },
+  "anvil_cost": 0,
+  "slots": ["mainhand"],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "ultimate:tempered_damage",
+        "attribute": "minecraft:generic.attack_damage",
+        "amount": { "type": "minecraft:linear", "base": 0.12, "per_level_above_first": 0.12 },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "id": "ultimate:tempered_spell_power",
+        "attribute": "irons_spellbooks:spell_power",
+        "amount": { "type": "minecraft:linear", "base": 0.06, "per_level_above_first": 0.06 },
+        "operation": "add_multiplied_base"
+      }
+    ]
+  }
+}

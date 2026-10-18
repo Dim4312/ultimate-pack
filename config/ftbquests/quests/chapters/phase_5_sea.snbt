@@ -1,0 +1,238 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "phase_5_sea"
+	group: "5A47BB2AE635AEC6"
+	icon: {
+		id: "minecraft:heart_of_the_sea"
+	}
+	id: "5BDFE4FCEA44F862"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"71396FFE00597E8A"
+			]
+			id: "1F0DF0760248002B"
+			rewards: [
+				{
+					id: "7E6A118096DE3229"
+					type: "xp"
+					xp: 80
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "23786FBFBA972D3B"
+					item: {
+						count: 1
+						id: "minecraft:heart_of_the_sea"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1F0DF0760248002B"
+			]
+			icon: {
+				id: "minecraft:prismarine_bricks"
+			}
+			id: "176A35EE0A40251D"
+			rewards: [
+				{
+					id: "24FE9AE0B246C7A8"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "6B794AF51DD5F9BD"
+					item: {
+						count: 1
+						id: "minecraft:sponge"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "687A475B05993433"
+					structure: "betteroceanmonuments:ocean_monument"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1F0DF0760248002B"
+			]
+			icon: {
+				id: "aeronautics:propeller_bearing"
+			}
+			id: "3A61AD421B7825F9"
+			rewards: [
+				{
+					id: "70A79F4BB012F4EF"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "155F5970A0C4D529"
+					item: {
+						count: 1
+						id: "aeronautics:propeller_bearing"
+					}
+					type: "item"
+				}
+				{
+					id: "3A57B444B596FA67"
+					item: {
+						count: 1
+						id: "simulated:physics_assembler"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1F0DF0760248002B"
+			]
+			icon: {
+				id: "minecraft:prismarine"
+			}
+			id: "582FB1C842F07D0A"
+			rewards: [
+				{
+					id: "743611F12348564F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "21B2E9AEFAD7A11F"
+					structure: "cataclysm:sunken_city"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"582FB1C842F07D0A"
+			]
+			icon: {
+				id: "minecraft:trident"
+			}
+			id: "2B2ABA53A2E279AE"
+			rewards: [
+				{
+					id: "50F9FDB2DDA20A64"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 5
+					id: "3AFDE90E8F97D738"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "246B9ED63C5BAB77"
+					stage: "ultimate_boss_leviathan"
+					type: "gamestage"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2B2ABA53A2E279AE"
+			]
+			icon: {
+				id: "minecraft:lightning_rod"
+			}
+			id: "132B5284D108AD23"
+			optional: true
+			rewards: [
+				{
+					id: "7FF7F8EF67F08F2C"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "540946F5467D8EDD"
+					stage: "ultimate_boss_scylla"
+					type: "gamestage"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2B2ABA53A2E279AE"
+				"176A35EE0A40251D"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_5"
+			}
+			id: "5EAE0F3E883289D1"
+			rewards: [
+				{
+					id: "6E7D9FC0C448EB58"
+					stage: "ultimate_tier_5"
+					type: "gamestage"
+				}
+				{
+					id: "2B43D0B6D3C772D9"
+					item: {
+						count: 1
+						id: "ultimate:tempering_kit_5"
+					}
+					type: "item"
+				}
+				{
+					id: "73A6BA6C9A085ED5"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "285B59BC671443C6"
+					stage: "ultimate_boss_leviathan"
+					type: "gamestage"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+	]
+}

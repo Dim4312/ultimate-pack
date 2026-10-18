@@ -1,0 +1,403 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "phase_4_far_lands"
+	group: "5A47BB2AE635AEC6"
+	icon: {
+		id: "minecraft:compass"
+	}
+	id: "74CAB2F3431C59C8"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4B7DF60BF4C1C75F"
+			]
+			icon: {
+				id: "minecraft:compass"
+			}
+			id: "33835BAE2EFAE768"
+			rewards: [
+				{
+					id: "2E1116CFEA8BF4F5"
+					type: "xp"
+					xp: 60
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "61AE811454225993"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"33835BAE2EFAE768"
+			]
+			icon: {
+				id: "create:controls"
+			}
+			id: "37D0E5A084DA15A8"
+			rewards: [
+				{
+					id: "6867149C996DB5CB"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "549764DD1DB39046"
+					item: {
+						count: 1
+						id: "create:track"
+					}
+					type: "item"
+				}
+				{
+					id: "7EE019E4C32D22D4"
+					item: {
+						count: 1
+						id: "create:track_station"
+					}
+					type: "item"
+				}
+				{
+					id: "4CB9BCA683893A3E"
+					item: {
+						count: 1
+						id: "create:controls"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"33835BAE2EFAE768"
+			]
+			icon: {
+				id: "minecraft:blue_ice"
+			}
+			id: "19B191D7E1743B4B"
+			rewards: [
+				{
+					id: "6F6469D3109E90C3"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					biome: "#c:is_snowy"
+					id: "2F7C8F7B37DDAEEA"
+					type: "biome"
+				}
+			]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"19B191D7E1743B4B"
+			]
+			icon: {
+				id: "mowziesmobs:ice_crystal"
+			}
+			id: "28A147AB52E53677"
+			rewards: [
+				{
+					id: "2ABD0D8CF003C9B2"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 3
+					id: "4FAE03A011FCEBC0"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "17EBBE8535989083"
+					stage: "ultimate_boss_frostmaw"
+					type: "gamestage"
+				}
+			]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"33835BAE2EFAE768"
+			]
+			icon: {
+				id: "minecraft:acacia_sapling"
+			}
+			id: "6C937FA5947E8982"
+			rewards: [
+				{
+					id: "4E123496AA4168C3"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "49E0B6264278BF05"
+					structure: "mowziesmobs:umvuthana_grove"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6C937FA5947E8982"
+			]
+			icon: {
+				id: "mowziesmobs:sol_visage"
+			}
+			id: "148B8F0EAF856AD1"
+			rewards: [
+				{
+					id: "46E2BE7D7927F42C"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 3
+					id: "1F548AAF4D55A373"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2A7AA8CBCF3819C3"
+					stage: "ultimate_boss_umvuthi"
+					type: "gamestage"
+				}
+			]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"33835BAE2EFAE768"
+			]
+			icon: {
+				id: "minecraft:packed_ice"
+			}
+			id: "10B7F86C2EE56300"
+			rewards: [
+				{
+					id: "432695F2EB1C421A"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "2A423DA09BBAFE42"
+					structure: "cataclysm:frosted_prison"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"10B7F86C2EE56300"
+			]
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "38D4C8F02F2CFD21"
+			rewards: [
+				{
+					id: "59BD262DC6EDD777"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 3
+					id: "77D7C11A7D58CCCF"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "42362ED5ECCC669D"
+					stage: "ultimate_boss_maledictus"
+					type: "gamestage"
+				}
+			]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"33835BAE2EFAE768"
+			]
+			icon: {
+				id: "minecraft:sandstone"
+			}
+			id: "647EE7319945CCCE"
+			rewards: [
+				{
+					id: "43F7A2FB412C0F0A"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "498717815F140823"
+					structure: "cataclysm:cursed_pyramid"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"647EE7319945CCCE"
+			]
+			icon: {
+				id: "cataclysm:necklace_of_the_desert"
+			}
+			id: "4C081E9D4761F2B9"
+			rewards: [
+				{
+					id: "29E78FA9DA455837"
+					type: "xp"
+					xp: 300
+				}
+				{
+					count: 3
+					id: "448B06AF9A183EBD"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "35104F51D6936DC8"
+					stage: "ultimate_boss_ancient_remnant"
+					type: "gamestage"
+				}
+			]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"33835BAE2EFAE768"
+			]
+			icon: {
+				id: "irons_spellbooks:evoker_spell_book"
+			}
+			id: "2F58F09C3B139A1B"
+			optional: true
+			rewards: [
+				{
+					id: "18890CADB92B9F86"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "69B84442F170E539"
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_essence"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "789530D384A68508"
+					structure: "irons_spellbooks:evoker_fort"
+					type: "structure"
+				}
+			]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"28A147AB52E53677"
+				"148B8F0EAF856AD1"
+				"38D4C8F02F2CFD21"
+				"4C081E9D4761F2B9"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_4"
+			}
+			id: "71396FFE00597E8A"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "77004B57CA668FE3"
+					stage: "ultimate_tier_4"
+					type: "gamestage"
+				}
+				{
+					id: "681BB858175CE4AC"
+					item: {
+						count: 1
+						id: "ultimate:tempering_kit_4"
+					}
+					type: "item"
+				}
+				{
+					id: "24F50C2D8552930E"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "5DB181670D0C0C4C"
+					type: "checkmark"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+	]
+}

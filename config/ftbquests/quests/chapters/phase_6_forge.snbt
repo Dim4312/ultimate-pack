@@ -1,0 +1,196 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "phase_6_forge"
+	group: "5A47BB2AE635AEC6"
+	icon: {
+		id: "minecraft:anvil"
+	}
+	id: "68564AFD461A87C0"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5EAE0F3E883289D1"
+			]
+			id: "39ECAB3AE1AFB2ED"
+			rewards: [
+				{
+					id: "4F78F84EBD1AEFD5"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "23FC2EAE218E078A"
+					item: {
+						count: 1
+						id: "create:precision_mechanism"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"39ECAB3AE1AFB2ED"
+			]
+			icon: {
+				id: "minecraft:redstone_block"
+			}
+			id: "2000F5C83EEDFD97"
+			rewards: [
+				{
+					id: "458063FC0139FC2B"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "4B7127ECF493CB2F"
+					structure: "cataclysm:ancient_factory"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2000F5C83EEDFD97"
+			]
+			icon: {
+				id: "ultimate:echo_harbinger"
+			}
+			id: "794C461EFF4CA55A"
+			rewards: [
+				{
+					id: "680C38A37D4BBD26"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "1B510652AE87AF94"
+					item: {
+						count: 1
+						id: "ultimate:echo_harbinger"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2000F5C83EEDFD97"
+			]
+			icon: {
+				id: "minecraft:nether_star"
+			}
+			id: "763F46BBA93593A3"
+			rewards: [
+				{
+					id: "73811F9E53932346"
+					type: "xp"
+					xp: 800
+				}
+				{
+					count: 8
+					id: "5939D17840994FAF"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "6A59149EB390EA0F"
+					stage: "ultimate_boss_harbinger"
+					type: "gamestage"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"39ECAB3AE1AFB2ED"
+			]
+			icon: {
+				id: "minecraft:stone_bricks"
+			}
+			id: "2233DB7D480197A6"
+			optional: true
+			rewards: [
+				{
+					id: "5BA0FB766B1A012B"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "59E100526F02CAC1"
+					stage: "ultimate_boss_sculptor"
+					type: "gamestage"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"763F46BBA93593A3"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_6"
+			}
+			id: "62BB24BE88E916DA"
+			rewards: [
+				{
+					id: "72CED3AC2B837CE3"
+					stage: "ultimate_tier_6"
+					type: "gamestage"
+				}
+				{
+					id: "264938C1595078FB"
+					item: {
+						count: 1
+						id: "ultimate:tempering_kit_6"
+					}
+					type: "item"
+				}
+				{
+					id: "150510713CDB4232"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "3DC717A82C7E79FC"
+					stage: "ultimate_boss_harbinger"
+					type: "gamestage"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+	]
+}

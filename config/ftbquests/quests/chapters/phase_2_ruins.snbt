@@ -1,0 +1,375 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "phase_2_ruins"
+	group: "4DA04986CA45D18F"
+	icon: {
+		id: "minecraft:mossy_stone_bricks"
+	}
+	id: "449DAB2CB6AD8451"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"19897C91C7CD5DA8"
+			]
+			id: "1C4E6474036F2D95"
+			rewards: [
+				{
+					id: "5B9D7706F6E7EAEB"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 4
+					id: "1748A2A92B8EF859"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "13E1BAD499A0C8B6"
+					structure: "#minecraft:village"
+					type: "structure"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1C4E6474036F2D95"
+			]
+			icon: {
+				id: "minecraft:crossbow"
+			}
+			id: "72C37C4C12766F9F"
+			rewards: [
+				{
+					id: "5D9F8DB96D879CE1"
+					type: "xp"
+					xp: 80
+				}
+				{
+					id: "1A79974460F68493"
+					item: {
+						count: 1
+						id: "minecraft:crossbow"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "19A6D766DF64F668"
+					structure: "#minecraft:pillager_outpost"
+					type: "structure"
+				}
+				{
+					entity: "minecraft:pillager"
+					id: "201EA10FFB5AA8CB"
+					type: "kill"
+					value: 8L
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1C4E6474036F2D95"
+			]
+			icon: {
+				id: "minecraft:spawner"
+			}
+			id: "21BF4BB51834B3E5"
+			rewards: [
+				{
+					id: "13B5D249A723A834"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "628260067C7D2AE5"
+					structure: "#betterdungeons:better_dungeons"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"21BF4BB51834B3E5"
+			]
+			icon: {
+				id: "minecraft:chiseled_sandstone"
+			}
+			id: "3B4DCB310F4D7421"
+			optional: true
+			rewards: [
+				{
+					id: "24161FCA830FAB81"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "31353D45AA0D0A51"
+					item: {
+						count: 1
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6BF01D56173D5304"
+					structure: "#betterdeserttemples:better_desert_temples"
+					type: "structure"
+				}
+			]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"21BF4BB51834B3E5"
+			]
+			icon: {
+				id: "minecraft:mossy_cobblestone"
+			}
+			id: "6E083910D9248137"
+			optional: true
+			rewards: [
+				{
+					id: "18C5CA7B1E2328A3"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "14900DAFD460CD6D"
+					item: {
+						count: 1
+						id: "minecraft:emerald"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "24ED37E3312FF84F"
+					structure: "#betterjungletemples:better_jungle_temples"
+					type: "structure"
+				}
+			]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"72C37C4C12766F9F"
+			]
+			icon: {
+				id: "minecraft:totem_of_undying"
+			}
+			id: "38850715B2AA5D94"
+			optional: true
+			rewards: [
+				{
+					id: "7DE41DFF80F3E3B7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "1D0A009E2C02F7E7"
+					structure: "#nova_structures:illager_structures"
+					type: "structure"
+				}
+			]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1C4E6474036F2D95"
+			]
+			icon: {
+				id: "irons_spellbooks:arcane_essence"
+			}
+			id: "3AC278343CFDF3D5"
+			optional: true
+			rewards: [
+				{
+					id: "49C0ABB1D81BC9B9"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 8
+					id: "4803C42E88AE0FC0"
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_essence"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					entity: "irons_spellbooks:pyromancer"
+					id: "5836E590507040DA"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "irons_spellbooks:cryomancer"
+					id: "524A191EC44F2079"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1C4E6474036F2D95"
+			]
+			icon: {
+				id: "create:brass_ingot"
+			}
+			id: "6C380F39401324F2"
+			rewards: [
+				{
+					id: "4B40B5FD7F335CDC"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 4
+					id: "770D2B0E09865B9A"
+					item: {
+						count: 1
+						id: "create:brass_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "14493419536FDC2F"
+					item: {
+						count: 1
+						id: "create:brass_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6C380F39401324F2"
+			]
+			icon: {
+				id: "create:mechanical_arm"
+			}
+			id: "2DE3874998AEE8D2"
+			optional: true
+			rewards: [
+				{
+					id: "43967D1646D7DEC1"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "5ED5CB24BF16A5CC"
+					item: {
+						count: 1
+						id: "create:deployer"
+					}
+					type: "item"
+				}
+				{
+					id: "48E46A868EE42239"
+					item: {
+						count: 1
+						id: "create:mechanical_arm"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"72C37C4C12766F9F"
+				"21BF4BB51834B3E5"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_2"
+			}
+			id: "2F436E4EB7868DE2"
+			rewards: [
+				{
+					id: "154ADA1B798C6E17"
+					stage: "ultimate_tier_2"
+					type: "gamestage"
+				}
+				{
+					id: "2004A40473238AA5"
+					item: {
+						count: 1
+						id: "ultimate:tempering_kit_2"
+					}
+					type: "item"
+				}
+				{
+					id: "2920EB42A9D86EC1"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					entity: "minecraft:vindicator"
+					id: "4849059DA13A2FBD"
+					type: "kill"
+					value: 5L
+				}
+				{
+					count: 16L
+					id: "38BE53A59196803F"
+					item: {
+						count: 1
+						id: "create:brass_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+}

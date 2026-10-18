@@ -1,0 +1,284 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "phase_3_deep"
+	group: "4DA04986CA45D18F"
+	icon: {
+		id: "minecraft:sculk"
+	}
+	id: "4C6955F48943D07D"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2F436E4EB7868DE2"
+			]
+			id: "49790207FC98980E"
+			rewards: [
+				{
+					id: "1B099A0111C1A825"
+					type: "xp"
+					xp: 60
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 3L
+					id: "401CD59455E903E3"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"49790207FC98980E"
+			]
+			icon: {
+				id: "create:mechanical_drill"
+			}
+			id: "791A1E32996ABDFB"
+			rewards: [
+				{
+					id: "42672480AF49963D"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "1BA90EA85CF29D05"
+					item: {
+						count: 1
+						id: "create:mechanical_drill"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"49790207FC98980E"
+			]
+			icon: {
+				id: "minecraft:rail"
+			}
+			id: "5C2BB606D61719AE"
+			rewards: [
+				{
+					id: "460154DEB8F472B8"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 32
+					id: "3889CE083FCAA4C4"
+					item: {
+						count: 1
+						id: "minecraft:rail"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2EA30EBE28A31176"
+					structure: "#ultimate:mineshafts"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"49790207FC98980E"
+			]
+			icon: {
+				id: "minecraft:iron_door"
+			}
+			id: "4C4F3F29FF6FF2E6"
+			rewards: [
+				{
+					id: "7DE8DE9AE5F19E6F"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "15ECB86611241453"
+					structure: "mowziesmobs:wrought_chamber"
+					type: "structure"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4C4F3F29FF6FF2E6"
+			]
+			icon: {
+				id: "mowziesmobs:wrought_axe"
+			}
+			id: "4EB8075860107567"
+			rewards: [
+				{
+					id: "5B6E3ECCD28B37E6"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5F2A5FD927D1A886"
+					stage: "ultimate_boss_wroughtnaut"
+					type: "gamestage"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5C2BB606D61719AE"
+			]
+			icon: {
+				id: "minecraft:sculk_shrieker"
+			}
+			id: "450FABCC58B14E95"
+			rewards: [
+				{
+					id: "35F18E46505D88D0"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:deep_dark"
+					id: "549BE0EC69806FE3"
+					type: "biome"
+				}
+				{
+					id: "604C1E80373FE9B9"
+					structure: "minecraft:ancient_city"
+					type: "structure"
+				}
+			]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"450FABCC58B14E95"
+			]
+			id: "55B7A018221C548A"
+			optional: true
+			rewards: [
+				{
+					id: "4098A839CED57733"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "40C82B90E14A6B79"
+					item: {
+						count: 1
+						id: "minecraft:echo_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"49790207FC98980E"
+			]
+			id: "7FFF069E9ED62590"
+			optional: true
+			rewards: [
+				{
+					id: "26E773C9BA68F240"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "6C3AE131828CBC9C"
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_anvil"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4EB8075860107567"
+				"450FABCC58B14E95"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_3"
+			}
+			id: "4B7DF60BF4C1C75F"
+			rewards: [
+				{
+					id: "28F25CA0161A74DE"
+					stage: "ultimate_tier_3"
+					type: "gamestage"
+				}
+				{
+					id: "6323746A7F70717D"
+					item: {
+						count: 1
+						id: "ultimate:tempering_kit_3"
+					}
+					type: "item"
+				}
+				{
+					id: "5F0B2F705C085B1B"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "2059213188291FB1"
+					stage: "ultimate_boss_wroughtnaut"
+					type: "gamestage"
+				}
+				{
+					id: "1BC548C355559A70"
+					structure: "minecraft:ancient_city"
+					type: "structure"
+				}
+			]
+			x: 6.5d
+			y: 1.5d
+		}
+	]
+}

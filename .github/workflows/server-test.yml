@@ -1,0 +1,94 @@
+name: Server boot test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  boot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Serve this commit's pack locally
+        run: |
+          python3 -m http.server 8000 --directory "$GITHUB_WORKSPACE" > /tmp/http.log 2>&1 &
+          sleep 2
+          curl -fsS http://localhost:8000/pack.toml > /dev/null
+
+      - name: Install server (same script players use)
+        run: |
+          mkdir -p /tmp/srv
+          cp server/start.sh /tmp/srv/
+          echo "eula=true" > /tmp/srv/eula.txt
+          cd /tmp/srv
+          # Install + sync only: replace the final exec with a no-op.
+          sed 's#^exec ./run.sh nogui#echo installed#' start.sh > install.sh && chmod +x install.sh
+          PACK_URL=http://localhost:8000/pack.toml MEMORY=6G ./install.sh
+          echo "Mods installed: $(ls mods | wc -l)"
+          ls mods
+
+      - name: Boot, run checks, stop
+        working-directory: /tmp/srv
+        run: |
+          (
+            for i in $(seq 1 300); do
+              if grep -q 'Done (' logs/latest.log 2>/dev/null; then
+                sleep 10
+                echo "ultimate status"
+                echo "ultimate gate nether open"
+                echo "ultimate gate nether close"
+                echo "kubejs errors"
+                sleep 10
+                echo "stop"
+                exit 0
+              fi
+              sleep 5
+            done
+            echo "stop"
+          ) | timeout 1800 ./run.sh nogui | tee console.log || true
+
+      - name: Check results
+        working-directory: /tmp/srv
+        run: |
+          status=0
+          if ! grep -q 'Done (' logs/latest.log; then
+            echo "::error::Server did not finish starting"; status=1
+          fi
+          if ls crash-reports/*.txt >/dev/null 2>&1; then
+            echo "::error::Crash report written"; cat crash-reports/*.txt | head -100; status=1
+          fi
+          for f in logs/kubejs/*.log; do
+            echo "===== $f"
+            cat "$f"
+            if grep -E '\[(ERROR|ERR)' "$f"; then
+              echo "::error file=$f::KubeJS reported errors"; status=1
+            fi
+          done
+          echo "===== ultimate status / gate output"
+          grep -E 'nether|end:|Phase|has been' console.log || true
+          echo "===== FTB Quests"
+          grep -i 'ftbquests\|ftb quests' logs/latest.log | head -40 || true
+          echo "===== Warnings/errors in latest.log (first 150)"
+          grep -E '/(ERROR|WARN)\]' logs/latest.log | head -150 || true
+          exit $status
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: server-logs
+          path: |
+            /tmp/srv/logs/
+            /tmp/srv/crash-reports/
+            /tmp/srv/console.log
+            /tmp/srv/config/
+          if-no-files-found: ignore

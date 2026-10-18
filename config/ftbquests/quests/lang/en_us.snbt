@@ -1,0 +1,373 @@
+{
+	chapter.23AE929B108DA600.chapter_subtitle: [
+		"Settle in. First machines, first fights, first spells."
+	]
+	chapter.23AE929B108DA600.title: "&a1. Arrival"
+	chapter.449DAB2CB6AD8451.chapter_subtitle: [
+		"The surface is full of places to raid."
+	]
+	chapter.449DAB2CB6AD8451.title: "&a2. Ruins"
+	chapter.4C6955F48943D07D.chapter_subtitle: [
+		"Mineshafts, caves, and something ancient below."
+	]
+	chapter.4C6955F48943D07D.title: "&a3. The Deep"
+	chapter.5BDFE4FCEA44F862.chapter_subtitle: [
+		"A city sank. Something still lives in it."
+	]
+	chapter.5BDFE4FCEA44F862.title: "&b5. The Sea"
+	chapter.6335527ACA7CF750.chapter_subtitle: [
+		"Read this first. It takes two minutes."
+	]
+	chapter.6335527ACA7CF750.title: "&eWelcome"
+	chapter.68564AFD461A87C0.chapter_subtitle: [
+		"An ancient factory holds the key to the Nether."
+	]
+	chapter.68564AFD461A87C0.title: "&b6. The Forge"
+	chapter.74CAB2F3431C59C8.chapter_subtitle: [
+		"Expeditions. Pick two of four."
+	]
+	chapter.74CAB2F3431C59C8.title: "&b4. Far Lands"
+	chapter_group.4DA04986CA45D18F.title: "&aAct I — The Land"
+	chapter_group.5A47BB2AE635AEC6.title: "&bAct II — The Frontier"
+	file.0000000000000001.title: "Ultimate Pack"
+	quest.10B7F86C2EE56300.quest_desc: [
+		"A castle on the snowy peaks, full of draugr. In its great hall lies a cursed tombstone."
+	]
+	quest.10B7F86C2EE56300.title: "The Frosted Prison"
+	quest.116573CF05013094.quest_desc: [
+		"A water wheel turns flowing water into rotation. Rotation powers everything in Create."
+	]
+	quest.116573CF05013094.title: "&6Create:&r Power"
+	quest.132B5284D108AD23.quest_desc: [
+		"Atop the Acropolis waits Scylla, a storm queen. Optional, but glorious."
+	]
+	quest.132B5284D108AD23.title: "&5Optional: Scylla"
+	quest.1411F78FB4F206F0.quest_desc: [
+		"&eJEI&r (item list on the right): hover an item and press &eR&r for its recipe or &eU&r for its uses."
+		"&ePonder&r: hold &eW&r while hovering any Create item to see an animated guide."
+		"&eJade&r shows what you are looking at, at the top of the screen."
+		"&eWaystones&r: find them in villages or craft them to travel between places you've been."
+	]
+	quest.1411F78FB4F206F0.title: "Lost? JEI and Ponder"
+	quest.148B8F0EAF856AD1.quest_desc: [
+		"Umvuthi calls the sun down on you. Kill the followers first, and don't stand in the light."
+	]
+	quest.148B8F0EAF856AD1.title: "&cBoss: Umvuthi"
+	quest.176A35EE0A40251D.quest_desc: [
+		"Guardians, elder guardians and gold. Bring milk for mining fatigue."
+	]
+	quest.176A35EE0A40251D.title: "Ocean Monument"
+	quest.19897C91C7CD5DA8.quest_desc: [
+		"Show that you can build and fight."
+		"Have 16 Andesite Alloy, and take down 3 creepers before they take down your base."
+		""
+		"&eReward:&r you learn &6Tempering I&r and get your first Tempering Kit I."
+		"From now on you can craft that kit and temper any weapon or staff up to level I."
+	]
+	quest.19897C91C7CD5DA8.quest_subtitle: "Learn Tempering I"
+	quest.19897C91C7CD5DA8.title: "&6Trial of Phase 1"
+	quest.19B191D7E1743B4B.quest_desc: [
+		"&bFrostmaw&r roams the ice spikes and snowy plains, sleeping until disturbed."
+	]
+	quest.19B191D7E1743B4B.title: "The Frozen North"
+	quest.1C3EEA688E04645A.quest_desc: [
+		"&6One world. Play together. Create, don't grind."
+		""
+		"The book is split into &aPhases&r. Each Phase sends you somewhere new and ends with a &6Trial&r."
+		"Beating a Trial teaches you the next level of &6Tempering&r, the only power upgrade in the pack."
+		""
+		"There are only three worlds: the &2Overworld&r, the &cNether&r and the &5End&r."
+		"The Nether and the End are &csealed&r for now. You will open them together."
+	]
+	quest.1C3EEA688E04645A.title: "&eWelcome to Ultimate Pack"
+	quest.1C4E6474036F2D95.quest_desc: [
+		"Visit a village. Trade, find a waystone, and ask yourself: where do all those ruins lead?"
+	]
+	quest.1C4E6474036F2D95.title: "The World Beyond"
+	quest.1CCC633B15A78AC2.quest_desc: [
+		"&9Ars Nouveau&r is the other magic: you design spells yourself from glyphs."
+		"Read the Worn Notebook for a full guide. Totally optional, totally fun."
+	]
+	quest.1CCC633B15A78AC2.title: "&9Magic:&r Ars Nouveau"
+	quest.1F0DF0760248002B.quest_desc: [
+		"Buried treasure maps lead to the Heart of the Sea. With it, build a conduit and breathe underwater."
+	]
+	quest.1F0DF0760248002B.title: "Set Sail"
+	quest.2000F5C83EEDFD97.quest_desc: [
+		"Deep under the ground lies a factory of the old world. Its guardian, &cthe Harbinger&r, is dormant."
+		"Normally you need a Nether Star to wake it, but the Nether is sealed."
+		"Instead, right-click it with an &dEcho of The Harbinger&r."
+	]
+	quest.2000F5C83EEDFD97.title: "The Ancient Factory"
+	quest.21BF4BB51834B3E5.quest_desc: [
+		"Dungeons hide under the ground: catacombs of zombies, skeletons and spiders."
+		"Each player gets their own loot from every chest, so share the hunt."
+	]
+	quest.21BF4BB51834B3E5.title: "Into the Dungeon"
+	quest.2233DB7D480197A6.quest_desc: [
+		"On a mountain monastery a sculptor challenges you to climb his pillar while he attacks."
+		"A puzzle fight. Optional, but nobody forgets it."
+	]
+	quest.2233DB7D480197A6.title: "&5Optional: The Sculptor"
+	quest.25B6B1D4E06FABDF.quest_desc: [
+		"A press flattens ingots into sheets. A millstone grinds ores and crops."
+		"Ores ground up give extra ingots. Automation starts paying off right away."
+	]
+	quest.25B6B1D4E06FABDF.title: "&6Create:&r First Machines"
+	quest.26045AE94C6082E0.quest_desc: [
+		"There are no classes. Pick up a sword &oand&r a spellbook."
+		""
+		"&cWeapons:&r Simply Swords, Better Combat (combos, dual wield), Combat Roll (dodge with &eR&r)."
+		"&9Magic:&r Iron's Spells 'n Spellbooks (find scrolls, inscribe them into a spellbook)"
+		"and Ars Nouveau (design your own spells)."
+		""
+		"Every Phase gives a weapon goal and a magic goal. Lean wherever you like, and change your mind any time."
+	]
+	quest.26045AE94C6082E0.title: "Everyone fights, everyone casts"
+	quest.28A147AB52E53677.quest_desc: [
+		"A great ice beast. Stay away from its breath, use fire, and keep moving."
+	]
+	quest.28A147AB52E53677.title: "&cBoss: Frostmaw"
+	quest.2B2ABA53A2E279AE.quest_desc: [
+		"The Leviathan only fights in water. Water breathing, Depth Strider and a conduit help a lot."
+		"Its Echo only works while you stand in water."
+	]
+	quest.2B2ABA53A2E279AE.title: "&cBoss: The Leviathan"
+	quest.2DE3874998AEE8D2.quest_desc: [
+		"Deployers use items like a player would. Mechanical arms move things around."
+		"Your factory can now craft things on its own."
+	]
+	quest.2DE3874998AEE8D2.title: "&6Create:&r Brass Machines"
+	quest.2F436E4EB7868DE2.quest_desc: [
+		"Prove the ruins are yours. Defeat 5 vindicators and have 16 brass ingots."
+		""
+		"&eReward:&r you learn &6Tempering II&r and get your first Tempering Kit II."
+		"From now on you can craft that kit and temper any weapon or staff up to level II."
+	]
+	quest.2F436E4EB7868DE2.quest_subtitle: "Learn Tempering II"
+	quest.2F436E4EB7868DE2.title: "&6Trial of Phase 2"
+	quest.2F58F09C3B139A1B.quest_desc: [
+		"An illager fortress full of evokers and their spells. Great loot for casters."
+	]
+	quest.2F58F09C3B139A1B.title: "&9Magic:&r Evoker Fort"
+	quest.33835BAE2EFAE768.quest_desc: [
+		"Four great enemies live far from spawn: in the ice, in the jungle, in the frozen peaks and in the desert."
+		"&eYou only need to beat two of them&r to pass this Phase. Pick the trips that sound fun."
+		"Now is a good time for a train line or a waystone network."
+	]
+	quest.33835BAE2EFAE768.title: "Expedition"
+	quest.37D0E5A084DA15A8.quest_desc: [
+		"Build a train. Tracks, a station, and a controls block on a frame of casings."
+		"A shared rail network is the backbone of a server. Connect your friends' bases."
+	]
+	quest.37D0E5A084DA15A8.title: "&6Create:&r Trains"
+	quest.38850715B2AA5D94.quest_desc: [
+		"Manors, hideouts, mansions. The illagers have more than outposts."
+		"Evokers drop totems of undying. You'll want some later."
+	]
+	quest.38850715B2AA5D94.title: "Illager Strongholds"
+	quest.38D4C8F02F2CFD21.quest_desc: [
+		"The cursed warrior. Fast, deadly and loud. Bring shields and friends."
+	]
+	quest.38D4C8F02F2CFD21.title: "&cBoss: Maledictus"
+	quest.391FC3F74C0C2F45.quest_desc: [
+		"Punch a tree, make a crafting table. Every great base starts this way."
+		"Look around. Can you see a village, a tower, a ruin? Remember it."
+	]
+	quest.391FC3F74C0C2F45.title: "A Place to Start"
+	quest.39ECAB3AE1AFB2ED.quest_desc: [
+		"Precision mechanisms come from sequenced assembly: a chain of deployers and a press."
+		"If you've built that line, you're ready for the factory."
+	]
+	quest.39ECAB3AE1AFB2ED.title: "Precision"
+	quest.3A61AD421B7825F9.quest_desc: [
+		"With Create Aeronautics you can build a flying ship: an envelope or propellers to lift it,"
+		"a propeller bearing to push it, and a Physics Assembler to bring it to life."
+		"Ponder (&eW&r) shows how. An airship makes the sea a lot friendlier."
+	]
+	quest.3A61AD421B7825F9.title: "&6Create:&r First Airship"
+	quest.3AC278343CFDF3D5.quest_desc: [
+		"Wandering wizards and tower mages carry spell scrolls and arcane essence."
+		"Some are friendly, some are not. Pyromancers and cryomancers live in their towers."
+	]
+	quest.3AC278343CFDF3D5.title: "&9Magic:&r Wizard Towers"
+	quest.3B4DCB310F4D7421.quest_desc: [
+		"A huge temple under the sand. Watch out for traps and the pharaoh's curse (mining fatigue)."
+		"Break the seals to lift it."
+	]
+	quest.3B4DCB310F4D7421.title: "Desert Temple"
+	quest.3C5CADF2C25E4756.quest_desc: [
+		"&6Tempering&r gives a weapon or staff &e+12% damage&r and &e+6% spell power&r per level."
+		""
+		"1. Beat a Phase &6Trial&r. You &olearn&r that Tempering level forever."
+		"2. Craft a &6Tempering Kit&r of that level (normal materials, see JEI)."
+		"3. Hold the weapon in one hand and the kit in the other, then right-click."
+		""
+		"Found a cooler sword later? Temper it too. Your knowledge stays, a kit only costs materials."
+		"No grinding, no random rolls. Tempering X is about 2.2x damage, and that's the cap."
+	]
+	quest.3C5CADF2C25E4756.title: "&6Tempering"
+	quest.450FABCC58B14E95.quest_desc: [
+		"Silent, dark, full of sculk. Don't wake the Warden."
+		"Ancient City chests hold &dEcho Shards&r, the base of every Boss Echo."
+	]
+	quest.450FABCC58B14E95.title: "The Deep Dark"
+	quest.49790207FC98980E.quest_desc: [
+		"The best stuff is underground. Find diamonds, and bring torches."
+	]
+	quest.49790207FC98980E.title: "Going Down"
+	quest.4B7DF60BF4C1C75F.quest_desc: [
+		"Defeat the Ferrous Wroughtnaut and reach an Ancient City."
+		""
+		"&eReward:&r you learn &6Tempering III&r and get your first Tempering Kit III."
+		"From now on you can craft that kit and temper any weapon or staff up to level III."
+	]
+	quest.4B7DF60BF4C1C75F.quest_subtitle: "Learn Tempering III"
+	quest.4B7DF60BF4C1C75F.title: "&6Trial of Phase 3"
+	quest.4C081E9D4761F2B9.quest_desc: [
+		"The sand king and his sandstorms. Keep your distance from the charge."
+	]
+	quest.4C081E9D4761F2B9.title: "&cBoss: Ancient Remnant"
+	quest.4C4F3F29FF6FF2E6.quest_desc: [
+		"Deep under the mountains there is a sealed iron room."
+		"Something huge waits inside, wearing iron armor."
+	]
+	quest.4C4F3F29FF6FF2E6.title: "The Wrought Chamber"
+	quest.4D37D3F99A7A7793.quest_desc: [
+		"&9Iron's Spells:&r spells are found as &oscrolls&r in chests and from wizards."
+		"Put a scroll into your spellbook at the Inscription Table to learn it for good."
+		"Cast with the spell wheel (default &eV&r) and the cast key (default &eR&r, rebind if it clashes with dodge)."
+	]
+	quest.4D37D3F99A7A7793.title: "&9Magic:&r A Spellbook"
+	quest.4EB8075860107567.quest_desc: [
+		"&cThe Ferrous Wroughtnaut&r only takes damage when struck &efrom behind&r."
+		"Dodge its swings, wait until it gets its axe stuck, then hit its back."
+		"Everyone within 64 blocks gets credit."
+	]
+	quest.4EB8075860107567.title: "&cBoss: Ferrous Wroughtnaut"
+	quest.5075BAA598827ACC.quest_desc: [
+		"&6Create&r lets you build machines out of moving parts."
+		"Andesite Alloy is the start of it all. Mix andesite with iron nuggets (or zinc)."
+		"Hold &eW&r over any Create item to see a Ponder scene."
+	]
+	quest.5075BAA598827ACC.title: "&6Create:&r Andesite Alloy"
+	quest.530B6C339ACBAFDC.quest_desc: [
+		"Iron is what everything else is built from: tools, armor, machines, spellbooks."
+	]
+	quest.530B6C339ACBAFDC.title: "Iron Age"
+	quest.53CBEC8BD54F35FE.quest_desc: [
+		"The nights are dangerous. Learn how your weapon swings (Better Combat) and how to dodge (&eR&r)."
+	]
+	quest.53CBEC8BD54F35FE.title: "Night Watch"
+	quest.55B7A018221C548A.quest_desc: [
+		"With Echo Shards you can craft &dBoss Echoes&r and fight any quest boss again."
+	]
+	quest.55B7A018221C548A.title: "&dEcho Shards"
+	quest.582FB1C842F07D0A.quest_desc: [
+		"A drowned city full of deeplings. At its heart is the Altar of the Abyss."
+	]
+	quest.582FB1C842F07D0A.title: "The Sunken City"
+	quest.5C2BB606D61719AE.quest_desc: [
+		"The old miners left rails, chests and cave spiders behind."
+	]
+	quest.5C2BB606D61719AE.title: "Abandoned Mineshafts"
+	quest.5EAE0F3E883289D1.quest_desc: [
+		"Defeat the Leviathan."
+		""
+		"&eReward:&r you learn &6Tempering V&r and get your first Tempering Kit V."
+		"From now on you can craft that kit and temper any weapon or staff up to level V."
+	]
+	quest.5EAE0F3E883289D1.quest_subtitle: "Learn Tempering V"
+	quest.5EAE0F3E883289D1.title: "&6Trial of Phase 5"
+	quest.6197ED624AE5FF2A.quest_desc: [
+		"A backpack is the best friend of an explorer. Upgrade it later."
+	]
+	quest.6197ED624AE5FF2A.title: "Pack Your Bags"
+	quest.62BB24BE88E916DA.quest_desc: [
+		"Defeat the Harbinger."
+		"This is the end of Act II. The Nether is open. Act III is coming in the next update."
+		""
+		"&eReward:&r you learn &6Tempering VI&r and get your first Tempering Kit VI."
+		"From now on you can craft that kit and temper any weapon or staff up to level VI."
+	]
+	quest.62BB24BE88E916DA.quest_subtitle: "Learn Tempering VI"
+	quest.62BB24BE88E916DA.title: "&6Trial of Phase 6"
+	quest.647EE7319945CCCE.quest_desc: [
+		"Under the desert lies the tomb of a king. You need the &eNecklace of the Desert&r to wake him."
+		"...or an Echo."
+	]
+	quest.647EE7319945CCCE.title: "The Cursed Pyramid"
+	quest.66EAEF7E688F4662.quest_desc: [
+		"Someone already killed the boss you need? No problem."
+		"Every quest boss has a craftable &dEcho&r. Right-click it in the Overworld to call that boss to you."
+		"Echoes need an &dEcho Shard&r, which you'll find in Ancient Cities (Phase 3). See JEI for recipes."
+	]
+	quest.66EAEF7E688F4662.title: "&dBoss Echoes"
+	quest.6C380F39401324F2.quest_desc: [
+		"Brass needs &oheated&r mixing, which normally means a blaze."
+		"The Nether is sealed, so this pack has an Overworld recipe for the &6Blaze Burner&r:"
+		"an empty burner (iron plates and magma) plus magma blocks, lava and coal. Check JEI."
+		"Zinc ore is found in the Overworld; copper you know."
+	]
+	quest.6C380F39401324F2.title: "&6Create:&r Brass"
+	quest.6C937FA5947E8982.quest_desc: [
+		"Masked warriors guard a grove in the savanna. Their chief wears the mask of the sun."
+	]
+	quest.6C937FA5947E8982.title: "Umvuthana Grove"
+	quest.6E083910D9248137.quest_desc: [
+		"Puzzles, traps and treasure under the vines."
+	]
+	quest.6E083910D9248137.title: "Jungle Temple"
+	quest.6E937C72C722ACFB.quest_desc: [
+		"&aBoss credit is shared:&r everyone within 64 blocks when a boss dies gets credit for it."
+		"&aBosses scale:&r more players means each hit does a bit less, so a group still gets a real fight."
+		"&aLoot is per player:&r every chest has its own loot for each player (Lootr). Latecomers still find loot."
+		"&aGraves:&r if you die, your items wait in a grave."
+		""
+		"Want to share quest progress with a friend? Make a party: &e/ftbteams party create&r."
+	]
+	quest.6E937C72C722ACFB.title: "Play together"
+	quest.71396FFE00597E8A.quest_desc: [
+		"Beat &etwo&r of the four far-land bosses: Frostmaw, Umvuthi, Maledictus or the Ancient Remnant."
+		""
+		"&eReward:&r you learn &6Tempering IV&r and get your first Tempering Kit IV."
+		"From now on you can craft that kit and temper any weapon or staff up to level IV."
+	]
+	quest.71396FFE00597E8A.quest_subtitle: "Learn Tempering IV"
+	quest.71396FFE00597E8A.title: "&6Trial of Phase 4"
+	quest.72C37C4C12766F9F.quest_desc: [
+		"Pillagers have built a tower nearby. Bring it down."
+	]
+	quest.72C37C4C12766F9F.title: "Pillager Outpost"
+	quest.763F46BBA93593A3.quest_desc: [
+		"A war machine with lasers and missiles. Use cover, spread out, and keep hitting."
+		"&6When it falls for the first time, the Nether opens for everyone.&r"
+	]
+	quest.763F46BBA93593A3.title: "&cBoss: The Harbinger"
+	quest.791A1E32996ABDFB.quest_desc: [
+		"Let a machine dig for you. Put drills on a moving contraption and you have a tunnel bore."
+	]
+	quest.791A1E32996ABDFB.title: "&6Create:&r Mechanical Drill"
+	quest.794C461EFF4CA55A.quest_desc: [
+		"Craft an Echo of The Harbinger (echo shard, precision mechanism, redstone block, iron block)."
+	]
+	quest.794C461EFF4CA55A.title: "&dWake the Harbinger"
+	quest.7CB04BB41982504E.quest_desc: [
+		"Waystones let you teleport between places you have visited."
+		"Villages often have one. Build one at your base and at every place you want to come back to."
+	]
+	quest.7CB04BB41982504E.title: "Waystones"
+	quest.7FFF069E9ED62590.quest_desc: [
+		"The Arcane Anvil upgrades spellbooks and imbues weapons with spells."
+		"Yes, you can put a spell on your sword."
+	]
+	quest.7FFF069E9ED62590.title: "&9Magic:&r Arcane Anvil"
+	task.1363CD3C1AB7DBCB.title: "Got it"
+	task.1965E58D6F097E28.title: "Got it"
+	task.2A5CAE48CB3A980F.title: "I found or built a waystone"
+	task.475424B3033F0424.title: "Got it"
+	task.5DB181670D0C0C4C.title: "Return from the far lands"
+	task.61649A8EFF75C600.title: "Got it"
+	task.61AE811454225993.title: "Ready to travel"
+	task.7EED3BDF7B610572.title: "Got it"
+}

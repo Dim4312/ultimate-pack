@@ -1,0 +1,402 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "phase_1_arrival"
+	group: "4DA04986CA45D18F"
+	icon: {
+		id: "minecraft:oak_sapling"
+	}
+	id: "23AE929B108DA600"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1C3EEA688E04645A"
+			]
+			id: "391FC3F74C0C2F45"
+			rewards: [
+				{
+					id: "2AA7539D14D2D7C4"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 8
+					id: "724CA5353C8F6480"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6454C3A0CE457772"
+					item: {
+						count: 1
+						id: "minecraft:crafting_table"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"391FC3F74C0C2F45"
+			]
+			id: "530B6C339ACBAFDC"
+			rewards: [
+				{
+					id: "40D7DA0DFBE3F0AA"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "659CCA448F5A033C"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"530B6C339ACBAFDC"
+			]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "53CBEC8BD54F35FE"
+			rewards: [
+				{
+					id: "3C705241C158E1ED"
+					type: "xp"
+					xp: 60
+				}
+				{
+					count: 32
+					id: "24075896E0193DC2"
+					item: {
+						count: 1
+						id: "minecraft:arrow"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "3E3DF272E838A2D6"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecraft:skeleton"
+					id: "3E82AB8DECB4DB9C"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "minecraft:spider"
+					id: "175DF27B5C7914B9"
+					type: "kill"
+					value: 5L
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"530B6C339ACBAFDC"
+			]
+			id: "5075BAA598827ACC"
+			rewards: [
+				{
+					id: "4EDEC735474A2466"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 8
+					id: "39CD279103F43473"
+					item: {
+						count: 1
+						id: "create:andesite_alloy"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "588A2005B84C7832"
+					item: {
+						count: 1
+						id: "create:andesite_alloy"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5075BAA598827ACC"
+			]
+			id: "116573CF05013094"
+			rewards: [
+				{
+					id: "161E1F5D7474B9CB"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 8
+					id: "464BFEF6D6F31AC6"
+					item: {
+						count: 1
+						id: "create:shaft"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "77A5E2D805614CB7"
+					item: {
+						count: 1
+						id: "create:water_wheel"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"116573CF05013094"
+			]
+			id: "25B6B1D4E06FABDF"
+			rewards: [
+				{
+					id: "464F8AE2A47942BF"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "3A00A06353ABEE01"
+					item: {
+						count: 1
+						id: "create:mechanical_press"
+					}
+					type: "item"
+				}
+				{
+					id: "1EC473046C71351F"
+					item: {
+						count: 1
+						id: "create:millstone"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"530B6C339ACBAFDC"
+			]
+			id: "4D37D3F99A7A7793"
+			rewards: [
+				{
+					id: "7524D376FAE7E401"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 4
+					id: "4587C847E704FB68"
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_essence"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "29DD2D4DDF99EDA5"
+					item: {
+						count: 1
+						id: "irons_spellbooks:inscription_table"
+					}
+					type: "item"
+				}
+				{
+					id: "2B6931F221906148"
+					item: {
+						count: 1
+						id: "irons_spellbooks:copper_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4D37D3F99A7A7793"
+			]
+			id: "1CCC633B15A78AC2"
+			optional: true
+			rewards: [
+				{
+					id: "4A9E144A95E9C3AD"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					id: "5E727CEF88291464"
+					item: {
+						count: 1
+						id: "ars_nouveau:novice_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"391FC3F74C0C2F45"
+			]
+			id: "6197ED624AE5FF2A"
+			optional: true
+			rewards: [
+				{
+					id: "157A655CA82A7590"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "5A2E189ED95F8A12"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"391FC3F74C0C2F45"
+			]
+			icon: {
+				id: "waystones:waystone"
+			}
+			id: "7CB04BB41982504E"
+			optional: true
+			rewards: [
+				{
+					id: "7037BC885036F76D"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "5715E6A5288FC80B"
+					item: {
+						count: 1
+						id: "waystones:warp_stone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2A5CAE48CB3A980F"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"53CBEC8BD54F35FE"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_1"
+			}
+			id: "19897C91C7CD5DA8"
+			rewards: [
+				{
+					id: "477D91BD0849793D"
+					stage: "ultimate_tier_1"
+					type: "gamestage"
+				}
+				{
+					id: "2B33D8E718E662AC"
+					item: {
+						count: 1
+						id: "ultimate:tempering_kit_1"
+					}
+					type: "item"
+				}
+				{
+					id: "42BFBBE263430F5D"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 16L
+					id: "37E1B475A78A2A8F"
+					item: {
+						count: 1
+						id: "create:andesite_alloy"
+					}
+					type: "item"
+				}
+				{
+					entity: "minecraft:creeper"
+					id: "608D7CB5F42C77A5"
+					type: "kill"
+					value: 3L
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+	]
+}

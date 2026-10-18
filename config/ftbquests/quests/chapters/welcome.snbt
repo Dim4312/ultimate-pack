@@ -1,0 +1,158 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: {
+		id: "ftbquests:book"
+	}
+	id: "6335527ACA7CF750"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "ftbquests:book"
+			}
+			id: "1C3EEA688E04645A"
+			rewards: [
+				{
+					id: "204369A37F92ED3A"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "pentagon"
+			size: 3.0d
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					id: "43A198B17540F511"
+					type: "dimension"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1C3EEA688E04645A"
+			]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "26045AE94C6082E0"
+			rewards: [
+				{
+					id: "2A1A1F65C62866B6"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "475424B3033F0424"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1C3EEA688E04645A"
+			]
+			icon: {
+				id: "ultimate:tempering_kit_1"
+			}
+			id: "3C5CADF2C25E4756"
+			rewards: [
+				{
+					id: "7AC040530D79A3FB"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "61649A8EFF75C600"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1C3EEA688E04645A"
+			]
+			icon: {
+				id: "minecraft:totem_of_undying"
+			}
+			id: "6E937C72C722ACFB"
+			rewards: [
+				{
+					id: "338231B29D5F9300"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "1363CD3C1AB7DBCB"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1C3EEA688E04645A"
+			]
+			icon: {
+				id: "create:wrench"
+			}
+			id: "1411F78FB4F206F0"
+			rewards: [
+				{
+					id: "739D70A4B17CF8C5"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "1965E58D6F097E28"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1C3EEA688E04645A"
+			]
+			icon: {
+				id: "minecraft:echo_shard"
+			}
+			id: "66EAEF7E688F4662"
+			rewards: [
+				{
+					id: "658845F7016A7D47"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "7EED3BDF7B610572"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 4.5d
+		}
+	]
+}

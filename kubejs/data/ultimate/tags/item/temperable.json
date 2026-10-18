@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#minecraft:swords",
+    "#minecraft:axes",
+    { "id": "#c:tools/melee_weapon", "required": false },
+    { "id": "#c:tools/spear", "required": false },
+    { "id": "#c:tools/trident", "required": false },
+    { "id": "#irons_spellbooks:staff", "required": false }
+  ]
+}
