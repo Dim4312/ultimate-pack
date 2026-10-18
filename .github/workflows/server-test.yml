@@ -9,7 +9,7 @@ on:
 jobs:
   boot:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -39,22 +39,33 @@ jobs:
       - name: Boot, run checks, stop
         working-directory: /tmp/srv
         run: |
-          (
-            for i in $(seq 1 300); do
-              if grep -q 'Done (' logs/latest.log 2>/dev/null; then
-                sleep 10
-                echo "ultimate status"
-                echo "ultimate gate nether open"
-                echo "ultimate gate nether close"
-                echo "kubejs errors"
-                sleep 10
-                echo "stop"
-                exit 0
-              fi
-              sleep 5
-            done
-            echo "stop"
-          ) | timeout 1800 ./run.sh nogui | tee console.log || true
+          mkfifo console.in
+          sleep infinity > console.in &
+          ./run.sh nogui < console.in > console.log 2>&1 &
+          server=$!
+          send() { echo "$1" > console.in; }
+          ready=
+          for i in $(seq 1 240); do
+            if grep -q 'Done (' logs/latest.log 2>/dev/null; then ready=1; break; fi
+            if ! kill -0 $server 2>/dev/null; then echo "::error::Server exited during startup"; break; fi
+            if [ $((i % 6)) -eq 0 ]; then echo "[$((i*5))s] $(tail -n 1 logs/latest.log 2>/dev/null | cut -c1-200)"; fi
+            sleep 5
+          done
+          if [ -n "$ready" ]; then
+            echo "Server ready after ~$((i*5))s"
+            sleep 15
+            send "ultimate status"
+            send "ultimate gate nether open"
+            send "ultimate gate nether close"
+            send "kubejs errors"
+            sleep 10
+            send "stop"
+          else
+            send "stop"
+          fi
+          for i in $(seq 1 60); do kill -0 $server 2>/dev/null || break; sleep 2; done
+          kill $server 2>/dev/null || true
+          tail -n 60 console.log
 
       - name: Check results
         working-directory: /tmp/srv
