@@ -38,11 +38,11 @@ if [ ! -f packwiz-installer-bootstrap.jar ]; then
   curl -fsSL -o packwiz-installer-bootstrap.jar https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
 fi
 echo "Syncing pack from $PACK_URL"
-bootstrap_args=()
+bootstrap_args=(-g -s server "$PACK_URL")
 if [ -n "${PACKWIZ_INSTALLER_TOKEN:-}" ]; then
-  bootstrap_args+=(--bootstrap-update-token "Bearer $PACKWIZ_INSTALLER_TOKEN")
+  bootstrap_args=(--bootstrap-update-token "Bearer $PACKWIZ_INSTALLER_TOKEN" "${bootstrap_args[@]}")
 fi
-java -jar packwiz-installer-bootstrap.jar "${bootstrap_args[@]}" -g -s server "$PACK_URL"
+java -jar packwiz-installer-bootstrap.jar "${bootstrap_args[@]}"
 
 if ! grep -q '^eula=true' eula.txt 2>/dev/null; then
   echo "You must accept the Minecraft EULA (https://aka.ms/MinecraftEULA):  echo eula=true > eula.txt"
