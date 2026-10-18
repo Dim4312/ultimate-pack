@@ -1,0 +1,25 @@
+// Keep the scenery spaced out without doubling the distance to story objectives.
+// This affects newly generated chunks; existing structures stay where they are.
+{
+  "spreadFactor": 2,
+  "idBasedSalt": true,
+  "customSpreadFactors": [
+    { "structure": "minecraft:village_plains", "factor": 1 },
+    { "structure": "minecraft:pillager_outpost", "factor": 1 },
+    { "structure": "minecraft:ancient_city", "factor": 1 },
+    { "structure": "minecraft:end_city", "factor": 1 },
+    { "structure": "minecraft:bastion_remnant", "factor": 1 },
+    { "structure": "betterdungeons:small_dungeon", "factor": 1 },
+    { "structure": "betteroceanmonuments:ocean_monument", "factor": 1 },
+    { "structure": "betterfortresses:fortress", "factor": 1 },
+    { "structure": "mowziesmobs:wrought_chamber", "factor": 1 },
+    { "structure": "mowziesmobs:umvuthana_grove", "factor": 1 },
+    { "structure": "cataclysm:frosted_prison", "factor": 1 },
+    { "structure": "cataclysm:cursed_pyramid", "factor": 1 },
+    { "structure": "cataclysm:sunken_city", "factor": 1 },
+    { "structure": "cataclysm:ancient_factory", "factor": 1 },
+    { "structure": "cataclysm:soul_black_smith", "factor": 1 },
+    { "structure": "cataclysm:burning_arena", "factor": 1 },
+    { "structure": "cataclysm:ruined_citadel", "factor": 1 }
+  ]
+}

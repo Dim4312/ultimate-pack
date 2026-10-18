@@ -28,6 +28,9 @@ BlockEvents.rightClicked('ultimate:return_gate', event => {
   } else if (!global.returnGate(server)) {
     if (!player.stages.has('ultimate_boss_ender_guardian')) {
       player.setStatusMessage(Text.red('The gate is cold. Only someone who has beaten the Ender Guardian can wake it.'))
+    } else if (!event.level.getBlock(block.x, block.y + 1, block.z).getBlockState().isAir() ||
+               !event.level.getBlock(block.x, block.y + 2, block.z).getBlockState().isAir()) {
+      player.setStatusMessage(Text.yellow('Leave two air blocks above the Return Gate for safe arrivals.'))
     } else {
       global.setReturnGate(server, block.x, block.y, block.z)
       player.stages.add(GATE_STAGE)
@@ -36,6 +39,11 @@ BlockEvents.rightClicked('ultimate:return_gate', event => {
       server.runCommandSilent('playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 1.2')
     }
   } else {
+    // After the first awakening, anyone can replace or move the shared gate.
+    if (event.level.getBlock(block.x, block.y + 1, block.z).getBlockState().isAir() &&
+        event.level.getBlock(block.x, block.y + 2, block.z).getBlockState().isAir()) {
+      global.setReturnGate(server, block.x, block.y, block.z)
+    }
     if (!player.stages.has(GATE_STAGE)) player.stages.add(GATE_STAGE)
     sendHome(player, server)
   }

@@ -1,0 +1,302 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "flight_school"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "aeronautics:propeller_bearing"
+	}
+	id: "1C3010A7761DDB9F"
+	order_index: 18
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6C380F39401324F2"
+			]
+			id: "1D26585B914CDB02"
+			optional: true
+			rewards: [
+				{
+					id: "484F93CAC0FEA0AB"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "6287266C86AEE7F6"
+					item: {
+						count: 1
+						id: "simulated:physics_assembler"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1D26585B914CDB02"
+			]
+			id: "3B0FF44B3AA79F3E"
+			optional: true
+			rewards: [
+				{
+					id: "25309A8A7655A323"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "5A1FDE0A71C6CCD8"
+					item: {
+						count: 1
+						id: "create:super_glue"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1D26585B914CDB02"
+			]
+			id: "47572E99CA53A6F5"
+			optional: true
+			rewards: [
+				{
+					id: "7A819B2D9DE81751"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1ADEF48E99E9E61E"
+					item: {
+						count: 1
+						id: "aeronautics:white_envelope"
+					}
+					type: "item"
+				}
+				{
+					id: "6C48AFC51CA2433A"
+					item: {
+						count: 1
+						id: "aeronautics:adjustable_burner"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1D26585B914CDB02"
+			]
+			id: "419DE84C1CC19D1F"
+			optional: true
+			rewards: [
+				{
+					id: "28D2B9C7C616BD16"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "7B399642FCF229F1"
+					item: {
+						count: 1
+						id: "aeronautics:propeller_bearing"
+					}
+					type: "item"
+				}
+				{
+					id: "1111EE1B0E7FABEA"
+					item: {
+						count: 1
+						id: "aeronautics:wooden_propeller"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"419DE84C1CC19D1F"
+			]
+			id: "5C414AC0B376AF56"
+			optional: true
+			rewards: [
+				{
+					id: "171B99DF4EC91D96"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "28186978BDA331EB"
+					item: {
+						count: 1
+						id: "simulated:red_portable_engine"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3B0FF44B3AA79F3E"
+			]
+			id: "166525D284CCC6F8"
+			optional: true
+			rewards: [
+				{
+					id: "44BCA9A2FBFE02E9"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "22EF523B51C5364A"
+					item: {
+						count: 1
+						id: "simulated:steering_wheel"
+					}
+					type: "item"
+				}
+				{
+					id: "32F9098EDBEF943D"
+					item: {
+						count: 1
+						id: "simulated:throttle_lever"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"47572E99CA53A6F5"
+				"5C414AC0B376AF56"
+				"166525D284CCC6F8"
+			]
+			icon: {
+				id: "create:schematic_and_quill"
+			}
+			id: "598659A9221C51C4"
+			optional: true
+			rewards: [
+				{
+					id: "1BDA92CEAB0955E0"
+					type: "xp"
+					xp: 160
+				}
+			]
+			tasks: [
+				{
+					id: "56BB35B30B7740E7"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"598659A9221C51C4"
+				"173BC39D72488FFA"
+			]
+			id: "51DE59CBA826AF1B"
+			optional: true
+			rewards: [
+				{
+					id: "52040A7841F6BF98"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "7DFC98B3E2FEF7E1"
+					item: {
+						count: 1
+						id: "aeronautics:levitite"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"598659A9221C51C4"
+			]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "12229C7DBB8ED096"
+			optional: true
+			rewards: [
+				{
+					id: "1503066AA90FCED0"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "7564A3863CB02007"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"12229C7DBB8ED096"
+				"21373C5E1185A5D0"
+			]
+			icon: {
+				id: "minecraft:end_stone"
+			}
+			id: "7DD2C043EEE63826"
+			optional: true
+			rewards: [
+				{
+					id: "3173EBFA2BA2480E"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					biome: "minecraft:the_end"
+					id: "186E0D6E98E22537"
+					type: "biome"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+}

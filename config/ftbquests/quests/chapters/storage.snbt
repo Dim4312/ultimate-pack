@@ -1,0 +1,266 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "storagedrawers:oak_full_drawers_1"
+	}
+	id: "54560F2FAB74139C"
+	order_index: 19
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"391FC3F74C0C2F45"
+			]
+			id: "27A63FFA28F320CE"
+			optional: true
+			rewards: [
+				{
+					id: "18C64E96E79C7D28"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "658E68B51942EDB9"
+					item: {
+						count: 1
+						id: "storagedrawers:oak_full_drawers_1"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"27A63FFA28F320CE"
+			]
+			id: "60055F1CCA2C9F0D"
+			optional: true
+			rewards: [
+				{
+					id: "1E46B11B348C2700"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "72BF3BF4A9BE421D"
+					item: {
+						count: 1
+						id: "storagedrawers:drawer_key"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"27A63FFA28F320CE"
+			]
+			id: "3044DC7231C28188"
+			optional: true
+			rewards: [
+				{
+					id: "2979F707574F8575"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "19CEB668FCDE9A6D"
+					item: {
+						count: 1
+						id: "storagedrawers:iron_storage_upgrade"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3044DC7231C28188"
+			]
+			id: "57753FA56DC7441A"
+			optional: true
+			rewards: [
+				{
+					id: "2CB237267133E2AD"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "1F5BE4673BFA663B"
+					item: {
+						count: 1
+						id: "storagedrawers:compacting_drawers_3"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"60055F1CCA2C9F0D"
+			]
+			id: "14742EE354C84565"
+			optional: true
+			rewards: [
+				{
+					id: "3F53F2FDCEBB3A64"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "3469022D287DE337"
+					item: {
+						count: 1
+						id: "storagedrawers:controller"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"14742EE354C84565"
+			]
+			id: "729FEAB06D6B803A"
+			optional: true
+			rewards: [
+				{
+					id: "158D1455588EC6D5"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "43E621B7F3ACBFDB"
+					item: {
+						count: 1
+						id: "create:content_observer"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"14742EE354C84565"
+				"6C380F39401324F2"
+			]
+			id: "37AD01ECE193497E"
+			optional: true
+			rewards: [
+				{
+					id: "1CD39064416D136F"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "26352B1067D669C8"
+					item: {
+						count: 1
+						id: "create:stock_ticker"
+					}
+					type: "item"
+				}
+				{
+					id: "4FB937422FE9422A"
+					item: {
+						count: 1
+						id: "create:stock_link"
+					}
+					type: "item"
+				}
+				{
+					id: "3F4E15710C72AA88"
+					item: {
+						count: 1
+						id: "create:packager"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"37AD01ECE193497E"
+			]
+			icon: {
+				id: "create:packager"
+			}
+			id: "1880A4168DB4E597"
+			optional: true
+			rewards: [
+				{
+					id: "20D5F9C6546AB342"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "11CFC66B7330B4E6"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1880A4168DB4E597"
+				"729FEAB06D6B803A"
+				"57753FA56DC7441A"
+			]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "6BF5585A0578E194"
+			optional: true
+			rewards: [
+				{
+					id: "7D55CAED6F44E6AF"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					id: "4754D34AB1D29B56"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+}

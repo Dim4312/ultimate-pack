@@ -44,6 +44,16 @@ def scan(jar, ids):
             if name.startswith("META-INF/jarjar/") and name.endswith(".jar"):
                 scan(io.BytesIO(z.read(name)), ids)  # bundled mods (e.g. Aeronautics ships Simulated)
                 continue
+            # Some mods use shared translation keys for whole families of blocks.
+            # Their crafting results still name each registered item individually.
+            if "/recipe/" in name and name.endswith(".json"):
+                try:
+                    recipe = json.loads(z.read(name))
+                    result = recipe.get("result", {})
+                    if recipe.get("type", "").startswith("minecraft:crafting_") and isinstance(result, dict) and "id" in result:
+                        ids["item"].add(result["id"])
+                except (ValueError, AttributeError):
+                    pass
             if name.endswith("lang/en_us.json") and "/assets/" in "/" + name:
                 try:
                     lang = json.loads(z.read(name).decode("utf-8", "replace"))

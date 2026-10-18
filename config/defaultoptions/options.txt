@@ -8,3 +8,5 @@ enableVsync:false
 maxFps:144
 mipmapLevels:2
 autoJump:false
+key_key.irons_spellbooks.spellbook_cast:key.keyboard.z
+key_key.irons_spellbooks.spell_wheel:key.keyboard.x

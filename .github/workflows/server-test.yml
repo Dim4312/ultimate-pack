@@ -7,7 +7,33 @@ on:
   workflow_dispatch:
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ultimate-pack/jars
+          key: quest-ids-${{ runner.os }}-${{ hashFiles('mods/*.pw.toml', 'pack.toml') }}
+          restore-keys: quest-ids-${{ runner.os }}-
+      - name: Validate resource IDs, generated book and progression
+        run: |
+          python3 tools/mod_ids.py
+          python3 tools/gen_quests.py --check
+          python3 -m unittest discover -s tools -p 'test_*.py' -v
+          node --test tools/test_gameplay.mjs
+          node --check tools/sample_terrain.js
+          find kubejs -name '*.js' -exec node --check {} \;
+
   boot:
+    needs: validate
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -33,6 +59,9 @@ jobs:
           # Install + sync only: replace the final exec with a no-op.
           sed 's#^exec ./run.sh nogui#echo installed#' start.sh > install.sh && chmod +x install.sh
           PACK_URL=http://localhost:8000/pack.toml MEMORY=8G ./install.sh
+          cp "$GITHUB_WORKSPACE/tools/sample_terrain.js" kubejs/server_scripts/worldgen_sample.js
+          # Keep the worldgen smoke test reproducible across runs.
+          echo 'level-seed=8675309' >> server.properties
           echo "Mods installed: $(ls mods | wc -l)"
           ls mods
 
@@ -60,16 +89,33 @@ jobs:
             send "ultimate gate nether open"
             send "ultimate gate nether close"
             send "ultimate arrival"
-            # Generate real chunks around spawn to catch worldgen crashes between mods.
-            send "chunky radius 96"
-            send "chunky start"
-            for j in $(seq 1 120); do
-              grep -q 'Task finished' console.log && break
-              kill -0 $server 2>/dev/null || break
-              ls crash-reports/*.txt >/dev/null 2>&1 && break
-              sleep 5
+            send "ultimate terrain"
+            send "ultimate_terrain_sample"
+            # Exercise separated terrain regions and all three dimensions. One
+            # spawn-sized square cannot establish worldgen compatibility.
+            for target in 'minecraft:overworld 0 0' 'minecraft:overworld 2048 2048' 'minecraft:overworld -2048 -2048' 'minecraft:the_nether 0 0' 'minecraft:the_end 1600 0'; do
+              read -r dimension center_x center_z <<< "$target"
+              first_line=$(( $(wc -l < console.log) + 1 ))
+              send "chunky world $dimension"
+              send "chunky shape square"
+              send "chunky center $center_x $center_z"
+              send "chunky radius 64"
+              send "chunky start"
+              finished=
+              for j in $(seq 1 60); do
+                if tail -n +"$first_line" console.log | grep -F "Task finished for $dimension." > /dev/null; then finished=1; break; fi
+                kill -0 $server 2>/dev/null || break
+                ls crash-reports/*.txt >/dev/null 2>&1 && break
+                grep -qE 'Feature order cycle|Exception generating new chunk|Error executing task on Chunk source' console.log && break
+                sleep 5
+              done
+              if [ -z "$finished" ]; then
+                echo "::error::Chunk generation did not finish for $target"
+                touch worldgen.failed
+                break
+              fi
+              echo "$target" >> worldgen-passed.txt
             done
-            grep -E 'Task finished|Task stopped' console.log || echo "::warning::Chunky did not report finishing"
             send "stop"
           else
             send "stop"
@@ -87,6 +133,18 @@ jobs:
           fi
           if ls crash-reports/*.txt >/dev/null 2>&1; then
             echo "::error::Crash report written"; cat crash-reports/*.txt | head -100; status=1
+          fi
+          if [ -f worldgen.failed ] || [ "$(wc -l < worldgen-passed.txt 2>/dev/null || echo 0)" -ne 5 ]; then
+            echo "::error::Not all five worldgen regions completed"; status=1
+          fi
+          if grep -E 'Feature order cycle|Exception generating new chunk|Error executing task on Chunk source|Failed to load registries' logs/latest.log; then
+            echo "::error::World generation reported a failure"; status=1
+          fi
+          if ! grep -q 'Tectonic terrain pack enabled' console.log; then
+            echo "::error::Tectonic terrain pack is not active"; status=1
+          fi
+          if ! grep -q 'ULTIMATE_TERRAIN_SAMPLE ' console.log; then
+            echo "::error::Terrain height sampling did not finish"; status=1
           fi
           for f in logs/kubejs/*.log; do
             echo "===== $f"
@@ -118,5 +176,6 @@ jobs:
             /tmp/srv/logs/
             /tmp/srv/crash-reports/
             /tmp/srv/console.log
+            /tmp/srv/worldgen-passed.txt
             /tmp/srv/config/
           if-no-files-found: ignore

@@ -44,6 +44,7 @@
 				id: "aeronautics:propeller_bearing"
 			}
 			id: "34A9BCAF72192C47"
+			optional: true
 			rewards: [
 				{
 					id: "103BF9DD454B59AA"
@@ -76,7 +77,7 @@
 		}
 		{
 			dependencies: [
-				"34A9BCAF72192C47"
+				"21373C5E1185A5D0"
 			]
 			icon: {
 				id: "minecraft:end_crystal"
@@ -161,7 +162,7 @@
 		}
 		{
 			dependencies: [
-				"366D7302AFE1D480"
+				"634892C2AFC35058"
 			]
 			id: "2606DD79023983B0"
 			optional: true

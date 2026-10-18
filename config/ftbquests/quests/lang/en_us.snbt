@@ -3,10 +3,18 @@
 		"More spells, better books, magic helpers."
 	]
 	chapter.14869D5CE9961DE0.title: "&9Arcane Studies"
+	chapter.16095C2989F50FD7.chapter_subtitle: [
+		"Projects for builders, cooks, engineers and hosts."
+	]
+	chapter.16095C2989F50FD7.title: "&aOur Shared World"
 	chapter.1A0695D07C9B8A34.chapter_subtitle: [
 		"Mini-bosses, rare finds and cool gear."
 	]
 	chapter.1A0695D07C9B8A34.title: "&6Treasure & Monsters"
+	chapter.1C3010A7761DDB9F.chapter_subtitle: [
+		"Build and test a ship before taking it across the void."
+	]
+	chapter.1C3010A7761DDB9F.title: "&6Flight School"
 	chapter.23AE929B108DA600.chapter_subtitle: [
 		"Settle in. First machines, first fights, first spells."
 	]
@@ -27,6 +35,10 @@
 		"Good food heals more and keeps you full longer. Cook together."
 	]
 	chapter.3010B3B346EC4BBA.title: "&eKitchen & Farm"
+	chapter.416341DDE6CA94CE.chapter_subtitle: [
+		"Revisit the world with wings, a workshop and a crew."
+	]
+	chapter.416341DDE6CA94CE.title: "&dAfter the Dragon"
 	chapter.449DAB2CB6AD8451.chapter_subtitle: [
 		"The surface is full of places to raid."
 	]
@@ -39,6 +51,10 @@
 		"The portal only goes one way. Pack well."
 	]
 	chapter.4F28DE7C5403CE63.title: "&58. One Way"
+	chapter.54560F2FAB74139C.chapter_subtitle: [
+		"Find your items, store bulk materials, and supply the workshop."
+	]
+	chapter.54560F2FAB74139C.title: "&6Storage & Logistics"
 	chapter.5654CFED2C5B0A2E.chapter_subtitle: [
 		"The dragon's island is cut off by the void."
 	]
@@ -78,6 +94,15 @@
 	chapter_group.66FDEF22A5BA1F25.title: "&dAct V — The End: The Way Back"
 	chapter_group.7B6FDD4F9A66BB50.title: "&eSide Quests & Discoveries"
 	file.0000000000000001.title: "Ultimate Pack"
+	quest.100B9D569DABAE23.quest_desc: [
+		"Find Iron's Spells' catacombs and face the Dead King. Bring the spells you learned on your travels."
+	]
+	quest.100B9D569DABAE23.title: "The Forgotten King"
+	quest.10A98898D65EB717.quest_desc: [
+		"Connect two places people actually use with a train, road or waystone route."
+		"Add signs and test the whole trip with someone who did not build it."
+	]
+	quest.10A98898D65EB717.title: "A Line Between Friends"
 	quest.10B7F86C2EE56300.quest_desc: [
 		"A castle on the snowy peaks, full of draugr. In its great hall lies a cursed tombstone."
 	]
@@ -103,6 +128,17 @@
 		"A water wheel turns flowing water into rotation. Rotation powers everything in Create."
 	]
 	quest.116573CF05013094.title: "&6Create:&r Power"
+	quest.118D0CCFB89A7724.quest_desc: [
+		"Build an End harbor near the awake Return Gate: a landing pad, repair supplies and clear signs."
+		"Keep two blocks of air above the gate. Use a replacement gate to register a new arrival point."
+	]
+	quest.118D0CCFB89A7724.title: "Port at the End of the World"
+	quest.12229C7DBB8ED096.quest_desc: [
+		"Test with passengers, a chest of supplies and the fuel you intend to carry."
+		"Give everyone a safe place to stand. Pack blocks, food, water, repair parts and an escape plan."
+		"Have one pilot and agree on a landing point before leaving."
+	]
+	quest.12229C7DBB8ED096.title: "A Ship for the Whole Crew"
 	quest.12596558C60C6F56.quest_desc: [
 		"Halloween, but it's a biome."
 	]
@@ -143,6 +179,11 @@
 		"A huge stone church."
 	]
 	quest.1473BAEDC00EB5EA.title: "The Cathedral"
+	quest.14742EE354C84565.quest_desc: [
+		"A Drawer Controller gives connected drawers one insertion point. Use trim to connect gaps in the wall."
+		"Feed it with Create funnels or chutes. Reserve the drawer contents with locks first."
+	]
+	quest.14742EE354C84565.title: "One Input for the Wall"
 	quest.148B8F0EAF856AD1.quest_desc: [
 		"Umvuthi calls the sun down on you. Kill the followers first, and don't stand in the light."
 	]
@@ -163,6 +204,12 @@
 		"Trees hanging from the ceiling."
 	]
 	quest.15438C6D1BD94F7D.title: "Inverted Forest"
+	quest.1554DFD68AB55D9D.quest_desc: [
+		"Place four End Crystals around the central exit portal to respawn the dragon."
+		"Bring empty bottles for Dragon's Breath, new players who need credit and spare equipment."
+		"Capture breath during the fight; a dead dragon cannot supply it. Echoes for other bosses are still craftable."
+	]
+	quest.1554DFD68AB55D9D.title: "Another Dragon Fight"
 	quest.155DDC016A303CB8.quest_desc: [
 		"Japanese cedars and quiet paths."
 	]
@@ -179,6 +226,11 @@
 		"YUNG's fortresses are huge: halls, bridges, a whole keep. Blazes and wither skeletons live here."
 	]
 	quest.15BC15E59B2C215F.title: "Nether Fortress"
+	quest.166525D284CCC6F8.quest_desc: [
+		"Build a pilot's station. Ponder the wheel and throttle to connect them to the ship's machinery."
+		"Check forward thrust, stopping, turning and descent while still close to the ground."
+	]
+	quest.166525D284CCC6F8.title: "A Pilot's Station"
 	quest.16816ACA93EFD583.quest_desc: [
 		"Upgrade your mage armor at the arcane anvil."
 	]
@@ -212,6 +264,11 @@
 		"Rituals change the weather, the time of day and more."
 	]
 	quest.185F99AFF658C69A.title: "&dArs:&r Rituals"
+	quest.1880A4168DB4E597.quest_desc: [
+		"Request a material from your stock ticker and open the delivered package at your workshop."
+		"Then try another delivery address for the kitchen or shipyard. Teach a friend to place an order."
+	]
+	quest.1880A4168DB4E597.title: "Deliver to the Workshop"
 	quest.18892417FC79295C.quest_desc: [
 		"In the soul sand valleys stands an old forge. Its smith never stopped working."
 	]
@@ -232,12 +289,17 @@
 		"Molten metal and the people who guard it."
 	]
 	quest.18E8E443386B66D4.title: "The Foundry"
+	quest.19492EF7EBF0AC98.quest_desc: [
+		"Post base locations, the next boss trip and jobs people can pick up in a short session."
+		"Mark public farms and private storage. A new player should be able to find the basics."
+	]
+	quest.19492EF7EBF0AC98.title: "The Noticeboard"
 	quest.19897C91C7CD5DA8.quest_desc: [
 		"Show that you can build and fight."
 		"Have 16 Andesite Alloy, and take down 3 creepers before they take down your base."
 		""
 		"&eReward:&r you learn &6Tempering I&r and get your first Tempering Kit I."
-		"From now on you can craft that kit and temper any weapon or staff up to level I."
+		"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level I."
 	]
 	quest.19897C91C7CD5DA8.quest_subtitle: "Learn Tempering I"
 	quest.19897C91C7CD5DA8.title: "&6Trial of Phase 1"
@@ -245,6 +307,13 @@
 		"&bFrostmaw&r roams the ice spikes and snowy plains, sleeping until disturbed."
 	]
 	quest.19B191D7E1743B4B.title: "The Frozen North"
+	quest.19B5A2A12EE6296E.quest_desc: [
+		"The Nether, End and Return Gate unlock for the whole server. Your own Trials still teach your Tempering levels."
+		"Ask for a tour, borrow workshop access and fight craftable Boss Echoes with friends. Nearby players share boss credit."
+		"Claim each Trial's rewards to learn its Tempering level. In a party, each player should claim their own rewards."
+		"For Phase 9, use the existing Return Gate. You do not need to craft a second one."
+	]
+	quest.19B5A2A12EE6296E.title: "Joining an older world"
 	quest.1A15553EB1954929.quest_desc: [
 		"Stepped pools in red stone."
 	]
@@ -300,7 +369,7 @@
 		"&6One world. Play together. Create, don't grind."
 		""
 		"The book is split into &aPhases&r. Each Phase sends you somewhere new and ends with a &6Trial&r."
-		"Beating a Trial teaches you the next level of &6Tempering&r, the only power upgrade in the pack."
+		"Beating a Trial teaches you the next level of &6Tempering&r, the shared upgrade path for weapons and magic."
 		""
 		"There are only three worlds: the &2Overworld&r, the &cNether&r and the &5End&r."
 		"The Nether and the End start &csealed&r. You open them together, for the whole server, by beating bosses."
@@ -337,6 +406,17 @@
 		"Wooden towers full of bandits and their loot."
 	]
 	quest.1D0C36F3C14B99EA.title: "Bandit Towers"
+	quest.1D1BF8D10C0881B8.quest_desc: [
+		"Fight the Wither for a Nether Star and build a beacon at a large shared project."
+		"A full mineral pyramid makes Haste II possible. Mining is easier when the whole crew benefits."
+	]
+	quest.1D1BF8D10C0881B8.title: "A Beacon for the Builders"
+	quest.1D26585B914CDB02.quest_desc: [
+		"Start over land or shallow water, with space around your build. Save void crossings for a tested ship."
+		"An airship needs a connected hull, lift, rotation for its propellers, steering and fuel."
+		"Hold W over each part for Ponder. A task checking parts does not prove the ship can fly."
+	]
+	quest.1D26585B914CDB02.title: "Your First Shipyard"
 	quest.1D7E99F9E2A05832.quest_desc: [
 		"More space, more upgrades."
 	]
@@ -397,6 +477,14 @@
 		"Broken ice and deep cracks."
 	]
 	quest.207432745E2C0690.title: "Shattered Glacier"
+	quest.207C6FD17E1BCE3E.quest_desc: [
+		"Catch the dragon's breath clouds with empty glass bottles. Keep a shared supply for replacement Tier X kits."
+	]
+	quest.207C6FD17E1BCE3E.title: "A Supply of Dragon's Breath"
+	quest.209ADE82F517D1A5.quest_desc: [
+		"Find the Acropolis and challenge Scylla. Shared boss credit applies to everyone nearby."
+	]
+	quest.209ADE82F517D1A5.title: "The Storm Queen"
 	quest.20B48BBB846068E6.quest_desc: [
 		"Teleports, punches, and throws void runes. Watch the ground for purple marks and move."
 		"&dWhoever helps beat it can wake a Return Gate.&r"
@@ -407,8 +495,9 @@
 	]
 	quest.20BF905D9DB02C51.title: "&dArs:&r &5The Wilden Chimera"
 	quest.21373C5E1185A5D0.quest_desc: [
-		"The dragon's island is about a thousand blocks of empty void away."
-		"Near it, wings stop working. Pearls don't reach. You need something bigger."
+		"Near the dragon's island, elytra stop working until the dragon has been beaten."
+		"Build a ship to bring the group across the void. Bridges and magic remain creative alternatives."
+		"Use &6Flight School&r to test your design before crossing. Falling here is costly."
 	]
 	quest.21373C5E1185A5D0.title: "Cut Off"
 	quest.21BF4BB51834B3E5.quest_desc: [
@@ -505,10 +594,10 @@
 	quest.268E0DCA5F2228B2.quest_desc: [
 		"Defeat the Ender Dragon."
 		"You've done it: all ten Phases. Tempering X is yours."
-		"&dThe Dragon's Echo&r (End raids and dragon pacts) is coming in a future update."
+		"The &dAfter the Dragon&r chapter has new expeditions and projects. Your world keeps going."
 		""
 		"&eReward:&r you learn &6Tempering X&r and get your first Tempering Kit X."
-		"From now on you can craft that kit and temper any weapon or staff up to level X."
+		"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level X."
 	]
 	quest.268E0DCA5F2228B2.quest_subtitle: "Learn Tempering X"
 	quest.268E0DCA5F2228B2.title: "&6Trial of Phase 10"
@@ -528,6 +617,12 @@
 		"Do you really want to? Optional. Very optional."
 	]
 	quest.2736256921B527F5.title: "The Warden"
+	quest.27A63FFA28F320CE.quest_desc: [
+		"Use Storage Drawers for bulk blocks, crops and ingots. Keep armor, scrolls and other varied items in chests."
+		"Right-click inserts items; double right-click deposits matching inventory stacks. Left-click takes items out."
+		"One big workshop is more useful than ten scattered piles of chests."
+	]
+	quest.27A63FFA28F320CE.title: "A Place for Everything"
 	quest.284A53888BB162C2.quest_desc: [
 		"What's left of a castle."
 	]
@@ -602,7 +697,7 @@
 		"Defeat the Netherite Monstrosity and Ignis."
 		""
 		"&eReward:&r you learn &6Tempering VII&r and get your first Tempering Kit VII."
-		"From now on you can craft that kit and temper any weapon or staff up to level VII."
+		"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level VII."
 	]
 	quest.2C580D63D92BA6FB.quest_subtitle: "Learn Tempering VII"
 	quest.2C580D63D92BA6FB.title: "&6Trial of Phase 7"
@@ -627,6 +722,11 @@
 		"Your factory can now craft things on its own."
 	]
 	quest.2DE3874998AEE8D2.title: "&6Create:&r Brass Machines"
+	quest.2DF6D12D618AA5BD.quest_desc: [
+		"Display souvenirs from three different expeditions, with signs explaining who went and what happened."
+		"Trophies tell a better story when everyone can see them."
+	]
+	quest.2DF6D12D618AA5BD.title: "The Expedition Museum"
 	quest.2E5776191E48B14F.quest_desc: [
 		"A book for a real wizard."
 	]
@@ -667,7 +767,7 @@
 		"Prove the ruins are yours. Defeat 5 vindicators and have 16 brass ingots."
 		""
 		"&eReward:&r you learn &6Tempering II&r and get your first Tempering Kit II."
-		"From now on you can craft that kit and temper any weapon or staff up to level II."
+		"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level II."
 	]
 	quest.2F436E4EB7868DE2.quest_subtitle: "Learn Tempering II"
 	quest.2F436E4EB7868DE2.title: "&6Trial of Phase 2"
@@ -691,6 +791,10 @@
 		"Hold many kinds of arrows at once."
 	]
 	quest.300A1160893400D8.title: "Quiver"
+	quest.3044DC7231C28188.quest_desc: [
+		"Add storage upgrades to busy drawers before building another wall. JEI shows the later capacity tiers."
+	]
+	quest.3044DC7231C28188.title: "Room to Grow"
 	quest.304EE32ED1CAB9C2.quest_desc: [
 		"Green, glowing and poisonous."
 	]
@@ -740,7 +844,7 @@
 	]
 	quest.34A9BCAF72192C47.title: "&6Create:&r An End Airship"
 	quest.366D7302AFE1D480.quest_desc: [
-		"The last boss. Everyone within 64 blocks gets credit."
+		"The last boss. Everyone within 192 blocks gets credit, including players handling the towers."
 		"When it dies, the void winds calm down and wings work everywhere in the End."
 	]
 	quest.366D7302AFE1D480.title: "&cBoss: The Ender Dragon"
@@ -757,6 +861,12 @@
 		"A tower of books and magic."
 	]
 	quest.3746CF719F3BB8BD.title: "Wizard Tower"
+	quest.37AD01ECE193497E.quest_desc: [
+		"Create's logistics system turns attached storage into a stock list you can order from."
+		"Ponder the Stock Link, Packager and Stock Ticker to put them on the same network."
+		"Start with one warehouse and one delivery point before connecting every factory."
+	]
+	quest.37AD01ECE193497E.title: "Search and Request"
 	quest.37C76DC33C395FEB.quest_desc: [
 		"A beach of every color."
 	]
@@ -824,6 +934,7 @@
 	quest.3A61AD421B7825F9.quest_desc: [
 		"With Create Aeronautics you can build a flying ship: an envelope or propellers to lift it,"
 		"a propeller bearing to push it, and a Physics Assembler to bring it to life."
+		"Follow the &6Flight School&r chapter for lift, power, steering and a safe test flight."
 		"Ponder (&eW&r) shows how. An airship makes the sea a lot friendlier."
 	]
 	quest.3A61AD421B7825F9.title: "&6Create:&r First Airship"
@@ -832,6 +943,16 @@
 		"Some are friendly, some are not. Pyromancers and cryomancers live in their towers."
 	]
 	quest.3AC278343CFDF3D5.title: "&9Magic:&r Wizard Towers"
+	quest.3AC48040EAD1307A.quest_desc: [
+		"Visit the projects and places you passed on the way to the dragon. Finish one you left half built."
+		"Take a new player along. The world is bigger when its stories belong to everyone."
+	]
+	quest.3AC48040EAD1307A.title: "The World We Built"
+	quest.3B0FF44B3AA79F3E.quest_desc: [
+		"Glue the hull and its machinery into one structure. Keep the dock separate so it stays on the ground."
+		"Use the Physics Assembler's Ponder to check which blocks will assemble. Start with a small deck."
+	]
+	quest.3B0FF44B3AA79F3E.title: "A Hull That Stays Together"
 	quest.3B4DCB310F4D7421.quest_desc: [
 		"A huge temple under the sand. Watch out for traps and the pharaoh's curse (mining fatigue)."
 		"Break the seals to lift it."
@@ -842,14 +963,14 @@
 	]
 	quest.3C568B0D252C8D7E.title: "Rope"
 	quest.3C5CADF2C25E4756.quest_desc: [
-		"&6Tempering&r gives a weapon or staff &e+12% damage&r and &e+6% spell power&r per level."
+		"&6Tempering&r gives a weapon, staff or Ars spellbook &e+12% damage&r and &e+6% spell power&r per level."
 		""
 		"1. Beat a Phase &6Trial&r. You &olearn&r that Tempering level forever."
 		"2. Craft a &6Tempering Kit&r of that level (normal materials, see JEI)."
 		"3. Hold the weapon in one hand and the kit in the other, then right-click."
 		""
 		"Found a cooler sword later? Temper it too. Your knowledge stays, a kit only costs materials."
-		"No grinding, no random rolls. Tempering X is about 2.2x damage, and that's the cap."
+		"Tempering X caps this bonus at about 2.2x melee damage. Equipment and spells keep their own effects."
 	]
 	quest.3C5CADF2C25E4756.title: "&6Tempering"
 	quest.3D2502FE71E7408B.quest_desc: [
@@ -888,6 +1009,11 @@
 		"Fuse a gem into a weapon for a special ability."
 	]
 	quest.40A9DC4E5068FCFA.title: "Netherfused Gem"
+	quest.419DE84C1CC19D1F.quest_desc: [
+		"A propeller bearing needs a propeller and rotational power. Check its Ponder before connecting it."
+		"Balance the thrust around the hull; a lopsided engine can turn a straight flight into a spin."
+	]
+	quest.419DE84C1CC19D1F.title: "Propulsion"
 	quest.42BD7617521E60C5.quest_desc: [
 		"Turn gems into source gems."
 	]
@@ -896,6 +1022,11 @@
 		"Trees taller than your house. Taller than your neighbor's house too."
 	]
 	quest.43B9F4D008230BD4.title: "Redwood Forest"
+	quest.44F1088AEF43CA36.quest_desc: [
+		"The ten Trials are finished. Wings now work everywhere in the End."
+		"Pick an expedition or a community project. These goals award experience and supplies, not another power tier."
+	]
+	quest.44F1088AEF43CA36.title: "A World Still Full of Things"
 	quest.450FABCC58B14E95.quest_desc: [
 		"Silent, dark, full of sculk. Don't wake the Warden."
 		"Ancient City chests hold &dEcho Shards&r, the base of every Boss Echo."
@@ -905,7 +1036,7 @@
 		"Defeat the Ender Guardian."
 		""
 		"&eReward:&r you learn &6Tempering VIII&r and get your first Tempering Kit VIII."
-		"From now on you can craft that kit and temper any weapon or staff up to level VIII."
+		"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level VIII."
 	]
 	quest.451DA2C4BBACE0BD.quest_subtitle: "Learn Tempering VIII"
 	quest.451DA2C4BBACE0BD.title: "&6Trial of Phase 8"
@@ -917,6 +1048,11 @@
 		"A fortress rising out of the waves."
 	]
 	quest.4520D8B574C5D64B.title: "Ocean Fortress"
+	quest.45D900EFA5CCF04F.quest_desc: [
+		"Prepare spare gear, food and a recovery compass for a friend returning to their grave."
+		"Make the route safer; a recovery trip should not become a second lost inventory."
+	]
+	quest.45D900EFA5CCF04F.title: "The Rescue Service"
 	quest.466F5743E5002F69.quest_desc: [
 		"Pink trees in the mountains."
 	]
@@ -934,6 +1070,11 @@
 		"Ars Nouveau is about building your own."
 	]
 	quest.475488349CEDBA22.title: "&9The Study"
+	quest.47572E99CA53A6F5.quest_desc: [
+		"Build a hot air envelope and heat it with adjustable burners. Use Ponder for its shape and placement."
+		"A heavier hull needs more lift. Carry spare fuel and test with passengers and cargo aboard."
+	]
+	quest.47572E99CA53A6F5.title: "Hot Air Lift"
 	quest.47CF82538833F521.quest_desc: [
 		"Red fungus trees and hoglins."
 	]
@@ -970,7 +1111,7 @@
 		"Defeat the Ferrous Wroughtnaut and reach an Ancient City."
 		""
 		"&eReward:&r you learn &6Tempering III&r and get your first Tempering Kit III."
-		"From now on you can craft that kit and temper any weapon or staff up to level III."
+		"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level III."
 	]
 	quest.4B7DF60BF4C1C75F.quest_subtitle: "Learn Tempering III"
 	quest.4B7DF60BF4C1C75F.title: "&6Trial of Phase 3"
@@ -1002,7 +1143,8 @@
 	quest.4D37D3F99A7A7793.quest_desc: [
 		"&9Iron's Spells:&r spells are found as &oscrolls&r in chests and from wizards."
 		"Put a scroll into your spellbook at the Inscription Table to learn it for good."
-		"Cast with the spell wheel (default &eV&r) and the cast key (default &eR&r, rebind if it clashes with dodge)."
+		"On a new install: hold &eX&r for the spell wheel, &eZ&r to cast. &eR&r remains dodge; &eV&r opens voice chat."
+		"Existing players keep their bindings: check Options > Controls if a key does something else."
 	]
 	quest.4D37D3F99A7A7793.title: "&9Magic:&r A Spellbook"
 	quest.4EB8075860107567.quest_desc: [
@@ -1041,6 +1183,12 @@
 		"Hold &eW&r over any Create item to see a Ponder scene."
 	]
 	quest.5075BAA598827ACC.title: "&6Create:&r Andesite Alloy"
+	quest.51DE59CBA826AF1B.quest_desc: [
+		"In the End, levitite gives you another lift option. JEI shows the full chain from end stone powder."
+		"The blend needs heated mixing, water and zinc; bring workshop supplies or return through the awake gate."
+		"Do not assume the empty void supplies everything needed for a ship."
+	]
+	quest.51DE59CBA826AF1B.title: "Lift for the End"
 	quest.5219AB5B1627DEF6.quest_desc: [
 		"Glow berries and azalea, deep under the ground."
 	]
@@ -1053,6 +1201,11 @@
 		"Iron is what everything else is built from: tools, armor, machines, spellbooks."
 	]
 	quest.530B6C339ACBAFDC.title: "Iron Age"
+	quest.53BAE9919CF5B0DB.quest_desc: [
+		"Invite friends to use something you built: an airship trip, a boss night, a rail tour or a dinner."
+		"This is your world. The quest book gives you reasons to start; your projects give it a future."
+	]
+	quest.53BAE9919CF5B0DB.title: "Opening Night"
 	quest.53CBEC8BD54F35FE.quest_desc: [
 		"The nights are dangerous. Learn how your weapon swings (Better Combat) and how to dodge (&eR&r)."
 	]
@@ -1079,6 +1232,8 @@
 	quest.55B092D6B97652CB.title: "Fine Wine"
 	quest.55B7A018221C548A.quest_desc: [
 		"With Echo Shards you can craft &dBoss Echoes&r and fight any quest boss again."
+		"Running low? Two amethyst shards, two copper ingots and one sculk block craft two Echo Shards."
+		"Use Silk Touch to collect sculk. A sculk catalyst spreads more when nearby mobs die."
 	]
 	quest.55B7A018221C548A.title: "&dEcho Shards"
 	quest.55E73BE5BE61637A.quest_desc: [
@@ -1089,7 +1244,9 @@
 		"&cThe End is a one-way trip.&r Nothing takes you back: no portal, no waystone. Only dying does."
 		"You won't land next to the dragon. The portal throws you onto an outer island, far away from it."
 		""
-		"Bring: food and seeds, a water bucket, tools, lots of blocks, torches, Create parts."
+		"Bring: food, dirt and seeds, a water bucket, fuel, tools, lots of blocks, torches and a crafting table."
+		"For your ship: pack an assembler, propellers, a portable engine and its fuel, glue, controls and lift blocks."
+		"Test a ship in the Overworld first. See &6Flight School&r for a full checklist; this is a good group project."
 		"Beds explode in the End. If you die, your items wait in a &egrave&r where you fell, and the portal still takes you back there."
 		"Go together. The first group builds the base everyone else lands in."
 	]
@@ -1102,14 +1259,19 @@
 		"Autumn, all year round."
 	]
 	quest.56F524B1A25C56C0.title: "Maple Woodlands"
+	quest.57753FA56DC7441A.quest_desc: [
+		"Compacting drawers expose forms of the same material together, such as iron nuggets, ingots and blocks."
+		"Useful beside a press or sequenced assembly line that needs different forms of one metal."
+	]
+	quest.57753FA56DC7441A.title: "Ingots, Nuggets and Blocks"
 	quest.58213E8CF889A2A5.quest_desc: [
 		"Wake the Return Gate (right-click it as someone who beat the Ender Guardian), then use it."
 		"&dThis happens once, for the whole server:&r from now on the gate takes anyone home,"
 		"and the stronghold portal brings anyone straight to the gate."
-		"Late joiners: just right-click an awake gate to finish this Trial."
+		"Late joiners: just right-click an awake gate to finish this Trial. The crafting branch is for the first builders."
 		""
 		"&eReward:&r you learn &6Tempering IX&r and get your first Tempering Kit IX."
-		"From now on you can craft that kit and temper any weapon or staff up to level IX."
+		"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level IX."
 	]
 	quest.58213E8CF889A2A5.quest_subtitle: "Learn Tempering IX"
 	quest.58213E8CF889A2A5.title: "&6Trial of Phase 9"
@@ -1118,7 +1280,8 @@
 	]
 	quest.582FB1C842F07D0A.title: "The Sunken City"
 	quest.5871D2B9A1CAB289.quest_desc: [
-		"Chorus fruit grows on the islands. Pop it in a furnace. End's Delight turns chorus, shulkers"
+		"Chorus fruit grows on the islands. Eat it raw; popped chorus fruit is a crafting material, not food."
+		"Pop it in a furnace. End's Delight turns chorus, shulkers"
 		"and even endermites into real meals."
 	]
 	quest.5871D2B9A1CAB289.title: "Food in the Void"
@@ -1142,6 +1305,12 @@
 		"Swamp water, cypress trees and fireflies."
 	]
 	quest.5975AFCD3286C6A9.title: "Bayou"
+	quest.598659A9221C51C4.quest_desc: [
+		"Launch with a friend watching from the ground. Turn both ways, stop, descend and land at your dock."
+		"If it tilts, reduce weight, balance the lift and check the direction of the propellers."
+		"This is a field test you confirm yourself. Keep the successful design as a schematic."
+	]
+	quest.598659A9221C51C4.title: "A Flight Around the Field"
 	quest.599E3586929EFE1D.quest_desc: [
 		"Every school has its own armor: fire, ice, lightning, holy, ender, blood, evocation..."
 	]
@@ -1158,6 +1327,11 @@
 		"Move water, lava, honey and more."
 	]
 	quest.5A3349BF54E081E8.title: "Pipes and Pumps"
+	quest.5AE6AC4A0FA1AF79.quest_desc: [
+		"Build a clearly marked arena away from homes and machinery. Echo bosses can damage a town."
+		"Provide cover, lighting, a supply chest and a meeting point. Give the sea bosses a proper water arena."
+	]
+	quest.5AE6AC4A0FA1AF79.title: "A Place for Boss Night"
 	quest.5AF002ECC54330A5.quest_desc: [
 		"Let a cannon build your schematics."
 	]
@@ -1170,15 +1344,26 @@
 		"The old miners left rails, chests and cave spiders behind."
 	]
 	quest.5C2BB606D61719AE.title: "Abandoned Mineshafts"
+	quest.5C414AC0B376AF56.quest_desc: [
+		"A water wheel at the dock cannot power a ship after it leaves. Bring a portable engine and its fuel."
+		"Follow JEI for the engine assembly, then Ponder for connecting the engine to the propellers."
+		"Use goggles to check speed and stress before launch."
+	]
+	quest.5C414AC0B376AF56.title: "Power That Travels"
 	quest.5D1A0BC9FD8E76AD.quest_desc: [
 		"Green apple trees on misty hills."
 	]
 	quest.5D1A0BC9FD8E76AD.title: "Skyris Vale"
+	quest.5D4CB11754A54642.quest_desc: [
+		"Prepare the Ritual of Awakening using Ars Nouveau's Worn Notebook and JEI."
+		"A new challenge for the mage who spent the main story building spells."
+	]
+	quest.5D4CB11754A54642.title: "The Wilden Chimera"
 	quest.5EAE0F3E883289D1.quest_desc: [
 		"Defeat the Leviathan."
 		""
 		"&eReward:&r you learn &6Tempering V&r and get your first Tempering Kit V."
-		"From now on you can craft that kit and temper any weapon or staff up to level V."
+		"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level V."
 	]
 	quest.5EAE0F3E883289D1.quest_subtitle: "Learn Tempering V"
 	quest.5EAE0F3E883289D1.title: "&6Trial of Phase 5"
@@ -1204,6 +1389,11 @@
 		"Fire resistance is a must. Hit it after its slam, then get out of the way."
 	]
 	quest.5FB8F2A9A154FF78.title: "&cBoss: Netherite Monstrosity"
+	quest.60055F1CCA2C9F0D.quest_desc: [
+		"Lock a drawer to remember its item even when empty. This keeps sorting stable when a factory runs dry."
+		"Lock drawers before connecting automated inputs."
+	]
+	quest.60055F1CCA2C9F0D.title: "Keep the Labels"
 	quest.6012C7596482A2FB.quest_desc: [
 		"A tomb on the surface."
 	]
@@ -1229,7 +1419,7 @@
 		"This is the end of Act II. The Nether is open: Act III starts now."
 		""
 		"&eReward:&r you learn &6Tempering VI&r and get your first Tempering Kit VI."
-		"From now on you can craft that kit and temper any weapon or staff up to level VI."
+		"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level VI."
 	]
 	quest.62BB24BE88E916DA.quest_subtitle: "Learn Tempering VI"
 	quest.62BB24BE88E916DA.title: "&6Trial of Phase 6"
@@ -1250,6 +1440,11 @@
 		"More glyphs per spell."
 	]
 	quest.64383F64D9FF7C1F.title: "&dArs:&r Apprentice Spell Book"
+	quest.644AA4F724D605F7.quest_desc: [
+		"Build guest rooms with beds, food, spare tools and a route to the town waystone."
+		"Help a late joiner settle in without emptying someone else's private stash."
+	]
+	quest.644AA4F724D605F7.title: "The Welcome Inn"
 	quest.647EE7319945CCCE.quest_desc: [
 		"Under the desert lies the tomb of a king. You need the &eNecklace of the Desert&r to wake him."
 		"...or an Echo."
@@ -1274,7 +1469,7 @@
 	quest.66EAEF7E688F4662.quest_desc: [
 		"Someone already killed the boss you need? No problem."
 		"Every quest boss has a craftable &dEcho&r. Right-click it where that boss lives (Overworld, Nether or End) to call it to you."
-		"Echoes need an &dEcho Shard&r, which you'll find in Ancient Cities (Phase 3). See JEI for recipes."
+		"Find &dEcho Shards&r in Ancient Cities (Phase 3), or craft them from sculk, amethyst and copper. See JEI."
 	]
 	quest.66EAEF7E688F4662.title: "&dBoss Echoes"
 	quest.6730F19A5ABCCE10.quest_desc: [
@@ -1297,6 +1492,11 @@
 		"Ice caves under the snow. Bring a warm coat."
 	]
 	quest.68CD47616C436C20.title: "Frosted Caves"
+	quest.694D7F6ACF3C2BD5.quest_desc: [
+		"Build a second working design: a cargo hauler, a fast scout or a passenger ship."
+		"Compare handling and carrying capacity on a trip together. Keep schematics at your public shipyard."
+	]
+	quest.694D7F6ACF3C2BD5.title: "A Fleet of Your Own"
 	quest.698E29B020580AEE.quest_desc: [
 		"Create's logistics: order anything from your storage and have it delivered."
 	]
@@ -1310,6 +1510,11 @@
 		"Late joiners: ask a friend who has fought them to come along."
 	]
 	quest.6B07D38FE3D375B0.title: "&dNether Echoes"
+	quest.6BF5585A0578E194.quest_desc: [
+		"Label shared food, iron, fuel, torches and spare tools. Leave private valuables in a separate place."
+		"Test claim and team permissions with a friend; access settings matter more than another chest."
+	]
+	quest.6BF5585A0578E194.title: "A Public Supply Room"
 	quest.6BFE38B0FFA293EA.quest_desc: [
 		"Captain Cornelia's frozen ship. Find it in the icy seas."
 	]
@@ -1345,6 +1550,7 @@
 		"There is no portal home. Not yet."
 		"Old stories talk about a &dReturn Gate&r: purpur and shells, pearls, and the head of a dragon"
 		"that never lived. Only someone who has beaten the Ender Guardian can wake it."
+		"If your friends already woke a gate, use it and go straight to this chapter's Trial. The crafting route is optional."
 	]
 	quest.6E31B51B1F1485AC.title: "How do we get back?"
 	quest.6E937C72C722ACFB.quest_desc: [
@@ -1380,7 +1586,7 @@
 		"Beat &etwo&r of the four far-land bosses: Frostmaw, Umvuthi, Maledictus or the Ancient Remnant."
 		""
 		"&eReward:&r you learn &6Tempering IV&r and get your first Tempering Kit IV."
-		"From now on you can craft that kit and temper any weapon or staff up to level IV."
+		"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level IV."
 	]
 	quest.71396FFE00597E8A.quest_subtitle: "Learn Tempering IV"
 	quest.71396FFE00597E8A.title: "&6Trial of Phase 4"
@@ -1404,6 +1610,11 @@
 		"Throw blocks where you aim."
 	]
 	quest.72915923B588064D.title: "Slingshot"
+	quest.729FEAB06D6B803A.quest_desc: [
+		"Plan an overflow chest or stop the input when storage fills. Content observers and redstone can help."
+		"Void upgrades delete excess items. Reserve those for renewable surplus, never your rare loot."
+	]
+	quest.729FEAB06D6B803A.title: "When the Drawer Is Full"
 	quest.72C37C4C12766F9F.quest_desc: [
 		"Pillagers have built a tower nearby. Bring it down."
 	]
@@ -1508,6 +1719,21 @@
 		"A magical forest. It glows."
 	]
 	quest.7D38C66175EB72A6.title: "Enchanted Tangle"
+	quest.7DC0267A7240C9E4.quest_desc: [
+		"These are build prompts you confirm yourself. There is no prescribed size or style."
+		"Choose one that helps your friends, split the work, and leave room for the next person."
+	]
+	quest.7DC0267A7240C9E4.title: "A Town Worth Coming Home To"
+	quest.7DD2C043EEE63826.quest_desc: [
+		"Reach the central island with your crew. Elytra fail within 1000 blocks until the dragon dies."
+		"Flight School is optional: the main story also accepts your own bridge or magic solution."
+	]
+	quest.7DD2C043EEE63826.title: "The Void Crossing"
+	quest.7E1744CD05DBDAFC.quest_desc: [
+		"Serve a cooked meal from your farm. Keep a stocked food chest where everyone can reach it."
+		"Try an automated ingredient line from Create or a magical helper from Ars Nouveau."
+	]
+	quest.7E1744CD05DBDAFC.title: "The Community Canteen"
 	quest.7E9A3A4CFA4CE7FB.quest_desc: [
 		"Hoglins, striders and ghasts are food too, if you're brave. Cook on a Nether stove."
 	]
@@ -1517,27 +1743,44 @@
 		"Yes, you can put a spell on your sword."
 	]
 	quest.7FFF069E9ED62590.title: "&9Magic:&r Arcane Anvil"
+	task.11CFC66B7330B4E6.title: "I requested and received a package"
 	task.1363CD3C1AB7DBCB.title: "Got it"
 	task.13ED023CAF90184B.title: "All crystals destroyed"
 	task.143365C67EB35B44.title: "I packed my bags"
+	task.16334DF87858221F.title: "We built it and someone used it"
 	task.1965E58D6F097E28.title: "Got it"
+	task.207B5033EACA3257.title: "I know how to catch up"
 	task.249812953395B24D.title: "Got it"
 	task.2A5CAE48CB3A980F.title: "I found or built a waystone"
 	task.2CCD59380F460D5A.title: "Got it"
+	task.30D0D038D129FA93.title: "We hosted a tour, meal or event"
+	task.31D29809FACC58CE.title: "We flew two different working ships together"
+	task.32F0550E8951D501.title: "We built it and someone used it"
 	task.38752D7E24DCED68.title: "Bring friends"
 	task.39509FF5E21C67DB.title: "Think about it"
-	task.395B995C0A360EE7.title: "I tried to fly there"
+	task.395B995C0A360EE7.title: "I planned a safe crossing"
 	task.3F8D35BD21E3B01B.title: "Let's go"
+	task.43A6D5B577BE9BA4.title: "We built it and someone used it"
 	task.475424B3033F0424.title: "Got it"
+	task.4754D34AB1D29B56.title: "A friend can find and restock our shared supplies"
 	task.4D4020292185A349.title: "Got it"
+	task.56BB35B30B7740E7.title: "I launched, turned and landed safely"
+	task.578EE434CE7B8F46.title: "We built it and someone used it"
+	task.58A6983DE118A938.title: "We built it and someone used it"
+	task.59D9445BB50425E5.title: "We built it and someone used it"
 	task.5DB181670D0C0C4C.title: "Return from the far lands"
 	task.5EB046D8EDFB72AB.title: "Got it"
 	task.5EC3E4C6D4C61BE1.title: "I flew through an End Gateway"
 	task.61649A8EFF75C600.title: "Got it"
 	task.61AE811454225993.title: "Ready to travel"
+	task.632C55577A3415DC.title: "We picked a shared project"
+	task.655D51A41C7B86CB.title: "We toured our shared world"
 	task.699D3BE6D2175E0C.title: "Got it"
 	task.7410231547AA7D0C.title: "Got it"
+	task.7564A3863CB02007.title: "I tested the ship with its intended load"
 	task.770593C0162BE319.title: "Got it"
+	task.7ACAF8CB8FA40B05.title: "We built it and someone used it"
+	task.7DC37600EB544AA9.title: "We built it and someone used it"
 	task.7EED3BDF7B610572.title: "Got it"
 	task.7F5AFB638F0B5CE3.title: "I know where my grave is"
 }

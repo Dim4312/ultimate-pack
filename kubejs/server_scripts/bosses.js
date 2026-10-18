@@ -8,6 +8,8 @@
 //   so nobody meets Frostmaw on day one. Echo-called bosses are tagged and exempt.
 
 const CREDIT_RADIUS = 64
+// The dragon can die high above the arena, far from players who broke crystals.
+const DRAGON_CREDIT_RADIUS = 192
 const SCALING_RADIUS = 48
 const SCALING_PER_EXTRA_PLAYER = 0.65
 const SPAWN_SAFE_RADIUS = 1000
@@ -67,7 +69,9 @@ EntityEvents.death(event => {
   const server = event.server
   const stage = `ultimate_boss_${id}`
 
-  const credited = playersNear(entity, CREDIT_RADIUS)
+  const credited = playersNear(entity, id === 'ender_dragon' ? DRAGON_CREDIT_RADIUS : CREDIT_RADIUS)
+  const killer = event.source ? event.source.getEntity() : null
+  if (killer && killer.isPlayer() && !killer.isSpectator() && credited.indexOf(killer) < 0) credited.push(killer)
   credited.forEach(player => {
     if (!player.stages.has(stage)) {
       player.stages.add(stage)
@@ -129,7 +133,7 @@ const summonInFront = (player, server, echo) => {
   const z = (player.z + look.z() * 6).toFixed(1)
   const y = player.y.toFixed(1)
   const nbt = `{Tags:["${ECHO_TAG}"]${echo.nbt ? ',' + echo.nbt : ''}}`
-  server.runCommandSilent(`execute in ${echoDimension(echo)} run summon ${echo.entity} ${x} ${y} ${z} ${nbt}`)
+  return server.runCommandSilent(`execute in ${echoDimension(echo)} run summon ${echo.entity} ${x} ${y} ${z} ${nbt}`) > 0
 }
 
 Object.keys(ECHOES).forEach(echoId => {
@@ -147,7 +151,11 @@ Object.keys(ECHOES).forEach(echoId => {
     } else if (echo.needsWater && !player.isInWater()) {
       message = Text.red('The Leviathan only answers from the water. Stand in the sea.')
     } else {
-      summonInFront(player, server, echo)
+      if (!summonInFront(player, server, echo)) {
+        player.setStatusMessage(Text.red('The echo could not take shape. Try a clear arena; your Echo was kept.'))
+        event.cancel()
+        return
+      }
       if (!player.isCreative()) item.shrink(1)
       server.runCommandSilent(`playsound minecraft:entity.warden.emerge hostile @a[distance=..48] ${player.x} ${player.y} ${player.z} 2 0.8`)
       server.tell(Text.lightPurple(`${player.username} called an echo. A boss has answered.`))
@@ -165,6 +173,11 @@ ItemEvents.entityInteracted('ultimate:echo_harbinger', event => {
   const target = event.target
   const item = event.item
   if (!event.server || String(target.type) !== 'cataclysm:the_harbinger') return
+  if (target.nbt.getBoolean('Is_Act')) {
+    player.setStatusMessage(Text.yellow('The Harbinger is already awake. Your Echo was kept.'))
+    event.cancel()
+    return
+  }
   target.mergeNbt({ Is_Act: true })
   if (!player.isCreative()) item.shrink(1)
   player.setStatusMessage(Text.darkRed('The Harbinger awakens.'))
