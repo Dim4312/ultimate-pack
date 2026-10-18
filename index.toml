@@ -198,7 +198,7 @@ hash = "97c9f323c6b523b7ff3ebdb6547bcd48ed4e867f44fb3e12fb13772556a5cf6a"
 
 [[files]]
 file = "kubejs/server_scripts/commands.js"
-hash = "b4bd13b4db734f1e93c855dea5801913555f61068b8bda36c772e2b0cb3f0261"
+hash = "e84524bc31a37601603e11f1f636690dad889dd040a3591e82a5cf7f2ca55d81"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
@@ -222,7 +222,7 @@ hash = "6a8fc52577fd3faf1b473911fd20735bda66c699498ea0d0e6bcec10e34c6bf5"
 
 [[files]]
 file = "kubejs/startup_scripts/world_gates.js"
-hash = "f07c52d476bcd426a113d5c22799e8d2d62feaeaf5188b42d44b3052e3d87400"
+hash = "39e12c20f63325375171c42290e7257ad872aca90d5ad524a02a279aa9058f2f"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"

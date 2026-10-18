@@ -124,7 +124,7 @@ global.endArrival = server => {
   const level = endLevel(server)
   const data = server.persistentData
   if (!data.getBoolean('ultimate_end_arrival')) {
-    const spot = findArrival(level)
+    let spot = findArrival(level)
     data.putBoolean('ultimate_end_arrival', true)
     data.putInt('ultimate_end_arrival_x', spot.x)
     data.putInt('ultimate_end_arrival_y', spot.y)

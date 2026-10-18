@@ -63,7 +63,7 @@ ServerEvents.commandRegistry(event => {
     .then(returnGate)
     .then(Commands.literal('arrival').executes(ctx => {
       try {
-        const spot = global.endArrival(ctx.source.server)
+        let spot = global.endArrival(ctx.source.server)
         ctx.source.sendSystemMessage(Text.gray('End arrival island: ').append(Text.white(`${spot.x} ${spot.y} ${spot.z}`)))
         return 1
       } catch (e) {
