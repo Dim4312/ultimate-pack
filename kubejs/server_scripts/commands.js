@@ -2,9 +2,11 @@
 //   /ultimate status                     world gates + everyone's progress
 //   /ultimate gate <nether|end> <open|close>
 //   /ultimate arrival                     where the stronghold portal drops players in the End
+//   /ultimate terrain                     active Tectonic pack and effective terrain settings
 //   /ultimate returngate reset            put the End back to one-way (the gate must be woken again)
 
 const GATE_NAMES = { nether: 'minecraft:the_nether', end: 'minecraft:the_end' }
+const TerrainTectonic = Java.loadClass('dev.worldgen.tectonic.Tectonic')
 
 const highestTier = player => {
   for (let tier = global.TEMPERING_TIERS; tier >= 1; tier--) {
@@ -56,11 +58,27 @@ ServerEvents.commandRegistry(event => {
     return 1
   }))
 
+  const terrain = Commands.literal('terrain').executes(ctx => {
+    const source = ctx.source
+    const config = TerrainTectonic.CONFIG.getState()
+    const packEnabled = source.server.getPackRepository().getSelectedIds().contains('tectonic')
+    if (!config.general.modEnabled || !packEnabled) {
+      source.sendSystemMessage(Text.red('Tectonic terrain is inactive. Check config/tectonic.json and /datapack list enabled, then restart.'))
+      return 0
+    }
+    source.sendSystemMessage(Text.green('Tectonic terrain pack enabled. ')
+      .append(Text.gray(`Vertical scale: ${config.globalTerrain.verticalScale}; elevation boost: ${config.globalTerrain.elevationBoost}.`)))
+    source.sendSystemMessage(Text.gray(`Flat terrain skew: ${config.continents.flatTerrainSkew}; erosion/ridge scales: ${config.continents.erosionScale}/${config.continents.ridgeScale}.`))
+    source.sendSystemMessage(Text.yellow('Terrain settings affect new chunks. Existing terrain keeps its original shape.'))
+    return 1
+  })
+
   event.register(Commands.literal('ultimate')
     .requires(source => source.hasPermission(2))
     .then(status)
     .then(gate)
     .then(returnGate)
+    .then(terrain)
     .then(Commands.literal('arrival').executes(ctx => {
       try {
         let spot = global.endArrival(ctx.source.server)

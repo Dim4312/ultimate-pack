@@ -28,7 +28,7 @@ StartupEvents.registry('item', event => {
       .rarity(tier >= 8 ? 'epic' : tier >= 5 ? 'rare' : tier >= 3 ? 'uncommon' : 'common')
       .maxStackSize(16)
       .tooltip(Text.gray(`Requires: Phase ${tier} Trial completed`))
-      .tooltip(Text.darkGray('Hold a weapon or staff in the other hand, then right-click.'))
+      .tooltip(Text.darkGray('Hold a weapon, staff or Ars spellbook in the other hand, then right-click.'))
   }
 
   BOSS_ECHOES.forEach(boss => {

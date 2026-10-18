@@ -154,5 +154,30 @@
 			x: 1.5d
 			y: 4.5d
 		}
+		{
+			dependencies: [
+				"6E937C72C722ACFB"
+				"66EAEF7E688F4662"
+			]
+			icon: {
+				id: "minecraft:clock"
+			}
+			id: "19B5A2A12EE6296E"
+			rewards: [
+				{
+					id: "1601F265157DF76E"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "207B5033EACA3257"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 6.5d
+		}
 	]
 }

@@ -1,0 +1,261 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "after_dragon"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "minecraft:end_crystal"
+	}
+	id: "416341DDE6CA94CE"
+	order_index: 21
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"268E0DCA5F2228B2"
+			]
+			icon: {
+				id: "minecraft:dragon_egg"
+			}
+			id: "44F1088AEF43CA36"
+			optional: true
+			rewards: [
+				{
+					id: "4F79E9BB085F4552"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "2EDC861EA9146EFD"
+					stage: "ultimate_boss_ender_dragon"
+					type: "gamestage"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"44F1088AEF43CA36"
+			]
+			id: "1554DFD68AB55D9D"
+			optional: true
+			rewards: [
+				{
+					id: "12DC444DC210E589"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 16
+					id: "5CA847DF4A5E1CAA"
+					item: {
+						count: 1
+						id: "minecraft:glass_bottle"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "21AAC3427AB18162"
+					item: {
+						count: 1
+						id: "minecraft:end_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1554DFD68AB55D9D"
+			]
+			id: "207C6FD17E1BCE3E"
+			optional: true
+			rewards: [
+				{
+					id: "5B6672BE86505F45"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "2ED618117C2014B5"
+					item: {
+						count: 1
+						id: "minecraft:dragon_breath"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"44F1088AEF43CA36"
+			]
+			id: "1D1BF8D10C0881B8"
+			optional: true
+			rewards: [
+				{
+					id: "62EFCEE3A2FA4DB0"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "7C8FF90F6690FE43"
+					item: {
+						count: 1
+						id: "minecraft:beacon"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"44F1088AEF43CA36"
+			]
+			icon: {
+				id: "ars_nouveau:wilden_horn"
+			}
+			id: "5D4CB11754A54642"
+			optional: true
+			rewards: [
+				{
+					id: "6B1ABC0975906CC9"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "ars_nouveau:wilden_boss"
+					id: "4C81209103DB500F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"44F1088AEF43CA36"
+			]
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "100B9D569DABAE23"
+			optional: true
+			rewards: [
+				{
+					id: "15C39F6096464E65"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "irons_spellbooks:dead_king"
+					id: "1E59177F7877B684"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"44F1088AEF43CA36"
+			]
+			icon: {
+				id: "minecraft:lightning_rod"
+			}
+			id: "209ADE82F517D1A5"
+			optional: true
+			rewards: [
+				{
+					id: "2A8A6B5EFE6BE662"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "5E3FFEE3C4DAB7BD"
+					stage: "ultimate_boss_scylla"
+					type: "gamestage"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"44F1088AEF43CA36"
+				"598659A9221C51C4"
+			]
+			icon: {
+				id: "aeronautics:propeller_bearing"
+			}
+			id: "694D7F6ACF3C2BD5"
+			optional: true
+			rewards: [
+				{
+					id: "3203A89F8A596B6C"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "31D29809FACC58CE"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"44F1088AEF43CA36"
+				"53BAE9919CF5B0DB"
+			]
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "3AC48040EAD1307A"
+			optional: true
+			rewards: [
+				{
+					id: "6A66BD34B040FA3B"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "655D51A41C7B86CB"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+}

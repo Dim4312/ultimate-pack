@@ -1,6 +1,7 @@
 dist/
 __pycache__/
 *.pyc
+*.log
 server/*
 !server/start.sh
 !server/start.bat

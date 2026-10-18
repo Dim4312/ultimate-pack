@@ -1,8 +1,11 @@
 README.md
 DESIGN.md
+REVIEW.md
+WORLDGEN.md
 LICENSE
 tools/
 prism/
 .github/
 dist/
 server/
+*.log

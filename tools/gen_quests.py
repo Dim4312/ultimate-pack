@@ -6,9 +6,11 @@ Writes config/ftbquests/quests/. Quest IDs are derived from stable keys, so
 re-running keeps everyone's progress. Never rename a quest key once released.
 """
 import hashlib
+import argparse
 import json
 import shutil
 import sys
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -152,7 +154,7 @@ class Chapter:
             q["size"] = D(size)
         if optional:
             q["optional"] = True
-        if min_deps:
+        if min_deps is not None:
             q["min_required_dependencies"] = min_deps
         LANG[f"quest.{q['id']}.title"] = title
         if subtitle:
@@ -170,7 +172,7 @@ class Chapter:
             desc=list(desc) + [
                 "",
                 f"&eReward:&r you learn &6Tempering {ROMAN[phase]}&r and get your first Tempering Kit {ROMAN[phase]}.",
-                f"From now on you can craft that kit and temper any weapon or staff up to level {ROMAN[phase]}.",
+                f"From now on you can craft that kit and temper any weapon, staff or Ars spellbook up to level {ROMAN[phase]}.",
             ],
             rewards=[r_stage(f"ultimate_tier_{phase}"), r_item(f"ultimate:tempering_kit_{phase}"), r_xp(200 * phase)]
                     + list(extra_rewards),
@@ -219,7 +221,7 @@ def welcome():
                 "&6One world. Play together. Create, don't grind.",
                 "",
                 "The book is split into &aPhases&r. Each Phase sends you somewhere new and ends with a &6Trial&r.",
-                "Beating a Trial teaches you the next level of &6Tempering&r, the only power upgrade in the pack.",
+                "Beating a Trial teaches you the next level of &6Tempering&r, the shared upgrade path for weapons and magic.",
                 "",
                 "There are only three worlds: the &2Overworld&r, the &cNether&r and the &5End&r.",
                 "The Nether and the End start &csealed&r. You open them together, for the whole server, by beating bosses.",
@@ -239,14 +241,14 @@ def welcome():
             ], deps=["welcome"], icon="minecraft:iron_sword", rewards=[r_xp(20)])
     c.quest("tempering", "&6Tempering", 0, 2.5, [check("Got it")],
             desc=[
-                "&6Tempering&r gives a weapon or staff &e+12% damage&r and &e+6% spell power&r per level.",
+                "&6Tempering&r gives a weapon, staff or Ars spellbook &e+12% damage&r and &e+6% spell power&r per level.",
                 "",
                 "1. Beat a Phase &6Trial&r. You &olearn&r that Tempering level forever.",
                 "2. Craft a &6Tempering Kit&r of that level (normal materials, see JEI).",
                 "3. Hold the weapon in one hand and the kit in the other, then right-click.",
                 "",
                 "Found a cooler sword later? Temper it too. Your knowledge stays, a kit only costs materials.",
-                "No grinding, no random rolls. Tempering X is about 2.2x damage, and that's the cap.",
+                "Tempering X caps this bonus at about 2.2x melee damage. Equipment and spells keep their own effects.",
             ], deps=["welcome"], icon="ultimate:tempering_kit_1", rewards=[r_xp(20)])
     c.quest("together", "Play together", 3, 2, [check("Got it")],
             desc=[
@@ -268,8 +270,14 @@ def welcome():
             desc=[
                 "Someone already killed the boss you need? No problem.",
                 "Every quest boss has a craftable &dEcho&r. Right-click it where that boss lives (Overworld, Nether or End) to call it to you.",
-                "Echoes need an &dEcho Shard&r, which you'll find in Ancient Cities (Phase 3). See JEI for recipes.",
+                "Find &dEcho Shards&r in Ancient Cities (Phase 3), or craft them from sculk, amethyst and copper. See JEI.",
             ], deps=["welcome"], icon="minecraft:echo_shard", rewards=[r_xp(20)])
+    c.quest("catch_up", "Joining an older world", 0, 6.5, [check("I know how to catch up")],
+            desc=["The Nether, End and Return Gate unlock for the whole server. Your own Trials still teach your Tempering levels.",
+                  "Ask for a tour, borrow workshop access and fight craftable Boss Echoes with friends. Nearby players share boss credit.",
+                  "Claim each Trial's rewards to learn its Tempering level. In a party, each player should claim their own rewards.",
+                  "For Phase 9, use the existing Return Gate. You do not need to craft a second one."],
+            deps=["together", "echoes"], rewards=[r_xp(20)], icon="minecraft:clock")
     return c
 
 
@@ -306,7 +314,8 @@ def phase1():
             [item("irons_spellbooks:inscription_table"), item("irons_spellbooks:copper_spell_book")],
             desc=["&9Iron's Spells:&r spells are found as &oscrolls&r in chests and from wizards.",
                   "Put a scroll into your spellbook at the Inscription Table to learn it for good.",
-                  "Cast with the spell wheel (default &eV&r) and the cast key (default &eR&r, rebind if it clashes with dodge)."],
+                  "On a new install: hold &eX&r for the spell wheel, &eZ&r to cast. &eR&r remains dodge; &eV&r opens voice chat.",
+                  "Existing players keep their bindings: check Options > Controls if a key does something else."],
             deps=["iron"], rewards=[r_xp(40), r_item("irons_spellbooks:arcane_essence", 4)])
     c.quest("ars", "&9Magic:&r Ars Nouveau", 4, 2, [item("ars_nouveau:novice_spell_book")],
             desc=["&9Ars Nouveau&r is the other magic: you design spells yourself from glyphs.",
@@ -404,7 +413,9 @@ def phase3():
                   "Ancient City chests hold &dEcho Shards&r, the base of every Boss Echo."],
             deps=["mineshaft"], rewards=[r_xp(150)], icon="minecraft:sculk_shrieker")
     c.quest("echo_shard", "&dEcho Shards", 6, -1.5, [item("minecraft:echo_shard", 2)],
-            desc=["With Echo Shards you can craft &dBoss Echoes&r and fight any quest boss again."],
+            desc=["With Echo Shards you can craft &dBoss Echoes&r and fight any quest boss again.",
+                  "Running low? Two amethyst shards, two copper ingots and one sculk block craft two Echo Shards.",
+                  "Use Silk Touch to collect sculk. A sculk catalyst spreads more when nearby mobs die."],
             deps=["deep_dark"], rewards=[r_xp(60)], optional=True)
     c.quest("arcane_anvil", "&9Magic:&r Arcane Anvil", 0, 2, [item("irons_spellbooks:arcane_anvil")],
             desc=["The Arcane Anvil upgrades spellbooks and imbues weapons with spells.",
@@ -478,6 +489,7 @@ def phase5():
             [item("aeronautics:propeller_bearing"), item("simulated:physics_assembler")],
             desc=["With Create Aeronautics you can build a flying ship: an envelope or propellers to lift it,",
                   "a propeller bearing to push it, and a Physics Assembler to bring it to life.",
+                  "Follow the &6Flight School&r chapter for lift, power, steering and a safe test flight.",
                   "Ponder (&eW&r) shows how. An airship makes the sea a lot friendlier."],
             deps=["start"], rewards=[r_xp(200)], icon="aeronautics:propeller_bearing")
     c.quest("sunken_city", "The Sunken City", 2, 1.5, [structure("cataclysm:sunken_city")],
@@ -597,7 +609,9 @@ def phase8():
             desc=["&cThe End is a one-way trip.&r Nothing takes you back: no portal, no waystone. Only dying does.",
                   "You won't land next to the dragon. The portal throws you onto an outer island, far away from it.",
                   "",
-                  "Bring: food and seeds, a water bucket, tools, lots of blocks, torches, Create parts.",
+                  "Bring: food, dirt and seeds, a water bucket, fuel, tools, lots of blocks, torches and a crafting table.",
+                  "For your ship: pack an assembler, propellers, a portable engine and its fuel, glue, controls and lift blocks.",
+                  "Test a ship in the Overworld first. See &6Flight School&r for a full checklist; this is a good group project.",
                   "Beds explode in the End. If you die, your items wait in a &egrave&r where you fell, and the portal still takes you back there.",
                   "Go together. The first group builds the base everyone else lands in."],
             deps=["stronghold"], rewards=[r_xp(50)], icon="minecraft:chest")
@@ -606,7 +620,8 @@ def phase8():
                   "Build a base. You'll be here for a while."],
             deps=["pack"], rewards=[r_xp(300)], icon="minecraft:end_stone", size=1.5)
     c.quest("food", "Food in the Void", 6, -2, [item("minecraft:popped_chorus_fruit", 16)],
-            desc=["Chorus fruit grows on the islands. Pop it in a furnace. End's Delight turns chorus, shulkers",
+            desc=["Chorus fruit grows on the islands. Eat it raw; popped chorus fruit is a crafting material, not food.",
+                  "Pop it in a furnace. End's Delight turns chorus, shulkers",
                   "and even endermites into real meals."],
             deps=["arrive"], rewards=[r_xp(100)], icon="minecraft:chorus_fruit")
     c.quest("end_city", "End City", 6, 0, [structure("#minecraft:end_city")],
@@ -639,61 +654,63 @@ def phase9():
     c.quest("start", "How do we get back?", 0, 0, [check("Think about it")],
             desc=["There is no portal home. Not yet.",
                   "Old stories talk about a &dReturn Gate&r: purpur and shells, pearls, and the head of a dragon",
-                  "that never lived. Only someone who has beaten the Ender Guardian can wake it."],
+                  "that never lived. Only someone who has beaten the Ender Guardian can wake it.",
+                  "If your friends already woke a gate, use it and go straight to this chapter's Trial. The crafting route is optional."],
             deps=["phase_8_one_way:trial"], rewards=[r_xp(50)], shape="hexagon", size=1.5, icon="minecraft:writable_book")
     c.quest("head", "The Figurehead", 2, -1.5, [item("minecraft:dragon_head")],
             desc=["Every End ship carries a dragon head on its bow. Bring one back."],
-            deps=["start"], rewards=[r_xp(200)], icon="minecraft:dragon_head")
+            deps=["start"], rewards=[r_xp(200)], icon="minecraft:dragon_head", optional=True)
     c.quest("materials", "Purpur and Pearls", 2, 1.5,
             [item("minecraft:purpur_block", 4), item("minecraft:shulker_shell", 2), item("minecraft:ender_pearl", 2)],
             desc=["The frame of the gate. Purpur from the cities, shells from shulkers, pearls from endermen."],
-            deps=["start"], rewards=[r_xp(100)], icon="minecraft:purpur_pillar")
+            deps=["start"], rewards=[r_xp(100)], icon="minecraft:purpur_pillar", optional=True)
     c.quest("build", "Build the Return Gate", 4, 0, [item("ultimate:return_gate")],
             desc=["Craft the gate (see JEI) and place it at your End base."],
-            deps=["head", "materials"], rewards=[r_xp(200)], icon="ultimate:return_gate")
+            deps=["head", "materials"], rewards=[r_xp(200)], icon="ultimate:return_gate", optional=True)
     c.trial(9, 6.5, 0, [stage("ultimate_return_gate")],
             desc=["Wake the Return Gate (right-click it as someone who beat the Ender Guardian), then use it.",
                   "&dThis happens once, for the whole server:&r from now on the gate takes anyone home,",
                   "and the stronghold portal brings anyone straight to the gate.",
-                  "Late joiners: just right-click an awake gate to finish this Trial."],
-            deps=["build"], icon="ultimate:tempering_kit_9")
+                  "Late joiners: just right-click an awake gate to finish this Trial. The crafting branch is for the first builders."],
+            deps=["start"], icon="ultimate:tempering_kit_9")
     return c
 
 
 def phase10():
     c = Chapter("phase_10_dragon", "&d10. The Dragon", "minecraft:dragon_egg", GROUP_ACT5,
                 subtitle="The dragon's island is cut off by the void.")
-    c.quest("start", "Cut Off", 0, 0, [check("I tried to fly there")],
-            desc=["The dragon's island is about a thousand blocks of empty void away.",
-                  "Near it, wings stop working. Pearls don't reach. You need something bigger."],
+    c.quest("start", "Cut Off", 0, 0, [check("I planned a safe crossing")],
+            desc=["Near the dragon's island, elytra stop working until the dragon has been beaten.",
+                  "Build a ship to bring the group across the void. Bridges and magic remain creative alternatives.",
+                  "Use &6Flight School&r to test your design before crossing. Falling here is costly."],
             deps=["phase_9_way_back:trial"], rewards=[r_xp(50)], shape="hexagon", size=1.5, icon="minecraft:elytra")
     c.quest("airship", "&6Create:&r An End Airship", 2, -1.5,
             [item("aeronautics:propeller_bearing", 2), item("simulated:physics_assembler")],
             desc=["Build an airship that can cross the void: lift, propellers, fuel, and a place to land.",
                   "Bring blocks, food and your whole team. Ponder (&eW&r) shows how the parts work.",
                   "Levitite (check JEI) makes things float."],
-            deps=["start"], rewards=[r_xp(400)], icon="aeronautics:propeller_bearing", size=1.5)
+            deps=["start"], rewards=[r_xp(400)], icon="aeronautics:propeller_bearing", size=1.5, optional=True)
     c.quest("island", "The Dragon's Island", 4, 0, [biome("minecraft:the_end")],
             desc=["Land on the main island. The obsidian towers hold End Crystals that heal the dragon.",
                   "Break them first. Some are in iron cages: you'll have to climb."],
-            deps=["airship"], rewards=[r_xp(300)], icon="minecraft:end_crystal")
+            deps=["start"], rewards=[r_xp(300)], icon="minecraft:end_crystal")
     c.quest("crystals", "No More Healing", 4, 2, [check("All crystals destroyed")],
             desc=["Bows, spells, anything that reaches. No crystals, no healing."],
             deps=["island"], rewards=[r_xp(100)], optional=True, icon="minecraft:bow")
     c.quest("dragon", "&cBoss: The Ender Dragon", 6, 0, [stage("ultimate_boss_ender_dragon")],
-            desc=["The last boss. Everyone within 64 blocks gets credit.",
+            desc=["The last boss. Everyone within 192 blocks gets credit, including players handling the towers.",
                   "When it dies, the void winds calm down and wings work everywhere in the End."],
             deps=["island"], rewards=[r_xp(2000), r_item("minecraft:diamond_block", 2)], icon="minecraft:dragon_head", size=2.0)
     c.quest("breath", "Dragon's Breath", 8, -2, [item("minecraft:dragon_breath", 4)],
             desc=["Catch it in bottles while the dragon breathes. Tempering Kit X needs it, so grab plenty."],
-            deps=["dragon"], rewards=[r_xp(100)], optional=True)
+            deps=["island"], rewards=[r_xp(100)], optional=True)
     c.quest("gateway", "Beyond", 8, 2, [check("I flew through an End Gateway")],
             desc=["The dragon's death opens small gateways at the edge of its island. They lead to the far islands."],
             deps=["dragon"], rewards=[r_xp(100)], optional=True, icon="minecraft:ender_pearl")
     c.trial(10, 10, 0, [stage("ultimate_boss_ender_dragon")],
             desc=["Defeat the Ender Dragon.",
                   "You've done it: all ten Phases. Tempering X is yours.",
-                  "&dThe Dragon's Echo&r (End raids and dragon pacts) is coming in a future update."],
+                  "The &dAfter the Dragon&r chapter has new expeditions and projects. Your world keeps going."],
             deps=["dragon"], icon="ultimate:tempering_kit_10")
     return c
 
@@ -1084,6 +1101,183 @@ def life():
     return c
 
 
+def flight_school():
+    c = Chapter("flight_school", "&6Flight School", "aeronautics:propeller_bearing", GROUP_SIDE,
+                subtitle="Build and test a ship before taking it across the void.")
+    def q(key, title, x, y, tasks, desc, deps, icon=None, xp=80):
+        return c.quest(key, title, x, y, tasks, desc=desc, deps=deps,
+                       rewards=[r_xp(xp)], optional=True, icon=icon)
+    q("start", "Your First Shipyard", 0, 0, [item("simulated:physics_assembler")],
+      ["Start over land or shallow water, with space around your build. Save void crossings for a tested ship.",
+       "An airship needs a connected hull, lift, rotation for its propellers, steering and fuel.",
+       "Hold W over each part for Ponder. A task checking parts does not prove the ship can fly."],
+      ["phase_2_ruins:brass"])
+    q("hull", "A Hull That Stays Together", 2, -2, [item("create:super_glue")],
+      ["Glue the hull and its machinery into one structure. Keep the dock separate so it stays on the ground.",
+       "Use the Physics Assembler's Ponder to check which blocks will assemble. Start with a small deck."], ["start"])
+    q("balloon", "Hot Air Lift", 2, 0,
+      [item("aeronautics:white_envelope", 16), item("aeronautics:adjustable_burner")],
+      ["Build a hot air envelope and heat it with adjustable burners. Use Ponder for its shape and placement.",
+       "A heavier hull needs more lift. Carry spare fuel and test with passengers and cargo aboard."], ["start"])
+    q("propulsion", "Propulsion", 2, 2,
+      [item("aeronautics:propeller_bearing"), item("aeronautics:wooden_propeller")],
+      ["A propeller bearing needs a propeller and rotational power. Check its Ponder before connecting it.",
+       "Balance the thrust around the hull; a lopsided engine can turn a straight flight into a spin."], ["start"])
+    q("engine", "Power That Travels", 4, 2, [item("simulated:red_portable_engine")],
+      ["A water wheel at the dock cannot power a ship after it leaves. Bring a portable engine and its fuel.",
+       "Follow JEI for the engine assembly, then Ponder for connecting the engine to the propellers.",
+       "Use goggles to check speed and stress before launch."], ["propulsion"])
+    q("controls", "A Pilot's Station", 4, -2,
+      [item("simulated:steering_wheel"), item("simulated:throttle_lever")],
+      ["Build a pilot's station. Ponder the wheel and throttle to connect them to the ship's machinery.",
+       "Check forward thrust, stopping, turning and descent while still close to the ground."], ["hull"])
+    q("test", "A Flight Around the Field", 6, 0, [check("I launched, turned and landed safely")],
+      ["Launch with a friend watching from the ground. Turn both ways, stop, descend and land at your dock.",
+       "If it tilts, reduce weight, balance the lift and check the direction of the propellers.",
+       "This is a field test you confirm yourself. Keep the successful design as a schematic."],
+      ["balloon", "engine", "controls"], "create:schematic_and_quill", xp=160)
+    q("levitite", "Lift for the End", 8, -2, [item("aeronautics:levitite", 8)],
+      ["In the End, levitite gives you another lift option. JEI shows the full chain from end stone powder.",
+       "The blend needs heated mixing, water and zinc; bring workshop supplies or return through the awake gate.",
+       "Do not assume the empty void supplies everything needed for a ship."],
+      ["test", "phase_8_one_way:arrive"])
+    q("cargo", "A Ship for the Whole Crew", 8, 0, [check("I tested the ship with its intended load")],
+      ["Test with passengers, a chest of supplies and the fuel you intend to carry.",
+       "Give everyone a safe place to stand. Pack blocks, food, water, repair parts and an escape plan.",
+       "Have one pilot and agree on a landing point before leaving."], ["test"], "minecraft:chest", xp=120)
+    q("crossing", "The Void Crossing", 10, 0, [biome("minecraft:the_end")],
+      ["Reach the central island with your crew. Elytra fail within 1000 blocks until the dragon dies.",
+       "Flight School is optional: the main story also accepts your own bridge or magic solution."],
+      ["cargo", "phase_10_dragon:start"], "minecraft:end_stone", xp=200)
+    return c
+
+
+def storage():
+    c = Chapter("storage", "&6Storage & Logistics", "storagedrawers:oak_full_drawers_1", GROUP_SIDE,
+                subtitle="Find your items, store bulk materials, and supply the workshop.")
+    def q(key, title, x, y, tasks, desc, deps, icon=None):
+        c.quest(key, title, x, y, tasks, desc=desc, deps=deps,
+                rewards=[r_xp(60)], optional=True, icon=icon)
+    q("start", "A Place for Everything", 0, 0, [item("storagedrawers:oak_full_drawers_1", 4)],
+      ["Use Storage Drawers for bulk blocks, crops and ingots. Keep armor, scrolls and other varied items in chests.",
+       "Right-click inserts items; double right-click deposits matching inventory stacks. Left-click takes items out.",
+       "One big workshop is more useful than ten scattered piles of chests."], ["phase_1_arrival:arrival"])
+    q("lock", "Keep the Labels", 2, -1.5, [item("storagedrawers:drawer_key")],
+      ["Lock a drawer to remember its item even when empty. This keeps sorting stable when a factory runs dry.",
+       "Lock drawers before connecting automated inputs."], ["start"])
+    q("capacity", "Room to Grow", 2, 1.5, [item("storagedrawers:iron_storage_upgrade")],
+      ["Add storage upgrades to busy drawers before building another wall. JEI shows the later capacity tiers."], ["start"])
+    q("compacting", "Ingots, Nuggets and Blocks", 4, 1.5, [item("storagedrawers:compacting_drawers_3")],
+      ["Compacting drawers expose forms of the same material together, such as iron nuggets, ingots and blocks.",
+       "Useful beside a press or sequenced assembly line that needs different forms of one metal."], ["capacity"])
+    q("controller", "One Input for the Wall", 4, -1.5, [item("storagedrawers:controller")],
+      ["A Drawer Controller gives connected drawers one insertion point. Use trim to connect gaps in the wall.",
+       "Feed it with Create funnels or chutes. Reserve the drawer contents with locks first."], ["lock"])
+    q("overflow", "When the Drawer Is Full", 6, -1.5, [item("create:content_observer")],
+      ["Plan an overflow chest or stop the input when storage fills. Content observers and redstone can help.",
+       "Void upgrades delete excess items. Reserve those for renewable surplus, never your rare loot."], ["controller"])
+    q("network", "Search and Request", 6, 1.5, [item("create:stock_ticker"), item("create:stock_link"), item("create:packager")],
+      ["Create's logistics system turns attached storage into a stock list you can order from.",
+       "Ponder the Stock Link, Packager and Stock Ticker to put them on the same network.",
+       "Start with one warehouse and one delivery point before connecting every factory."],
+      ["controller", "phase_2_ruins:brass"])
+    q("delivery", "Deliver to the Workshop", 8, 1.5, [check("I requested and received a package")],
+      ["Request a material from your stock ticker and open the delivered package at your workshop.",
+       "Then try another delivery address for the kitchen or shipyard. Teach a friend to place an order."],
+      ["network"], "create:packager")
+    q("shared", "A Public Supply Room", 10, 0, [check("A friend can find and restock our shared supplies")],
+      ["Label shared food, iron, fuel, torches and spare tools. Leave private valuables in a separate place.",
+       "Test claim and team permissions with a friend; access settings matter more than another chest."],
+      ["delivery", "overflow", "compacting"], "minecraft:chest")
+    return c
+
+
+def community():
+    c = Chapter("community", "&aOur Shared World", "minecraft:bell", GROUP_SIDE,
+                subtitle="Projects for builders, cooks, engineers and hosts.")
+    c.quest("start", "A Town Worth Coming Home To", 0, 0, [check("We picked a shared project")],
+            desc=["These are build prompts you confirm yourself. There is no prescribed size or style.",
+                  "Choose one that helps your friends, split the work, and leave room for the next person."],
+            deps=["phase_1_arrival:arrival"], rewards=[r_xp(30)], icon="minecraft:bell", optional=True)
+    projects = [
+        ("noticeboard", "The Noticeboard", "minecraft:oak_sign",
+         ["Post base locations, the next boss trip and jobs people can pick up in a short session.",
+          "Mark public farms and private storage. A new player should be able to find the basics."], ["start"]),
+        ("inn", "The Welcome Inn", "minecraft:red_bed",
+         ["Build guest rooms with beds, food, spare tools and a route to the town waystone.",
+          "Help a late joiner settle in without emptying someone else's private stash."], ["start"]),
+        ("canteen", "The Community Canteen", "farmersdelight:cooking_pot",
+         ["Serve a cooked meal from your farm. Keep a stocked food chest where everyone can reach it.",
+          "Try an automated ingredient line from Create or a magical helper from Ars Nouveau."], ["start"]),
+        ("station", "A Line Between Friends", "create:track_station",
+         ["Connect two places people actually use with a train, road or waystone route.",
+          "Add signs and test the whole trip with someone who did not build it."], ["start"]),
+        ("arena", "A Place for Boss Night", "ultimate:echo_wroughtnaut",
+         ["Build a clearly marked arena away from homes and machinery. Echo bosses can damage a town.",
+          "Provide cover, lighting, a supply chest and a meeting point. Give the sea bosses a proper water arena."], ["start"]),
+        ("museum", "The Expedition Museum", "minecraft:armor_stand",
+         ["Display souvenirs from three different expeditions, with signs explaining who went and what happened.",
+          "Trophies tell a better story when everyone can see them."], ["start"]),
+        ("rescue", "The Rescue Service", "minecraft:recovery_compass",
+         ["Prepare spare gear, food and a recovery compass for a friend returning to their grave.",
+          "Make the route safer; a recovery trip should not become a second lost inventory."], ["start"]),
+        ("end_port", "Port at the End of the World", "ultimate:return_gate",
+         ["Build an End harbor near the awake Return Gate: a landing pad, repair supplies and clear signs.",
+          "Keep two blocks of air above the gate. Use a replacement gate to register a new arrival point."],
+         ["start", "phase_9_way_back:trial"]),
+    ]
+    for i, (key, title, icon, desc, deps) in enumerate(projects):
+        c.quest(key, title, 2 + (i % 4) * 2, -2 + (i // 4) * 4,
+                [check("We built it and someone used it")], desc=desc, deps=deps,
+                rewards=[r_xp(120)], icon=icon, optional=True)
+    c.quest("festival", "Opening Night", 10, 0, [check("We hosted a tour, meal or event")],
+            desc=["Invite friends to use something you built: an airship trip, a boss night, a rail tour or a dinner.",
+                  "This is your world. The quest book gives you reasons to start; your projects give it a future."],
+            deps=["inn", "canteen", "station", "arena", "museum"], min_deps=3,
+            rewards=[r_xp(300)], optional=True, icon="minecraft:firework_rocket")
+    return c
+
+
+def after_dragon():
+    c = Chapter("after_dragon", "&dAfter the Dragon", "minecraft:end_crystal", GROUP_SIDE,
+                subtitle="Revisit the world with wings, a workshop and a crew.")
+    c.quest("start", "A World Still Full of Things", 0, 0, [stage("ultimate_boss_ender_dragon")],
+            desc=["The ten Trials are finished. Wings now work everywhere in the End.",
+                  "Pick an expedition or a community project. These goals award experience and supplies, not another power tier."],
+            deps=["phase_10_dragon:trial"], rewards=[r_xp(100)], icon="minecraft:dragon_egg", optional=True)
+    c.quest("crystals", "Another Dragon Fight", 2, -2, [item("minecraft:end_crystal", 4)],
+            desc=["Place four End Crystals around the central exit portal to respawn the dragon.",
+                  "Bring empty bottles for Dragon's Breath, new players who need credit and spare equipment.",
+                  "Capture breath during the fight; a dead dragon cannot supply it. Echoes for other bosses are still craftable."],
+            deps=["start"], rewards=[r_xp(200), r_item("minecraft:glass_bottle", 16)], optional=True)
+    c.quest("breath", "A Supply of Dragon's Breath", 4, -2, [item("minecraft:dragon_breath", 16)],
+            desc=["Catch the dragon's breath clouds with empty glass bottles. Keep a shared supply for replacement Tier X kits."],
+            deps=["crystals"], rewards=[r_xp(200)], optional=True)
+    c.quest("beacon", "A Beacon for the Builders", 2, 0, [item("minecraft:beacon")],
+            desc=["Fight the Wither for a Nether Star and build a beacon at a large shared project.",
+                  "A full mineral pyramid makes Haste II possible. Mining is easier when the whole crew benefits."],
+            deps=["start"], rewards=[r_xp(250)], optional=True)
+    c.quest("chimera", "The Wilden Chimera", 2, 2, [kill("ars_nouveau:wilden_boss")],
+            desc=["Prepare the Ritual of Awakening using Ars Nouveau's Worn Notebook and JEI.",
+                  "A new challenge for the mage who spent the main story building spells."],
+            deps=["start"], rewards=[r_xp(300)], icon="ars_nouveau:wilden_horn", optional=True)
+    c.quest("dead_king", "The Forgotten King", 4, 2, [kill("irons_spellbooks:dead_king")],
+            desc=["Find Iron's Spells' catacombs and face the Dead King. Bring the spells you learned on your travels."],
+            deps=["start"], rewards=[r_xp(300)], icon="minecraft:wither_skeleton_skull", optional=True)
+    c.quest("scylla", "The Storm Queen", 6, 2, [stage("ultimate_boss_scylla")],
+            desc=["Find the Acropolis and challenge Scylla. Shared boss credit applies to everyone nearby."],
+            deps=["start"], rewards=[r_xp(300)], icon="minecraft:lightning_rod", optional=True)
+    c.quest("fleet", "A Fleet of Your Own", 6, -2, [check("We flew two different working ships together")],
+            desc=["Build a second working design: a cargo hauler, a fast scout or a passenger ship.",
+                  "Compare handling and carrying capacity on a trip together. Keep schematics at your public shipyard."],
+            deps=["start", "flight_school:test"], rewards=[r_xp(300)], icon="aeronautics:propeller_bearing", optional=True)
+    c.quest("home", "The World We Built", 8, 0, [check("We toured our shared world")],
+            desc=["Visit the projects and places you passed on the way to the dragon. Finish one you left half built.",
+                  "Take a new player along. The world is bigger when its stories belong to everyone."],
+            deps=["start", "community:festival"], rewards=[r_xp(500)], icon="minecraft:filled_map", optional=True)
+    return c
+
+
 # ---------------------------------------------------------------- ID check
 
 IDS_FILE = ROOT / "tools/.ids.json"
@@ -1093,22 +1287,53 @@ OWN_NAMESPACES = {"ultimate", "ftbquests"}
 def validate(chapters):
     """Refuse to write quests that point at items, mobs, structures or biomes that don't exist.
     tools/.ids.json comes from tools/mod_ids.py; re-run it after adding mods."""
+    bad = []
+    seen = set()
+    quests = {q["id"]: q for c in chapters for q in c.quests}
+    for c in chapters:
+        for obj in [c] + [obj for q in c.quests for obj in [q] + q["tasks"] + q.get("rewards", [])]:
+            id = obj.id if isinstance(obj, Chapter) else obj["id"]
+            if id in seen:
+                bad.append(f"{c.key}: duplicate ID {id}")
+            seen.add(id)
+        for q in c.quests:
+            deps = q.get("dependencies", [])
+            if not q["tasks"]:
+                bad.append(f"{c.key}: quest {q['id']} has no tasks")
+            if any(d not in quests for d in deps):
+                bad.append(f"{c.key}: quest {q['id']} has a missing dependency")
+            minimum = q.get("min_required_dependencies", len(deps))
+            if not 0 <= minimum <= len(deps) or (deps and minimum == 0):
+                bad.append(f"{c.key}: quest {q['id']} has an impossible dependency count")
+
+    visiting, visited = set(), set()
+    def visit(id):
+        if id in visiting:
+            bad.append(f"dependency cycle at {id}")
+            return
+        if id in visited or id not in quests:
+            return
+        visiting.add(id)
+        for dep in quests[id].get("dependencies", []):
+            visit(dep)
+        visiting.remove(id)
+        visited.add(id)
+    for id in quests:
+        visit(id)
+    if bad:
+        raise ValueError("\n".join(bad))
+
     if not IDS_FILE.exists():
-        print("warning: tools/.ids.json missing, run tools/mod_ids.py to check IDs", file=sys.stderr)
+        print("warning: tools/.ids.json missing, run tools/mod_ids.py to check resource IDs", file=sys.stderr)
         return
     known = {k: set(v) for k, v in json.loads(IDS_FILE.read_text()).items() if k != "unchecked"}
-    bad = []
 
     def need(kind, id, where):
         if id.lstrip("#").split(":")[0] not in OWN_NAMESPACES and id not in known[kind]:
             bad.append(f"{where}: unknown {kind} {id}")
 
-    all_ids = {q["id"] for c in chapters for q in c.quests}
     for c in chapters:
         need("item", c.icon, f"chapter {c.key}")
-        for q in c.quests:
-            if any(d not in all_ids for d in q.get("dependencies", [])):
-                bad.append(f"{c.key}: a dependency of {q['id']} points at a quest that doesn't exist")
         for q in c.quests:
             where = c.key + ":" + LANG.get("quest." + q["id"] + ".title", q["id"])
             if "icon" in q:
@@ -1122,18 +1347,22 @@ def validate(chapters):
                     need(t["type"], t[t["type"]], where)
     if bad:
         print("\n".join(bad), file=sys.stderr)
-        sys.exit(f"{len(bad)} unknown IDs; fix them (or re-run tools/mod_ids.py if you added mods)")
+        raise ValueError(f"{len(bad)} unknown IDs; fix them (or re-run tools/mod_ids.py if you added mods)")
 
 
-def main():
-    if OUT.exists():
-        shutil.rmtree(OUT)
-    chapters = [welcome(), phase1(), phase2(), phase3(), phase4(), phase5(), phase6(),
+def build_chapters():
+    LANG.clear()
+    return [welcome(), phase1(), phase2(), phase3(), phase4(), phase5(), phase6(),
                 phase7(), phase8(), phase9(), phase10(),
-                discover_biomes(), discover_structures(), kitchen(), create_side(), magic_side(), gear(), life()]
+                discover_biomes(), discover_structures(), kitchen(), create_side(), magic_side(), gear(), life(),
+                flight_school(), storage(), community(), after_dragon()]
+
+
+def render(out):
+    chapters = build_chapters()
     validate(chapters)
 
-    write(OUT / "data.snbt", {
+    write(out / "data.snbt", {
         "default_autoclaim_rewards": "disabled",
         "default_consume_items": False,
         "default_quest_disable_jei": False,
@@ -1152,15 +1381,33 @@ def main():
         "version": 13,
     })
     LANG["file.0000000000000001.title"] = "Ultimate Pack"
-    write(OUT / "chapter_groups.snbt", {"chapter_groups": [{"id": gid} for gid, _ in GROUPS]})
+    write(out / "chapter_groups.snbt", {"chapter_groups": [{"id": gid} for gid, _ in GROUPS]})
     for gid, title in GROUPS:
         LANG[f"chapter_group.{gid}.title"] = title
     for order, chapter in enumerate(chapters):
-        write(OUT / "chapters" / f"{chapter.key}.snbt", chapter.to_snbt(order))
-    write(OUT / "lang" / "en_us.snbt", LANG)
+        write(out / "chapters" / f"{chapter.key}.snbt", chapter.to_snbt(order))
+    write(out / "lang" / "en_us.snbt", LANG)
+    return chapters
 
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="validate and fail if generated quests are out of date")
+    args = parser.parse_args()
+    # Validate and render before touching the live book. A bad edit cannot erase it.
+    with tempfile.TemporaryDirectory() as tmp:
+        generated = Path(tmp) / "quests"
+        chapters = render(generated)
+        if args.check:
+            files = lambda root: {p.relative_to(root): p.read_bytes() for p in root.rglob("*") if p.is_file()}
+            if files(generated) != files(OUT):
+                sys.exit("Quest book is out of date; run python3 tools/gen_quests.py")
+        else:
+            if OUT.exists():
+                shutil.rmtree(OUT)
+            shutil.copytree(generated, OUT)
     total = sum(len(c.quests) for c in chapters)
-    print(f"wrote {len(chapters)} chapters, {total} quests to {OUT.relative_to(ROOT)}")
+    print(f"{'checked' if args.check else 'wrote'} {len(chapters)} chapters, {total} quests in {OUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

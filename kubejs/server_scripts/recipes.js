@@ -34,7 +34,8 @@ ServerEvents.recipes(event => {
   event.shaped(kit(7), [' N ', 'BEB', ' Q '], {
     N: 'minecraft:netherite_scrap', B: 'minecraft:blaze_rod', E: 'irons_spellbooks:arcane_essence', Q: 'minecraft:quartz_block'
   })
-  // Phases 8–10 — the End is one-way at first, so these use only things found there.
+  // Phases 8–9 use End materials while travel is one-way. Tier X comes after
+  // the Return Gate opens, so its netherite can be brought from home.
   event.shaped(kit(8), [' S ', 'CPC', ' U '], {
     S: 'minecraft:shulker_shell', C: 'minecraft:popped_chorus_fruit', P: 'minecraft:ender_pearl', U: 'minecraft:purpur_block'
   })
@@ -60,7 +61,13 @@ ServerEvents.recipes(event => {
     'create:empty_blaze_burner', 'minecraft:magma_block', 'minecraft:magma_block', 'minecraft:lava_bucket', 'minecraft:coal_block'
   ]).id('ultimate:blaze_burner_overworld')
 
-  // Boss Echoes. Echo shards come from Ancient Cities (Phase 3). No boss drops needed,
+  // Cities introduce Echo Shards; a sculk/amethyst workshop keeps a ten-player
+  // server supplied afterwards, without repeatedly searching finite loot chests.
+  event.shaped('2x minecraft:echo_shard', [' A ', 'CSC', ' A '], {
+    A: 'minecraft:amethyst_shard', C: 'minecraft:copper_ingot', S: 'minecraft:sculk'
+  }).id('ultimate:renewable_echo_shards')
+
+  // Boss Echoes. Echo shards come from cities or the sculk workshop. No boss drops needed,
   // so anyone can call a boss even if someone else already beat the one in the world.
   const echo = (id, items) => event.shapeless(`ultimate:echo_${id}`, ['minecraft:echo_shard'].concat(items))
   echo('wroughtnaut', ['minecraft:iron_block', 'minecraft:iron_block', 'minecraft:chain'])

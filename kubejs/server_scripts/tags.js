@@ -21,6 +21,11 @@ const WEAPON_CLASSES = [
 ].map(loadClassOrNull).filter(cls => cls !== null)
 
 ServerEvents.tags('item', event => {
+  event.add('ultimate:temperable', [
+    'ars_nouveau:novice_spell_book',
+    'ars_nouveau:apprentice_spell_book',
+    'ars_nouveau:archmage_spell_book'
+  ])
   BuiltInRegistries.ITEM.keySet().forEach(id => {
     const item = BuiltInRegistries.ITEM.get(id)
     if (WEAPON_CLASSES.some(cls => item instanceof cls)) {

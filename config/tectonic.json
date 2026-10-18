@@ -1,0 +1,27 @@
+{
+  "minor_version": 1,
+  "general": {
+    "mod_enabled": true,
+    "snow_start_offset": 128
+  },
+  "global_terrain": {
+    "min_y": -64,
+    "max_y": 320,
+    "vertical_scale": 1.35,
+    "elevation_boost": 0.1,
+    "ultrasmooth": false,
+    "lava_tunnels": true
+  },
+  "continents": {
+    "ocean_offset": -0.8,
+    "continents_scale": 0.13,
+    "erosion_scale": 0.5,
+    "ridge_scale": 0.5,
+    "flat_terrain_skew": -0.15,
+    "rolling_hills": true,
+    "jungle_pillars": true,
+    "underground_rivers": true,
+    "river_ice": false,
+    "river_lanterns": true
+  }
+}

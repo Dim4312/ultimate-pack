@@ -140,11 +140,18 @@ NativeEvents.onEvent('net.neoforged.neoforge.event.entity.player.PlayerEvent$Pla
   if (player.x * player.x + player.z * player.z > PORTAL_ARRIVAL_RADIUS * PORTAL_ARRIVAL_RADIUS) return
   const server = player.getServer()
   const gate = global.returnGate(server)
-  const spot = gate ? { x: gate.x, y: gate.y + 1, z: gate.z } : global.endArrival(server)
+  const level = endLevel(server)
+  const safeGate = gate && String(level.getBlock(gate.x, gate.y, gate.z).id) === 'ultimate:return_gate' &&
+    level.getBlock(gate.x, gate.y + 1, gate.z).getBlockState().isAir() &&
+    level.getBlock(gate.x, gate.y + 2, gate.z).getBlockState().isAir()
+  const spot = safeGate ? { x: gate.x, y: gate.y + 1, z: gate.z } : global.endArrival(server)
   server.runCommandSilent(`execute in minecraft:the_end run tp ${player.getGameProfile().getName()} ${spot.x + 0.5} ${spot.y} ${spot.z + 0.5}`)
   if (!gate) {
     player.tell(Text.lightPurple('The portal throws you far out into the void. The dragon is somewhere far away.'))
     player.tell(Text.gray('There is no way back from here. Settle in, and look for a way home.'))
+  } else if (!safeGate) {
+    player.tell(Text.yellow('The Return Gate is missing or obstructed. You arrived at the original island safely.'))
+    player.tell(Text.gray('Place a replacement Return Gate and use it to set a new arrival point. Travel home remains open.'))
   }
 })
 

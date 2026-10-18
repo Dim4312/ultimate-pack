@@ -44,6 +44,7 @@
 				id: "minecraft:dragon_head"
 			}
 			id: "2FCC36702D78E8BD"
+			optional: true
 			rewards: [
 				{
 					id: "335EA3979F536BEA"
@@ -72,6 +73,7 @@
 				id: "minecraft:purpur_pillar"
 			}
 			id: "2B92D956815BC6C4"
+			optional: true
 			rewards: [
 				{
 					id: "113DDA2AA3033708"
@@ -120,6 +122,7 @@
 				id: "ultimate:return_gate"
 			}
 			id: "3E3F5106478640C8"
+			optional: true
 			rewards: [
 				{
 					id: "1CC410BA7B1C2AE8"
@@ -142,7 +145,7 @@
 		}
 		{
 			dependencies: [
-				"3E3F5106478640C8"
+				"6E31B51B1F1485AC"
 			]
 			icon: {
 				id: "ultimate:tempering_kit_9"

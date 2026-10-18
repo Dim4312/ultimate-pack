@@ -25,7 +25,7 @@ const tryTemper = (player, server, kitHand, tier) => {
     return Text.red(`You haven't learned Tempering ${TEMPER_ROMAN[tier]} yet. Complete the Phase ${tier} Trial.`)
   }
   if (weapon.isEmpty() || !TEMPERABLE.test(weapon)) {
-    return Text.yellow('Hold a melee weapon or a staff in your other hand.')
+    return Text.yellow('Hold a melee weapon, staff or Ars spellbook in your other hand.')
   }
 
   const holder = temperingHolder(server)
@@ -56,5 +56,5 @@ PlayerEvents.stageAdded(event => {
   if (!match) return
   const tier = parseInt(match[1])
   event.player.tell(Text.gold(`You learned Tempering ${TEMPER_ROMAN[tier]}! `)
-    .append(Text.gray(`Craft a Tempering Kit ${TEMPER_ROMAN[tier]} and use it on any weapon or staff.`)))
+    .append(Text.gray(`Craft a Tempering Kit ${TEMPER_ROMAN[tier]} and use it on any weapon, staff or Ars spellbook.`)))
 })

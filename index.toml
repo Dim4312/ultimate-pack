@@ -2,11 +2,19 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "b73936da40995d52654b641ba8a31b6ea6e809c4cd048608046ed12c3a81b298"
+hash = "10ea598228fa52a708db97589a5bb6b3c5b4ad162a94581897d567fa1f816623"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "df8b92bdd8a1fbef506cba5bc3ee88aea0cfca5f3a1c83918a8b086f114875b9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/after_dragon.snbt"
+hash = "3bbbefb937726e8485d0571dc5f833b828a47911f5df132e8625177b4da81960"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/community.snbt"
+hash = "dfb3ec96f5e7829ce26c207a1fa54d1add483b1a498d67a654d8f7861d6a05b0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_side.snbt"
@@ -19,6 +27,10 @@ hash = "b5d17a0370a0271f22641c0620921505556d99304c7ca75e1615c7bf3b0fc931"
 [[files]]
 file = "config/ftbquests/quests/chapters/discover_structures.snbt"
 hash = "cf15c6624b5487237d91b8807754cf44284b70e37732013a4c75cadaa769c79d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/flight_school.snbt"
+hash = "4c8aa99058906f1b4f7a333eb92065623fb9677441eba17198080b4b896cfc8f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/gear.snbt"
@@ -38,7 +50,7 @@ hash = "773892444784d8cc82a204210fd37dfbccab6bfe4944bf3c1e7b83352fd19a96"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/phase_10_dragon.snbt"
-hash = "aec59006ff2dd718f303f049c50b854da6cfc5c8736553fb978ffc7c1d35c835"
+hash = "d7edbb36ef44fa4d5baad9d8e1cc7a0278ed2b0688790c055ddadf55938a6d65"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/phase_1_arrival.snbt"
@@ -74,11 +86,15 @@ hash = "433038414fad77ea26fbc845354169f963e728726cc9c056b5193e33b1bd9d79"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/phase_9_way_back.snbt"
-hash = "adaa4254789df61436cc12a902c918e8f4b8e3bf5c062b0cd96d4da9c872521e"
+hash = "c27695f23130d72e90661f54186a0351e740c3aa390f85030aed914555650438"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/storage.snbt"
+hash = "753336866f82efbcbf0481d4edd46027ae0135493f90c7825e39e4abf5714f1f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "471bc2506a6df31410d5a2438ad659a8272e44f5cf8cf5fdb127bbda3a743e2c"
+hash = "a99ccfc3fee586efa0d6055fec9cc5601889b0777a4d8f717a8e3b03e1a47e26"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -86,11 +102,19 @@ hash = "330b976950620f9a853f7f58be87cfa09a0c581e4faec902bb8d0ef856690965"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "adcd7acca3ea86c3e901c37fb05de0f58c3033b6563f099d9263648378138e18"
+hash = "551b2e43ecd55d80e8a37673ff0977c3ddcbaff106891e7dfff24e7d0eb3fca9"
 
 [[files]]
 file = "config/natures_spirit-common.toml"
 hash = "a0c639f0e22098fd33e89ff022ecf0a7189639b487238974345f8eef3d35149e"
+
+[[files]]
+file = "config/sparsestructures.json5"
+hash = "9d0919be9b5465da2530eb7a70b98559a1164d9a92dda07fbbb70fe6e1011f43"
+
+[[files]]
+file = "config/tectonic.json"
+hash = "a7e1caf86e0ccd33826139938d3fd28b0aba91cf906b3959ebd0659c98abe05d"
 
 [[files]]
 file = "kubejs/assets/ultimate/lang/en_us.json"
@@ -194,35 +218,39 @@ hash = "387c4c29407a954f107965bf40e27f68f4b7e0cf252b05241edc90316fed6716"
 
 [[files]]
 file = "kubejs/server_scripts/bosses.js"
-hash = "97c9f323c6b523b7ff3ebdb6547bcd48ed4e867f44fb3e12fb13772556a5cf6a"
+hash = "d406ae515387167106606fef57946c110c9c9bc4a59e83bc2dd30532838731a6"
 
 [[files]]
 file = "kubejs/server_scripts/commands.js"
-hash = "e84524bc31a37601603e11f1f636690dad889dd040a3591e82a5cf7f2ca55d81"
+hash = "818dbccedebb7297c787749d40b9664d37a20f10aaa6c96ee076283f22e9e529"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "f7bd0d4257603fefe0cf2fe1bc08b425fdd2eee67aa4c4cb3c84a346640107c6"
+hash = "133fbddc405662d2fb709a796306695d9667660904156089c25a806ee7d8f0af"
 
 [[files]]
 file = "kubejs/server_scripts/tags.js"
-hash = "2e68672405506f3907820ab9a6f31ce9229aa2552dae1d17b103514245cd8895"
+hash = "019e8f66bf011764b0f1b0f816982d4542e856e62ada473220137ccf21531b8d"
 
 [[files]]
 file = "kubejs/server_scripts/tempering.js"
-hash = "cbe200d58a071f14477c98dd7311fa1ca516d817f3859180b4f3eaa8e95f5b7b"
+hash = "ea5e583f0e2a85581a64e81c25e7077ae8b68e917b655ad4f7d88f28595d62f7"
 
 [[files]]
 file = "kubejs/server_scripts/the_end.js"
-hash = "ccbe8a43beedb2894bbcace1b6a35bd54beab28f65703e67e0343116f0db50e8"
+hash = "fc3f16c28399abc7bea6767e9e4b74fe54d184108f1f51ee94fe090b79e2b8bc"
+
+[[files]]
+file = "kubejs/startup_scripts/ars_tempering.js"
+hash = "89d9d6937dbff642a46fa503f83f5b39cdc53058e776bf0d40ecd3d83075d8af"
 
 [[files]]
 file = "kubejs/startup_scripts/items.js"
-hash = "6a8fc52577fd3faf1b473911fd20735bda66c699498ea0d0e6bcec10e34c6bf5"
+hash = "be5d918e9f4e4dad6078d70fe08fecd879037d0031708fc87f5a9f971e8d6472"
 
 [[files]]
 file = "kubejs/startup_scripts/world_gates.js"
-hash = "39e12c20f63325375171c42290e7257ad872aca90d5ad524a02a279aa9058f2f"
+hash = "16ca3bc0423c19946d5fe8fb3a95dc45fa65b7773d83ea69b8e066852ca131ea"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"
@@ -721,7 +749,7 @@ metafile = true
 
 [[files]]
 file = "mods/particle-rain.pw.toml"
-hash = "bb3302ebfd619afbda63f5365628856d4680c0a3fe86bfbdf1135d2a48acb190"
+hash = "5de4a7057ff73b277bc450db30c7fc401bcfb97031ccdc794e2b836acb27a72d"
 metafile = true
 
 [[files]]
@@ -842,6 +870,11 @@ metafile = true
 [[files]]
 file = "mods/sparsestructures.pw.toml"
 hash = "993b4e4970e1a5ef2fe7c6712212f57a84dcf8b31d4b6863540b6395c4f9ce09"
+metafile = true
+
+[[files]]
+file = "mods/storagedrawers.pw.toml"
+hash = "1d277d4c4d8f3abc49176d3b029584b70d92dcb9b89cf2cf6094e674fe9885c8"
 metafile = true
 
 [[files]]

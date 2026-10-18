@@ -1,0 +1,270 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "community"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "minecraft:bell"
+	}
+	id: "16095C2989F50FD7"
+	order_index: 20
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"391FC3F74C0C2F45"
+			]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "7DC0267A7240C9E4"
+			optional: true
+			rewards: [
+				{
+					id: "4DD97C6AE830CEE4"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					id: "632C55577A3415DC"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7DC0267A7240C9E4"
+			]
+			icon: {
+				id: "minecraft:oak_sign"
+			}
+			id: "19492EF7EBF0AC98"
+			optional: true
+			rewards: [
+				{
+					id: "14407E2D2421668B"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "58A6983DE118A938"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7DC0267A7240C9E4"
+			]
+			icon: {
+				id: "minecraft:red_bed"
+			}
+			id: "644AA4F724D605F7"
+			optional: true
+			rewards: [
+				{
+					id: "279D7A7E9265C245"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "43A6D5B577BE9BA4"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7DC0267A7240C9E4"
+			]
+			icon: {
+				id: "farmersdelight:cooking_pot"
+			}
+			id: "7E1744CD05DBDAFC"
+			optional: true
+			rewards: [
+				{
+					id: "50DDB605AC9B2C61"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "7ACAF8CB8FA40B05"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7DC0267A7240C9E4"
+			]
+			icon: {
+				id: "create:track_station"
+			}
+			id: "10A98898D65EB717"
+			optional: true
+			rewards: [
+				{
+					id: "53FEDD78AC9EA904"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "59D9445BB50425E5"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7DC0267A7240C9E4"
+			]
+			icon: {
+				id: "ultimate:echo_wroughtnaut"
+			}
+			id: "5AE6AC4A0FA1AF79"
+			optional: true
+			rewards: [
+				{
+					id: "7683C14E8339552E"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "578EE434CE7B8F46"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7DC0267A7240C9E4"
+			]
+			icon: {
+				id: "minecraft:armor_stand"
+			}
+			id: "2DF6D12D618AA5BD"
+			optional: true
+			rewards: [
+				{
+					id: "744F77C030F872D1"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "7DC37600EB544AA9"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7DC0267A7240C9E4"
+			]
+			icon: {
+				id: "minecraft:recovery_compass"
+			}
+			id: "45D900EFA5CCF04F"
+			optional: true
+			rewards: [
+				{
+					id: "5CED629017F59CE3"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "32F0550E8951D501"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7DC0267A7240C9E4"
+				"58213E8CF889A2A5"
+			]
+			icon: {
+				id: "ultimate:return_gate"
+			}
+			id: "118D0CCFB89A7724"
+			optional: true
+			rewards: [
+				{
+					id: "2A7B629E5141EAE9"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "16334DF87858221F"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"644AA4F724D605F7"
+				"7E1744CD05DBDAFC"
+				"10A98898D65EB717"
+				"5AE6AC4A0FA1AF79"
+				"2DF6D12D618AA5BD"
+			]
+			icon: {
+				id: "minecraft:firework_rocket"
+			}
+			id: "53BAE9919CF5B0DB"
+			min_required_dependencies: 3
+			optional: true
+			rewards: [
+				{
+					id: "4FD714A8E9832EA5"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "30D0D038D129FA93"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+}
