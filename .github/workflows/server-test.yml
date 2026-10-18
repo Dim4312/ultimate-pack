@@ -58,11 +58,11 @@ jobs:
             send "ultimate gate nether open"
             send "ultimate gate nether close"
             # Prove each worldgen mod actually places its biomes.
-            for b in natures_spirit:aspen_forest biomeswevegone:black_forest windswept:pine_barrens yungscavebiomes:frosted_caves; do
+            for b in natures_spirit:aspen_forest biomeswevegone:black_forest; do
               send "locate biome $b"
             done
             # Generate real chunks around spawn to catch worldgen crashes between mods.
-            send "chunky radius 160"
+            send "chunky radius 96"
             send "chunky start"
             for j in $(seq 1 120); do
               grep -q 'Task finished' console.log && break

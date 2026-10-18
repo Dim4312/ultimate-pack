@@ -10,7 +10,7 @@ A co-op **combat + magic + Create** modpack for Minecraft **1.21.1 / NeoForge** 
 - **Clear direction.** A quest book (FTB Quests) leads you through 10 phases. JEI and Create's Ponder explain the machines.
 - **Upgrades = materials + a quest.** There's no drop-rate grind: beat a phase's Trial, craft a Tempering Kit, and upgrade any weapon or staff.
 - **Bosses you can beat in an evening.** They have real mechanics (Mowzie's Mobs, L_Ender's Cataclysm) and scale with group size. Everyone nearby gets credit. Echoes let anyone fight a boss again.
-- **A world worth exploring:** Tectonic terrain, Nature's Spirit + Oh The Biomes We've Gone biomes, Windswept and Geophilic for richer snowy and vanilla areas, YUNG's Cave Biomes underground. Distant Horizons shows mountains kilometres away (optional; untick it on the first-launch screen if your PC struggles).
+- **A world worth exploring:** Tectonic terrain, Nature's Spirit + Oh The Biomes We've Gone biomes, Windswept for richer snowy and forest areas, YUNG's Cave Biomes underground. Distant Horizons shows mountains kilometres away (optional; untick it on the first-launch screen if your PC struggles).
 - **Three worlds only:** Overworld, Nether, End. No extra dimensions to split the server.
 - **Late joiners catch up.** Loot is per player (Lootr), boss credit is shared, and server-wide gates move the story forward for everyone.
 
