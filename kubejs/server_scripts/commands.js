@@ -62,8 +62,14 @@ ServerEvents.commandRegistry(event => {
     .then(gate)
     .then(returnGate)
     .then(Commands.literal('arrival').executes(ctx => {
-      const spot = global.endArrival(ctx.source.server)
-      ctx.source.sendSystemMessage(Text.gray('End arrival island: ').append(Text.white(`${spot.x} ${spot.y} ${spot.z}`)))
-      return 1
+      try {
+        const spot = global.endArrival(ctx.source.server)
+        ctx.source.sendSystemMessage(Text.gray('End arrival island: ').append(Text.white(`${spot.x} ${spot.y} ${spot.z}`)))
+        return 1
+      } catch (e) {
+        console.error(`ultimate arrival failed: ${e}`)
+        ctx.source.sendSystemMessage(Text.red(`Could not find the End arrival island: ${e}`))
+        return 0
+      }
     })))
 })

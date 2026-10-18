@@ -107,10 +107,16 @@ const findArrival = level => {
   return { x: 1500, y: 65, z: 0 }
 }
 
-const Level = Java.loadClass('net.minecraft.world.level.Level')
+const endLevel = server => {
+  let found = null
+  server.getAllLevels().forEach(level => {
+    if (String(level.dimension().location()) === 'minecraft:the_end') found = level
+  })
+  return found
+}
 
 global.endArrival = server => {
-  const level = server.getLevel(Level.END)
+  const level = endLevel(server)
   const data = server.persistentData
   if (!data.getBoolean('ultimate_end_arrival')) {
     const spot = findArrival(level)
