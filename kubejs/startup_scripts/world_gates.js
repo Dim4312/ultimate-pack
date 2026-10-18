@@ -50,6 +50,12 @@ global.clearReturnGate = server => server.persistentData.putBoolean('ultimate_re
 
 const exempt = player => player.isCreative() || player.isSpectator()
 
+// KubeJS turns level.dimension into a property (the dimension id), so level.dimension() is not callable.
+global.dimensionId = level => {
+  const dim = level.dimension
+  return String(typeof dim === 'function' ? level.dimension().location() : dim)
+}
+
 // Block travel into a sealed dimension (portals, commands from non-ops, anything),
 // and out of the End while it is still one-way.
 NativeEvents.onEvent('net.neoforged.neoforge.event.entity.EntityTravelToDimensionEvent', event => {
@@ -57,13 +63,12 @@ NativeEvents.onEvent('net.neoforged.neoforge.event.entity.EntityTravelToDimensio
   const server = entity.getServer()
   if (!server) return
   const target = String(event.getDimension().location())
-  const from = String(entity.level.dimension().location())
   if (!global.isGateOpen(server, target)) {
     event.setCanceled(true)
     if (entity.isPlayer()) entity.setStatusMessage(Text.red(GATES[target].sealed))
     return
   }
-  if (from === 'minecraft:the_end' && entity.isPlayer() && !exempt(entity) && !global.returnGate(server)) {
+  if (global.dimensionId(entity.level) === 'minecraft:the_end' && entity.isPlayer() && !exempt(entity) && !global.returnGate(server)) {
     event.setCanceled(true)
     entity.setStatusMessage(Text.lightPurple('The End holds on to you. There is no way home... yet.'))
   }
@@ -110,7 +115,7 @@ const findArrival = level => {
 const endLevel = server => {
   let found = null
   server.getAllLevels().forEach(level => {
-    if (String(level.dimension().location()) === 'minecraft:the_end') found = level
+    if (global.dimensionId(level) === 'minecraft:the_end') found = level
   })
   return found
 }

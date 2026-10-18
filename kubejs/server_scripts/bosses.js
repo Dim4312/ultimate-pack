@@ -103,7 +103,7 @@ EntityEvents.spawned(event => {
   const entity = event.entity
   const id = BOSSES[String(entity.type)]
   if (!id || FAR_BOSSES.indexOf(id) < 0 || entity.tags.contains(ECHO_TAG)) return
-  if (String(entity.level.dimension().location()) !== 'minecraft:overworld') return
+  if (global.dimensionId(entity.level) !== 'minecraft:overworld') return
   const spawn = entity.level.getSharedSpawnPos()
   const dx = entity.x - spawn.x
   const dz = entity.z - spawn.z
@@ -142,7 +142,7 @@ Object.keys(ECHOES).forEach(echoId => {
     const item = event.item
     if (!server) return
     let message
-    if (String(player.level.dimension().location()) !== echoDimension(echo)) {
+    if (global.dimensionId(player.level) !== echoDimension(echo)) {
       message = Text.red(`The echo is silent here. Use it in ${DIMENSION_NAMES[echoDimension(echo)]}.`)
     } else if (echo.needsWater && !player.isInWater()) {
       message = Text.red('The Leviathan only answers from the water. Stand in the sea.')

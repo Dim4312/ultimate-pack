@@ -9,7 +9,7 @@ const Heightmap = Java.loadClass('net.minecraft.world.level.levelgen.Heightmap$T
 const WINGLESS_RADIUS = 1000
 const GATE_STAGE = 'ultimate_return_gate'
 
-const inEnd = entity => String(entity.level.dimension().location()) === 'minecraft:the_end'
+const inEnd = entity => global.dimensionId(entity.level) === 'minecraft:the_end'
 
 const sendHome = (player, server) => {
   const overworld = server.overworld()
