@@ -83,6 +83,17 @@ jobs:
           cp /tmp/bootstrap.jar /tmp/solo/.minecraft/packwiz-installer-bootstrap.jar
           cp /tmp/installer.jar /tmp/solo/.minecraft/packwiz-installer.jar
           (cd /tmp/solo/.minecraft && java -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -g -s both http://localhost:8000/pack.toml)
+          # Optional add-ons that default to off (shaders) are skipped by a
+          # headless install; the solo zip ships them preinstalled.
+          for f in $(grep -l '^default = false' mods/*.pw.toml shaderpacks/*.pw.toml); do
+            dir=/tmp/solo/.minecraft/$(dirname "$f")
+            name=$(grep -m1 '^filename' "$f" | cut -d'"' -f2)
+            url=$(grep -m1 '^url' "$f" | cut -d'"' -f2)
+            hash=$(grep -m1 '^hash = ' "$f" | cut -d'"' -f2)
+            mkdir -p "$dir" && curl -fsSL -o "$dir/$name" "$url"
+            echo "$hash  $dir/$name" | sha512sum -c -
+          done
+          test -n "$(ls /tmp/solo/.minecraft/mods | grep -i iris)"
           chunky=$(grep -m1 '^filename' mods/chunky.pw.toml | cut -d'"' -f2)
           rm -f "/tmp/solo/.minecraft/mods/$chunky" /tmp/solo/.minecraft/packwiz-installer*.jar
           test -n "$(ls /tmp/solo/.minecraft/mods | grep -i distanthorizons)"

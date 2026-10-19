@@ -122,7 +122,7 @@ hash = "9d0919be9b5465da2530eb7a70b98559a1164d9a92dda07fbbb70fe6e1011f43"
 
 [[files]]
 file = "config/tectonic.json"
-hash = "a7e1caf86e0ccd33826139938d3fd28b0aba91cf906b3959ebd0659c98abe05d"
+hash = "58f54fedc4008fffe16306c57ac8e86dd8209348f42bddd7aac12dba481d856e"
 
 [[files]]
 file = "kubejs/assets/ultimate/lang/en_us.json"
@@ -466,6 +466,11 @@ hash = "426238488c9ffd843f661f8bc74aa8e585fa6b4d342c43c4ba4cb8451298b725"
 metafile = true
 
 [[files]]
+file = "mods/euphoria-patches.pw.toml"
+hash = "5f169a19e5b2ecfd30e52158f6ff3ab403c527173e5087d783cafa601bbc1ad2"
+metafile = true
+
+[[files]]
 file = "mods/expanded-delight.pw.toml"
 hash = "e0ad7cb6cf33d7958b7c9b7af321807190adf45ada89d65892fe2d437fe3024d"
 metafile = true
@@ -478,6 +483,11 @@ metafile = true
 [[files]]
 file = "mods/explorify.pw.toml"
 hash = "6adce6422e74091638dbd7872270ee58d9a22dc18340580f809cc50c739e0d4f"
+metafile = true
+
+[[files]]
+file = "mods/fallingleavesforge.pw.toml"
+hash = "5db5e7bdaa8455f290c567e88f918887ec86167565dd6822be8089405e4a8ecd"
 metafile = true
 
 [[files]]
@@ -608,6 +618,11 @@ metafile = true
 [[files]]
 file = "mods/integrated-api.pw.toml"
 hash = "91e64f115f316af85a1162f327d2b14b4669e6f6dffafc468f633be4317cf3b4"
+metafile = true
+
+[[files]]
+file = "mods/iris.pw.toml"
+hash = "2303f5b0c4107f1cce048c33a68f2ae522962ab7f563505cd57e5f363af19bec"
 metafile = true
 
 [[files]]
@@ -901,6 +916,11 @@ hash = "3c24accda8011a6a5e04c49c40e39617bb04ab3a549d8f2e8180d3246fddac39"
 metafile = true
 
 [[files]]
+file = "mods/snow-under-trees.pw.toml"
+hash = "3f227d1a8d6fd5ec64280173965653a4c426bbc2d45054c7ad462fa7bf729554"
+metafile = true
+
+[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "6ab228a1fa98348b7444c0715e4db592414d2102e441671ac5e79066596a912c"
 metafile = true
@@ -961,6 +981,11 @@ hash = "15962183bec2468058c70e87aa32e902a08489b0f86741088cdc9aa958ba4931"
 metafile = true
 
 [[files]]
+file = "mods/terralith.pw.toml"
+hash = "81c5c05f9ed4c07b9f027ff6c421939bb04e476075091f135d34aaa05af1f950"
+metafile = true
+
+[[files]]
 file = "mods/towns-and-towers.pw.toml"
 hash = "a9afe82b3d1b4975dd9f8b3272898450aeb29365678b3779059977301f88c101"
 metafile = true
@@ -978,6 +1003,11 @@ metafile = true
 [[files]]
 file = "mods/windswept.pw.toml"
 hash = "e6add5c438aaf45243f804e0696307b24a185e159da32a1ba4f3865c0de8b6c2"
+metafile = true
+
+[[files]]
+file = "mods/wwoo.pw.toml"
+hash = "68b74b23a76eaf8a5ed82524b581a69caed0a0139176f01c437c9b3fb0dc094e"
 metafile = true
 
 [[files]]
@@ -1048,4 +1078,9 @@ metafile = true
 [[files]]
 file = "mods/zeta.pw.toml"
 hash = "cb474b6c0dde741836ed4f796f3b6ab0b9d3cdc0453e651122cd002d5d1f8df8"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "5773753dfb3bea99f6cc01ead5c58beb105f6491f3bc33650c3a8cb5919d9e24"
 metafile = true

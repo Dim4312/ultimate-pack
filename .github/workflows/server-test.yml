@@ -98,6 +98,9 @@ jobs:
             send "ultimate gate nether close"
             send "ultimate arrival"
             send "ultimate terrain"
+            send "datapack list enabled"
+            send "locate biome terralith:yellowstone"
+            send "locate biome natures_spirit:redwood_forest"
             send "ultimate_terrain_sample"
             # Exercise separated terrain regions and all three dimensions. One
             # spawn-sized square cannot establish worldgen compatibility.
@@ -161,6 +164,8 @@ jobs:
               echo "::error file=$f::KubeJS reported errors"; status=1
             fi
           done
+          echo "===== data packs and biomes"
+          grep -E 'data pack|nearest|Could not find' console.log || true
           echo "===== ultimate status / gate output"
           grep -E 'nether|end:|Phase|has been|return gate|ender dragon|arrival' console.log || true
           if ! grep -q 'End arrival island' console.log; then
