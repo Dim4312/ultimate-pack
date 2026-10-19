@@ -23,18 +23,18 @@
 
 [datapack]
 	vanilla_trees_toggle = false
-	birch_forest_toggle = true
-	flower_forest_toggle = true
-	jungle_toggle = true
-	swamp_toggle = true
-	desert_toggle = true
-	badlands_toggle = true
-	mountain_biomes_toggle = true
-	savanna_toggle = true
-	dark_forest_toggle = true
-	taiga_toggle = true
+	birch_forest_toggle = false
+	flower_forest_toggle = false
+	jungle_toggle = false
+	swamp_toggle = false
+	desert_toggle = false
+	badlands_toggle = false
+	mountain_biomes_toggle = false
+	savanna_toggle = false
+	dark_forest_toggle = false
+	taiga_toggle = false
 	plains_toggle = false
-	windswept_hills_toggle = true
+	windswept_hills_toggle = false
 
 [biome]
 	has_sugi_forest = true

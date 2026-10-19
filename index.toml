@@ -110,7 +110,7 @@ hash = "2afa52e4e303df977a6e1622ee6309f0742074aa88536acdd9c7e80569924c3e"
 
 [[files]]
 file = "config/natures_spirit-common.toml"
-hash = "a0c639f0e22098fd33e89ff022ecf0a7189639b487238974345f8eef3d35149e"
+hash = "4b47e8ab9769c11f2015d68817bac10335cbb15247881e7a97ff62988986387d"
 
 [[files]]
 file = "config/servercore/config.yml"
