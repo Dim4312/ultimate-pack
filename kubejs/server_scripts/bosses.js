@@ -33,6 +33,27 @@ const BOSSES = {
   'minecraft:ender_dragon': 'ender_dragon'
 }
 
+// Other bosses: no quest stage, but they still scale. Keep in sync with
+// "Boss Entities" in config/multiplayerbosses-common.toml (that mod only adds drops and loot bags).
+const OTHER_BOSSES = [
+  'cataclysm:ender_golem', 'bosses_of_mass_destruction:void_blossom',
+  'bosses_of_mass_destruction:gauntlet', 'bosses_of_mass_destruction:lich',
+  'bosses_of_mass_destruction:obsidilith', 'minecraft:elder_guardian',
+  'aquamirae:captain_cornelia', 'aquamirae:maze_mother', 'born_in_chaos_v1:lord_pumpkinhead',
+  'born_in_chaos_v1:lord_pumpkinhead_withouta_horse', 'alexsmobs:void_worm',
+  'alexscaves:luxtructosaurus', 'hybrid_aquatic:karkinos', 'hybrid_aquatic:shell_beast',
+  'illagerinvasion:invoker', 'legendary_monsters:overgrown_colossus',
+  'legendary_monsters:frostbitten_golem', 'legendary_monsters:lava_eater',
+  'legendary_monsters:withered_abomination', 'legendary_monsters:warped_fungussus',
+  'legendary_monsters:skeletosaurus', 'legendary_monsters:endersent',
+  'legendary_monsters:ancient_guardian', 'legendary_monsters:dune_sentinel',
+  'legendary_monsters:cloud_golem', 'legendary_monsters:posessed_paladin',
+  'legendary_monsters:the_obliterator', 'irons_spellbooks:dead_king', 'irons_spellbooks:fire_boss',
+  'block_factorys_bosses:infernal_dragon', 'block_factorys_bosses:kraken',
+  'block_factorys_bosses:sandworm', 'block_factorys_bosses:underworld_knight',
+  'block_factorys_bosses:yeti'
+]
+
 // echo item id suffix -> how to summon it (Overworld unless a dimension is given)
 const ECHOES = {
   wroughtnaut: { entity: 'mowziesmobs:ferrous_wroughtnaut' },
@@ -118,7 +139,8 @@ EntityEvents.spawned(event => {
 // damage x 1 / (1 + 0.65 x (players - 1)): fair for one player, still a fight for five.
 EntityEvents.beforeHurt(event => {
   const entity = event.entity
-  if (!BOSSES[String(entity.type)]) return
+  const type = String(entity.type)
+  if (!BOSSES[type] && OTHER_BOSSES.indexOf(type) < 0) return
   const players = playersNear(entity, SCALING_RADIUS).length
   if (players <= 1) return
   event.setDamage(event.damage / (1 + SCALING_PER_EXTRA_PLAYER * (players - 1)))

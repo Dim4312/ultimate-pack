@@ -1,0 +1,739 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "boss_hunters"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "block_factorys_bosses:dragon_skull"
+	}
+	id: "4C53ABA9E7EE27B8"
+	order_index: 18
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1C4E6474036F2D95"
+			]
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "638264787E0570DB"
+			rewards: [
+				{
+					id: "62335167679F98E5"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "325B706A93CB19FD"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "legendary_monsters:cloud_rod"
+			}
+			id: "5BD00899C07E2728"
+			optional: true
+			rewards: [
+				{
+					id: "3E319B5A4A5AE684"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:cloud_golem"
+					id: "78E8A2F003CD9125"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "minecraft:moss_block"
+			}
+			id: "42E33B3531A2580D"
+			optional: true
+			rewards: [
+				{
+					id: "3487122B1CCA1605"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:overgrown_colossus"
+					id: "2847058E7B10159A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.75d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "minecraft:packed_ice"
+			}
+			id: "2F2FAB09B46953BF"
+			optional: true
+			rewards: [
+				{
+					id: "167CFEEF1DFB978D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:frostbitten_golem"
+					id: "4623419F9135859F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "legendary_monsters:crystal_of_sandstorm"
+			}
+			id: "2CDAF6D84C3A8753"
+			optional: true
+			rewards: [
+				{
+					id: "308A6AC8855681D4"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:dune_sentinel"
+					id: "758DA16310A58504"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.25d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "legendary_monsters:dinosaur_bone"
+			}
+			id: "62F9B36AADCE203E"
+			optional: true
+			rewards: [
+				{
+					id: "18C55E23417007AF"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:skeletosaurus"
+					id: "785CE23AEBFF2DCD"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "block_factorys_bosses:ice_gauntlet"
+			}
+			id: "1E6A8A4BD18FD315"
+			optional: true
+			rewards: [
+				{
+					id: "56E166C157A8E473"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "block_factorys_bosses:yeti"
+					id: "14C7E07060A8E6C6"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "block_factorys_bosses:sandworm_gauntlet"
+			}
+			id: "71D03A93D0D32819"
+			optional: true
+			rewards: [
+				{
+					id: "591BF9472FE78951"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "block_factorys_bosses:sandworm"
+					id: "386E0603C99F02DE"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.75d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "hybrid_aquatic:karkinos_claw"
+			}
+			id: "657E419FF7DC4AA1"
+			optional: true
+			rewards: [
+				{
+					id: "400DEA9AC7602333"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "hybrid_aquatic:karkinos"
+					id: "102F224160CE29BA"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 5.5d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "bosses_of_mass_destruction:void_thorn"
+			}
+			id: "5274E07644B18DD0"
+			optional: true
+			rewards: [
+				{
+					id: "1E1A3AA4555ED6CE"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "bosses_of_mass_destruction:void_blossom"
+					id: "54A4180ACE1190A3"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.25d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "bosses_of_mass_destruction:soul_star"
+			}
+			id: "4E099ADE53F2D19C"
+			optional: true
+			rewards: [
+				{
+					id: "5AD8D3419B255378"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "bosses_of_mass_destruction:lich"
+					id: "1AC22D22899EF22B"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "minecraft:netherite_sword"
+			}
+			id: "2902D175067C0064"
+			optional: true
+			rewards: [
+				{
+					id: "335B19843DD33CCB"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					id: "3B380C211EF8CD28"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2902D175067C0064"
+			]
+			icon: {
+				id: "minecraft:magma_block"
+			}
+			id: "49523AEC43C6846F"
+			optional: true
+			rewards: [
+				{
+					id: "1B095D74C10E3AA8"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:lava_eater"
+					id: "48CEA00F47F8C56C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2902D175067C0064"
+			]
+			icon: {
+				id: "minecraft:wither_rose"
+			}
+			id: "2D49D02467BF3106"
+			optional: true
+			rewards: [
+				{
+					id: "7023EF4E7C2C3F6E"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:withered_abomination"
+					id: "2A441EB6F0AFF410"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.75d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2902D175067C0064"
+			]
+			icon: {
+				id: "minecraft:warped_fungus"
+			}
+			id: "2B241A1A7E8199E4"
+			optional: true
+			rewards: [
+				{
+					id: "39D4974B9CE38005"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:warped_fungussus"
+					id: "1811E7EAA6036A8F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2902D175067C0064"
+			]
+			icon: {
+				id: "minecraft:golden_sword"
+			}
+			id: "44EAA27478C21CA1"
+			optional: true
+			rewards: [
+				{
+					id: "3E637D171016C129"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:posessed_paladin"
+					id: "2F7D63B9D4D60AC7"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.25d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2902D175067C0064"
+			]
+			icon: {
+				id: "block_factorys_bosses:knight_sword"
+			}
+			id: "1D4945C58083484B"
+			optional: true
+			rewards: [
+				{
+					id: "271DBF61DEE93A9A"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "block_factorys_bosses:underworld_knight"
+					id: "1F98159F98FBC882"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2902D175067C0064"
+			]
+			icon: {
+				id: "block_factorys_bosses:kraken_tooth"
+			}
+			id: "30D9EA163CDBDF63"
+			optional: true
+			rewards: [
+				{
+					id: "37CF18A2F22A6461"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "block_factorys_bosses:kraken"
+					id: "161217E67F6A05B0"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"2902D175067C0064"
+			]
+			icon: {
+				id: "block_factorys_bosses:dragon_skull"
+			}
+			id: "138BE52C32148FDD"
+			optional: true
+			rewards: [
+				{
+					id: "37E69DC31BB1E57F"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "block_factorys_bosses:infernal_dragon"
+					id: "79059208C7DB1071"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.75d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"2902D175067C0064"
+			]
+			icon: {
+				id: "bosses_of_mass_destruction:blazing_eye"
+			}
+			id: "1016D6D74CD438A1"
+			optional: true
+			rewards: [
+				{
+					id: "5370D380690D0F19"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "bosses_of_mass_destruction:gauntlet"
+					id: "27DD49C7E006BFFD"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 5.5d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"2902D175067C0064"
+			]
+			icon: {
+				id: "alexscaves:submarine"
+			}
+			id: "15365ED83EC109D7"
+			optional: true
+			rewards: [
+				{
+					id: "18A49566A7B1CD3C"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "alexscaves:hullbreaker"
+					id: "354752F56C126D6C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.25d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"2902D175067C0064"
+			]
+			icon: {
+				id: "alexscaves:tremorsaurus_egg"
+			}
+			id: "63C5606F53F95443"
+			optional: true
+			rewards: [
+				{
+					id: "1D23022E445DAD0D"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					entity: "alexscaves:luxtructosaurus"
+					id: "732EF1C0FC7F947A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"638264787E0570DB"
+			]
+			icon: {
+				id: "minecraft:end_crystal"
+			}
+			id: "6A5B1AB20D1C2454"
+			optional: true
+			rewards: [
+				{
+					id: "6D6B0AFEE3349B33"
+					type: "xp"
+					xp: 20
+				}
+			]
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "106A6466C4F230C3"
+					type: "dimension"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"6A5B1AB20D1C2454"
+			]
+			icon: {
+				id: "bosses_of_mass_destruction:obsidian_heart"
+			}
+			id: "567A2067334F64BA"
+			optional: true
+			rewards: [
+				{
+					id: "2BA34FB206AC3199"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					entity: "bosses_of_mass_destruction:obsidilith"
+					id: "45433B309003C9FF"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"6A5B1AB20D1C2454"
+			]
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "23F194BE0831FEDB"
+			optional: true
+			rewards: [
+				{
+					id: "26AEF573BD6EF09C"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:endersent"
+					id: "1E8D691A35C881F2"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.75d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"6A5B1AB20D1C2454"
+			]
+			icon: {
+				id: "legendary_monsters:bottle_of_annihilation"
+			}
+			id: "3C446B7E113612C4"
+			optional: true
+			rewards: [
+				{
+					id: "16A5F276F673E41D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:the_obliterator"
+					id: "58236A761A46F316"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"6A5B1AB20D1C2454"
+			]
+			icon: {
+				id: "alexsmobs:void_worm_eye"
+			}
+			id: "689E2D5C2AC8FBF6"
+			optional: true
+			rewards: [
+				{
+					id: "71853482BC770885"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					entity: "alexsmobs:void_worm"
+					id: "32E4CE712F7F1B00"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.25d
+			y: 7.0d
+		}
+	]
+}

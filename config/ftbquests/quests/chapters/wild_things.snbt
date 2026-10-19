@@ -1,0 +1,585 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "wild_things"
+	group: "7B6FDD4F9A66BB50"
+	icon: {
+		id: "alexsmobs:animal_dictionary"
+	}
+	id: "5E8CD5739DE98091"
+	order_index: 17
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"391FC3F74C0C2F45"
+			]
+			id: "58DB18CB0EAF6FCB"
+			rewards: [
+				{
+					id: "2906C1B6F9F7EF32"
+					type: "xp"
+					xp: 40
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "17B7D60463F9B898"
+					item: {
+						count: 1
+						id: "alexsmobs:animal_dictionary"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "6A98CFC8880A1A76"
+			optional: true
+			rewards: [
+				{
+					id: "107E08D9071074CE"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "765AD213FDAB8C13"
+					item: {
+						count: 1
+						id: "alexsmobs:banana"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "5E49426BFAB6EF11"
+			optional: true
+			rewards: [
+				{
+					id: "792ED68D14DF023E"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "4C16E9F79B990D04"
+					item: {
+						count: 1
+						id: "alexsmobs:falconry_glove"
+					}
+					type: "item"
+				}
+			]
+			x: 3.75d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "6D20034C9B3E7A46"
+			optional: true
+			rewards: [
+				{
+					id: "34280A76EF68DC23"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "300A2FBFBFA62512"
+					item: {
+						count: 1
+						id: "alexsmobs:vine_lasso"
+					}
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "5F4B6DF35C5A4891"
+			optional: true
+			rewards: [
+				{
+					id: "24B43FAD8092E03E"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "3B18D7722E960D36"
+					item: {
+						count: 1
+						id: "alexsmobs:straddleboard"
+					}
+					type: "item"
+				}
+			]
+			x: 7.25d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "2B3667A7614444E9"
+			optional: true
+			rewards: [
+				{
+					id: "243C5B8E8B00A22A"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "524A4AAC9E85E058"
+					item: {
+						count: 1
+						id: "alexsmobs:moose_antler"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "30CE3FFF9029D41D"
+			optional: true
+			rewards: [
+				{
+					id: "536B930FE6095316"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "79F3482327CB0CC0"
+					item: {
+						count: 1
+						id: "alexsmobs:shark_tooth"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "61F77CB426093FA6"
+			optional: true
+			rewards: [
+				{
+					id: "4A01779A57E6D2A3"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "5ACD1A1C22BBAD3B"
+					item: {
+						count: 1
+						id: "alexsmobs:tarantula_hawk_elytra"
+					}
+					type: "item"
+				}
+			]
+			x: 3.75d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "490F3572138EE98E"
+			optional: true
+			rewards: [
+				{
+					id: "421C6DE32A377FD1"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "15813626E7EA7BA2"
+					item: {
+						count: 1
+						id: "alexsmobs:shield_of_the_deep"
+					}
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "1CE51F20CB7ECE8A"
+			optional: true
+			rewards: [
+				{
+					id: "386162C53A21BC07"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "249B5C7AB28CC8BE"
+					item: {
+						count: 1
+						id: "crittersandcompanions:pearl"
+					}
+					type: "item"
+				}
+			]
+			x: 7.25d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "47044FD330F10FEE"
+			optional: true
+			rewards: [
+				{
+					id: "6B79CFE1A99B0155"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "4D98EEA8AECD6EC7"
+					item: {
+						count: 1
+						id: "crittersandcompanions:pearl_necklace_1"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "475554F4C870B7BA"
+			optional: true
+			rewards: [
+				{
+					id: "2128F4A613E22C66"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "4687137E59606F12"
+					item: {
+						count: 1
+						id: "crittersandcompanions:iron_dragonfly_armor"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "5A1E439352254089"
+			optional: true
+			rewards: [
+				{
+					id: "2E94886660237BED"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "1B3ABAF938A5F8F3"
+					item: {
+						count: 1
+						id: "crittersandcompanions:koi_fish_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 3.75d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "5F7FDB1001E05BDB"
+			optional: true
+			rewards: [
+				{
+					id: "5B3A11A7D3D972E1"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "50C5972084DFFF4A"
+					item: {
+						count: 1
+						id: "crittersandcompanions:sea_bunny_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "3640074EF362CE67"
+			optional: true
+			rewards: [
+				{
+					id: "48D7E133C1B688C4"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "79E1ACCEE720AFBA"
+					item: {
+						count: 1
+						id: "crittersandcompanions:dumbo_octopus_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 7.25d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "6C4F4447B65706BA"
+			optional: true
+			rewards: [
+				{
+					id: "1C45AB819AB41068"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "6B21F942322C0FF8"
+					item: {
+						count: 1
+						id: "crittersandcompanions:silk_lead"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "13E81F6B9A329A9E"
+			optional: true
+			rewards: [
+				{
+					id: "73A2A59964B18806"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "1453BB15B2CEC9A0"
+					item: {
+						count: 1
+						id: "hybrid_aquatic:crab_pot"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "2AB452863C3AAA0A"
+			optional: true
+			rewards: [
+				{
+					id: "17EBACA7A6099BAD"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "1553A0DA894ADFA5"
+					item: {
+						count: 1
+						id: "hybrid_aquatic:cooked_crab"
+					}
+					type: "item"
+				}
+			]
+			x: 3.75d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			id: "187CF2EDB30B2DBF"
+			optional: true
+			rewards: [
+				{
+					id: "55E2660694BD23F7"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "26FEFA06F48ABCF5"
+					item: {
+						count: 1
+						id: "hybrid_aquatic:black_pearl"
+					}
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			icon: {
+				id: "minecraft:creeper_head"
+			}
+			id: "756BE99C23D0369A"
+			optional: true
+			rewards: [
+				{
+					id: "48D50D9EAEEA8704"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					entity: "creeperoverhaul:desert_creeper"
+					id: "12BAAA3C3F931076"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "creeperoverhaul:jungle_creeper"
+					id: "696EC02BA0337B8D"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "creeperoverhaul:snowy_creeper"
+					id: "5909643753A961EB"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.25d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"58DB18CB0EAF6FCB"
+			]
+			icon: {
+				id: "minecraft:ender_pearl"
+			}
+			id: "4663B1C97C938401"
+			optional: true
+			rewards: [
+				{
+					id: "1E04C2E1CBB92307"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "66C2D47BFF500AA6"
+					item: {
+						count: 1
+						id: "endermanoverhaul:icy_pearl"
+					}
+					type: "item"
+				}
+				{
+					id: "413D89C4192B1435"
+					item: {
+						count: 1
+						id: "endermanoverhaul:crimson_pearl"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 3.75d
+		}
+	]
+}

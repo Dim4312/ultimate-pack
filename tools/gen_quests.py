@@ -789,6 +789,30 @@ BIOMES_END = [
 ]
 
 
+BIOMES_TERRALITH = [
+    ("terralith", "yellowstone", "Yellowstone", "Hot springs and geysers, like the real park.", "minecraft:cyan_terracotta"),
+    ("terralith", "yosemite_cliffs", "Yosemite Cliffs", "Granite walls hundreds of blocks high.", "minecraft:granite"),
+    ("terralith", "bryce_canyon", "Bryce Canyon", "Red rock spires as far as you can see.", "minecraft:red_terracotta"),
+    ("terralith", "volcanic_peaks", "Volcanic Peaks", "Black rock, ash and lava at the top.", "minecraft:basalt"),
+    ("terralith", "caldera", "Caldera", "A lake inside an old volcano.", "minecraft:blackstone"),
+    ("terralith", "skylands_summer", "Skylands", "Islands floating over the land. Bring a feather.", "minecraft:feather"),
+    ("terralith", "moonlight_grove", "Moonlight Grove", "A purple forest that glows at night.", "minecraft:amethyst_shard"),
+    ("terralith", "amethyst_canyon", "Amethyst Canyon", "Crystals growing out of the canyon walls.", "minecraft:amethyst_cluster"),
+    ("terralith", "glacial_chasm", "Glacial Chasm", "Deep cracks in blue ice.", "minecraft:blue_ice"),
+    ("terralith", "mirage_isles", "Mirage Isles", "Strange islands in a warm sea.", "minecraft:sand"),
+    ("terralith", "shield", "The Shield", "Old rock, lakes and endless spruce.", "minecraft:spruce_sapling"),
+    ("terralith", "haze_mountain", "Haze Mountain", "A mountain lost in the clouds.", "minecraft:white_wool"),
+]
+BIOMES_ALEXS_CAVES = [
+    ("alexscaves", "magnetic_caves", "Magnetic Caves", "Metal floats here. So might you.", "alexscaves:scarlet_magnet"),
+    ("alexscaves", "primordial_caves", "Primordial Caves", "Dinosaurs. Under the ground. Run.", "alexscaves:dinosaur_chop"),
+    ("alexscaves", "toxic_caves", "Toxic Caves", "Green, glowing and radioactive. Don't stay long.", "alexscaves:uranium"),
+    ("alexscaves", "abyssal_chasm", "Abyssal Chasm", "A flooded cave at the bottom of the sea. Something big lives here.", "alexscaves:depth_charge"),
+    ("alexscaves", "forlorn_hollows", "Forlorn Hollows", "Pitch black, and the things here like it that way.", "minecraft:sculk"),
+    ("alexscaves", "candy_cavity", "Candy Cavity", "Everything is candy. Even the monsters.", "alexscaves:candy_cane"),
+]
+
+
 def discover_biomes():
     c = Chapter("discover_biomes", "&eDiscoveries: Biomes", "naturescompass:naturescompass", GROUP_SIDE,
                 subtitle="Go everywhere. Every biome is a small reward.")
@@ -810,6 +834,15 @@ def discover_biomes():
             desc=["Nullscape reshapes the outer End: peaks, shadows and barrens."],
             deps=["phase_8_one_way:arrive"], rewards=[r_xp(50)], optional=True, icon="minecraft:end_stone")
     grid(c, [(f"{ns}_{b}", t, [biome(f"{ns}:{b}")], d, i) for ns, b, t, d, i in BIOMES_END], 2, 10, 8, ["end"], xp=80)
+    c.quest("terralith", "&eReal-World Wonders", 0, 12, [check("Got it")],
+            desc=["Terralith shapes the land like real places: canyons, hot springs, volcanoes, floating islands."],
+            deps=["start"], rewards=[r_xp(20)], optional=True, icon="minecraft:spyglass")
+    grid(c, [(f"{ns}_{b}", t, [biome(f"{ns}:{b}")], d, i) for ns, b, t, d, i in BIOMES_TERRALITH], 2, 12, 6, ["terralith"], xp=50)
+    c.quest("alexs_caves", "&eAlex's Caves", 0, 15.5, [item("alexscaves:cave_tablet")],
+            desc=["Six huge cave biomes hide deep underground. Cave Tablets turn up in loot underground.",
+                  "Decode one at a Spelunkery Table and it shows you the way to that cave."],
+            deps=["underground"], rewards=[r_xp(60)], optional=True, icon="alexscaves:cave_tablet")
+    grid(c, [(f"{ns}_{b}", t, [biome(f"{ns}:{b}")], d, i) for ns, b, t, d, i in BIOMES_ALEXS_CAVES], 2, 15.5, 6, ["alexs_caves"], xp=150)
     return c
 
 
@@ -1071,6 +1104,90 @@ def gear():
         ("warden", "The Warden", [kill("minecraft:warden")], "Do you really want to? Optional. Very optional.", "minecraft:sculk_shrieker"),
     ]
     grid(c, bosses, 2, 3.5, 6, ["monsters"], xp=150)
+    return c
+
+
+def wild_things():
+    c = Chapter("wild_things", "&aWild Things", "alexsmobs:animal_dictionary", GROUP_SIDE,
+                subtitle="Animals to find, tame and ride.")
+    c.quest("start", "&aThe Animal Dictionary", 0, 0, [item("alexsmobs:animal_dictionary")],
+            desc=["Alex's Mobs adds almost a hundred animals. The dictionary tells you",
+                  "where each one lives, what it eats and how to tame it."],
+            deps=["phase_1_arrival:arrival"], rewards=[r_xp(40)], shape="hexagon", size=1.5)
+    entries = [
+        ("banana", "Bananas", [item("alexsmobs:banana")], "Break jungle leaves. Monkeys love them.", None),
+        ("falconry", "Falconry", [item("alexsmobs:falconry_glove")], "Bald eagles can be tamed. The glove is how you carry one.", None),
+        ("lasso", "Vine Lasso", [item("alexsmobs:vine_lasso")], "Pull mobs toward you. Great for catching runaway animals.", None),
+        ("straddle", "Lava Surfing", [item("alexsmobs:straddleboard")], "Ride the lava in the Nether, like a surfboard.", None),
+        ("antlers", "Moose Antlers", [item("alexsmobs:moose_antler")], "Moose antlers. Wear them as a very silly hat.", None),
+        ("shark_tooth", "Shark Teeth", [item("alexsmobs:shark_tooth")], "Sharks drop them. Make arrows that fly through water.", None),
+        ("hawk_wings", "Tarantula Hawk Elytra", [item("alexsmobs:tarantula_hawk_elytra")], "Made from tarantula hawk wings. An elytra before the End!", None),
+        ("deep_shield", "Shield of the Deep", [item("alexsmobs:shield_of_the_deep")], "A shield made from ocean treasures. The dictionary has the recipe.", None),
+        ("pearl", "Otter Pearls", [item("crittersandcompanions:pearl")], "Fish up clams in rivers. Give them to an otter and it opens them.", None),
+        ("necklace", "Pearl Necklace", [item("crittersandcompanions:pearl_necklace_1")], "Pearls make a necklace. Wear it when you go diving.", None),
+        ("dragonfly", "Dragonfly Rider", [item("crittersandcompanions:iron_dragonfly_armor")], "Tame a dragonfly with spider eyes, then give it armor.", None),
+        ("koi", "Lucky Koi", [item("crittersandcompanions:koi_fish_bucket")], "Groups of koi bring you luck.", None),
+        ("sea_bunny", "Sea Bunny", [item("crittersandcompanions:sea_bunny_bucket")], "A tiny ocean slug that looks like a bunny.", None),
+        ("dumbo", "Dumbo Octopus", [item("crittersandcompanions:dumbo_octopus_bucket")], "It gives you a bubble when you're drowning. Keep one close.", None),
+        ("silk_lead", "Silk Lead", [item("crittersandcompanions:silk_lead")], "A lead made from silk.", None),
+        ("crab_pot", "Crab Pot", [item("hybrid_aquatic:crab_pot")], "Drop it in the sea and come back for crabs.", None),
+        ("crab", "Crab Dinner", [item("hybrid_aquatic:cooked_crab")], "Fresh from the pot.", None),
+        ("black_pearl", "Black Pearl", [item("hybrid_aquatic:black_pearl")], "A rare pearl from the deep.", None),
+        ("creepers", "Creepers Everywhere", [kill("creeperoverhaul:desert_creeper"), kill("creeperoverhaul:jungle_creeper"), kill("creeperoverhaul:snowy_creeper")],
+         "Each biome has its own creeper, and each one explodes differently.", "minecraft:creeper_head"),
+        ("endermen", "Endermen Everywhere", [item("endermanoverhaul:icy_pearl"), item("endermanoverhaul:crimson_pearl")],
+         "Biome endermen drop their own pearls, and each pearl does something different.", "minecraft:ender_pearl"),
+    ]
+    grid(c, entries, 2, -1.5, 5, ["start"], xp=50, step=1.75)
+    return c
+
+
+def boss_hunters():
+    c = Chapter("boss_hunters", "&4Boss Hunters", "block_factorys_bosses:dragon_skull", GROUP_SIDE,
+                subtitle="Every big boss outside the main story.")
+    c.quest("start", "&4Bring Everyone", 0, 0, [check("We're ready")],
+            desc=["More players nearby means each hit does a bit less, and every player gets their own loot bag.",
+                  "So bring the whole group: nobody leaves empty-handed."],
+            deps=["phase_2_ruins:start"], rewards=[r_xp(20)], shape="hexagon", size=1.5, icon="minecraft:wither_skeleton_skull")
+    early = [
+        ("cloud_golem", "The Cloud Golem", [kill("legendary_monsters:cloud_golem")], "Look up. Way up.", "legendary_monsters:cloud_rod"),
+        ("colossus", "The Overgrown Colossus", [kill("legendary_monsters:overgrown_colossus")], "A mossy giant, older than the forest.", "minecraft:moss_block"),
+        ("frostbitten", "The Frostbitten Golem", [kill("legendary_monsters:frostbitten_golem")], "A golem of ice and snow.", "minecraft:packed_ice"),
+        ("dune_sentinel", "The Dune Sentinel", [kill("legendary_monsters:dune_sentinel")], "A guardian of the desert sands.", "legendary_monsters:crystal_of_sandstorm"),
+        ("skeletosaurus", "Skeletosaurus", [kill("legendary_monsters:skeletosaurus")], "A dinosaur skeleton that didn't stay dead.", "legendary_monsters:dinosaur_bone"),
+        ("yeti", "The Yeti", [kill("block_factorys_bosses:yeti")], "Bosses'Rise: deep in a frozen arena.", "block_factorys_bosses:ice_gauntlet"),
+        ("sandworm", "The Sandworm", [kill("block_factorys_bosses:sandworm")], "Bosses'Rise: the desert moves. That's the worm.", "block_factorys_bosses:sandworm_gauntlet"),
+        ("karkinos", "Karkinos", [kill("hybrid_aquatic:karkinos")], "A crab the size of a house.", "hybrid_aquatic:karkinos_claw"),
+        ("void_blossom", "The Void Blossom", [kill("bosses_of_mass_destruction:void_blossom")], "A giant flower deep in the lush caves. It bites.", "bosses_of_mass_destruction:void_thorn"),
+        ("lich", "The Night Lich", [kill("bosses_of_mass_destruction:lich")], "Its tower stands in the snow. Fight it on the roof.", "bosses_of_mass_destruction:soul_star"),
+    ]
+    grid(c, early, 2, -1.5, 5, ["start"], xp=300, step=1.75)
+    c.quest("mid", "&cHarder Hunts", 0, 3.5, [check("Bring potions")],
+            desc=["These need good gear and a full team."],
+            deps=["start"], rewards=[r_xp(20)], optional=True, icon="minecraft:netherite_sword")
+    mid = [
+        ("lava_eater", "The Lava Eater", [kill("legendary_monsters:lava_eater")], "It swims in lava, and so will you if you're not careful.", "minecraft:magma_block"),
+        ("withered", "The Withered Abomination", [kill("legendary_monsters:withered_abomination")], "Something grew wrong in the Nether.", "minecraft:wither_rose"),
+        ("fungussus", "The Warped Fungussus", [kill("legendary_monsters:warped_fungussus")], "A walking mushroom with a temper.", "minecraft:warped_fungus"),
+        ("paladin", "The Possessed Paladin", [kill("legendary_monsters:posessed_paladin")], "A holy knight, not holy anymore.", "minecraft:golden_sword"),
+        ("underworld_knight", "The Underworld Knight", [kill("block_factorys_bosses:underworld_knight")], "Bosses'Rise: a duel in the dark.", "block_factorys_bosses:knight_sword"),
+        ("kraken", "The Kraken", [kill("block_factorys_bosses:kraken")], "Bosses'Rise: a pirate ship, a storm and tentacles.", "block_factorys_bosses:kraken_tooth"),
+        ("infernal_dragon", "The Infernal Dragon", [kill("block_factorys_bosses:infernal_dragon")], "Bosses'Rise: a dragon of fire, older than the Ender Dragon.", "block_factorys_bosses:dragon_skull"),
+        ("gauntlet", "The Gauntlet", [kill("bosses_of_mass_destruction:gauntlet")], "A giant iron hand in the Nether. Hit the eye.", "bosses_of_mass_destruction:blazing_eye"),
+        ("hullbreaker", "The Hullbreaker", [kill("alexscaves:hullbreaker")], "The thing at the bottom of the Abyssal Chasm. Take a submarine.", "alexscaves:submarine"),
+        ("luxtructosaurus", "The Luxtructosaurus", [kill("alexscaves:luxtructosaurus")], "A burning dinosaur in the Primordial Caves.", "alexscaves:tremorsaurus_egg"),
+    ]
+    grid(c, mid, 2, 3.5, 5, ["mid"], xp=600, step=1.75)
+    c.quest("late", "&5The End's Monsters", 0, 7, [dimension("minecraft:the_end")],
+            desc=["The outer End has its own bosses. Come back after the dragon."],
+            deps=["start"], rewards=[r_xp(20)], optional=True, icon="minecraft:end_crystal")
+    late = [
+        ("obsidilith", "The Obsidilith", [kill("bosses_of_mass_destruction:obsidilith")], "A living obsidian pillar on the End islands.", "bosses_of_mass_destruction:obsidian_heart"),
+        ("endersent", "The Endersent", [kill("legendary_monsters:endersent")], "An enderman the size of a tower.", "minecraft:ender_eye"),
+        ("obliterator", "The Obliterator", [kill("legendary_monsters:the_obliterator")], "One of the strongest bosses in the pack. Bring everything.", "legendary_monsters:bottle_of_annihilation"),
+        ("void_worm", "The Void Worm", [kill("alexsmobs:void_worm")], "Throw a Void Worm Effigy into the End void. It comes up to meet you.", "alexsmobs:void_worm_eye"),
+    ]
+    grid(c, late, 2, 7, 5, ["late"], xp=1000, step=1.75)
     return c
 
 
@@ -1354,7 +1471,8 @@ def build_chapters():
     LANG.clear()
     return [welcome(), phase1(), phase2(), phase3(), phase4(), phase5(), phase6(),
                 phase7(), phase8(), phase9(), phase10(),
-                discover_biomes(), discover_structures(), kitchen(), create_side(), magic_side(), gear(), life(),
+                discover_biomes(), discover_structures(), kitchen(), create_side(), magic_side(), gear(),
+                wild_things(), boss_hunters(), life(),
                 flight_school(), storage(), community(), after_dragon()]
 
 

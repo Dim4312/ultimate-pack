@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/alexscaves-general.toml"
+hash = "7e13f27067d19537081f9621c3f6fc99f289b4dcc9176d3bd490ec1df6dbf5ca"
+
+[[files]]
 file = "config/defaultoptions/options.txt"
 hash = "10ea598228fa52a708db97589a5bb6b3c5b4ad162a94581897d567fa1f816623"
 
@@ -10,11 +14,15 @@ hash = "df8b92bdd8a1fbef506cba5bc3ee88aea0cfca5f3a1c83918a8b086f114875b9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/after_dragon.snbt"
-hash = "3bbbefb937726e8485d0571dc5f833b828a47911f5df132e8625177b4da81960"
+hash = "5cfe379d20ea448b395dbd3bd1b1f6c08fda2f588050549b12124c3c01cbc6d5"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/boss_hunters.snbt"
+hash = "5b6beb1ba1cf48faa4693ef268a6bf10fbfc015a5cff3cb8e3f2a1b80a567304"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/community.snbt"
-hash = "dfb3ec96f5e7829ce26c207a1fa54d1add483b1a498d67a654d8f7861d6a05b0"
+hash = "771cdf0ada3411d01b6eee34038f65a1473530cce59fab2e1d35e0542b664c3a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_side.snbt"
@@ -22,7 +30,7 @@ hash = "ff9b91f6a6aac8a655617c127f1ccc479f2d6c2328ba6bfd41eba298a06478b8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/discover_biomes.snbt"
-hash = "b5d17a0370a0271f22641c0620921505556d99304c7ca75e1615c7bf3b0fc931"
+hash = "9f9527eacaa1a68510be076bd712f1621b63259c5c0a883b884da6680b192327"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/discover_structures.snbt"
@@ -30,7 +38,7 @@ hash = "cf15c6624b5487237d91b8807754cf44284b70e37732013a4c75cadaa769c79d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/flight_school.snbt"
-hash = "4c8aa99058906f1b4f7a333eb92065623fb9677441eba17198080b4b896cfc8f"
+hash = "93035402ede3092509142ce67366ab6448bab046b9f72f350e024aa0860ba1b2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/gear.snbt"
@@ -42,7 +50,7 @@ hash = "fe9c5aa391fbcd81a2ac2101990285a23789de49a711749f72cb3bd8731e3365"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/life.snbt"
-hash = "b3f0bce80933dc75f9e5938314b58d8511325a3b1b23e5fbb2946e301c0c61c4"
+hash = "d62ee2df598679543692c6d22cc4d4001ebd13a5a1a4f8824f7dee3e44061edc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/magic_side.snbt"
@@ -90,11 +98,15 @@ hash = "c27695f23130d72e90661f54186a0351e740c3aa390f85030aed914555650438"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage.snbt"
-hash = "753336866f82efbcbf0481d4edd46027ae0135493f90c7825e39e4abf5714f1f"
+hash = "a7454e0155042701afbf5fbc7574cdf2fd6ee098ffd347e5275a097bae335aa3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
 hash = "a99ccfc3fee586efa0d6055fec9cc5601889b0777a4d8f717a8e3b03e1a47e26"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/wild_things.snbt"
+hash = "b673fa5f040f088ae1e0c6f729cbdf8191f826ab3e5712642ca6dee87345c23c"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -102,11 +114,15 @@ hash = "330b976950620f9a853f7f58be87cfa09a0c581e4faec902bb8d0ef856690965"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "551b2e43ecd55d80e8a37673ff0977c3ddcbaff106891e7dfff24e7d0eb3fca9"
+hash = "6b32190c6948e163a8a219008cadbbabd001046555fba1a54f825b3af024be70"
 
 [[files]]
 file = "config/immersive_optimization.json"
 hash = "2afa52e4e303df977a6e1622ee6309f0742074aa88536acdd9c7e80569924c3e"
+
+[[files]]
+file = "config/multiplayerbosses-common.toml"
+hash = "17ba4095440263cbea1ceb64d58c913e5c1bb46768532004bfcd936d24e559a9"
 
 [[files]]
 file = "config/natures_spirit-common.toml"
@@ -226,7 +242,7 @@ hash = "387c4c29407a954f107965bf40e27f68f4b7e0cf252b05241edc90316fed6716"
 
 [[files]]
 file = "kubejs/server_scripts/bosses.js"
-hash = "d406ae515387167106606fef57946c110c9c9bc4a59e83bc2dd30532838731a6"
+hash = "36e90a8722d98966015f7f904022b9704406c92926590c20abaecae8c3f280b1"
 
 [[files]]
 file = "kubejs/server_scripts/commands.js"

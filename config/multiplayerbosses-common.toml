@@ -1,0 +1,30 @@
+# Ultimate Pack: health scaling is off. kubejs/server_scripts/bosses.js scales damage instead
+# (bosses take less damage per extra player). This mod adds extra drops and loot bags.
+#If boss health should be scaled
+"Should Scale Boss Health" = false
+#If boss drops should be rolled an additional time per player
+"Should Scale Boss Drops" = true
+#The amount to scale boss health per player after the first
+# Default: 1.0
+# Range: 0.0 ~ 1.7976931348623157E308
+"Health Multiplier Per Player" = 1.0
+#A flat value to increase boss health. Will override "Health Multiplier Per Player" if it is not 0
+# Default: 0.0
+# Range: 0.0 ~ 1.7976931348623157E308
+"Flat Health Multiplier" = 0.0
+#A flat value to increase boss. If this value is not 0 player count will be ignored
+# Default: 0
+# Range: > 0
+"Flat Drop Multiplier" = 0
+#Whether to use the tags in your modloader (Forge, Neoforge, Fabric) to detect bosses. Will still use Boss Names as a fallback
+"Should Use Loader Tags" = true
+#Whether to drop loot bags filled with boss items or just drop the plain items
+"Should Drop Loot Bags" = true
+#Whether to scale health and loot off of the number of players in the configured range or use the global player count
+"Use Proximity Scaling" = true
+#How far from a boss spawn position to detect players. Detects in a cube centered on the entity with each side being the configured number of blocks away.
+# Default: 100
+# Range: > 0
+"Proximity Scaling Range" = 100
+#All bosses that should be affected by this mod. Most are usually in the modloader (Forge, Neoforge, Fabric) tag
+"Boss Entities" = ["minecraft:wither", "minecraft:ender_dragon", "cataclysm:ancient_remnant", "cataclysm:ignis", "cataclysm:maledictus", "cataclysm:ender_golem", "cataclysm:ender_guardian", "cataclysm:the_leviathan", "cataclysm:the_harbinger", "cataclysm:netherite_monstrosity", "bosses_of_mass_destruction:void_blossom", "bosses_of_mass_destruction:gauntlet", "bosses_of_mass_destruction:lich", "bosses_of_mass_destruction:obsidilith", "minecraft:elder_guardian", "cataclysm:scylla", "aquamirae:captain_cornelia", "aquamirae:maze_mother", "born_in_chaos_v1:lord_pumpkinhead", "born_in_chaos_v1:lord_pumpkinhead_withouta_horse", "alexsmobs:void_worm", "alexscaves:luxtructosaurus", "hybrid_aquatic:karkinos", "hybrid_aquatic:shell_beast", "illagerinvasion:invoker", "legendary_monsters:overgrown_colossus", "legendary_monsters:frostbitten_golem", "legendary_monsters:lava_eater", "legendary_monsters:withered_abomination", "legendary_monsters:warped_fungussus", "legendary_monsters:skeletosaurus", "legendary_monsters:endersent", "legendary_monsters:ancient_guardian", "legendary_monsters:dune_sentinel", "legendary_monsters:cloud_golem", "legendary_monsters:posessed_paladin", "legendary_monsters:the_obliterator", "mowziesmobs:ferrous_wroughtnaut", "mowziesmobs:frostmaw", "mowziesmobs:sculptor", "mowziesmobs:umvuthi", "irons_spellbooks:dead_king", "irons_spellbooks:fire_boss", "block_factorys_bosses:infernal_dragon", "block_factorys_bosses:kraken", "block_factorys_bosses:sandworm", "block_factorys_bosses:underworld_knight", "block_factorys_bosses:yeti"]

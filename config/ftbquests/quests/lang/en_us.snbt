@@ -43,6 +43,10 @@
 		"The surface is full of places to raid."
 	]
 	chapter.449DAB2CB6AD8451.title: "&a2. Ruins"
+	chapter.4C53ABA9E7EE27B8.chapter_subtitle: [
+		"Every big boss outside the main story."
+	]
+	chapter.4C53ABA9E7EE27B8.title: "&4Boss Hunters"
 	chapter.4C6955F48943D07D.chapter_subtitle: [
 		"Mineshafts, caves, and something ancient below."
 	]
@@ -63,6 +67,10 @@
 		"A city sank. Something still lives in it."
 	]
 	chapter.5BDFE4FCEA44F862.title: "&b5. The Sea"
+	chapter.5E8CD5739DE98091.chapter_subtitle: [
+		"Animals to find, tame and ride."
+	]
+	chapter.5E8CD5739DE98091.title: "&aWild Things"
 	chapter.6335527ACA7CF750.chapter_subtitle: [
 		"Read this first. It takes two minutes."
 	]
@@ -98,6 +106,10 @@
 		"Find Iron's Spells' catacombs and face the Dead King. Bring the spells you learned on your travels."
 	]
 	quest.100B9D569DABAE23.title: "The Forgotten King"
+	quest.1016D6D74CD438A1.quest_desc: [
+		"A giant iron hand in the Nether. Hit the eye."
+	]
+	quest.1016D6D74CD438A1.title: "The Gauntlet"
 	quest.10A98898D65EB717.quest_desc: [
 		"Connect two places people actually use with a train, road or waystone route."
 		"Add signs and test the whole trip with someone who did not build it."
@@ -160,6 +172,14 @@
 		"Ring it to see where mobs can spawn."
 	]
 	quest.1380EAF0EAE47745.title: "Haunted Bell"
+	quest.138BE52C32148FDD.quest_desc: [
+		"Bosses'Rise: a dragon of fire, older than the Ender Dragon."
+	]
+	quest.138BE52C32148FDD.title: "The Infernal Dragon"
+	quest.139A7DB70901B299.quest_desc: [
+		"Hot springs and geysers, like the real park."
+	]
+	quest.139A7DB70901B299.title: "Yellowstone"
 	quest.13C6C24E75346738.quest_desc: [
 		"Houses inside giant mushrooms."
 	]
@@ -168,6 +188,14 @@
 		"Craft the big recipes automatically."
 	]
 	quest.13DA8590AB7495A1.title: "Mechanical Crafters"
+	quest.13E81F6B9A329A9E.quest_desc: [
+		"Drop it in the sea and come back for crabs."
+	]
+	quest.13E81F6B9A329A9E.title: "Crab Pot"
+	quest.13F57EF13DF1B9A5.quest_desc: [
+		"A mountain lost in the clouds."
+	]
+	quest.13F57EF13DF1B9A5.title: "Haze Mountain"
 	quest.1411F78FB4F206F0.quest_desc: [
 		"&eJEI&r (item list on the right): hover an item and press &eR&r for its recipe or &eU&r for its uses."
 		"&ePonder&r: hold &eW&r while hovering any Create item to see an animated guide."
@@ -175,6 +203,14 @@
 		"&eWaystones&r: find them in villages or craft them to travel between places you've been."
 	]
 	quest.1411F78FB4F206F0.title: "Lost? JEI and Ponder"
+	quest.1456A49822518E2E.quest_desc: [
+		"A flooded cave at the bottom of the sea. Something big lives here."
+	]
+	quest.1456A49822518E2E.title: "Abyssal Chasm"
+	quest.145A7E85B8E251A2.quest_desc: [
+		"Crystals growing out of the canyon walls."
+	]
+	quest.145A7E85B8E251A2.title: "Amethyst Canyon"
 	quest.1473BAEDC00EB5EA.quest_desc: [
 		"A huge stone church."
 	]
@@ -200,6 +236,10 @@
 		"The pirate captain of the Ice Maze."
 	]
 	quest.14F845F787B56A05.title: "Captain Cornelia"
+	quest.15365ED83EC109D7.quest_desc: [
+		"The thing at the bottom of the Abyssal Chasm. Take a submarine."
+	]
+	quest.15365ED83EC109D7.title: "The Hullbreaker"
 	quest.15438C6D1BD94F7D.quest_desc: [
 		"Trees hanging from the ceiling."
 	]
@@ -264,6 +304,10 @@
 		"Rituals change the weather, the time of day and more."
 	]
 	quest.185F99AFF658C69A.title: "&dArs:&r Rituals"
+	quest.187CF2EDB30B2DBF.quest_desc: [
+		"A rare pearl from the deep."
+	]
+	quest.187CF2EDB30B2DBF.title: "Black Pearl"
 	quest.1880A4168DB4E597.quest_desc: [
 		"Request a material from your stock ticker and open the delivered package at your workshop."
 		"Then try another delivery address for the kitchen or shipyard. Teach a friend to place an order."
@@ -352,6 +396,11 @@
 		"A piglin castle full of gold, and full of piglin brutes. Their chests hold netherite scraps."
 	]
 	quest.1B929428B2854DF9.title: "Bastion Remnant"
+	quest.1BD20781A77D29D5.quest_desc: [
+		"Six huge cave biomes hide deep underground. Cave Tablets turn up in loot underground."
+		"Decode one at a Spelunkery Table and it shows you the way to that cave."
+	]
+	quest.1BD20781A77D29D5.title: "&eAlex's Caves"
 	quest.1C173F21C41AB355.quest_desc: [
 		"Old stones, older secrets."
 	]
@@ -398,6 +447,10 @@
 		"Read the Worn Notebook for a full guide. Totally optional, totally fun."
 	]
 	quest.1CCC633B15A78AC2.title: "&9Magic:&r Ars Nouveau"
+	quest.1CE51F20CB7ECE8A.quest_desc: [
+		"Fish up clams in rivers. Give them to an otter and it opens them."
+	]
+	quest.1CE51F20CB7ECE8A.title: "Otter Pearls"
 	quest.1CE8753C3B2548BD.quest_desc: [
 		"There were other dragons once."
 	]
@@ -417,6 +470,10 @@
 		"Hold W over each part for Ponder. A task checking parts does not prove the ship can fly."
 	]
 	quest.1D26585B914CDB02.title: "Your First Shipyard"
+	quest.1D4945C58083484B.quest_desc: [
+		"Bosses'Rise: a duel in the dark."
+	]
+	quest.1D4945C58083484B.title: "The Underworld Knight"
 	quest.1D7E99F9E2A05832.quest_desc: [
 		"More space, more upgrades."
 	]
@@ -425,6 +482,14 @@
 		"Fight your way through the arena."
 	]
 	quest.1D9B52BEACC805AA.title: "The Coliseum"
+	quest.1E36B1995FD99289.quest_desc: [
+		"A lake inside an old volcano."
+	]
+	quest.1E36B1995FD99289.title: "Caldera"
+	quest.1E6A8A4BD18FD315.quest_desc: [
+		"Bosses'Rise: deep in a frozen arena."
+	]
+	quest.1E6A8A4BD18FD315.title: "The Yeti"
 	quest.1EE68DDE8C6B2590.quest_desc: [
 		"A Nature's Compass points to any biome you pick. Try it."
 		"There are more than a hundred biomes in this pack. You don't have to find them all... but you could."
@@ -462,6 +527,10 @@
 		"Brew potions and break down scrolls into ink."
 	]
 	quest.1F6E734F4E5D9A4B.title: "&9Iron's:&r Alchemist Cauldron"
+	quest.1F878257CAD6CE18.quest_desc: [
+		"Granite walls hundreds of blocks high."
+	]
+	quest.1F878257CAD6CE18.title: "Yosemite Cliffs"
 	quest.1FA52EB91E716014.quest_desc: [
 		"Purple towers full of shulkers. Some have a ship floating next to them."
 		"Remember the ships. They matter later."
@@ -473,6 +542,10 @@
 		"Instead, right-click it with an &dEcho of The Harbinger&r."
 	]
 	quest.2000F5C83EEDFD97.title: "The Ancient Factory"
+	quest.2063E1B5C4BFF869.quest_desc: [
+		"Pitch black, and the things here like it that way."
+	]
+	quest.2063E1B5C4BFF869.title: "Forlorn Hollows"
 	quest.207432745E2C0690.quest_desc: [
 		"Broken ice and deep cracks."
 	]
@@ -519,6 +592,10 @@
 		"Fir trees on high meadows."
 	]
 	quest.23D721B1896E13E3.title: "Alpine Highlands"
+	quest.23F194BE0831FEDB.quest_desc: [
+		"An enderman the size of a tower."
+	]
+	quest.23F194BE0831FEDB.title: "The Endersent"
 	quest.23FE46A28DC64A31.quest_desc: [
 		"Lava rivers between black rock."
 	]
@@ -559,6 +636,10 @@
 		"The greatest of the evoker mages."
 	]
 	quest.254546620A7C9A3D.title: "&9Iron's:&r &5The Archevoker"
+	quest.2594ED4A74200221.quest_desc: [
+		"Deep cracks in blue ice."
+	]
+	quest.2594ED4A74200221.title: "Glacial Chasm"
 	quest.25B6B1D4E06FABDF.quest_desc: [
 		"A press flattens ingots into sheets. A millstone grinds ores and crops."
 		"Ores ground up give extra ingots. Automation starts paying off right away."
@@ -639,6 +720,10 @@
 		"A whole underground mine, carts and all."
 	]
 	quest.2901DAD22DC33E8F.title: "Mining System"
+	quest.2902D175067C0064.quest_desc: [
+		"These need good gear and a full team."
+	]
+	quest.2902D175067C0064.title: "&cHarder Hunts"
 	quest.2905922F04002C1F.quest_desc: [
 		"With Create Central Kitchen, a mixer and a heated basin cook Farmer's Delight pot recipes on their own."
 		"Deployers can use cutting boards. Your whole kitchen can run itself."
@@ -660,15 +745,31 @@
 		"Somebody lives up there."
 	]
 	quest.2A7C0EF5ACFC62A7.title: "Jungle Tree House"
+	quest.2AB452863C3AAA0A.quest_desc: [
+		"Fresh from the pot."
+	]
+	quest.2AB452863C3AAA0A.title: "Crab Dinner"
 	quest.2ABF0388C774055A.quest_desc: [
 		"Mine faster with your bare hands."
 	]
 	quest.2ABF0388C774055A.title: "Digging Claws"
+	quest.2B11F87AB2AF8EE7.quest_desc: [
+		"Green, glowing and radioactive. Don't stay long."
+	]
+	quest.2B11F87AB2AF8EE7.title: "Toxic Caves"
+	quest.2B241A1A7E8199E4.quest_desc: [
+		"A walking mushroom with a temper."
+	]
+	quest.2B241A1A7E8199E4.title: "The Warped Fungussus"
 	quest.2B2ABA53A2E279AE.quest_desc: [
 		"The Leviathan only fights in water. Water breathing, Depth Strider and a conduit help a lot."
 		"Its Echo only works while you stand in water."
 	]
 	quest.2B2ABA53A2E279AE.title: "&cBoss: The Leviathan"
+	quest.2B3667A7614444E9.quest_desc: [
+		"Moose antlers. Wear them as a very silly hat."
+	]
+	quest.2B3667A7614444E9.title: "Moose Antlers"
 	quest.2B3A833FA8175741.quest_desc: [
 		"Half-timbered houses, English style."
 	]
@@ -713,6 +814,14 @@
 		"Blaze rods brew potions and power a real Blaze Burner. You'll need them for Eyes of Ender too."
 	]
 	quest.2CCBAE40FAEE8477.title: "Blaze Rods"
+	quest.2CDAF6D84C3A8753.quest_desc: [
+		"A guardian of the desert sands."
+	]
+	quest.2CDAF6D84C3A8753.title: "The Dune Sentinel"
+	quest.2D49D02467BF3106.quest_desc: [
+		"Something grew wrong in the Nether."
+	]
+	quest.2D49D02467BF3106.title: "The Withered Abomination"
 	quest.2D708A78533599DF.quest_desc: [
 		"Roast chestnuts by the fire."
 	]
@@ -755,6 +864,10 @@
 		"The strongest illager mage. Drops the Hallowed Gem."
 	]
 	quest.2F06003042FC29DD.title: "The Invoker"
+	quest.2F2FAB09B46953BF.quest_desc: [
+		"A golem of ice and snow."
+	]
+	quest.2F2FAB09B46953BF.title: "The Frostbitten Golem"
 	quest.2F37ACE67A731F1F.quest_desc: [
 		"A jungle in purple."
 	]
@@ -803,6 +916,14 @@
 		"Even ships in the void can sink."
 	]
 	quest.307A7FB4B1ECDB04.title: "End Shipwreck"
+	quest.30CE3FFF9029D41D.quest_desc: [
+		"Sharks drop them. Make arrows that fly through water."
+	]
+	quest.30CE3FFF9029D41D.title: "Shark Teeth"
+	quest.30D9EA163CDBDF63.quest_desc: [
+		"Bosses'Rise: a pirate ship, a storm and tentacles."
+	]
+	quest.30D9EA163CDBDF63.title: "The Kraken"
 	quest.3236A73465D211DF.quest_desc: [
 		"Read the &eWorn Notebook&r. Glyphs are crafted at the Scribe's Table and put into your spell book."
 	]
@@ -843,6 +964,14 @@
 		"Levitite (check JEI) makes things float."
 	]
 	quest.34A9BCAF72192C47.title: "&6Create:&r An End Airship"
+	quest.35B1780F46E822B1.quest_desc: [
+		"Red rock spires as far as you can see."
+	]
+	quest.35B1780F46E822B1.title: "Bryce Canyon"
+	quest.3640074EF362CE67.quest_desc: [
+		"It gives you a bubble when you're drowning. Keep one close."
+	]
+	quest.3640074EF362CE67.title: "Dumbo Octopus"
 	quest.366D7302AFE1D480.quest_desc: [
 		"The last boss. Everyone within 192 blocks gets credit, including players handling the towers."
 		"When it dies, the void winds calm down and wings work everywhere in the End."
@@ -914,6 +1043,10 @@
 		"Spires of crystal on the outer islands."
 	]
 	quest.397204955D0BF79E.title: "Crystal Peaks"
+	quest.39C4027F6D1AA4F2.quest_desc: [
+		"Black rock, ash and lava at the top."
+	]
+	quest.39C4027F6D1AA4F2.title: "Volcanic Peaks"
 	quest.39DC552F5B5E97A5.quest_desc: [
 		"A knight in black armor."
 	]
@@ -958,6 +1091,10 @@
 		"Break the seals to lift it."
 	]
 	quest.3B4DCB310F4D7421.title: "Desert Temple"
+	quest.3C446B7E113612C4.quest_desc: [
+		"One of the strongest bosses in the pack. Bring everything."
+	]
+	quest.3C446B7E113612C4.title: "The Obliterator"
 	quest.3C568B0D252C8D7E.quest_desc: [
 		"Climb down and pull things up."
 	]
@@ -1018,10 +1155,26 @@
 		"Turn gems into source gems."
 	]
 	quest.42BD7617521E60C5.title: "&dArs:&r Imbuement Chamber"
+	quest.42E33B3531A2580D.quest_desc: [
+		"A mossy giant, older than the forest."
+	]
+	quest.42E33B3531A2580D.title: "The Overgrown Colossus"
+	quest.431CDAC92445AE8D.quest_desc: [
+		"Islands floating over the land. Bring a feather."
+	]
+	quest.431CDAC92445AE8D.title: "Skylands"
 	quest.43B9F4D008230BD4.quest_desc: [
 		"Trees taller than your house. Taller than your neighbor's house too."
 	]
 	quest.43B9F4D008230BD4.title: "Redwood Forest"
+	quest.44D23A823F97E13E.quest_desc: [
+		"Strange islands in a warm sea."
+	]
+	quest.44D23A823F97E13E.title: "Mirage Isles"
+	quest.44EAA27478C21CA1.quest_desc: [
+		"A holy knight, not holy anymore."
+	]
+	quest.44EAA27478C21CA1.title: "The Possessed Paladin"
 	quest.44F1088AEF43CA36.quest_desc: [
 		"The ten Trials are finished. Wings now work everywhere in the End."
 		"Pick an expedition or a community project. These goals award experience and supplies, not another power tier."
@@ -1053,6 +1206,10 @@
 		"Make the route safer; a recovery trip should not become a second lost inventory."
 	]
 	quest.45D900EFA5CCF04F.title: "The Rescue Service"
+	quest.4663B1C97C938401.quest_desc: [
+		"Biome endermen drop their own pearls, and each pearl does something different."
+	]
+	quest.4663B1C97C938401.title: "Endermen Everywhere"
 	quest.466F5743E5002F69.quest_desc: [
 		"Pink trees in the mountains."
 	]
@@ -1065,11 +1222,23 @@
 		"Sandy soil and tall pines."
 	]
 	quest.46A3A7C9B343752F.title: "Pine Barrens"
+	quest.46E733042B9ED622.quest_desc: [
+		"Everything is candy. Even the monsters."
+	]
+	quest.46E733042B9ED622.title: "Candy Cavity"
+	quest.47044FD330F10FEE.quest_desc: [
+		"Pearls make a necklace. Wear it when you go diving."
+	]
+	quest.47044FD330F10FEE.title: "Pearl Necklace"
 	quest.475488349CEDBA22.quest_desc: [
 		"Two magic mods, no classes. Iron's Spells is about finding and upgrading spells,"
 		"Ars Nouveau is about building your own."
 	]
 	quest.475488349CEDBA22.title: "&9The Study"
+	quest.475554F4C870B7BA.quest_desc: [
+		"Tame a dragonfly with spider eyes, then give it armor."
+	]
+	quest.475554F4C870B7BA.title: "Dragonfly Rider"
 	quest.47572E99CA53A6F5.quest_desc: [
 		"Build a hot air envelope and heat it with adjustable burners. Use Ponder for its shape and placement."
 		"A heavier hull needs more lift. Carry spare fuel and test with passengers and cargo aboard."
@@ -1083,6 +1252,10 @@
 		"Piglins have towns too."
 	]
 	quest.48760F6D731A85AE.title: "Piglin Village"
+	quest.490F3572138EE98E.quest_desc: [
+		"A shield made from ocean treasures. The dictionary has the recipe."
+	]
+	quest.490F3572138EE98E.title: "Shield of the Deep"
 	quest.4940ABD7981D2CD3.quest_desc: [
 		"Thin islands floating over nothing."
 	]
@@ -1091,6 +1264,10 @@
 		"A pub up in the trees. First round's on you."
 	]
 	quest.494F0B0748942A74.title: "Treetop Tavern"
+	quest.49523AEC43C6846F.quest_desc: [
+		"It swims in lava, and so will you if you're not careful."
+	]
+	quest.49523AEC43C6846F.title: "The Lava Eater"
 	quest.49790207FC98980E.quest_desc: [
 		"The best stuff is underground. Find diamonds, and bring torches."
 	]
@@ -1147,6 +1324,10 @@
 		"Existing players keep their bindings: check Options > Controls if a key does something else."
 	]
 	quest.4D37D3F99A7A7793.title: "&9Magic:&r A Spellbook"
+	quest.4E099ADE53F2D19C.quest_desc: [
+		"Its tower stands in the snow. Fight it on the roof."
+	]
+	quest.4E099ADE53F2D19C.title: "The Night Lich"
 	quest.4EB8075860107567.quest_desc: [
 		"&cThe Ferrous Wroughtnaut&r only takes damage when struck &efrom behind&r."
 		"Dodge its swings, wait until it gets its axe stuck, then hit its back."
@@ -1165,6 +1346,10 @@
 		"The dragon's death opens small gateways at the edge of its island. They lead to the far islands."
 	]
 	quest.4F4B32F79DD288AD.title: "Beyond"
+	quest.4FC70FC5E20AF976.quest_desc: [
+		"Dinosaurs. Under the ground. Run."
+	]
+	quest.4FC70FC5E20AF976.title: "Primordial Caves"
 	quest.4FECCE9110E31F0E.quest_desc: [
 		"Even more slots."
 	]
@@ -1193,6 +1378,10 @@
 		"Glow berries and azalea, deep under the ground."
 	]
 	quest.5219AB5B1627DEF6.title: "Lush Caves"
+	quest.5274E07644B18DD0.quest_desc: [
+		"A giant flower deep in the lush caves. It bites."
+	]
+	quest.5274E07644B18DD0.title: "The Void Blossom"
 	quest.529E6ED4C7D6E0A3.quest_desc: [
 		"A holy place of fire."
 	]
@@ -1255,6 +1444,10 @@
 		"Something huge lives under the frozen sea."
 	]
 	quest.5611F33D7BC349EA.title: "Maze Mother"
+	quest.567A2067334F64BA.quest_desc: [
+		"A living obsidian pillar on the End islands."
+	]
+	quest.567A2067334F64BA.title: "The Obsidilith"
 	quest.56F524B1A25C56C0.quest_desc: [
 		"Autumn, all year round."
 	]
@@ -1293,6 +1486,11 @@
 		"An empty manor at the edge of the woods."
 	]
 	quest.58D1183CF5827A00.title: "Old Manor"
+	quest.58DB18CB0EAF6FCB.quest_desc: [
+		"Alex's Mobs adds almost a hundred animals. The dictionary tells you"
+		"where each one lives, what it eats and how to tame it."
+	]
+	quest.58DB18CB0EAF6FCB.title: "&aThe Animal Dictionary"
 	quest.58F8A0E1841FD10D.quest_desc: [
 		"Simply Swords' runic weapons get a random power from these."
 	]
@@ -1323,6 +1521,10 @@
 		"Someone built an airship before you did."
 	]
 	quest.5A0DCA1967A047CE.title: "A Lost Blimp"
+	quest.5A1E439352254089.quest_desc: [
+		"Groups of koi bring you luck."
+	]
+	quest.5A1E439352254089.title: "Lucky Koi"
 	quest.5A3349BF54E081E8.quest_desc: [
 		"Move water, lava, honey and more."
 	]
@@ -1336,6 +1538,10 @@
 		"Let a cannon build your schematics."
 	]
 	quest.5AF002ECC54330A5.title: "Schematicannon"
+	quest.5BD00899C07E2728.quest_desc: [
+		"Look up. Way up."
+	]
+	quest.5BD00899C07E2728.title: "The Cloud Golem"
 	quest.5BDBDFA1690B905C.quest_desc: [
 		"Witches live here. Don't touch the pots."
 	]
@@ -1350,6 +1556,10 @@
 		"Use goggles to check speed and stress before launch."
 	]
 	quest.5C414AC0B376AF56.title: "Power That Travels"
+	quest.5CCC5C8F35099C3F.quest_desc: [
+		"Metal floats here. So might you."
+	]
+	quest.5CCC5C8F35099C3F.title: "Magnetic Caves"
 	quest.5D1A0BC9FD8E76AD.quest_desc: [
 		"Green apple trees on misty hills."
 	]
@@ -1359,6 +1569,14 @@
 		"A new challenge for the mage who spent the main story building spells."
 	]
 	quest.5D4CB11754A54642.title: "The Wilden Chimera"
+	quest.5E31C218114C9B08.quest_desc: [
+		"Terralith shapes the land like real places: canyons, hot springs, volcanoes, floating islands."
+	]
+	quest.5E31C218114C9B08.title: "&eReal-World Wonders"
+	quest.5E49426BFAB6EF11.quest_desc: [
+		"Bald eagles can be tamed. The glove is how you carry one."
+	]
+	quest.5E49426BFAB6EF11.title: "Falconry"
 	quest.5EAE0F3E883289D1.quest_desc: [
 		"Defeat the Leviathan."
 		""
@@ -1375,6 +1593,10 @@
 		"YUNG's strongholds are big and full of traps. The portal room is at the bottom."
 	]
 	quest.5F12D1208183EC82.title: "The Stronghold"
+	quest.5F4B6DF35C5A4891.quest_desc: [
+		"Ride the lava in the Nether, like a surfboard."
+	]
+	quest.5F4B6DF35C5A4891.title: "Lava Surfing"
 	quest.5F6F1EDDB10F8C9F.quest_desc: [
 		"Loot is per player, so every chest is worth opening."
 		"Artifacts hide in chests and in &cmimics&r (chests that bite)."
@@ -1384,6 +1606,10 @@
 		"Glowing mushrooms in the dark."
 	]
 	quest.5F767CC7399FCF8D.title: "Mushroom Mines"
+	quest.5F7FDB1001E05BDB.quest_desc: [
+		"A tiny ocean slug that looks like a bunny."
+	]
+	quest.5F7FDB1001E05BDB.title: "Sea Bunny"
 	quest.5FB8F2A9A154FF78.quest_desc: [
 		"A walking furnace of netherite and lava. It hits like a mountain and throws lava."
 		"Fire resistance is a must. Hit it after its slam, then get out of the way."
@@ -1414,6 +1640,10 @@
 		"Supplementaries: carry things, store fireflies, decorate."
 	]
 	quest.61E29E4B52BE17CA.title: "Sacks and Jars"
+	quest.61F77CB426093FA6.quest_desc: [
+		"Made from tarantula hawk wings. An elytra before the End!"
+	]
+	quest.61F77CB426093FA6.title: "Tarantula Hawk Elytra"
 	quest.62BB24BE88E916DA.quest_desc: [
 		"Defeat the Harbinger."
 		"This is the end of Act II. The Nether is open: Act III starts now."
@@ -1423,6 +1653,10 @@
 	]
 	quest.62BB24BE88E916DA.quest_subtitle: "Learn Tempering VI"
 	quest.62BB24BE88E916DA.title: "&6Trial of Phase 6"
+	quest.62F9B36AADCE203E.quest_desc: [
+		"A dinosaur skeleton that didn't stay dead."
+	]
+	quest.62F9B36AADCE203E.title: "Skeletosaurus"
 	quest.634168CDBA6D061F.quest_desc: [
 		"Double your ores, and get extra goodies from gravel."
 	]
@@ -1432,6 +1666,15 @@
 		"Break them first. Some are in iron cages: you'll have to climb."
 	]
 	quest.634892C2AFC35058.title: "The Dragon's Island"
+	quest.638264787E0570DB.quest_desc: [
+		"More players nearby means each hit does a bit less, and every player gets their own loot bag."
+		"So bring the whole group: nobody leaves empty-handed."
+	]
+	quest.638264787E0570DB.title: "&4Bring Everyone"
+	quest.63C5606F53F95443.quest_desc: [
+		"A burning dinosaur in the Primordial Caves."
+	]
+	quest.63C5606F53F95443.title: "The Luxtructosaurus"
 	quest.6419ECB7D8BFAA2A.quest_desc: [
 		"Saws cut whole trees at once."
 	]
@@ -1456,6 +1699,14 @@
 		"AppleSkin shows how filling each food is."
 	]
 	quest.654356F8CDAC9C3F.title: "&eA Real Kitchen"
+	quest.6568F5AFE796438F.quest_desc: [
+		"A purple forest that glows at night."
+	]
+	quest.6568F5AFE796438F.title: "Moonlight Grove"
+	quest.657E419FF7DC4AA1.quest_desc: [
+		"A crab the size of a house."
+	]
+	quest.657E419FF7DC4AA1.title: "Karkinos"
 	quest.665C2FD14970862F.quest_desc: [
 		"Purple and blue flowers hanging from every branch."
 	]
@@ -1480,6 +1731,10 @@
 		"Pink petals everywhere."
 	]
 	quest.67418D77FD6D64B8.title: "Sakura Grove"
+	quest.678BEDC5E07CBE5A.quest_desc: [
+		"Old rock, lakes and endless spruce."
+	]
+	quest.678BEDC5E07CBE5A.title: "The Shield"
 	quest.67DEDBF9C94A7D3A.quest_desc: [
 		"Older than the mineshafts."
 	]
@@ -1488,6 +1743,10 @@
 		"Red vines and a deep valley."
 	]
 	quest.6841F030B3C6A43B.title: "Weeping Valley"
+	quest.689E2D5C2AC8FBF6.quest_desc: [
+		"Throw a Void Worm Effigy into the End void. It comes up to meet you."
+	]
+	quest.689E2D5C2AC8FBF6.title: "The Void Worm"
 	quest.68CD47616C436C20.quest_desc: [
 		"Ice caves under the snow. Bring a warm coat."
 	]
@@ -1505,6 +1764,14 @@
 		"Nothing in here is what it looks like."
 	]
 	quest.6A09BEC0D14488F4.title: "Illusioner Tower"
+	quest.6A5B1AB20D1C2454.quest_desc: [
+		"The outer End has its own bosses. Come back after the dragon."
+	]
+	quest.6A5B1AB20D1C2454.title: "&5The End's Monsters"
+	quest.6A98CFC8880A1A76.quest_desc: [
+		"Break jungle leaves. Monkeys love them."
+	]
+	quest.6A98CFC8880A1A76.title: "Bananas"
 	quest.6B07D38FE3D375B0.quest_desc: [
 		"An Echo of Ignis or of the Netherite Monstrosity calls them again, but only in the Nether."
 		"Late joiners: ask a friend who has fought them to come along."
@@ -1526,6 +1793,10 @@
 		"Zinc ore is found in the Overworld; copper you know."
 	]
 	quest.6C380F39401324F2.title: "&6Create:&r Brass"
+	quest.6C4F4447B65706BA.quest_desc: [
+		"A lead made from silk."
+	]
+	quest.6C4F4447B65706BA.title: "Silk Lead"
 	quest.6C6C1CFD85E7F7C6.quest_desc: [
 		"More health."
 	]
@@ -1534,6 +1805,10 @@
 		"Masked warriors guard a grove in the savanna. Their chief wears the mask of the sun."
 	]
 	quest.6C937FA5947E8982.title: "Umvuthana Grove"
+	quest.6D20034C9B3E7A46.quest_desc: [
+		"Pull mobs toward you. Great for catching runaway animals."
+	]
+	quest.6D20034C9B3E7A46.title: "Vine Lasso"
 	quest.6DA1CF5749944F50.quest_desc: [
 		"Fat trees that look like they're upside down."
 	]
@@ -1594,6 +1869,10 @@
 		"The illagers built a maze. Of course they did."
 	]
 	quest.71C2D51A9756F916.title: "Illager Labyrinth"
+	quest.71D03A93D0D32819.quest_desc: [
+		"Bosses'Rise: the desert moves. That's the worm."
+	]
+	quest.71D03A93D0D32819.title: "The Sandworm"
 	quest.720BBE61DE8A3CCB.quest_desc: [
 		"A whole city of nether brick."
 	]
@@ -1632,6 +1911,10 @@
 		"Reach far. Very useful for building."
 	]
 	quest.75686AC0BDCF8523.title: "Extendo Grip"
+	quest.756BE99C23D0369A.quest_desc: [
+		"Each biome has its own creeper, and each one explodes differently."
+	]
+	quest.756BE99C23D0369A.title: "Creepers Everywhere"
 	quest.763172D3C740DE60.quest_desc: [
 		"Palm-like trees and warm water."
 	]
@@ -1755,10 +2038,13 @@
 	task.2CCD59380F460D5A.title: "Got it"
 	task.30D0D038D129FA93.title: "We hosted a tour, meal or event"
 	task.31D29809FACC58CE.title: "We flew two different working ships together"
+	task.325B706A93CB19FD.title: "We're ready"
 	task.32F0550E8951D501.title: "We built it and someone used it"
 	task.38752D7E24DCED68.title: "Bring friends"
 	task.39509FF5E21C67DB.title: "Think about it"
 	task.395B995C0A360EE7.title: "I planned a safe crossing"
+	task.3B380C211EF8CD28.title: "Bring potions"
+	task.3E29D16FF60C5B1F.title: "Got it"
 	task.3F8D35BD21E3B01B.title: "Let's go"
 	task.43A6D5B577BE9BA4.title: "We built it and someone used it"
 	task.475424B3033F0424.title: "Got it"
