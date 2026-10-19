@@ -1,5 +1,3 @@
-# Ultimate Pack: health scaling is off. kubejs/server_scripts/bosses.js scales damage instead
-# (bosses take less damage per extra player). This mod adds extra drops and loot bags.
 #If boss health should be scaled
 "Should Scale Boss Health" = false
 #If boss drops should be rolled an additional time per player

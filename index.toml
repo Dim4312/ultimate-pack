@@ -122,7 +122,7 @@ hash = "2afa52e4e303df977a6e1622ee6309f0742074aa88536acdd9c7e80569924c3e"
 
 [[files]]
 file = "config/multiplayerbosses-common.toml"
-hash = "17ba4095440263cbea1ceb64d58c913e5c1bb46768532004bfcd936d24e559a9"
+hash = "a90144c0db54c08a734b3e8590d7b8dff1b1645dd7b90e3cc132f332108e043e"
 
 [[files]]
 file = "config/natures_spirit-common.toml"
